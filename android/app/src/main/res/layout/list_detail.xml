@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/head_right_text"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/month_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:text="2016年03月应付"
+                    android:textColor="#545665"
+                    android:textSize="@dimen/text_size_13" />
+
+                <LinearLayout
+                    android:id="@+id/project_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/month_txt"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:paddingLeft="@dimen/margin_15dp"
+                    android:paddingRight="@dimen/margin_10dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_toLeftOf="@id/point"
+                        android:gravity="bottom|right"
+                        android:maxLength="8"
+                        android:minWidth="60dp"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/margin_15dp"
+                        android:src="@drawable/red_down" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/t_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/green_7ec568"
+                        android:textSize="@dimen/text_size_20" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="1dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_11" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_dbdbdb"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_text_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/gray_acacac"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/title_text_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/gray_acacac"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <TextView
+            android:id="@+id/title_text_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/gray_acacac"
+            android:textSize="@dimen/text_size_12" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_dbdbdb"></View>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/gray_f1f1f1"
+        android:divider="@null"></ListView>
+
+
+    <RelativeLayout
+        android:id="@+id/record_layout"
+        style="@style/bottom_button_layout"
+        android:onClick="onClick">
+
+        <View style="@style/line" />
+
+        <TextView
+            style="@style/bottom_button"
+            android:text="马上记一笔" />
+    </RelativeLayout>
+</LinearLayout>

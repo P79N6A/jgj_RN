@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/draw_listview_selector_white_gray"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/catalogLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:paddingBottom="5dip"
+        android:paddingLeft="14dip"
+        android:paddingTop="5dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/catalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_cccccc"
+            android:textSize="@dimen/catalog_size" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/color_f1f1f1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:translationX="-25dp">
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+            android:id="@+id/removeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/removeImage"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/remove_picture" />
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+
+        <include layout="@layout/person_info" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/personCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+
+</LinearLayout>

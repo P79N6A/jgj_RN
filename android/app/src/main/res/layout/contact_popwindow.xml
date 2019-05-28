@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingRight="10dp">
+
+    <ImageView style="@style/navigationPopwindow_sanjiao" />
+
+    <LinearLayout style="@style/navigationPopwindowLayout">
+
+        <com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha
+            android:id="@+id/add_friend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/add_friend" />
+
+            <TextView
+                android:id="@+id/add_friend_text"
+                style="@style/navigationPopwindowTextview"
+                android:layout_toRightOf="@id/icon1"
+                android:text="@string/add_friend" />
+
+            <View
+                style="@style/navigationPopwindowItem"
+                android:layout_below="@id/add_friend_text"
+                android:layout_toRightOf="@id/icon1" />
+
+        </com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha>
+
+        <com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha
+            android:id="@+id/black_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/blacklist" />
+
+            <TextView
+                style="@style/navigationPopwindowTextview"
+                android:layout_toRightOf="@id/icon2"
+                android:text="@string/blacklist" />
+
+        </com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha>
+
+    </LinearLayout>
+
+
+</LinearLayout>

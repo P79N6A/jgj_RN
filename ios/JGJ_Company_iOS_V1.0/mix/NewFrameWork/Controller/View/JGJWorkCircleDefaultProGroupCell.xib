@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJWorkCircleDefaultProGroupCell" id="KGk-i7-Jjw" customClass="JGJWorkCircleDefaultProGroupCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gm4-uv-BJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="145.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还没加入任何项目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEQ-YZ-Iwp">
+                        <rect key="frame" x="70" y="44" width="180" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="Lgf-ae-Xzy"/>
+                            <constraint firstAttribute="height" constant="15" id="as3-0I-Rqv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QlI-jS-G6a">
+                        <rect key="frame" x="81" y="87" width="109" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="k0o-Ye-M0s"/>
+                            <constraint firstAttribute="width" constant="109" id="meE-fs-8gf"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle"/>
+                        </state>
+                        <connections>
+                            <action selector="scanQRCodeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kGK-J7-T3T"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NsR-hX-JHx">
+                        <rect key="frame" x="187" y="62.5" width="98" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="41s-cZ-Sqp"/>
+                            <constraint firstAttribute="width" constant="98" id="IC7-Q0-bVi"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="-9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-19" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle"/>
+                        </state>
+                        <connections>
+                            <action selector="createGroupBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5Um-pJ-B9Y"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6Q-Eu-Jiw">
+                        <rect key="frame" x="-77" y="64" width="62" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="立即登录"/>
+                        <connections>
+                            <action selector="handleLoginButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KfN-Xc-cHP"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击右上角 + 按钮即可 新建项目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-vx-ahP">
+                        <rect key="frame" x="36" y="64" width="249" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="YCD-aN-Zh1"/>
+                            <constraint firstAttribute="width" constant="249" id="aGE-yK-t1U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="或者 扫描二维码 加入已有项目" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ig-wF-iam">
+                        <rect key="frame" x="48" y="87" width="225" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="WWl-Tp-im5"/>
+                            <constraint firstAttribute="width" constant="225" id="fAP-2n-Wbe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="4ig-wF-iam" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8ly-Tj-RD4"/>
+                    <constraint firstItem="Gm4-uv-BJ8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BUB-Cl-F9k"/>
+                    <constraint firstItem="4ig-wF-iam" firstAttribute="top" secondItem="qm3-vx-ahP" secondAttribute="bottom" constant="5" id="DDi-jy-072"/>
+                    <constraint firstItem="qm3-vx-ahP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Frz-as-wK2"/>
+                    <constraint firstAttribute="bottom" secondItem="Gm4-uv-BJ8" secondAttribute="bottom" id="G1D-xc-mk9"/>
+                    <constraint firstAttribute="trailing" secondItem="Gm4-uv-BJ8" secondAttribute="trailing" id="Mxw-7R-H0A"/>
+                    <constraint firstItem="Gm4-uv-BJ8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XSA-eR-X2B"/>
+                    <constraint firstItem="gEQ-YZ-Iwp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="XuD-lO-sf3"/>
+                    <constraint firstItem="qm3-vx-ahP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cxb-Ft-gJt"/>
+                    <constraint firstItem="QlI-jS-G6a" firstAttribute="top" secondItem="qm3-vx-ahP" secondAttribute="bottom" constant="5" id="duM-Ua-Gbx"/>
+                    <constraint firstItem="qm3-vx-ahP" firstAttribute="top" secondItem="gEQ-YZ-Iwp" secondAttribute="bottom" constant="5" id="s9V-vW-eSC"/>
+                    <constraint firstItem="QlI-jS-G6a" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-24.5" id="w9J-sk-drW"/>
+                    <constraint firstItem="NsR-hX-JHx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="2.5" id="wf5-dg-98x"/>
+                    <constraint firstItem="NsR-hX-JHx" firstAttribute="trailing" secondItem="qm3-vx-ahP" secondAttribute="trailing" id="yyY-vC-27c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentDetailView" destination="Gm4-uv-BJ8" id="kvt-71-sRm"/>
+                <outlet property="creatProDesH" destination="YCD-aN-Zh1" id="Neb-bs-Fvo"/>
+                <outlet property="creatProDesLable" destination="qm3-vx-ahP" id="eLt-Ke-WBL"/>
+                <outlet property="createGroupButton" destination="NsR-hX-JHx" id="wUM-Tl-wH3"/>
+                <outlet property="desLable" destination="gEQ-YZ-Iwp" id="P3u-pi-RDz"/>
+                <outlet property="loginButton" destination="O6Q-Eu-Jiw" id="iCB-JA-cF7"/>
+                <outlet property="scanQRCodeButton" destination="QlI-jS-G6a" id="NW6-52-GjG"/>
+                <outlet property="scanQRDesLable" destination="4ig-wF-iam" id="At1-H8-UvE"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

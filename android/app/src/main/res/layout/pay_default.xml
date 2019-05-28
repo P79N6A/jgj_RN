@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical|bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unScollTotalManhour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_size_13" />
+
+            <View
+                android:id="@+id/unScollSumNormalWork"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:background="@color/pick_ffcccc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="上班合计"
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/text_size_11" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unScrollTotalOvertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/over_time_color"
+                android:textSize="@dimen/text_size_13" />
+
+            <View
+                android:id="@+id/unScollSumOvertimeWork"
+                android:layout_width="30dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:background="@color/green_b2ead0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="加班合计"
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/text_size_11" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/valueLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unScrollTotalIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_666666"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/unScrollTotalExpend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/unScrollTotalBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/unScrollTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/valueLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="工资总和:"
+                android:textColor="@color/gray_99999"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="借支总和:"
+                android:textColor="@color/gray_99999"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="结算总和:"
+                android:textColor="@color/gray_99999"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/outstanding_wages_colon"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

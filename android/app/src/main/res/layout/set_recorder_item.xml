@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/firstTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择晴雨表记录员"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="注:  项目创建者和管理员也可记录晴雨表"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_11" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:paddingBottom="5dip"
+        android:paddingLeft="14dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/color_cccccc"
+        android:textSize="@dimen/catalog_size"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/color_f1f1f1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_selector_white_gray"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/seletedImage"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp" />
+
+        <include layout="@layout/person_info" />
+
+        <ImageView
+            android:id="@+id/isRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="35dp"
+            android:src="@drawable/is_register" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:padding="50dp">
+
+        <com.jizhi.jongg.widget.LongGifView
+            android:id="@+id/gif_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gif_image"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="正在同步..."
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

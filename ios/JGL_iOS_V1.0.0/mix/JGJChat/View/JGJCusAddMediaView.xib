@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJCusAddMediaView">
+            <connections>
+                <outlet property="containView" destination="iN0-l3-epB" id="aFf-JS-WyQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7z-Pw-TfX">
+                    <rect key="frame" x="45" y="18" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="MKV-Wd-JQa"/>
+                        <constraint firstAttribute="height" constant="64" id="RLf-PV-7VK"/>
+                    </constraints>
+                    <state key="normal" image="chat_photoAlbum_icon"/>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="BUv-oL-VNa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-Ho-fTS">
+                    <rect key="frame" x="155.5" y="18" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3fd-lK-FBd"/>
+                        <constraint firstAttribute="width" constant="64" id="aAc-Db-T8c"/>
+                    </constraints>
+                    <state key="normal" image="chat_takephoto_icon"/>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="eSS-SU-SdJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljm-x8-buo">
+                    <rect key="frame" x="266" y="18" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="NIj-um-IsQ"/>
+                        <constraint firstAttribute="height" constant="64" id="gWt-Of-ZdK"/>
+                    </constraints>
+                    <state key="normal" image="chat_postcard_icon"/>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="iyc-3T-Nta"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍摄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkx-Ef-IGU">
+                    <rect key="frame" x="175" y="91" width="25" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的名片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3q-VB-Vcc">
+                    <rect key="frame" x="273.5" y="91" width="49.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qR-HH-0hK">
+                    <rect key="frame" x="64.5" y="91" width="25" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-Yb-k2T" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="8js-Er-gty"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="Pkx-Ef-IGU" firstAttribute="centerX" secondItem="J3W-Ho-fTS" secondAttribute="centerX" id="78Q-ya-TIY"/>
+                <constraint firstItem="H3q-VB-Vcc" firstAttribute="centerY" secondItem="Pkx-Ef-IGU" secondAttribute="centerY" id="8M2-Kc-kcn"/>
+                <constraint firstItem="3qR-HH-0hK" firstAttribute="centerY" secondItem="Pkx-Ef-IGU" secondAttribute="centerY" id="B61-Bx-Xd0"/>
+                <constraint firstItem="J3W-Ho-fTS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="18" id="RdN-ta-L8Y"/>
+                <constraint firstItem="zIk-Yb-k2T" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Syl-qH-6a0"/>
+                <constraint firstItem="J3W-Ho-fTS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VVQ-aj-qms"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zIk-Yb-k2T" secondAttribute="trailing" id="Vbn-rB-dZI"/>
+                <constraint firstItem="zIk-Yb-k2T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cn2-o8-FYj"/>
+                <constraint firstItem="ljm-x8-buo" firstAttribute="top" secondItem="J3W-Ho-fTS" secondAttribute="top" id="dJf-wN-AVd"/>
+                <constraint firstItem="H3q-VB-Vcc" firstAttribute="centerX" secondItem="ljm-x8-buo" secondAttribute="centerX" id="gsL-t3-xXa"/>
+                <constraint firstItem="ljm-x8-buo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.59" id="icy-Vx-fxj"/>
+                <constraint firstItem="3qR-HH-0hK" firstAttribute="centerX" secondItem="I7z-Pw-TfX" secondAttribute="centerX" id="ma4-gF-uk2"/>
+                <constraint firstItem="I7z-Pw-TfX" firstAttribute="top" secondItem="J3W-Ho-fTS" secondAttribute="top" id="n9F-GY-MEN"/>
+                <constraint firstItem="Pkx-Ef-IGU" firstAttribute="top" secondItem="J3W-Ho-fTS" secondAttribute="bottom" constant="9" id="pPB-yj-cj9"/>
+                <constraint firstItem="I7z-Pw-TfX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.41" id="uiE-rj-l53"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_photoAlbum_icon" width="64" height="64"/>
+        <image name="chat_postcard_icon" width="64" height="64"/>
+        <image name="chat_takephoto_icon" width="64" height="64"/>
+    </resources>
+</document>

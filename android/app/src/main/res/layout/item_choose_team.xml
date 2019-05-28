@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_white_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.jizhi.jlongg.groupimageviews.NineGroupChatGridImageView
+                android:id="@+id/teamHeads"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+
+            <TextView
+                android:id="@+id/proName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/membersNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/houtui" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/itemDiver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_dbdbdb" />
+
+    <TextView
+        android:id="@+id/bottomDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+
+</LinearLayout>

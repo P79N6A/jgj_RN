@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rea_top"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="#1"
+                android:textColor="@color/color_999999"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_delete_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:text="删除分项"
+                android:textColor="#ff4886ed"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rea_top_10px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_line_10px" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rea_sub_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_project_name" />
+
+            <TextView
+                android:id="@+id/tv_sub_name_left"
+                style="@style/account_left_text"
+                android:text="分项名称" />
+
+
+            <TextView
+                android:id="@+id/tv_sub_name"
+                style="@style/account_right_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_sub_name_left"
+                android:hint="例如:包柱子/挂窗帘" />
+
+            <ImageView style="@style/account_right_arrow" />
+
+            <ImageView style="@style/account_driver_1px" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/all_account_r"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_salary" />
+
+            <TextView
+                android:id="@+id/account_left_text"
+                style="@style/account_left_text"
+                android:text="填写单价" />
+
+            <EditText
+                android:id="@+id/ed_sub_price"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="这里输入单价金额"
+                android:maxLines="1"
+                android:textColor="@color/color_eb4e4e"
+                android:textColorHint="@color/color_999999"
+                android:textSize="15sp" />
+
+            <ImageView style="@style/account_driver_1px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/lin_company"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login_pwd_bck_999999"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="平方米"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/icon_triangle_dos"
+                    android:textColor="@color/color_333333" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rea_count_left"
+                android:layout_toLeftOf="@id/lin_company"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/account_left_image"
+                    android:background="@drawable/icon_account_count" />
+
+                <TextView
+                    style="@style/account_left_text"
+                    android:text="填写数量" />
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/login_pwd_bck_999999"
+                    android:orientation="horizontal">
+
+                    <com.hcs.cityslist.widget.ClearEditText
+                        android:id="@+id/ed_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:gravity="center_vertical"
+                        android:hint="@string/account_input_number"
+                        android:inputType="numberDecimal"
+                        android:maxLength="6"
+                        android:textColorHint="@color/gray_cccccc"
+                        android:textSize="@dimen/text_size_13" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+            <ImageView style="@style/account_driver_1px" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_price" />
+
+            <TextView
+                style="@style/account_left_text"
+                android:text="包工工钱" />
+
+            <TextView
+                android:id="@+id/tv_salary_price"
+                style="@style/account_right_text"
+                android:textColor="@color/color_eb4e4e" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

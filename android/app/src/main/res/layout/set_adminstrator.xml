@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/administratorCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="已有管理员"
+            android:textColor="@color/color_999999" />
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+            android:id="@+id/administrator_introduce_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon1"
+                android:drawablePadding="3dp"
+                android:text="@string/what_administrator_permission"
+                android:textColor="@color/color_e48b8e"
+                android:textSize="@dimen/text_size_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_dd8c8b" />
+        </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:divider="@color/color_f1f1f1"
+            android:dividerHeight="7dp" />
+
+        <include layout="@layout/empty_view" />
+
+    </RelativeLayout>
+</LinearLayout>

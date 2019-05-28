@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ebebeb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:visibility="gone"
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:background="@color/color_cccccc" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/nomore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有更多了~"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

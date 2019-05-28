@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JLGAddProExperienceTableViewCell" rowHeight="119" id="KGk-i7-Jjw" customClass="JLGAddProExperienceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxY-Gv-ill" customClass="JLGPhoneDeleteCollection">
+                        <rect key="frame" x="10" y="10" width="328" height="108"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyn-Zu-arz" customClass="LineView">
+                        <rect key="frame" x="0.0" y="0.0" width="348" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="0.5" id="Omt-zy-H7l"/>
+                            <constraint firstAttribute="height" constant="0.5" id="vyb-cG-ebb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqD-Xy-H2v" customClass="LineView">
+                        <rect key="frame" x="0.0" y="128" width="348" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="0.5" id="DYS-Yn-nSW"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="0.5" id="MdC-7L-mSE"/>
+                            <constraint firstAttribute="height" constant="0.5" id="pvC-S8-suK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cqD-Xy-H2v" secondAttribute="trailing" id="KRa-Wg-KZr"/>
+                    <constraint firstAttribute="bottom" secondItem="cqD-Xy-H2v" secondAttribute="bottom" id="Lgk-Jq-Dpv"/>
+                    <constraint firstItem="jyn-Zu-arz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XBT-17-Net"/>
+                    <constraint firstAttribute="bottom" secondItem="CxY-Gv-ill" secondAttribute="bottom" constant="10" id="Yza-Hj-ird"/>
+                    <constraint firstItem="cqD-Xy-H2v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bDw-ns-mNK"/>
+                    <constraint firstItem="jyn-Zu-arz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="k8G-7X-OyI"/>
+                    <constraint firstAttribute="trailing" secondItem="jyn-Zu-arz" secondAttribute="trailing" id="mcY-Ct-36S"/>
+                    <constraint firstAttribute="trailing" secondItem="CxY-Gv-ill" secondAttribute="trailing" constant="10" id="njR-F5-Mfe"/>
+                    <constraint firstItem="CxY-Gv-ill" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vVF-uf-3Hy"/>
+                    <constraint firstItem="CxY-Gv-ill" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xd1-PZ-8Ud"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLineView" destination="cqD-Xy-H2v" id="ChD-m9-maq"/>
+                <outlet property="headDepart" destination="vVF-uf-3Hy" id="TMX-sb-OxH"/>
+                <outlet property="imagesCollectionCell" destination="CxY-Gv-ill" id="IdZ-Jd-75P"/>
+                <outlet property="topLineView" destination="jyn-Zu-arz" id="sA3-dm-f6g"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="272.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,148 @@
+#!/bin/bash
+
+#获取shell文件所在的绝对路径
+current_path=$(pwd)
+tmp_path=$(dirname $0)
+cd $tmp_path
+shell_path=$(pwd)
+cd $current_path
+
+
+
+#参数判断
+should_email=n
+git_log_limit=0
+project_path=
+change_msg=
+while getopts el:d:m: opt
+do
+    case "$opt" in
+        e)  should_email=y;;
+        l)  git_log_limit="$OPTARG";;
+        d)  project_path="$OPTARG";;
+        m)  change_msg="$OPTARG";;
+        \?)		# unknown flag
+        echo >&2 \
+        "usage: $0 [-d directory>] [-e] [-l number] [-m message]"
+        exit 1;;
+    esac
+done
+shift `expr $OPTIND - 1`
+
+
+#工程绝对路径
+cd $project_path
+project_path=$(pwd)
+
+#判断所输入路径是否是xcode工程的根路径
+ls | grep .xcodeproj > /dev/null
+rtnValue=$?
+if [ $rtnValue != 0 ];then
+	echo "Error!! The param must be the root path of a xcode project."
+	exit
+fi
+
+#判断是否执行过ipa-build脚本
+ls ./build/ipa-build/*.ipa &>/dev/null
+rtnValue=$?
+if [ $rtnValue != 0 ];then
+	echo "Error!! No ipa files exists.Please run the \"ipa-build\" shell script first"
+	exit
+fi
+
+#build文件夹路径
+build_path=${project_path}/build
+
+echo "Fetching app infomation from the ipa file..."
+#切换到tmp文件夹
+cd /tmp
+#创建临时文件夹
+tmpfoldername=ipa_tmp
+if [ -d ./${tmpfoldername} ];then
+	rm -rf ${tmpfoldername}
+fi
+mkdir ${tmpfoldername}
+
+cd ${tmpfoldername}
+#拷贝ipa到临时文件夹中
+cp ${build_path}/ipa-build/*.ipa ./tmp.zip
+#将ipa解压
+unzip tmp.zip &>/dev/null
+#app文件中Info.plist文件路径
+app_infoplist_path=$(pwd)/Payload/*.app/Info.plist
+#取版本号
+bundleShortVersion=$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" ${app_infoplist_path})
+#取build值
+bundleVersion=$(/usr/libexec/PlistBuddy -c "print CFBundleVersion" ${app_infoplist_path})
+#取bundleIdentifier
+bundleIdentifier=$(/usr/libexec/PlistBuddy -c "print CFBundleIdentifier" ${app_infoplist_path})
+#取CFBundleName
+target_name=$(/usr/libexec/PlistBuddy -c "print CFBundleName" ${app_infoplist_path})
+#取CFBundleDisplayName
+display_name=$(/usr/libexec/PlistBuddy -c "print CFBundleDisplayName" ${app_infoplist_path})
+
+echo "${app_infoplist_path}"
+
+echo "App $display_name 版本号为: $bundleShortVersion, 构建号为: $bundleVersion."
+
+#删除临时文件夹
+cd ..
+rm -rf ${tmpfoldername}
+
+#进入到工程build路径下
+cd $build_path
+
+#显示名称
+ipa_name="${display_name}"
+
+if [ -d ./$target_name ];then
+	rm -rf $target_name
+fi
+mkdir $target_name
+#拷贝ipa
+cp ./ipa-build/*.ipa ./$target_name/${target_name}.ipa
+cd $target_name
+
+#处理用户输入的消息
+change_msg=`echo $change_msg | tr -d " " | awk '{printf "%s<br/>",$1}'`
+
+
+#配置蒲公英
+uKey="46cb0a82789b2e608d092eb1343a95de"
+apiKey="d66b4846e3ca30ee79e7a7600895d0c9"
+password="19876063"
+
+#上传ipa包，并获取最终的url short name
+echo -e "\n上传蒲公英文件中.........\n"
+
+# 发布到蒲公英
+curl -F "file=@${target_name}.ipa" -F "uKey=${uKey}" -F "_api_key=${apiKey}" -F "publishRange=2" -F "password=${password}" http://www.pgyer.com/apiv1/app/upload
+
+rtnValue=$?
+if [ $rtnValue != 0 ];then
+exit 1
+fi
+
+echo -e "\n\n蒲公英发布成功.........\n"
+
+#配置bugly
+app_key="WKeirSefR3bOo6Qu"
+app_id="900011887"
+pid="2"
+
+echo -e "上传Bugly文件中.........\n"
+
+# 发布到Bugly
+curl -F "file=@${target_name}.ipa" -F "app_id=${app_id}" -F "pid=2" -F "title=${display_name}" -F "secret=1" https://api.bugly.qq.com/beta/apiv1/exp?app_key=${app_key}
+
+rtnValue=$?
+if [ $rtnValue != 0 ];then
+exit 1
+fi
+
+
+echo -e "\n\nBugly发布成功.........\n"
+
+echo "所有分发渠道,更新成功"
+
+build_time=`date`

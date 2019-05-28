@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="他们已收到：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izB-Jo-Rbv">
+                    <rect key="frame" x="5" y="5" width="365" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Lef-dR-wLh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view tag="119" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35h-g9-EOO">
+                    <rect key="frame" x="0.0" y="25" width="375" height="642"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="izB-Jo-Rbv" secondAttribute="trailing" constant="5" id="CSh-Ii-pwB"/>
+                <constraint firstItem="35h-g9-EOO" firstAttribute="top" secondItem="izB-Jo-Rbv" secondAttribute="bottom" id="Vy7-26-GWi"/>
+                <constraint firstItem="35h-g9-EOO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c5f-J7-ar5"/>
+                <constraint firstAttribute="trailing" secondItem="35h-g9-EOO" secondAttribute="trailing" id="g6u-Cs-50f"/>
+                <constraint firstItem="izB-Jo-Rbv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="gDf-Jh-CO0"/>
+                <constraint firstItem="izB-Jo-Rbv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="kdz-MX-dgX"/>
+                <constraint firstAttribute="bottom" secondItem="35h-g9-EOO" secondAttribute="bottom" id="npB-en-edf"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

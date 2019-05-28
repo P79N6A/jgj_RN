@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <TextView
+        android:id="@+id/isMyTelphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="更换手机号后，下次可使用新手机号等录。"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/telephone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.hcs.cityslist.widget.ClearEditText
+        android:id="@+id/telEdit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/editor"
+        android:hint="@string/login_pwd"
+        android:imeOptions="actionNext"
+        android:maxLength="11"
+        android:nextFocusForward="@+id/codeEdit"
+        android:numeric="integer"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:id="@+id/codeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/editor"
+        android:orientation="horizontal">
+
+        <com.hcs.cityslist.widget.ClearEditText
+            android:id="@+id/codeEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/input_news_code"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/text_size_14" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/getCodeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/get_code"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/draw_dis_app_btncolor_5radius"
+        android:onClick="onClick"
+        android:text="确定更换"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size" />
+
+
+</LinearLayout>

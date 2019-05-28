@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ebebeb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rea_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rea_right"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="17dp"
+            android:visibility="visible">
+
+
+            <View
+                android:id="@+id/img_dot"
+                style="@style/red_circle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="25.5dp" />
+
+            <View
+                android:id="@+id/view_top"
+                android:layout_width="2px"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_cccccc" />
+
+            <View
+                android:id="@+id/view_bottom"
+                android:layout_width="2px"
+                android:layout_height="17dp"
+                android:layout_below="@id/img_dot"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/color_cccccc" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="21dp"
+            android:layout_toRightOf="@id/rea_right"
+            android:text="2018年3月20日 星期三 17:58"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="17dp"
+            android:layout_marginLeft="10.5dp"
+            android:background="@color/color_cccccc" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_ebebeb"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/rea_right"
+        android:background="@drawable/bg_ffffff_3radius"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_impor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_notebook_list_important" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="00000"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <com.jizhi.jongg.widget.HorizotalImageLayout
+            android:id="@+id/ngl_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="1dp"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:verticalSpacing="1dp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:id="@+id/view_bg_bottom"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:visibility="visible" />-->
+</LinearLayout>

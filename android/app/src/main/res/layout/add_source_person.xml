@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+        android:id="@+id/sourceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fdf1e0"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sourceMember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#f18215"
+            android:textSize="@dimen/text_size_15" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/yellow_right_arrow_icon" />
+
+    </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+    <include layout="@layout/search_edit_layout" />
+
+    <include layout="@layout/side_layout" />
+
+    <LinearLayout
+        android:id="@+id/recyclerviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb" />
+
+        <Button
+            android:id="@+id/redBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="7dp"
+            android:onClick="onClick"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

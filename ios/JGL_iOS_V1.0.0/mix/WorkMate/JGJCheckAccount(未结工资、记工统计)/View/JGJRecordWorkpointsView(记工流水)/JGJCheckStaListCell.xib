@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJCheckStaListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="27.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O15-K6-pJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="qKt-Tu-sg1"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18D-Gq-BF1">
+                        <rect key="frame" x="0.0" y="22.5" width="320" height="5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="osi-Rs-zwL"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看更多统计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dap-ki-xCV">
+                        <rect key="frame" x="114" y="0.0" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_right_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NfU-KU-wG1">
+                        <rect key="frame" x="211" y="4" width="6" height="10"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dap-ki-xCV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0nV-sT-v02"/>
+                    <constraint firstItem="dap-ki-xCV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1d1-Bn-qvr"/>
+                    <constraint firstItem="O15-K6-pJJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6rY-yt-258"/>
+                    <constraint firstItem="O15-K6-pJJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IGQ-sP-Oof"/>
+                    <constraint firstAttribute="trailing" secondItem="18D-Gq-BF1" secondAttribute="trailing" id="QJ8-wV-VF2"/>
+                    <constraint firstItem="NfU-KU-wG1" firstAttribute="leading" secondItem="dap-ki-xCV" secondAttribute="trailing" constant="5" id="SoF-Ax-eig"/>
+                    <constraint firstAttribute="trailing" secondItem="O15-K6-pJJ" secondAttribute="trailing" id="UJr-n7-fgj"/>
+                    <constraint firstItem="18D-Gq-BF1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WcN-JI-82l"/>
+                    <constraint firstItem="NfU-KU-wG1" firstAttribute="centerY" secondItem="dap-ki-xCV" secondAttribute="centerY" id="Zpf-hk-qCN"/>
+                    <constraint firstAttribute="bottom" secondItem="18D-Gq-BF1" secondAttribute="bottom" id="cou-w2-f19"/>
+                    <constraint firstItem="dap-ki-xCV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wDk-aL-OYe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bottomLineH" destination="osi-Rs-zwL" id="ngp-wo-1bf"/>
+                <outlet property="bottomLineView" destination="18D-Gq-BF1" id="tN2-8g-KSh"/>
+                <outlet property="nextImageView" destination="NfU-KU-wG1" id="ZsB-bw-Pmg"/>
+                <outlet property="titleLablel" destination="dap-ki-xCV" id="jOG-fZ-iL6"/>
+                <outlet property="topLineH" destination="qKt-Tu-sg1" id="P9S-JH-kMq"/>
+                <outlet property="topLineView" destination="O15-K6-pJJ" id="bsg-jS-cKF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_right_icon" width="6.5" height="10.5"/>
+    </resources>
+</document>

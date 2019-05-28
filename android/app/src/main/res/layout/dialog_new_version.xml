@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageViewUnRect xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/new_version_icon"
+            app:riv_border_color="@color/app_color"
+            app:riv_corner_radius="5dp"
+            app:riv_oval="false" />
+
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/closeBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/clear_btn" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/updateDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="13dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_size_13" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/linecolor" />
+
+    <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+        android:id="@+id/updateNow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/red_button_height"
+        android:background="@drawable/bg_gray_bottom_round_right"
+        android:gravity="center"
+        android:text="@string/updateNow"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/text_size_14" />
+
+
+</LinearLayout>

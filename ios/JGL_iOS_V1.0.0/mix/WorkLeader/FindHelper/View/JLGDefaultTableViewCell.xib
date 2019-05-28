@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JLGDefaultTableViewCell" rowHeight="296" id="KGk-i7-Jjw" customClass="JLGDefaultTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="296"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="295"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="WorkerDetailNoData" translatesAutoresizingMaskIntoConstraints="NO" id="4xA-Lk-CnY">
+                        <rect key="frame" x="140" y="55" width="57" height="52"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有项目经验" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-gX-9MR">
+                        <rect key="frame" x="117" y="117" width="102" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在干活 稍候晒手艺，敬请期待..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-c0-XK0">
+                        <rect key="frame" x="92" y="148" width="153" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4xA-Lk-CnY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-20" id="2a1-ah-767"/>
+                    <constraint firstItem="7ej-c0-XK0" firstAttribute="top" secondItem="fVF-gX-9MR" secondAttribute="bottom" constant="10" id="2g1-KY-DzJ"/>
+                    <constraint firstItem="4xA-Lk-CnY" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="Dox-OX-KkQ"/>
+                    <constraint firstItem="fVF-gX-9MR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Geq-wM-Bn6"/>
+                    <constraint firstItem="4xA-Lk-CnY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Phb-FS-xqK"/>
+                    <constraint firstItem="7ej-c0-XK0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="T2O-D8-eQs"/>
+                    <constraint firstItem="4xA-Lk-CnY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UQO-d7-YdR"/>
+                    <constraint firstItem="4xA-Lk-CnY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="XSX-Pb-Ir8"/>
+                    <constraint firstAttribute="trailing" secondItem="4xA-Lk-CnY" secondAttribute="trailing" constant="20" id="f8J-Gj-Qzh"/>
+                    <constraint firstItem="fVF-gX-9MR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-20" id="inM-Dv-M9L"/>
+                    <constraint firstItem="fVF-gX-9MR" firstAttribute="top" secondItem="4xA-Lk-CnY" secondAttribute="bottom" constant="10" id="uNA-oC-Ztf"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2a1-ah-767"/>
+                        <exclude reference="Dox-OX-KkQ"/>
+                        <exclude reference="Phb-FS-xqK"/>
+                        <exclude reference="XSX-Pb-Ir8"/>
+                        <exclude reference="f8J-Gj-Qzh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="defaultDetailTitle" destination="7ej-c0-XK0" id="Vld-Db-M1M"/>
+                <outlet property="defaultImageView" destination="4xA-Lk-CnY" id="pXU-fo-9dw"/>
+                <outlet property="defautTitle" destination="fVF-gX-9MR" id="lFY-iT-smR"/>
+                <outlet property="tileLayoutCenterY" destination="inM-Dv-M9L" id="6du-iU-ex1"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="222"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="WorkerDetailNoData" width="57" height="52"/>
+    </resources>
+</document>

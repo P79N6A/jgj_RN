@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_white_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_f1f1f1"
+        android:paddingBottom="5dip"
+        android:paddingLeft="16dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/gray_cccccc"
+        android:textSize="@dimen/catalog_size"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:background="@color/gray_f1f1f1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <include layout="@layout/person_info" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sk_gy_333333_3radius"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/margin_20dp"
+                android:paddingRight="@dimen/margin_20dp"
+                android:paddingTop="5dp"
+                android:text="添加"
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/text_size_13"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/is_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/add_btn"
+                android:layout_alignLeft="@id/add_btn"
+                android:layout_alignRight="@id/add_btn"
+                android:layout_alignTop="@id/add_btn"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="12dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="@dimen/margin_3dp"
+                    android:src="@drawable/gray_draw" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已添加"
+                    android:textColor="@color/gray_99999"
+                    android:textSize="@dimen/text_size_11" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

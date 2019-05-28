@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/no_data"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:text="点击了解该功能"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="@dimen/text_size_17"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_eb4e4e"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/defaultDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="如需使用该功能，请订购黄金服务版"
+            android:textColor="@color/color_b9b9b9"
+            android:textSize="@dimen/default_title_size"/>
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="立即订购"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_size"/>
+
+        <RadioButton
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:id="@+id/rb_state"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:background="@drawable/stroke_f9a00f"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableLeft="@drawable/high_grade"
+            android:text="免费试用黄金服务版"
+            android:textColor="@color/color_f9a00f"
+            android:textSize="@dimen/margin_15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_eeeeee"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rea_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/head_right_image_wrap"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rea_layout"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rea_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <include layout="@layout/layout_list_notice_top"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rea_filter_reset"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_marginRight="70dp"
+                android:id="@+id/tv_filter_reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="共筛选出"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"
+                />
+
+            <Button
+                android:id="@+id/btn_filter_reset"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/draw_color_666666_5radius"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:onClick="onClick"
+                android:text="重置"
+                android:textColor="@color/color_333333"
+                android:textSize="13sp"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_marginBottom="63dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rea_filters"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:visibility="visible">
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:divider="@color/color_f1f1f1"
+            android:dividerHeight="7.5dp"
+            android:visibility="visible"/>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_close"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/ygbbz_bg"-->
+    <!--android:visibility="gone"/>-->
+
+    <LinearLayout
+        android:id="@+id/lin_message_def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/color_eeeeee"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/no_data"/>
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/def_nodata"
+            android:textColor="@color/gray_b9b9b9"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="72dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/icon_message_notice_top"
+        android:paddingLeft="12dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/lin_send"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_toact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:gravity="center"
+            android:text="+ 记录问题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/team_closed_icon"
+        android:visibility="gone"/>
+</RelativeLayout>

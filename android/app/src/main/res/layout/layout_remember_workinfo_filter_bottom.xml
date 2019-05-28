@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_reset"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sk_draw_color_666666_5radius"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_save"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

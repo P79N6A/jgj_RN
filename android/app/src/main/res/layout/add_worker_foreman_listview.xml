@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_right_image" />
+
+    <LinearLayout
+        android:id="@+id/default_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_top">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_data" />
+
+        <TextView
+            android:id="@+id/tv_without_workerinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray_b9b9b9"
+            android:textSize="@dimen/default_title_size" />
+
+        <TextView
+            android:id="@+id/tv_addworker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_without_workerinfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textColor="@color/gray_cccccc"
+            android:textSize="@dimen/default_desc_size" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/add_worker"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_addworker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/button_press_effect"
+            android:onClick="onClick"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+    </LinearLayout>
+
+    <include layout="@layout/search_edit_layout" />
+
+    <include layout="@layout/side_layout" />
+
+
+</LinearLayout>

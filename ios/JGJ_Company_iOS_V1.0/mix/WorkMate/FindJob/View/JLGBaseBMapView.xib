@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLGBaseBMapView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Agg-4F-YyR"/>
+                <outlet property="mapView" destination="BKW-u5-L4t" id="szn-TH-lFn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="239"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKW-u5-L4t" customClass="BMKMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="312" height="239"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BKW-u5-L4t" secondAttribute="bottom" id="HV1-aL-wnB"/>
+                <constraint firstItem="BKW-u5-L4t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a2a-MD-tGF"/>
+                <constraint firstAttribute="trailing" secondItem="BKW-u5-L4t" secondAttribute="trailing" id="fCf-MS-6k0"/>
+                <constraint firstItem="BKW-u5-L4t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uFT-PV-tUG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="237" y="41.5"/>
+        </view>
+    </objects>
+</document>

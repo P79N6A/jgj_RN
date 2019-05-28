@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16F71b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JLGRegisterHeadPicTableViewCell" id="9hu-2V-sY6" customClass="JLGRegisterHeadPicTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9hu-2V-sY6" id="7ax-5m-udk">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prg-yn-wG7" userLabel="topView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMR-ep-77U">
+                                <rect key="frame" x="30" y="8" width="35" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acj-G9-cWz">
+                                <rect key="frame" x="166" y="36" width="144" height="144"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Acj-G9-cWz" secondAttribute="height" multiplier="1:1" id="4mt-T0-uXK"/>
+                                </constraints>
+                                <state key="normal" image="login_Demo_Camera">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="upHeadPicBtnClick:" destination="9hu-2V-sY6" eventType="touchUpInside" id="wgE-D8-nxr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="点击上传头像" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1D-ZU-yDc">
+                                <rect key="frame" x="196" y="141" width="84" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_Demo_HeadImage" translatesAutoresizingMaskIntoConstraints="NO" id="Ogq-s4-Nbo">
+                                <rect key="frame" x="10" y="36" width="144" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ogq-s4-Nbo" secondAttribute="height" multiplier="1:1" id="K6I-IV-u4n"/>
+                                    <constraint firstAttribute="width" secondItem="Ogq-s4-Nbo" secondAttribute="height" multiplier="1:1" id="rYa-K2-HER"/>
+                                    <constraint firstAttribute="width" constant="145" id="xkE-FG-BBp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K6I-IV-u4n"/>
+                                        <exclude reference="xkE-FG-BBp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_RedStar" translatesAutoresizingMaskIntoConstraints="NO" id="4MU-C2-s3v">
+                                <rect key="frame" x="10" y="10" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4MU-C2-s3v" secondAttribute="height" multiplier="1:1" id="CwW-5d-dlM"/>
+                                    <constraint firstAttribute="width" constant="10" id="X2C-KS-W78"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_Demo_Label" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-Jj-Voh">
+                                <rect key="frame" x="10" y="36" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4pI-3V-dFY"/>
+                                    <constraint firstAttribute="width" secondItem="ZLo-Jj-Voh" secondAttribute="height" multiplier="1:1" id="9Ey-G5-cv5"/>
+                                    <constraint firstAttribute="width" constant="38" id="Hgc-Fo-LJV"/>
+                                    <constraint firstAttribute="width" secondItem="ZLo-Jj-Voh" secondAttribute="height" multiplier="1:1" id="hu1-6s-Qpw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4pI-3V-dFY"/>
+                                        <exclude reference="9Ey-G5-cv5"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Acj-G9-cWz" firstAttribute="leading" secondItem="Ogq-s4-Nbo" secondAttribute="trailing" constant="20" id="12j-fQ-9so"/>
+                            <constraint firstItem="ZLo-Jj-Voh" firstAttribute="top" secondItem="prg-yn-wG7" secondAttribute="top" constant="36" id="9aY-ry-Ko8"/>
+                            <constraint firstItem="Ogq-s4-Nbo" firstAttribute="width" secondItem="prg-yn-wG7" secondAttribute="width" multiplier="0.45" id="DRN-cd-45y"/>
+                            <constraint firstItem="F1D-ZU-yDc" firstAttribute="centerY" secondItem="Acj-G9-cWz" secondAttribute="centerY" constant="40" id="EhD-vp-cZI"/>
+                            <constraint firstItem="ZLo-Jj-Voh" firstAttribute="top" secondItem="Acj-G9-cWz" secondAttribute="top" id="NHq-ds-F5k"/>
+                            <constraint firstItem="ZLo-Jj-Voh" firstAttribute="leading" secondItem="4MU-C2-s3v" secondAttribute="leading" id="P23-Gh-fuo"/>
+                            <constraint firstAttribute="height" constant="189" id="Q02-YA-qff"/>
+                            <constraint firstItem="ZLo-Jj-Voh" firstAttribute="top" secondItem="OMR-ep-77U" secondAttribute="bottom" constant="10" id="R95-M6-8Mh"/>
+                            <constraint firstItem="ZLo-Jj-Voh" firstAttribute="leading" secondItem="Ogq-s4-Nbo" secondAttribute="leading" id="TJv-oM-8FS"/>
+                            <constraint firstItem="4MU-C2-s3v" firstAttribute="leading" secondItem="prg-yn-wG7" secondAttribute="leading" constant="10" id="b9j-sf-ltU"/>
+                            <constraint firstAttribute="trailing" secondItem="Acj-G9-cWz" secondAttribute="trailing" constant="10" id="diA-6T-1ui"/>
+                            <constraint firstItem="Acj-G9-cWz" firstAttribute="bottom" secondItem="Ogq-s4-Nbo" secondAttribute="bottom" id="dob-vp-nJd"/>
+                            <constraint firstItem="Acj-G9-cWz" firstAttribute="centerX" secondItem="F1D-ZU-yDc" secondAttribute="centerX" id="eA6-H4-R2s"/>
+                            <constraint firstItem="OMR-ep-77U" firstAttribute="leading" secondItem="4MU-C2-s3v" secondAttribute="trailing" constant="10" id="gQj-07-ndf"/>
+                            <constraint firstItem="4MU-C2-s3v" firstAttribute="top" secondItem="prg-yn-wG7" secondAttribute="top" constant="10" id="itN-RN-fzE"/>
+                            <constraint firstItem="ZLo-Jj-Voh" firstAttribute="top" secondItem="Ogq-s4-Nbo" secondAttribute="top" id="j5L-4X-nVi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="12j-fQ-9so"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="prg-yn-wG7" secondAttribute="trailing" id="PqR-vl-Tn1"/>
+                    <constraint firstItem="prg-yn-wG7" firstAttribute="top" secondItem="7ax-5m-udk" secondAttribute="top" id="ciY-Ig-qMf"/>
+                    <constraint firstAttribute="bottom" secondItem="prg-yn-wG7" secondAttribute="bottom" constant="240" id="dCz-4e-xzS"/>
+                    <constraint firstItem="prg-yn-wG7" firstAttribute="leading" secondItem="7ax-5m-udk" secondAttribute="leading" id="ggl-8B-tsx"/>
+                    <constraint firstAttribute="bottom" secondItem="prg-yn-wG7" secondAttribute="bottom" constant="236" id="htX-37-vUe"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="dCz-4e-xzS"/>
+                        <exclude reference="htX-37-vUe"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="headImageButton" destination="Acj-G9-cWz" id="rdp-Bi-tAG"/>
+                <outlet property="headImageLabel" destination="F1D-ZU-yDc" id="rkH-hJ-5fj"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="-184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="login_Demo_Camera" width="53" height="44"/>
+        <image name="login_Demo_HeadImage" width="172" height="172"/>
+        <image name="login_Demo_Label" width="45" height="45"/>
+        <image name="login_RedStar" width="15" height="15"/>
+    </resources>
+</document>

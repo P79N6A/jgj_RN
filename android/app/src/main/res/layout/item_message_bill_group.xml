@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_dbdbdb" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="@color/gray_F6F6F6"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_12dp"
+        android:textColor="@color/gray_666666"
+        android:textSize="@dimen/text_size_13"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="姓名"
+            android:textColor="@color/gray_99999"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="上班"
+            android:textColor="@color/gray_99999"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="28dp"
+            android:text="加班"
+            android:textColor="@color/gray_99999"
+            android:textSize="@dimen/text_size_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@color/gray_dbdbdb" />
+    </RelativeLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="21dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="28dp"-->
+    <!--android:layout_marginRight="28dp"-->
+    <!--android:background="@color/white"/>-->
+
+</LinearLayout>

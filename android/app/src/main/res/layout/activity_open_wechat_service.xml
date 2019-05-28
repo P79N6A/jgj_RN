@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <ScrollView
+        android:id="@+id/layout_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3f3f3f"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/open_wechat_service_bck" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:background="@drawable/draw_rectangle_c3d6fc_white">
+
+                    <ImageView
+                        android:id="@+id/img_qrcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/btn_save"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/draw_app_btncolor_5radius"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="保存二维码到相册"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_wechat_bind_success" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="恭喜，你已成功开通微信服务"
+            android:textColor="#4688EB"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="以后可以通过微信接收工作消息了"
+            android:textColor="@color/color_000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="10dp"
+            android:text="如果不需要通过微信接收工作消息点击\n点击关闭微信服务即可"
+            android:textColor="@color/color_666666"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_receive"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:gravity="center"
+            android:text="马上去领取"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

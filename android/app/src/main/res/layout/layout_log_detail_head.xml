@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/layout_notice_detail_head"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fafafa"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            app:riv_border_color="@color/app_color"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_628ae0"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/margin_12dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/drawable_rectangle_c8c8c8_f1f1f1"
+            android:orientation="horizontal"
+            android:paddingRight="1dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:ems="1"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="天气"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.97"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_weather_morning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f1f1f1"
+                    android:gravity="center"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_weather_afternoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f1f1f1"
+                    android:gravity="center"
+                    android:maxLength="1000"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="温度\n℃"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_temperature_morning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f1f1f1"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_temperature_afternoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f1f1f1"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="风力\n(级)"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_wind_morning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f1f1f1"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_wind_afternoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/color_f1f1f1"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:textColor="@color/color_666666"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:lineSpacingExtra="1.2dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/color_333333"
+        android:textColorLink="@color/blue_46a6ff"
+        android:textIsSelectable="true"
+        android:textSize="15sp"/>
+
+
+    <com.jizhi.jlongg.groupimageviews.NineGridMsgImageView
+        android:id="@+id/ngl_images"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="1dp"
+        android:listSelector="#00000000"
+        android:visibility="gone"
+        app:imgGap="3dp"
+        app:maxSize="9"
+        app:showStyle="grid"
+        app:singleImgSize="250dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_proName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="来自"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="@dimen/margin_12dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/icon_from_group_arrow"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_f1f1f1"/>
+
+    <RelativeLayout
+        android:id="@+id/rea_read_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/tv_hint_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已读"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_readinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_hint_read"
+            android:textColor="@color/color_999999"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/icon_from_group_arrow"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_f1f1f1"/>
+
+
+    <View style="@style/line"/>
+
+</LinearLayout>

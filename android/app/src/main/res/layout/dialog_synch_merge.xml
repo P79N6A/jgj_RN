@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/red_button_height"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_gray_bottom_round_right"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/redBtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_525c68"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/btn_asscess"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/confirm_syn"
+            android:textColor="@color/color_d7252c"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

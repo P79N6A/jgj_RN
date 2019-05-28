@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="messageTypeReadInfo">
+        <item>未读</item>
+        <item>已读</item>
+    </string-array>
+
+    <string-array name="messageLongClickSucces">
+        <item>复制</item>
+        <item>撤回</item>
+    </string-array>
+    <string-array name="messageLongClickFail">
+
+        <item>复制</item>
+        <item>重新发送</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="messageLongClickSending">
+        <item>复制</item>
+    </string-array>
+    <string-array name="accountCompanyList">
+        <item>平方米</item>
+        <item>立方米</item>
+        <item>吨</item>
+        <item>米</item>
+        <item>个</item>
+        <item>次</item>
+        <item>天</item>
+        <item>块</item>
+        <item>组</item>
+        <item>台</item>
+        <item>捆</item>
+        <item>宗</item>
+        <item>项</item>
+        <item>株</item>
+    </string-array>
+</resources>

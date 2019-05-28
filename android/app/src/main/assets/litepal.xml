@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="message_history_db" />
+    <!--3.4.1,15-->
+    <!--3.4.2,16-->
+    <!--4.0.0,19-->
+    <!--4.0.1,20-->
+    <!--4.0.2,21-->
+
+    <version value="22" />
+    <list>
+        <mapping class="com.jizhi.jlongg.main.bean.ChatMainInfo" />
+        <mapping class="com.jizhi.jlongg.main.bean.GroupDiscussionInfo" />
+        <mapping class="com.jizhi.jlongg.main.bean.MessageBean" />
+        <mapping class="com.jizhi.jlongg.main.bean.DeleteMessageBean" />
+        <mapping class="com.jizhi.jlongg.main.bean.LocalInfoBean" />
+        <mapping class="com.jizhi.jlongg.main.bean.AccountProjectId" />
+        <mapping class="com.jizhi.jlongg.main.bean.SaveLogMode" />
+    </list>
+
+
+</litepal>

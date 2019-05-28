@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+                android:id="@+id/syncRecordAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:drawableTop="@drawable/sync_type_icon1"
+                    android:gravity="center"
+                    android:text="同步记工记账"
+                    android:textColor="@color/color_333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/sync_type_tips1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+
+            </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+            <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+                android:id="@+id/syncAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:drawablePadding="20dp"
+                    android:drawableTop="@drawable/sync_type_icon2"
+                    android:gravity="center"
+                    android:text="同步记工"
+                    android:textColor="@color/color_333333"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/sync_type_tips2"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+
+            </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

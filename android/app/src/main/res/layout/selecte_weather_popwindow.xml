@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_color">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/clearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="清空重选"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wheel_view_center_text_size" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="选择天气"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wheel_view_center_text_size" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/redBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="关闭"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wheel_view_center_text_size" />
+
+    </RelativeLayout>
+
+
+    <com.jizhi.jongg.widget.WrapGridview
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:listSelector="@drawable/gridview_click"
+        android:numColumns="5"
+        android:orientation="vertical"
+        android:verticalSpacing="15dp" />
+
+
+</LinearLayout>

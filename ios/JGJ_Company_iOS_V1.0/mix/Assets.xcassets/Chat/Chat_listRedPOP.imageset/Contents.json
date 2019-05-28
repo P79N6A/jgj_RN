@@ -1,0 +1,50 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 2
+        },
+        "cap-insets" : {
+          "bottom" : 26,
+          "top" : 46,
+          "right" : 35,
+          "left" : 19
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "Chat_listRedPOP@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 8
+        },
+        "cap-insets" : {
+          "bottom" : 31,
+          "top" : 70,
+          "right" : 53,
+          "left" : 31
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "Chat_listRedPOP@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.jizhi.jongg.widget.ClearEmojEditText
+            android:id="@+id/remarkEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/input_remark"
+            android:inputType="text"
+            android:textColor="@color/gray_333333"
+            android:textColorHint="@color/gray_cccccc"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+
+</LinearLayout>

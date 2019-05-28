@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJGroupChatSelelctedMemberHeadView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="JAK-EZ-5mE"/>
+                <outlet property="nameLable" destination="Igg-aC-h1e" id="kT2-vv-luR"/>
+                <outlet property="selectedButton" destination="Tp7-M2-pab" id="son-Wu-y9D"/>
+                <outlet property="selectedButtonW" destination="0GQ-gU-82w" id="GuS-1R-cOt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp7-M2-pab">
+                    <rect key="frame" x="0.0" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="0GQ-gU-82w"/>
+                        <constraint firstAttribute="height" constant="40" id="bwr-pM-We9"/>
+                    </constraints>
+                    <state key="normal" image="EllipseIcon"/>
+                    <state key="selected" image="MultiSelected"/>
+                    <connections>
+                        <action selector="handleSelectedMemberButtonPressed:" destination="-1" eventType="touchUpInside" id="9W0-9p-nX3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igg-aC-h1e">
+                    <rect key="frame" x="40" y="16" width="323" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B36-UV-tWS" customClass="LineView">
+                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Uao-yr-Iau"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tp7-M2-pab" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0bE-TO-D7E"/>
+                <constraint firstAttribute="trailing" secondItem="B36-UV-tWS" secondAttribute="trailing" id="6XA-yc-vAe"/>
+                <constraint firstAttribute="trailing" secondItem="Igg-aC-h1e" secondAttribute="trailing" constant="12" id="f2W-Q7-Ofm"/>
+                <constraint firstItem="Tp7-M2-pab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fd3-61-49C"/>
+                <constraint firstItem="Igg-aC-h1e" firstAttribute="leading" secondItem="Tp7-M2-pab" secondAttribute="trailing" id="gcl-QN-30r"/>
+                <constraint firstItem="B36-UV-tWS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oy4-r8-3cD"/>
+                <constraint firstAttribute="bottom" secondItem="B36-UV-tWS" secondAttribute="bottom" id="vUI-Eu-tG6"/>
+                <constraint firstItem="Igg-aC-h1e" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xRd-U2-vZK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="149.5" y="13"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EllipseIcon" width="20" height="20"/>
+        <image name="MultiSelected" width="20" height="20"/>
+    </resources>
+</document>

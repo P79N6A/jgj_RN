@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJCusBottomButtonView">
+            <connections>
+                <outlet property="actionButton" destination="wde-hK-eDp" id="lMc-oD-MSs"/>
+                <outlet property="containView" destination="iN0-l3-epB" id="x9o-Lf-SH0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYN-1f-w1o">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wde-hK-eDp">
+                            <rect key="frame" x="12" y="9" width="351" height="45"/>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Lgi-aP-A6K"/>
+                            </constraints>
+                            <color key="tintColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="下一步"/>
+                            <connections>
+                                <action selector="handleActionButtonPressed:" destination="-1" eventType="touchUpInside" id="jJf-UB-Zay"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seI-Dy-Nft" customClass="LineView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="gvP-K0-Ycw"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="rT7-n3-V99"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="rT7-n3-V99"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="8bE-A6-Eab"/>
+                        <constraint firstAttribute="trailing" secondItem="wde-hK-eDp" secondAttribute="trailing" constant="12" id="H5G-vi-TKe"/>
+                        <constraint firstItem="wde-hK-eDp" firstAttribute="centerY" secondItem="JYN-1f-w1o" secondAttribute="centerY" id="ISr-Lg-xGW"/>
+                        <constraint firstAttribute="trailing" secondItem="seI-Dy-Nft" secondAttribute="trailing" id="V5q-Ik-Xxs"/>
+                        <constraint firstAttribute="height" constant="63" id="Vah-cB-AoX"/>
+                        <constraint firstItem="wde-hK-eDp" firstAttribute="leading" secondItem="JYN-1f-w1o" secondAttribute="leading" constant="12" id="Z4h-to-Yeb"/>
+                        <constraint firstItem="seI-Dy-Nft" firstAttribute="top" secondItem="JYN-1f-w1o" secondAttribute="top" id="bGp-NJ-LaS"/>
+                        <constraint firstItem="seI-Dy-Nft" firstAttribute="leading" secondItem="JYN-1f-w1o" secondAttribute="leading" id="chN-QO-KLb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JYN-1f-w1o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8AY-vS-FJ1"/>
+                <constraint firstAttribute="trailing" secondItem="JYN-1f-w1o" secondAttribute="trailing" id="GgE-I9-ThS"/>
+                <constraint firstAttribute="bottom" secondItem="JYN-1f-w1o" secondAttribute="bottom" id="SVW-SE-lls"/>
+                <constraint firstItem="JYN-1f-w1o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UIi-FK-Dwj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_f1f1f1"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_right_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_dbdbdb"/>
+
+    <LinearLayout
+        android:id="@+id/lin_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/listview_selector_white_gray"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="角色"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15"/>
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="名字"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb"/>
+
+    <LinearLayout
+        android:id="@+id/normal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/listview_selector_white_gray"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上班标准"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15"/>
+
+
+        <TextView
+            android:id="@+id/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/houtui"
+            android:text="8小时算1个工"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="@dimen/text_size_15"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb"/>
+
+    <LinearLayout
+        android:id="@+id/overtime_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/listview_selector_white_gray"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加班标准"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:id="@+id/overtime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/houtui"
+            android:text="6小时算1个工"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="@dimen/text_size_15"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb"/>
+
+    <LinearLayout
+        android:id="@+id/lin_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每天工资标准(或预估)"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_15"/>
+
+            <com.hcs.cityslist.widget.AppCursorEditText
+                android:id="@+id/s_tpl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/color_eb4e4e"
+                android:textColorHint="@color/texthintcolor"
+                android:textSize="@dimen/text_size_15"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_money"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统根据加班标准自动计算的"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="加班一小时"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_15"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_salaty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/color_000000"
+            android:textSize="@dimen/text_size_15"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb"/>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_horizontal"
+        android:text="注：包工记工天无需设置工资金额"
+        android:textColor="@color/color_666666"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/save"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/draw_eb4e4e_5radius"
+        android:onClick="onClick"
+        android:text="@string/assign"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size"/>
+</LinearLayout>

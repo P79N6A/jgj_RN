@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJComDefaultView">
+            <connections>
+                <outlet property="actionButton" destination="vIH-aO-aax" id="Onl-DV-r6r"/>
+                <outlet property="containView" destination="iN0-l3-epB" id="coN-aK-Eaa"/>
+                <outlet property="defaultImageView" destination="ZU6-sz-lTB" id="osn-OD-5LT"/>
+                <outlet property="desLable" destination="XJP-n1-c5w" id="h7t-XJ-lwR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJP-n1-c5w">
+                    <rect key="frame" x="10" y="213.5" width="355" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIH-aO-aax">
+                    <rect key="frame" x="115" y="259" width="145" height="45"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="TkS-7O-usc"/>
+                        <constraint firstAttribute="height" constant="45" id="jMW-Wn-oqz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="邀请他人向我同步"/>
+                    <connections>
+                        <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="ck4-AM-SHx"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoDataDefault_NoManagePro" translatesAutoresizingMaskIntoConstraints="NO" id="ZU6-sz-lTB">
+                    <rect key="frame" x="141" y="136.5" width="93" height="51"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XJP-n1-c5w" secondAttribute="trailing" constant="10" id="2NI-qv-IAe"/>
+                <constraint firstItem="XJP-n1-c5w" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-110" id="3AM-FJ-QDa"/>
+                <constraint firstItem="vIH-aO-aax" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5jU-7l-3S1"/>
+                <constraint firstItem="XJP-n1-c5w" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5vU-LV-Ne2"/>
+                <constraint firstItem="XJP-n1-c5w" firstAttribute="top" secondItem="ZU6-sz-lTB" secondAttribute="bottom" constant="26" id="GT5-FO-YGd"/>
+                <constraint firstItem="XJP-n1-c5w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="UzJ-cM-dM5"/>
+                <constraint firstItem="vIH-aO-aax" firstAttribute="top" secondItem="XJP-n1-c5w" secondAttribute="bottom" constant="25" id="XLz-WR-LEr"/>
+                <constraint firstItem="ZU6-sz-lTB" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="vkJ-1k-qXr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NoDataDefault_NoManagePro" width="93" height="51.5"/>
+    </resources>
+</document>

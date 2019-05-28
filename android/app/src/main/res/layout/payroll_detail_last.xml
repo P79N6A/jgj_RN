@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/previousMonthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/circle_left_point"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@color/color_cccccc"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/nextMonthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/circle_right_point"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@color/color_cccccc"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/currentMonthMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_color"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/countText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/text_size_11" />
+
+    <LinearLayout
+        android:id="@+id/defaultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_top"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/no_data" />
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="没有记录"
+            android:textColor="@color/gray_b9b9b9"
+            android:textSize="@dimen/default_title_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:text="无法了解工钱与借支情况"
+            android:textColor="@color/gray_cccccc"
+            android:textSize="@dimen/default_desc_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_f1f1f1"
+        android:divider="@color/color_f1f1f1"
+        android:dividerHeight="7dp"
+        android:scrollbars="none" />
+
+
+    <RelativeLayout
+        android:id="@+id/record_layout"
+        style="@style/bottom_button_layout"
+        android:onClick="onClick">
+
+        <View style="@style/line" />
+
+        <TextView
+            style="@style/bottom_button"
+            android:text="马上记一笔" />
+    </RelativeLayout>
+
+
+</LinearLayout>

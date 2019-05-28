@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_right_text" />
+
+    <LinearLayout
+        android:id="@+id/default_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_layout_margin_top"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/default_image_width"
+            android:layout_height="@dimen/default_image_height"
+            android:src="@drawable/no_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你还没有给任何人同步账单"
+            android:textColor="@color/color_b9b9b9"
+            android:textSize="@dimen/default_title_size" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="马上添加同步人"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/button_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/listViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/margin_10dp"
+            android:background="@drawable/draw_bg_f1f1f1_5radius"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/magnifying" />
+
+            <com.hcs.cityslist.widget.ClearEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="请输入姓名和手机号查找"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_9e9e9e"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f1f1f1"
+                android:divider="@null" />
+
+            <TextView
+                android:id="@+id/center_text"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/draw_oval_d7252c"
+                android:gravity="center"
+                android:text="Z"
+                android:textColor="@android:color/white"
+                android:textSize="25dip"
+                android:visibility="invisible" />
+
+            <com.hcs.cityslist.widget.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="20.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@drawable/draw_sider_background" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        style="@style/bottom_button_layout"
+        android:visibility="gone">
+
+        <View style="@style/line" />
+
+        <TextView
+            android:id="@+id/person_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15" />
+
+
+        <TextView
+            android:id="@+id/confirm_add"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_15" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rea_top"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/color_fafafa">
+
+        <ImageView
+            android:id="@+id/img_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_notebook_cha" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/save"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/rb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_arrow_dowm_red"
+            android:text="1970年1月1日 星期十"
+            android:textColor="#030303"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.jizhi.jongg.widget.SrcollEditText
+                android:id="@+id/ed_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="马上记事..."
+                android:lineSpacingExtra="3dp"
+                android:maxHeight="320dp"
+                android:minHeight="220dp"
+                android:padding="20dp"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <com.jizhi.jongg.widget.WrapGridview
+                android:id="@+id/wrap_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_content"
+                android:background="@color/white"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:verticalSpacing="10dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/is_important_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="15sp" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/add_pic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/notes_add_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="添加图片"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

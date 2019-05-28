@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log Filter View Controller-->
+        <scene sceneID="vqS-cU-pv9">
+            <objects>
+                <viewController storyboardIdentifier="JGJLogFilterVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1zP-L7-1o6" customClass="JGJLogFilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKV-Pa-Lrb"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Tp-vw-22r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z4n-Bd-r7b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZyS-e0-eXn">
+                                <rect key="frame" x="0.0" y="30" width="375" height="577"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="deviceRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu0-FW-oKN" userLabel="bottom" customClass="JGJFilterBottomButtonView">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Z6H-WH-Jnw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Tp-vw-22r" firstAttribute="top" secondItem="Hu0-FW-oKN" secondAttribute="bottom" id="5CH-XV-2yT"/>
+                            <constraint firstItem="ZyS-e0-eXn" firstAttribute="leading" secondItem="z4n-Bd-r7b" secondAttribute="leading" id="I0s-wu-hZK"/>
+                            <constraint firstItem="Hu0-FW-oKN" firstAttribute="top" secondItem="ZyS-e0-eXn" secondAttribute="bottom" id="I5I-bp-pSV"/>
+                            <constraint firstItem="ZyS-e0-eXn" firstAttribute="top" secondItem="wKV-Pa-Lrb" secondAttribute="bottom" constant="10" id="Ul3-A5-SsJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZyS-e0-eXn" secondAttribute="trailing" id="dPY-GQ-p2u"/>
+                            <constraint firstAttribute="trailing" secondItem="Hu0-FW-oKN" secondAttribute="trailing" id="iBo-61-ZHw"/>
+                            <constraint firstItem="Hu0-FW-oKN" firstAttribute="leading" secondItem="z4n-Bd-r7b" secondAttribute="leading" id="ptQ-Cm-BK0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="Hu0-FW-oKN" id="Hf2-Es-Ao4"/>
+                        <outlet property="tableview" destination="ZyS-e0-eXn" id="jBD-2Y-jZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JmS-Wf-sOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

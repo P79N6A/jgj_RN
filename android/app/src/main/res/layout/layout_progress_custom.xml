@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:background="@drawable/app_gif_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/ivGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_gif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="加载中..."
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:id="@+id/layout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <View
+             android:id="@+id/first_circle"
+             android:layout_width="18dp"
+             android:layout_height="18dp"
+             android:background="@drawable/og_circle" />
+
+         <View
+             android:id="@+id/two_circle"
+             android:layout_width="18dp"
+             android:layout_height="18dp"
+             android:layout_marginLeft="@dimen/margin_20dp"
+             android:background="@drawable/blue_circle_shape" />
+
+         <View
+             android:id="@+id/three_circle"
+             android:layout_width="18dp"
+             android:layout_height="18dp"
+             android:layout_marginLeft="@dimen/margin_20dp"
+             android:background="@drawable/yellow_circle_shape" />
+
+     </LinearLayout>
+
+
+     <TextView
+         android:id="@+id/message"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/textcolor"
+         android:textSize="@dimen/text_size_11" />-->
+
+</LinearLayout>

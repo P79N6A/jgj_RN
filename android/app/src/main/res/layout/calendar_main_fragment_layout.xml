@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+        android:id="@+id/net_fail_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffecec"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/network_error"
+            android:drawablePadding="5dp"
+            android:text="当前网络不可用"
+            android:textColor="@color/color_666666" />
+
+    </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+    <LinearLayout
+        android:id="@+id/calendar_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/net_fail_Layout"
+        android:background="@color/app_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/navigation_roler_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/main_change_role_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/guide_title_size" />
+
+            <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+                android:id="@+id/date_left_arrow_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/title"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/left_arrow_white" />
+
+            <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+                android:id="@+id/date_right_arrow_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/title"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/right_arrow_white" />
+
+            <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+                android:id="@+id/notes_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/main_calendar_notes_icon" />
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:alpha="0.5"
+                    android:text="@string/sunday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/monday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thesday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/wednesday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thursday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/friday"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:alpha="0.5"
+                    android:text="@string/saturday"
+                    android:textColor="@color/white" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <com.jizhi.jongg.widget.ObservableScrollView
+        android:id="@+id/scrollView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/calendar_title_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.jizhi.jongg.widget.ResetHeightViewPager
+                android:id="@+id/calendar_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:background="@color/color_dbdbdb" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/below_calendar_text_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在吉工家记工 数据永远不会丢失"
+                        android:textColor="@color/color_666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/calendar_scroll_guide_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_010101_20radius"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2dp"
+                        android:text="左右滑动日历，可以切换月份哦～"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="1"
+                    android:background="@color/color_dbdbdb" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+                    android:id="@+id/borrow_balance_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw_sk_eb4e4e_20radius"
+                    android:text="借支/结算"
+                    android:textColor="@color/color_eb4e4e"
+                    android:textSize="14sp" />
+
+                <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+                    android:id="@+id/record_account_red_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.5" />
+
+                <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+                    android:id="@+id/record_account_right_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw_sk_eb4e4e_20radius"
+                    android:gravity="center"
+                    android:textColor="@color/color_eb4e4e"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/my_group_layout"
+                style="@style/click_layout">
+
+                <TextView
+                    style="@style/textViewKey"
+                    android:drawableLeft="@drawable/my_group_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="我的项目班组"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/textViewValue"
+                    android:layout_marginLeft="20dp"
+                    android:text="进入"
+                    android:textColor="@color/color_666666" />
+
+                <View
+                    android:id="@+id/other_group_red_circle"
+                    style="@style/red_circle"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_marginTop="-8dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/houtui" />
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.jizhi.jongg.widget.LineGridView
+                android:id="@+id/navigation_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:numColumns="3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/color_f1f1f1" />
+
+        </LinearLayout>
+
+    </com.jizhi.jongg.widget.ObservableScrollView>
+
+    <RelativeLayout
+        android:id="@+id/scroll_guide_layout"
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/bg_333333_sk_000000_2dp"
+        android:visibility="gone">
+
+        <!--        <View
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_333333_sk_000000_2dp" />-->
+
+        <ImageView
+            android:id="@+id/scroll_point_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/main_scroll_point_guide" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/scroll_guide_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="30dp"-->
+    <!--android:src="@drawable/main_scroll_guide_icon" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="27dp">-->
+
+    <!--<View-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/bg_333333_sk_000000_2dp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/scroll_point_icon"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@drawable/main_scroll_point_guide" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/notes_guide_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

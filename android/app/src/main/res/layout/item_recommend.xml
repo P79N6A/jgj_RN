@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/video_game"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:textColor="@color/gray_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_conent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gray_99999"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/itemDiver"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/video_game"
+        android:layout_alignTop="@id/video_game"
+        android:background="@color/gray_dbdbdb"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

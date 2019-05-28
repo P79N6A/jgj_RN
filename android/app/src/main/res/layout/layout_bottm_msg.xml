@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="10dp">
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/btn_set_mode_voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/voice_btn" />
+
+        <ImageView
+            android:id="@+id/btn_set_mode_keyboard"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_keyboard"
+            android:visibility="gone" />
+
+
+        <com.jizhi.jlongg.recoed.manager.AudioRecordMessageButton.AudioRecordMessageButton
+            android:id="@+id/btn_press_to_speak"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_room_press_speak_btn"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="按住说话"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_room_edit"
+            android:hint="请输入内容"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:minHeight="40dp"
+            android:minLines="2"
+            android:paddingLeft="7dp"
+            android:textColorHint="@color/color_999999"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/emotion_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:clickable="true"
+            android:src="@drawable/icon_emoji" />
+
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/btn_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/btn_msg_more" />
+
+        <Button
+            android:id="@+id/btn_sendTextmsg"
+            android:layout_width="50.5dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:gravity="center"
+            android:text="@string/send_invite"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView style="@style/driver_1px" />
+
+    <LinearLayout
+        android:id="@+id/lin_msg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/btn_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawableTop="@drawable/icon_msg_bottom_pic"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:text="相册"
+                android:textColor="@color/color_999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawableTop="@drawable/icon_msg_bottom_camera"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+
+                android:text="拍摄"
+                android:textColor="@color/color_999999" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/btn_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawableTop="@drawable/icon_msg_bottom_info"
+                android:drawablePadding="10dp"
+                android:gravity="center_horizontal"
+                android:text="我的名片"
+                android:textColor="@color/color_999999" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

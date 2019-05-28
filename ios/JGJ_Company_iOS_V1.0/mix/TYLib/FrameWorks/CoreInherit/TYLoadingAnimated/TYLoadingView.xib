@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TYLoadingView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="3pd-vJ-Zgn"/>
+                <outlet property="titleLabel" destination="Cfc-Rx-pu3" id="S5a-HW-556"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMJ-4T-QzS" customClass="TYLoadingAnimatedView">
+                    <rect key="frame" x="40" y="0.0" width="120" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="177" id="6n9-qB-Bjh"/>
+                        <constraint firstAttribute="width" secondItem="IMJ-4T-QzS" secondAttribute="height" multiplier="177:70" id="Oc9-QM-4Nn"/>
+                        <constraint firstAttribute="width" secondItem="IMJ-4T-QzS" secondAttribute="height" multiplier="2:1" id="S8e-dS-J3k"/>
+                        <constraint firstAttribute="width" constant="177" id="YLc-nI-Msa"/>
+                        <constraint firstAttribute="width" secondItem="IMJ-4T-QzS" secondAttribute="height" multiplier="2:1" id="zMK-Lu-u6o"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6n9-qB-Bjh"/>
+                            <exclude reference="Oc9-QM-4Nn"/>
+                            <exclude reference="YLc-nI-Msa"/>
+                            <exclude reference="zMK-Lu-u6o"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Cfc-Rx-pu3">
+                    <rect key="frame" x="0.0" y="50" width="200" height="50"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="177:160" id="4eS-pm-tth"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="177:160" id="6A5-7F-0sq"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="177:160" id="76g-Gn-fyw"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bm5-eJ-psU"/>
+                <constraint firstAttribute="bottom" secondItem="Cfc-Rx-pu3" secondAttribute="bottom" id="H5B-4r-k6i"/>
+                <constraint firstItem="Cfc-Rx-pu3" firstAttribute="top" secondItem="IMJ-4T-QzS" secondAttribute="bottom" constant="-10" id="TnY-E4-yeO"/>
+                <constraint firstItem="Cfc-Rx-pu3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y3w-iv-De9"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aax-od-xsT"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="cQB-wX-gMG"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="gVT-Qm-mOF"/>
+                <constraint firstAttribute="trailing" secondItem="Cfc-Rx-pu3" secondAttribute="trailing" id="pWW-nD-EXd"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.6" id="r6f-Kd-XxT"/>
+                <constraint firstItem="IMJ-4T-QzS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uqV-5L-4dl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4eS-pm-tth"/>
+                    <exclude reference="6A5-7F-0sq"/>
+                    <exclude reference="76g-Gn-fyw"/>
+                    <exclude reference="cQB-wX-gMG"/>
+                    <exclude reference="gVT-Qm-mOF"/>
+                    <exclude reference="uqV-5L-4dl"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="285" y="109"/>
+        </view>
+    </objects>
+</document>

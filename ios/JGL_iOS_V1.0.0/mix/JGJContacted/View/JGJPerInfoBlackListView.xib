@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JGJPerInfoBlackListView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ben-Fd-iOp" customClass="LineView">
+                    <rect key="frame" x="0.0" y="562" width="375" height="105"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY7-Wh-YHs">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="83m-0h-L2T"/>
+                            </constraints>
+                            <state key="normal" title="加入黑名单">
+                                <color key="titleColor" red="0.84313725490196079" green="0.14901960784313725" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="handleJoinBlackListAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="uQQ-tO-5fw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG6-UY-oAk">
+                            <rect key="frame" x="0.0" y="55" width="375" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="CGD-pK-hhl"/>
+                                <constraint firstAttribute="height" constant="50" id="Naj-z2-Ccq"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="handleCancelButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xye-Rk-iiP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="4DT-Fg-pXZ"/>
+                        <constraint firstAttribute="trailing" secondItem="ZG6-UY-oAk" secondAttribute="trailing" id="Gg5-3E-vBH"/>
+                        <constraint firstAttribute="trailing" secondItem="kY7-Wh-YHs" secondAttribute="trailing" id="PNx-bi-Bx8"/>
+                        <constraint firstItem="kY7-Wh-YHs" firstAttribute="leading" secondItem="ben-Fd-iOp" secondAttribute="leading" id="dQe-5y-ucz"/>
+                        <constraint firstItem="kY7-Wh-YHs" firstAttribute="top" secondItem="ben-Fd-iOp" secondAttribute="top" id="hYZ-Wd-8kN"/>
+                        <constraint firstAttribute="bottom" secondItem="ZG6-UY-oAk" secondAttribute="bottom" id="kzc-fg-4sv"/>
+                        <constraint firstItem="ZG6-UY-oAk" firstAttribute="leading" secondItem="ben-Fd-iOp" secondAttribute="leading" id="qQy-IQ-EsQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ben-Fd-iOp" secondAttribute="trailing" id="A7L-VB-T5Z"/>
+                <constraint firstAttribute="bottom" secondItem="ben-Fd-iOp" secondAttribute="bottom" id="TcU-SL-6wY"/>
+                <constraint firstItem="ben-Fd-iOp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qZV-Lj-cwo"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="ben-Fd-iOp" id="zaW-qS-8IF"/>
+                <outlet property="contentViewBottom" destination="TcU-SL-6wY" id="cOT-j2-U9n"/>
+            </connections>
+        </view>
+    </objects>
+</document>

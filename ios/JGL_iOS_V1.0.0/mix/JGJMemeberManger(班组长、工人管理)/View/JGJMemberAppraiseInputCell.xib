@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJMemberAppraiseInputCell" id="KGk-i7-Jjw" customClass="JGJMemberAppraiseInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-6k-zvi">
+                        <rect key="frame" x="228" y="0.0" width="82" height="35"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.30588235294117649" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="v6E-Y9-Q8I"/>
+                            <constraint firstAttribute="height" constant="35" id="xwJ-RR-zUw"/>
+                        </constraints>
+                        <state key="normal" title="添加"/>
+                        <connections>
+                            <action selector="addButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mfg-FL-Iul"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHn-db-Q4J">
+                        <rect key="frame" x="10" y="0.0" width="208" height="35"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入你对他的印象(最多6个字)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kag-sm-4jO" customClass="LengthLimitTextField">
+                                <rect key="frame" x="6" y="0.0" width="202" height="35"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Kag-sm-4jO" secondAttribute="bottom" id="2GW-7q-VWH"/>
+                            <constraint firstItem="Kag-sm-4jO" firstAttribute="leading" secondItem="eHn-db-Q4J" secondAttribute="leading" constant="6" id="4ge-BR-5T4"/>
+                            <constraint firstAttribute="trailing" secondItem="Kag-sm-4jO" secondAttribute="trailing" id="Rq4-eQ-WY2"/>
+                            <constraint firstItem="Kag-sm-4jO" firstAttribute="top" secondItem="eHn-db-Q4J" secondAttribute="top" id="xwu-cg-imS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ih9-6k-zvi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7Kx-MS-NOY"/>
+                    <constraint firstItem="eHn-db-Q4J" firstAttribute="height" secondItem="Ih9-6k-zvi" secondAttribute="height" id="URG-yt-xSg"/>
+                    <constraint firstItem="eHn-db-Q4J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Vge-Zy-Msg"/>
+                    <constraint firstAttribute="trailing" secondItem="Ih9-6k-zvi" secondAttribute="trailing" constant="10" id="o3o-YM-BYJ"/>
+                    <constraint firstItem="Ih9-6k-zvi" firstAttribute="leading" secondItem="eHn-db-Q4J" secondAttribute="trailing" constant="10" id="oFZ-Cu-suV"/>
+                    <constraint firstItem="eHn-db-Q4J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tlo-BC-82D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="addButton" destination="Ih9-6k-zvi" id="kzC-nO-teK"/>
+                <outlet property="containView" destination="eHn-db-Q4J" id="ZNY-v4-yfC"/>
+                <outlet property="inputTextField" destination="Kag-sm-4jO" id="kKS-Ec-Nhg"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="51.5"/>
+        </tableViewCell>
+    </objects>
+</document>

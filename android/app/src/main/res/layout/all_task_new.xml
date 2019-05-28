@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_image" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/unDealText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="待处理"
+            android:textColor="@color/app_color"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:background="@color/color_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha
+            android:id="@+id/compeleteLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/compeleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已完成"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/compeleteUnreadRedCircle"
+                style="@style/red_circle"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/compeleteText"
+                android:visibility="gone" />
+        </com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:background="@color/color_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/iCommitText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="我提交的"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:background="@color/color_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/iResporse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="我负责的"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/bottom_red_button_layout" />
+
+</LinearLayout>

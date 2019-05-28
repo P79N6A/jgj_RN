@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/download_excel"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/share_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/download_share_icon"
+            android:onClick="onClick"
+            android:text="分享"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/download_and_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/download_icon"
+            android:onClick="onClick"
+            android:text="查看"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

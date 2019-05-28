@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JGJProSetMemberHeaderReusableView" id="U6b-Vx-4bR" customClass="JGJProSetMemberHeaderReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPy-Vo-bia">
+                    <rect key="frame" x="12" y="13" width="25" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbW-C3-CwH">
+                    <rect key="frame" x="308" y="20" width="0.0" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pE4-Vz-d5o">
+                    <rect key="frame" x="299" y="12.5" width="9" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="9" id="W7N-sX-q8l"/>
+                        <constraint firstAttribute="height" constant="15" id="vLN-jw-rLI"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xri-wI-ilo">
+                    <rect key="frame" x="219" y="0.0" width="101" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="101" id="51y-tz-svv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jkp-Ss-bL8" customClass="LineView">
+                    <rect key="frame" x="12" y="36" width="296" height="1"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="oVE-P6-L45"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pE4-Vz-d5o" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="6sF-3C-WJg"/>
+                <constraint firstItem="RPy-Vo-bia" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="KBA-Cw-q0c"/>
+                <constraint firstItem="RPy-Vo-bia" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="12" id="L87-55-frk"/>
+                <constraint firstAttribute="trailing" secondItem="Jkp-Ss-bL8" secondAttribute="trailing" constant="12" id="Pme-R1-K8Z"/>
+                <constraint firstItem="Jkp-Ss-bL8" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="12" id="UTr-xo-vh6"/>
+                <constraint firstAttribute="trailing" secondItem="pE4-Vz-d5o" secondAttribute="trailing" constant="12" id="WTy-BD-dQ5"/>
+                <constraint firstItem="Xri-wI-ilo" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ZYp-df-pM3"/>
+                <constraint firstAttribute="bottom" secondItem="Jkp-Ss-bL8" secondAttribute="bottom" constant="3" id="bJT-dD-mj3"/>
+                <constraint firstAttribute="trailing" secondItem="Xri-wI-ilo" secondAttribute="trailing" id="r6u-AW-xIU"/>
+                <constraint firstAttribute="bottom" secondItem="Xri-wI-ilo" secondAttribute="bottom" id="yVh-kp-Q6a"/>
+            </constraints>
+            <connections>
+                <outlet property="nextImageView" destination="pE4-Vz-d5o" id="7Nl-h0-DwF"/>
+                <outlet property="titleLable" destination="RPy-Vo-bia" id="Oj9-Mv-ZMV"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

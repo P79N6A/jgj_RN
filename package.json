@@ -1,0 +1,40 @@
+{
+  "name": "jgj_app_person",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "an": "react-native run-android",
+    "build": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "postinstall": "node node_modules/react-native-autotrack-growingio/hook.js -run"
+  },
+  "dependencies": {
+    "bmap": "^1.0.1",
+    "react": "16.8.3",
+    "react-native": "0.59.4",
+    "react-native-autotrack-growingio": "git+https://github.com/growingio/GIORNHook.git#0.0.5",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-growingio": "git+https://github.com/growingio/react-native-growingio.git#0.0.7",
+    "react-native-image-crop-picker": "^0.23.1",
+    "react-native-image-picker": "^0.28.1",
+    "react-native-linear-gradient": "^2.5.4",
+    "react-native-modal-datetime-picker": "^7.4.0",
+    "react-native-modal-dropdown": "^0.6.2",
+    "react-native-root-toast": "^3.0.2",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.9.1",
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

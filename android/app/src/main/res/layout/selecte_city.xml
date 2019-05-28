@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <TextView
+        android:id="@+id/proAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_14" />
+
+    <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+        android:id="@+id/currentCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/derectSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/derect_select"
+            android:textColor="@color/gray_cccccc"
+            android:textSize="@dimen/text_size_15" />
+
+        <View
+            android:id="@+id/itemDiver"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/derectSelect"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray_dbdbdb" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/itemDiver"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/provinceListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+            <ListView
+                android:id="@+id/cityListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="1px">
+
+            <LinearLayout
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/draw_bg_f3f3f3_5radius"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/magnifying" />
+
+                <com.hcs.cityslist.widget.ClearEditText
+                    android:id="@+id/filterEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.WrapListView
+                android:id="@+id/searchListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

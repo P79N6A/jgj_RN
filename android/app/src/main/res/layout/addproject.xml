@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_only_title" />
+
+    <com.hcs.cityslist.widget.ClearEditText
+        android:id="@id/project_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:maxLength="20"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:paddingRight="@dimen/margin_10dp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/gray_cccccc"
+        android:textSize="@dimen/text_size_15" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/bottom_red_btn_style"
+        android:layout_marginTop="15dp"
+        android:text="保存" />
+
+</LinearLayout>

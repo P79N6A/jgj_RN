@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLGLoadWebViewFailure">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="IgT-ip-9tA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="426"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="webViewFailure_Image.png" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-xH-Wq3">
+                    <rect key="frame" x="86" y="106" width="171" height="215"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ogf-xH-Wq3" secondAttribute="height" multiplier="345:433" id="Ee1-62-tev"/>
+                        <constraint firstAttribute="width" constant="345" id="rfP-Hr-HPb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="rfP-Hr-HPb"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="webViewFailure_Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="eKa-fq-az7">
+                    <rect key="frame" x="81" y="55" width="180" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eKa-fq-az7" secondAttribute="height" multiplier="364:64" id="U3d-gc-phc"/>
+                        <constraint firstAttribute="width" constant="365" id="zoR-ip-2uw"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="zoR-ip-2uw"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI2-Nl-lby">
+                    <rect key="frame" x="116" y="341" width="110" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RI2-Nl-lby" secondAttribute="height" multiplier="224:75" id="Exp-Ds-hhk"/>
+                        <constraint firstAttribute="width" constant="224" id="Q9r-bR-rR7"/>
+                        <constraint firstAttribute="width" secondItem="RI2-Nl-lby" secondAttribute="height" id="V2K-PH-Tkk"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="webViewFailure_Refresh.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Q9r-bR-rR7"/>
+                            <exclude reference="V2K-PH-Tkk"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="refreshButton:" destination="-1" eventType="touchUpInside" id="8uY-TL-OMM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ogf-xH-Wq3" firstAttribute="top" secondItem="eKa-fq-az7" secondAttribute="bottom" constant="20" id="9bI-D1-shd"/>
+                <constraint firstItem="eKa-fq-az7" firstAttribute="width" secondItem="ogf-xH-Wq3" secondAttribute="width" multiplier="1.05" id="CML-JX-PcU"/>
+                <constraint firstItem="ogf-xH-Wq3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IXO-O1-886"/>
+                <constraint firstItem="RI2-Nl-lby" firstAttribute="top" secondItem="ogf-xH-Wq3" secondAttribute="bottom" constant="20" id="MTD-2v-OZo"/>
+                <constraint firstItem="RI2-Nl-lby" firstAttribute="centerX" secondItem="ogf-xH-Wq3" secondAttribute="centerX" id="hYs-jy-ehC"/>
+                <constraint firstItem="eKa-fq-az7" firstAttribute="centerX" secondItem="ogf-xH-Wq3" secondAttribute="centerX" id="jj5-Vr-MMN"/>
+                <constraint firstItem="eKa-fq-az7" firstAttribute="width" secondItem="ogf-xH-Wq3" secondAttribute="width" multiplier="0.84" id="lAZ-Qv-1nM"/>
+                <constraint firstItem="ogf-xH-Wq3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="um5-GF-wiW"/>
+                <constraint firstItem="RI2-Nl-lby" firstAttribute="width" secondItem="ogf-xH-Wq3" secondAttribute="width" multiplier="0.64" id="us0-84-bNn"/>
+                <constraint firstItem="ogf-xH-Wq3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xkM-D9-CBg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="lAZ-Qv-1nM"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="216.5" y="146"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="webViewFailure_Image.png" width="345" height="433"/>
+        <image name="webViewFailure_Refresh.png" width="224" height="75"/>
+        <image name="webViewFailure_Title.png" width="365" height="44"/>
+    </resources>
+</document>

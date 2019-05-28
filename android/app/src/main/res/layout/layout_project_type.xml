@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/head_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:padding="8dip"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/head_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:padding="8dip"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="请选择"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/select_count"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/textviewback"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/gray_8b8b8b"
+        android:textSize="@dimen/text_size_14" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</LinearLayout>

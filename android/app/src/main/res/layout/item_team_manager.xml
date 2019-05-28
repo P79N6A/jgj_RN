@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jizhi.jongg.widget.SquareReLativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@id/roundImageHashText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp" />
+
+        <ImageView
+            android:id="@+id/tagIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_administrator" />
+
+        <ImageView
+            android:id="@+id/is_active"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/is_register" />
+    </com.jizhi.jongg.widget.SquareReLativeLayout>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_size_12" />
+
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/head_only_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="@dimen/margin_12dp"
+                    android:paddingRight="@dimen/margin_12dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="签到时间"
+                        android:textColor="@color/color_545454"
+                        android:textSize="@dimen/text_size_15"/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/text_size_14"/>
+                </LinearLayout>
+
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/margin_12dp"
+                    android:paddingRight="@dimen/margin_12dp"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="签到地点"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/text_size_15"/>
+
+                    <TextView
+                        android:id="@+id/tv_address1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/time"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:lineSpacingExtra="3dp"
+                        android:text="正在定位"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/text_size_14"/>
+
+                    <TextView
+                        android:id="@+id/tv_address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tv_address1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/time"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/color_999999"
+                        android:textSize="@dimen/text_size_14"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_sign_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingRight="10dp"
+                        android:text="地点微调"
+                        android:textColor="@color/color_eb4e4e"
+                        android:textSize="13sp"/>
+
+                    <ImageView
+                        android:id="@+id/img_loc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="65dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/icon_sign_address"
+                        android:paddingTop="5dp"/>
+
+                    <com.baidu.mapapi.map.MapView
+                        android:id="@+id/bmapView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/img_loc"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+
+                <include layout="@layout/layout_sign_photo_bottom"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bottom_red_button_layout"/>
+
+</LinearLayout>

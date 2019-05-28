@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Recorder View Controller-->
+        <scene sceneID="j0K-YT-sMy">
+            <objects>
+                <viewController storyboardIdentifier="JGJSetRecorderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mdG-Ap-3yk" customClass="JGJSetRecorderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8ny-Ew-OEu"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkN-Pu-i7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Irc-yv-XmY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-er-oh3">
+                                <rect key="frame" x="0.0" y="70" width="375" height="534"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcj-5D-OGK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFJ-00-J0e">
+                                <rect key="frame" x="0.0" y="604" width="375" height="63"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gcj-5D-OGK" firstAttribute="leading" secondItem="Irc-yv-XmY" secondAttribute="leading" id="JTt-vf-gtb"/>
+                            <constraint firstItem="Csz-er-oh3" firstAttribute="top" secondItem="Gcj-5D-OGK" secondAttribute="bottom" id="Lf5-2r-6Oc"/>
+                            <constraint firstItem="Csz-er-oh3" firstAttribute="leading" secondItem="Irc-yv-XmY" secondAttribute="leading" id="Oig-zr-bDH"/>
+                            <constraint firstItem="Csz-er-oh3" firstAttribute="top" secondItem="8ny-Ew-OEu" secondAttribute="bottom" constant="50" id="QBC-4k-YDz"/>
+                            <constraint firstItem="ZFJ-00-J0e" firstAttribute="top" secondItem="Csz-er-oh3" secondAttribute="bottom" id="SxO-wl-QQV"/>
+                            <constraint firstAttribute="trailing" secondItem="Csz-er-oh3" secondAttribute="trailing" id="WTU-QX-JXS"/>
+                            <constraint firstItem="gkN-Pu-i7s" firstAttribute="top" secondItem="ZFJ-00-J0e" secondAttribute="bottom" id="guo-Qy-0KG"/>
+                            <constraint firstItem="ZFJ-00-J0e" firstAttribute="leading" secondItem="Irc-yv-XmY" secondAttribute="leading" id="hH8-6o-7td"/>
+                            <constraint firstItem="Gcj-5D-OGK" firstAttribute="top" secondItem="Irc-yv-XmY" secondAttribute="top" id="mE2-yD-dZ9"/>
+                            <constraint firstItem="gkN-Pu-i7s" firstAttribute="top" secondItem="Csz-er-oh3" secondAttribute="bottom" constant="63" id="mZc-rz-RiJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZFJ-00-J0e" secondAttribute="trailing" id="sVZ-hL-Kse"/>
+                            <constraint firstAttribute="trailing" secondItem="Gcj-5D-OGK" secondAttribute="trailing" id="sfK-PB-F96"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Tableview" destination="Csz-er-oh3" id="Ngz-M1-PcR"/>
+                        <outlet property="bootmBaseView" destination="ZFJ-00-J0e" id="edo-so-uqL"/>
+                        <outlet property="warningView" destination="Gcj-5D-OGK" id="m1Y-8t-PF8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eP5-fG-Crp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.80000000000001" y="-247.82608695652175"/>
+        </scene>
+    </scenes>
+</document>

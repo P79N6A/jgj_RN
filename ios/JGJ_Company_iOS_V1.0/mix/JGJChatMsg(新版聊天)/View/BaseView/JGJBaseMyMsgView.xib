@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJBaseMyMsgView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuy-LI-vj0">
+                    <rect key="frame" x="325" y="10" width="40" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="OoF-24-W03"/>
+                        <constraint firstAttribute="width" secondItem="uuy-LI-vj0" secondAttribute="height" id="xnC-j0-Qxk"/>
+                    </constraints>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZJ-HW-qyC" customClass="JGJChatMsgTopTimeView">
+                    <rect key="frame" x="83" y="10" width="225" height="14"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="m3X-Oc-csq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRy-Tb-kMF">
+                    <rect key="frame" x="76" y="28" width="245" height="117"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chat_listRedPOP" translatesAutoresizingMaskIntoConstraints="NO" id="y7B-Dj-49y">
+                            <rect key="frame" x="0.0" y="0.0" width="245" height="117"/>
+                            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="deviceRGB"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbX-la-doT" customClass="JGJCusYyLable">
+                            <rect key="frame" x="10" y="6" width="215" height="105"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zbX-la-doT" firstAttribute="leading" secondItem="PRy-Tb-kMF" secondAttribute="leading" constant="10" id="4r3-d2-z6Y"/>
+                        <constraint firstAttribute="trailing" secondItem="y7B-Dj-49y" secondAttribute="trailing" id="GZa-7o-v9c"/>
+                        <constraint firstItem="zbX-la-doT" firstAttribute="top" secondItem="PRy-Tb-kMF" secondAttribute="top" constant="6" id="H1F-KA-OLA"/>
+                        <constraint firstAttribute="bottom" secondItem="zbX-la-doT" secondAttribute="bottom" constant="6" id="RTX-0I-D4e"/>
+                        <constraint firstAttribute="trailing" secondItem="zbX-la-doT" secondAttribute="trailing" constant="20" id="SKe-cH-IRa"/>
+                        <constraint firstAttribute="bottom" secondItem="y7B-Dj-49y" secondAttribute="bottom" id="TW0-MA-tFd"/>
+                        <constraint firstAttribute="width" constant="245" id="dkd-1Q-fbB"/>
+                        <constraint firstItem="y7B-Dj-49y" firstAttribute="top" secondItem="PRy-Tb-kMF" secondAttribute="top" id="gL3-Wz-vPc"/>
+                        <constraint firstItem="y7B-Dj-49y" firstAttribute="leading" secondItem="PRy-Tb-kMF" secondAttribute="leading" id="wf5-fR-R72"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="uuy-LI-vj0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="0iJ-zX-eJU"/>
+                <constraint firstItem="PRy-Tb-kMF" firstAttribute="top" secondItem="QZJ-HW-qyC" secondAttribute="bottom" constant="4" id="3ca-CK-pwp"/>
+                <constraint firstItem="QZJ-HW-qyC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="BKs-AX-Cad"/>
+                <constraint firstItem="QZJ-HW-qyC" firstAttribute="top" secondItem="uuy-LI-vj0" secondAttribute="top" id="KaL-0b-jf8"/>
+                <constraint firstAttribute="trailing" secondItem="uuy-LI-vj0" secondAttribute="trailing" constant="10" id="Mme-Ai-IRy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PRy-Tb-kMF" secondAttribute="bottom" constant="5" id="PaE-VT-4MR"/>
+                <constraint firstItem="uuy-LI-vj0" firstAttribute="leading" secondItem="PRy-Tb-kMF" secondAttribute="trailing" constant="4" id="YDr-2m-8wy"/>
+                <constraint firstItem="uuy-LI-vj0" firstAttribute="leading" secondItem="QZJ-HW-qyC" secondAttribute="trailing" constant="17" id="sjN-Ps-PMb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Chat_listRedPOP" width="27" height="37"/>
+    </resources>
+</document>

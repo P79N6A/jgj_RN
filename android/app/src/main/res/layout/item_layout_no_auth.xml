@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:background="#685946">
+
+        <RelativeLayout
+            android:id="@+id/post_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_white_10radius">
+            <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                android:id="@+id/img_head_postcard"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@color/color_f1f1f1"
+                app:riv_border_width="0dip"
+                app:riv_corner_radius="@dimen/rect_radius"
+                app:riv_oval="false"
+                tools:background="@drawable/head2"/>
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_head_postcard">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    tools:text="张晓阳"
+                    android:layout_marginLeft="11dp"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/auth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/auth_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/name"/>
+                <ImageView
+                    android:id="@+id/verify"
+                    android:layout_toRightOf="@+id/auth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/verfined_icon"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_workscale"
+                android:layout_toRightOf="@+id/img_head_postcard"
+                android:layout_below="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                tools:text="乌兹别克族 工龄 20 年 队伍 150 人"/>
+            <TextView
+                android:layout_below="@+id/text_workscale"
+                android:layout_toLeftOf="@+id/btn_send_postcard"
+                android:id="@+id/text_workType"
+                tools:text="玻璃幕墙工 | 水电工..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+           <TextView
+               android:id="@+id/btn_send_postcard"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="发送名片"
+               android:textColor="#fffffefe"
+               android:textSize="12sp"
+               android:background="@drawable/bg_eb4e4e_3radius"
+               android:paddingTop="4dp"
+               android:paddingBottom="4dp"
+               android:paddingLeft="7dp"
+               android:paddingRight="7dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/text_workscale"
+               android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/lin_findjob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_white_10radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            tools:text="成都市招水电工"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_below="@+id/tv_pro_name"
+            android:layout_toLeftOf="@+id/btn_send_findjob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_type_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:background="@drawable/bg_og_3a92ff_3radius"
+                android:paddingLeft="3dp"
+                android:paddingTop="1dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="1dp"
+                tools:text="点工"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="2dp"
+                android:lineSpacingMultiplier="1.5"
+                tools:text="工资标准"
+                android:textColor="@color/color_333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="2dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                tools:text="2000 ~ 4000 元/天"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_send_findjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pro_name"
+            android:layout_alignParentRight="true"
+            android:text="发送招工信息"
+            android:textColor="#fffffefe"
+            android:textSize="12sp"
+            android:background="@drawable/bg_eb4e4e_3radius"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp" />
+        <!--<View-->
+            <!--android:id="@+id/view_line"-->
+            <!--style="@style/line"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp" />-->
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/lin_findhelper"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingBottom="15dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_search_hint"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:text="工资标准"-->
+            <!--android:textColor="@color/color_999999"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="visible" />-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="12dp">-->
+
+            <!--<com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/img_head"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:focusable="false"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/head2"-->
+                <!--app:riv_border_color="@color/color_f1f1f1"-->
+                <!--app:riv_border_width="0dip"-->
+                <!--app:riv_corner_radius="@dimen/rect_radius"-->
+                <!--app:riv_oval="false" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:layout_toRightOf="@id/img_head"-->
+                <!--android:text="工资标准"-->
+                <!--android:textColor="@color/color_333333"-->
+                <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_work_year"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/tv_name"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:layout_marginBottom="2dp"-->
+                <!--android:layout_toRightOf="@id/img_head"-->
+                <!--android:text="工龄:5年"-->
+                <!--android:textColor="@color/color_666666"-->
+                <!--android:textSize="12sp" />-->
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+<!--android:layout_marginTop="46dp"-->
+    <LinearLayout
+        android:id="@+id/lin_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        tools:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_verifie_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="你还未进行实名认证，实名认证能提高找工作的成功率"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:button="@null"
+            android:text="立即认证"
+            android:visibility="visible"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_yellow_right"
+            android:textColor="@color/color_ff6600"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
+
+

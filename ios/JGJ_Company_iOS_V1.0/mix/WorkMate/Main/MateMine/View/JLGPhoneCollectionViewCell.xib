@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="JLGPhoneCollectionViewCell" reuseIdentifier="JLGPhoneCollectionViewCell" id="xZJ-eB-Oap" customClass="JLGPhoneCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bPy-xl-N4D">
+                        <rect key="frame" x="0.0" y="4" width="203" height="188"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bPy-xl-N4D" secondAttribute="height" multiplier="1:1" id="RAg-xB-FU1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RAg-xB-FU1"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSk-7s-mwJ">
+                        <rect key="frame" x="149" y="0.0" width="58" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hSk-7s-mwJ" secondAttribute="height" multiplier="1:1" id="OD6-u0-grX"/>
+                        </constraints>
+                        <state key="normal" image="findHelper_deletePhone"/>
+                        <connections>
+                            <action selector="deleteBtnClick:" destination="xZJ-eB-Oap" eventType="touchUpInside" id="vMd-67-cPf"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="hSk-7s-mwJ" firstAttribute="width" secondItem="xZJ-eB-Oap" secondAttribute="width" multiplier="0.28" id="9UQ-1D-Fj7"/>
+                <constraint firstAttribute="trailing" secondItem="bPy-xl-N4D" secondAttribute="trailing" constant="4" id="EJg-Uk-i6S"/>
+                <constraint firstItem="bPy-xl-N4D" firstAttribute="top" secondItem="xZJ-eB-Oap" secondAttribute="top" id="Kj7-bM-hBP"/>
+                <constraint firstAttribute="trailing" secondItem="hSk-7s-mwJ" secondAttribute="trailing" id="L2W-kS-odY"/>
+                <constraint firstAttribute="bottom" secondItem="bPy-xl-N4D" secondAttribute="bottom" id="Llz-Qd-hb7"/>
+                <constraint firstItem="bPy-xl-N4D" firstAttribute="leading" secondItem="xZJ-eB-Oap" secondAttribute="leading" id="Ovd-UG-Cax"/>
+                <constraint firstItem="bPy-xl-N4D" firstAttribute="width" secondItem="xZJ-eB-Oap" secondAttribute="width" multiplier="0.96" id="VRM-o2-Jq5"/>
+                <constraint firstItem="hSk-7s-mwJ" firstAttribute="top" secondItem="xZJ-eB-Oap" secondAttribute="top" id="WpE-gG-5p1"/>
+                <constraint firstItem="bPy-xl-N4D" firstAttribute="top" secondItem="xZJ-eB-Oap" secondAttribute="top" constant="4" id="b3k-mv-djk"/>
+                <constraint firstItem="bPy-xl-N4D" firstAttribute="leading" secondItem="xZJ-eB-Oap" secondAttribute="leading" id="cQQ-eE-5FZ"/>
+                <constraint firstAttribute="bottom" secondItem="bPy-xl-N4D" secondAttribute="bottom" id="fHP-PJ-ftV"/>
+                <constraint firstAttribute="trailing" secondItem="bPy-xl-N4D" secondAttribute="trailing" id="rnh-cD-HyQ"/>
+                <constraint firstItem="bPy-xl-N4D" firstAttribute="height" secondItem="xZJ-eB-Oap" secondAttribute="height" multiplier="0.96" id="w5m-UK-5Ml"/>
+            </constraints>
+            <size key="customSize" width="196" height="188"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Kj7-bM-hBP"/>
+                    <exclude reference="Llz-Qd-hb7"/>
+                    <exclude reference="VRM-o2-Jq5"/>
+                    <exclude reference="cQQ-eE-5FZ"/>
+                    <exclude reference="rnh-cD-HyQ"/>
+                    <exclude reference="w5m-UK-5Ml"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backGroundImage" destination="bPy-xl-N4D" id="70Z-uS-NY9"/>
+                <outlet property="deleteButton" destination="hSk-7s-mwJ" id="Klg-o1-JGH"/>
+            </connections>
+            <point key="canvasLocation" x="380.5" y="297"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="findHelper_deletePhone" width="15" height="15"/>
+    </resources>
+</document>

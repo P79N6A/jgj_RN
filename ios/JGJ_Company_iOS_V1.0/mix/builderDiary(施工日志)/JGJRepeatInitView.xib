@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJRepeatInitView">
+            <connections>
+                <outlet property="clickButton" destination="WBE-7t-O8p" id="OC4-mB-0VW"/>
+                <outlet property="contentView" destination="rUO-w9-8Ls" id="Pgv-nR-fbF"/>
+                <outlet property="numlable" destination="hLz-e5-GuB" id="MeH-db-sXh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rUO-w9-8Ls">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBE-7t-O8p">
+                    <rect key="frame" x="371" y="21.5" width="50" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="OEp-yv-3Jv"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="RsP-7m-4cx"/>
+                        <constraint firstAttribute="height" constant="25" id="l0i-Jx-a2y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickRepeatButton:" destination="-1" eventType="touchUpInside" id="4Ko-Pe-H0a"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共筛选出 0 记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLz-e5-GuB">
+                    <rect key="frame" x="10" y="0.0" width="200" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Al5-RS-rIf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-xe-VNy">
+                    <rect key="frame" x="0.0" y="67.5" width="433" height="0.5"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85695178462009791" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="dYk-q2-m73"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hLz-e5-GuB" firstAttribute="top" secondItem="rUO-w9-8Ls" secondAttribute="top" id="4GF-H2-PCR"/>
+                <constraint firstAttribute="bottom" secondItem="hLz-e5-GuB" secondAttribute="bottom" id="7hp-oI-v68"/>
+                <constraint firstAttribute="trailing" secondItem="CXo-xe-VNy" secondAttribute="trailing" id="Blw-ee-6wf"/>
+                <constraint firstItem="WBE-7t-O8p" firstAttribute="centerY" secondItem="rUO-w9-8Ls" secondAttribute="centerY" id="GaB-bH-H5R"/>
+                <constraint firstItem="hLz-e5-GuB" firstAttribute="leading" secondItem="rUO-w9-8Ls" secondAttribute="leading" constant="10" id="GbQ-fY-pgy"/>
+                <constraint firstItem="CXo-xe-VNy" firstAttribute="leading" secondItem="rUO-w9-8Ls" secondAttribute="leading" id="QXj-tR-skL"/>
+                <constraint firstAttribute="trailing" secondItem="WBE-7t-O8p" secondAttribute="trailing" constant="12" id="Rqs-Pb-2Go"/>
+                <constraint firstAttribute="bottom" secondItem="CXo-xe-VNy" secondAttribute="bottom" id="u9l-Xa-c8f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="318.5" y="-143"/>
+        </view>
+    </objects>
+</document>

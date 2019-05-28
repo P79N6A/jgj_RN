@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_f1f1f1"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/groupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/text_size_13" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:text="请按顺序选择天气"
+                android:textColor="@color/color_cccccc"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.jizhi.jongg.widget.WeatherRangteCircle
+                        android:id="@+id/leftTop"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:lineSpacingExtra="1dp"
+                        custom:direction="top_left" />
+
+                    <ImageView
+                        android:id="@+id/leftTopSelectedIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_top"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <com.jizhi.jongg.widget.WeatherRangteCircle
+                        android:id="@+id/rightTop"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:lineSpacingExtra="1dp"
+                        custom:direction="top_right" />
+
+                    <ImageView
+                        android:id="@+id/rightTopSelectedIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/right_top"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <com.jizhi.jongg.widget.WeatherRangteCircle
+                        android:id="@+id/leftBottom"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:lineSpacingExtra="1dp"
+                        custom:direction="bottom_left" />
+
+                    <ImageView
+                        android:id="@+id/leftBottomSelectedIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_bottom"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true">
+
+                    <com.jizhi.jongg.widget.WeatherRangteCircle
+                        android:id="@+id/rightBottom"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:lineSpacingExtra="1dp"
+                        custom:direction="bottom_right" />
+
+                    <ImageView
+                        android:id="@+id/rightBottomSelectedIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/right_bottom"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+
+                <com.jizhi.jongg.widget.CustomCircle
+                    android:id="@+id/weatherCircle"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/color_dbdbdb" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:text="温度"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/morningTemperature"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/desc"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="上午"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/morningTemperature"
+                    android:text="(℃)"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/morningTemperature"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/morningTemperature"
+                    android:layout_toRightOf="@id/desc"
+                    android:background="@color/color_333333" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/afternoonTemperature"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/text1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="下午"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/afternoonTemperature"
+                    android:text="(℃)"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/afternoonTemperature"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/afternoonTemperature"
+                    android:layout_toRightOf="@id/morningTemperature"
+                    android:background="@color/color_333333" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/desc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:text="风力"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/morningWindowForce"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/desc3"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="上午"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/morningWindowForce"
+                    android:text="(级)"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/morningWindowForce"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/morningWindowForce"
+                    android:layout_toRightOf="@id/desc3"
+                    android:background="@color/color_333333" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/afternoonWindowForce"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/text2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="下午"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/afternoonWindowForce"
+                    android:text="(级)"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@id/afternoonWindowForce"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/afternoonWindowForce"
+                    android:layout_toRightOf="@id/morningWindowForce"
+                    android:background="@color/color_333333" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_f1f1f1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(最多50个字)"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/weatherDesc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="14dp"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请输入天气对项目的影响"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/color_cccccc"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb" />
+
+    <LinearLayout
+        android:id="@+id/editorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/deleteBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_whitecolor_5dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/delete"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/button_size" />
+
+        <TextView
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_appcolor"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

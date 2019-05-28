@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    tools:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="76dp"
+        android:visibility="visible">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false"
+            tools:background="@drawable/head2" />
+        <TextView
+            android:id="@+id/tv_username_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            tools:text="2019"
+            android:layout_toRightOf="@id/img_head_left"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp"/>
+        <RelativeLayout
+            android:id="@+id/send_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/img_head_left"
+            android:background="@drawable/selector_messge_text_left"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/lin_findjob_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pro_name_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    android:textColor="@color/color_333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="成都市招水电工" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_pro_name_left"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_type_work_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_og_3a92ff_3radius"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="1dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="1dp"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        tools:text="点工" />
+
+                    <TextView
+                        android:id="@+id/tv_type_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:paddingLeft="3dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="2dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13sp"
+                        tools:text="工资标准" />
+
+                    <TextView
+                        android:id="@+id/tv_money_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/color_999999"
+                        android:textSize="13sp"
+                        tools:text="200 元/天" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false"
+            tools:background="@drawable/head2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_head_right">
+
+
+            <LinearLayout
+                android:id="@+id/rea_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="13dp">
+
+                    <TextView
+                        android:id="@+id/tv_unread_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_628ae0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_date_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_unread_right"
+                        android:text="0000"
+                        android:textColor="@color/color_666666"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:id="@+id/spinner"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/load_spinner"
+                            android:visibility="invisible" />
+
+                        <ImageButton
+                            android:id="@+id/img_sendfail"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_sendfail"
+                            android:padding="10dp"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/send_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/img_head_right"
+                        android:background="@drawable/selector_messge_text_left_white">
+
+                        <RelativeLayout
+                            android:id="@+id/lin_findjob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_pro_name_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="20"
+                                android:textColor="@color/color_333333"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                tools:text="成都市招水电工" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_pro_name_right"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_type_work_right"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_og_3a92ff_3radius"
+                                    android:paddingLeft="3dp"
+                                    android:paddingTop="1dp"
+                                    android:paddingRight="3dp"
+                                    android:paddingBottom="1dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    tools:text="点工" />
+
+                                <TextView
+                                    android:id="@+id/tv_type_right"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:paddingLeft="2dp"
+                                    android:paddingTop="2dp"
+                                    android:paddingRight="3dp"
+                                    android:paddingBottom="2dp"
+                                    android:lineSpacingMultiplier="1.5"
+                                    android:textColor="@color/color_333333"
+                                    android:textSize="13sp"
+                                    tools:text="工资标准" />
+
+                                <TextView
+                                    android:id="@+id/tv_money_right"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="2dp"
+                                    android:paddingTop="2dp"
+                                    android:paddingRight="3dp"
+                                    android:paddingBottom="2dp"
+                                    android:textColor="@color/color_999999"
+                                    android:textSize="13sp"
+                                    tools:text="2000 ~3000 元/天" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

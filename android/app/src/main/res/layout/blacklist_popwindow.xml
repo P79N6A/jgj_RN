@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingRight="10dp">
+
+    <View
+        android:layout_width="18dp"
+        android:layout_height="10dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/navi_po" />
+
+    <LinearLayout
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/draw_bg_49484b_3radius"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+            android:id="@+id/btnJoinBlackList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/backlist_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="拉黑"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#5c5b5d" />
+
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+            android:id="@+id/lin_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/delete_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="删除好友"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#5c5b5d" />
+        <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+            android:id="@+id/lin_complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/complaint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="投诉"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+    </LinearLayout>
+
+</LinearLayout>

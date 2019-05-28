@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray_f1f1f1"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_appcolor"
+            android:gravity="center"
+            android:text="@string/story"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            android:textSize="@dimen/button_size" />
+
+        <TextView
+            android:id="@+id/save_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_whitecolor_5dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/save_and_keepgo"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/button_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

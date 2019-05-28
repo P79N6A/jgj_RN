@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_all_account_type" />
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="包工类型" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_account_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_account_all"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/work_account_contract"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <RadioButton
+
+                android:id="@+id/rb_account_subcontract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/radio_account_all"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/work_account_subcontract"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"
+                android:visibility="visible" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_type_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:text="承包：从他人那里接来的工程自己做"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/layout_line_10px" />
+
+    <RelativeLayout
+        android:id="@+id/rea_project"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_driver_1px"
+            android:layout_alignParentBottom="false" />
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_project" />
+
+        <TextView
+            style="@style/account_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在项目" />
+
+
+        <ImageView
+            android:id="@+id/img_pro_arrow"
+            style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_proname"
+            style="@style/account_right_text"
+            android:layout_marginLeft="110dp"
+            android:ellipsize="end"
+            android:hint="例如：万科魅力之城"
+            android:maxEms="13"
+            android:singleLine="true" />
+
+        <ImageView style="@style/account_driver_1px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_role"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_role" />
+
+        <TextView
+            android:id="@+id/tv_role_title"
+            style="@style/account_left_text"
+            android:text="title" />
+
+        <ImageView
+            android:id="@+id/img_role_arrow"
+            style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_role_name"
+            style="@style/account_right_text"
+            android:hint="hint" />
+
+        <ImageView style="@style/account_driver_1px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_date"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_date" />
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="日期" />
+
+        <ImageView style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/account_right_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJConRecomHeaderView">
+            <connections>
+                <outlet property="conRecomButton" destination="rKP-3L-jst" id="19r-En-eaI"/>
+                <outlet property="containView" destination="eaT-4s-d3y" id="ZzE-Ey-513"/>
+                <outlet property="freshFriendFlagView" destination="8pP-Ru-LF8" id="1uZ-6S-jcx"/>
+                <outlet property="topLineView" destination="v9J-tT-qZj" id="pFB-GT-4KN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eaT-4s-d3y">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="7hH-wv-tub">
+                    <rect key="frame" x="302" y="29" width="8" height="12"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKP-3L-jst">
+                    <rect key="frame" x="10" y="10" width="310" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ARQ-6X-Q75"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="我的人脉" image="from_group_icon">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="conRecomButtonPressed:" destination="-1" eventType="touchUpInside" id="um5-vX-bj1"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-tT-qZj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="s2E-LX-Bu7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pP-Ru-LF8">
+                    <rect key="frame" x="284" y="31" width="8" height="8"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="DUi-TG-rd8"/>
+                        <constraint firstAttribute="height" constant="8" id="OuO-fr-XCy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SV3-VS-dwA" customClass="LineView">
+                    <rect key="frame" x="0.0" y="10" width="320" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="zLI-gX-Hjf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZX-jp-e0y" customClass="LineView">
+                    <rect key="frame" x="0.0" y="59.5" width="320" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="24b-CY-tRK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rKP-3L-jst" firstAttribute="leading" secondItem="sSG-Nq-VXH" secondAttribute="leading" constant="10" id="1ni-ri-biE"/>
+                <constraint firstAttribute="bottom" secondItem="HZX-jp-e0y" secondAttribute="bottom" id="58r-LJ-V84"/>
+                <constraint firstAttribute="trailing" secondItem="HZX-jp-e0y" secondAttribute="trailing" id="5oK-WC-13Z"/>
+                <constraint firstItem="v9J-tT-qZj" firstAttribute="top" secondItem="sSG-Nq-VXH" secondAttribute="top" id="6HT-5H-hE0"/>
+                <constraint firstItem="SV3-VS-dwA" firstAttribute="top" secondItem="v9J-tT-qZj" secondAttribute="bottom" id="AU1-8Y-Eg3"/>
+                <constraint firstItem="v9J-tT-qZj" firstAttribute="leading" secondItem="sSG-Nq-VXH" secondAttribute="leading" id="JkU-Ch-d5A"/>
+                <constraint firstItem="7hH-wv-tub" firstAttribute="centerY" secondItem="sSG-Nq-VXH" secondAttribute="centerY" constant="5" id="SNH-6d-n2q"/>
+                <constraint firstItem="rKP-3L-jst" firstAttribute="bottom" secondItem="sSG-Nq-VXH" secondAttribute="bottom" id="W3T-ae-QCn"/>
+                <constraint firstItem="8pP-Ru-LF8" firstAttribute="centerY" secondItem="rKP-3L-jst" secondAttribute="centerY" id="WZb-5r-tjR"/>
+                <constraint firstItem="SV3-VS-dwA" firstAttribute="trailing" secondItem="sSG-Nq-VXH" secondAttribute="trailing" id="afA-C5-KGJ"/>
+                <constraint firstAttribute="trailing" secondItem="rKP-3L-jst" secondAttribute="trailing" id="biT-Mf-6ed"/>
+                <constraint firstItem="7hH-wv-tub" firstAttribute="leading" secondItem="8pP-Ru-LF8" secondAttribute="trailing" constant="10" id="boD-bH-1zk"/>
+                <constraint firstItem="HZX-jp-e0y" firstAttribute="leading" secondItem="eaT-4s-d3y" secondAttribute="leading" id="e8u-7E-c1H"/>
+                <constraint firstItem="SV3-VS-dwA" firstAttribute="leading" secondItem="sSG-Nq-VXH" secondAttribute="leading" id="hoF-OD-ija"/>
+                <constraint firstItem="sSG-Nq-VXH" firstAttribute="trailing" secondItem="v9J-tT-qZj" secondAttribute="trailing" id="pN5-Tq-YX4"/>
+                <constraint firstItem="sSG-Nq-VXH" firstAttribute="trailing" secondItem="7hH-wv-tub" secondAttribute="trailing" constant="10" id="rtz-Ua-KRi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sSG-Nq-VXH"/>
+            <point key="canvasLocation" x="43" y="362"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="8" height="12"/>
+        <image name="from_group_icon" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rea_msg_text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="14dp"
+        android:visibility="visible">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head2"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/img_head_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0000"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+
+
+            <!--<com.melink.bqmmsdk.widget.BQMMMessageText-->
+            <TextView
+                android:id="@+id/tv_text_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/selector_messge_text_left"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.1"
+                android:text="0"
+                android:autoLink="web"
+                android:textColorLink="@color/blue_46a6ff"
+                android:textColor="@color/black"
+                android:textScaleX="1.0"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_msg_text_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:src="@drawable/head2"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_head_right">
+
+
+            <LinearLayout
+                android:id="@+id/rea_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="13dp">
+
+                    <TextView
+                        android:id="@+id/tv_unread_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_628ae0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_date_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_unread_right"
+                        android:text="0000"
+                        android:textColor="@color/color_666666"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="3dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:id="@+id/spinner"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/load_spinner"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/img_sendfail"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_sendfail"
+                            android:padding="10dp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <!--<com.melink.bqmmsdk.widget.BQMMMessageText-->
+                    <TextView
+                        android:id="@+id/tv_text_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/icon_bubble_reds"
+                        android:gravity="center_vertical"
+                        android:textColorLink="@color/blue_46a6ff"
+                        android:lineSpacingMultiplier="1.1"
+                        android:text="0"
+                        android:autoLink="web"
+                        android:textColor="@color/white"
+                        android:textScaleX="1.0"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

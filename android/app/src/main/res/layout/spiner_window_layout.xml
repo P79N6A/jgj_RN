@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.jizhi.jongg.widget.WrapListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/sk_gy_e6e6e6_1px"
+        android:divider="@color/gray_e6e6e6"
+        android:dividerHeight="1px"
+        android:scrollbars="none"></com.jizhi.jongg.widget.WrapListView>
+
+
+</LinearLayout>

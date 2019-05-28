@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJChatSynInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cC-Bv-dqt" customClass="JGJBaseOutMsgView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGH-u8-3dn" customClass="JGJCusYyLable">
+                        <rect key="frame" x="70" y="40" width="227" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="YvN-gh-zVz"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djw-gW-KTX" customClass="JGJCusYyLable">
+                        <rect key="frame" x="70" y="65" width="227" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="IGy-Fk-llt"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1C-y5-Dec" customClass="JGJChatSynBottomBtnView">
+                        <rect key="frame" x="70" y="109.5" width="227" height="25"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="49q-NY-b8e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Djw-gW-KTX" firstAttribute="top" secondItem="FGH-u8-3dn" secondAttribute="bottom" id="2Xe-Qb-ci7"/>
+                    <constraint firstItem="9cC-Bv-dqt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Rk-do-7jl"/>
+                    <constraint firstAttribute="trailing" secondItem="FGH-u8-3dn" secondAttribute="trailing" constant="78" id="AhF-Yn-hoL"/>
+                    <constraint firstItem="9cC-Bv-dqt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BcD-TN-9Tb"/>
+                    <constraint firstItem="Djw-gW-KTX" firstAttribute="leading" secondItem="FGH-u8-3dn" secondAttribute="leading" id="MCM-6w-elc"/>
+                    <constraint firstAttribute="bottom" secondItem="9cC-Bv-dqt" secondAttribute="bottom" id="O3e-PT-FjS"/>
+                    <constraint firstItem="FGH-u8-3dn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="Uqj-ry-Q9Q"/>
+                    <constraint firstItem="v1C-y5-Dec" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="WNR-CM-aFf"/>
+                    <constraint firstAttribute="trailing" secondItem="v1C-y5-Dec" secondAttribute="trailing" constant="78" id="gsp-Ck-4G8"/>
+                    <constraint firstAttribute="bottom" secondItem="v1C-y5-Dec" secondAttribute="bottom" constant="20" id="n2a-D8-IuH"/>
+                    <constraint firstItem="Djw-gW-KTX" firstAttribute="trailing" secondItem="FGH-u8-3dn" secondAttribute="trailing" id="rEL-pS-vHq"/>
+                    <constraint firstItem="FGH-u8-3dn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="70" id="yjt-4o-rj2"/>
+                    <constraint firstAttribute="trailing" secondItem="9cC-Bv-dqt" secondAttribute="trailing" id="zwz-cl-15y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="containBtnView" destination="v1C-y5-Dec" id="acz-DU-nnx"/>
+                <outlet property="containBtnViewHieght" destination="49q-NY-b8e" id="Xwp-ZX-nP3"/>
+                <outlet property="des" destination="Djw-gW-KTX" id="KsR-58-lNw"/>
+                <outlet property="desContentHeight" destination="IGy-Fk-llt" id="omu-aK-OGV"/>
+                <outlet property="outMsgView" destination="9cC-Bv-dqt" id="r7W-uQ-KEu"/>
+                <outlet property="titeHeight" destination="YvN-gh-zVz" id="3WI-PK-E1t"/>
+                <outlet property="title" destination="FGH-u8-3dn" id="pjr-yG-EBi"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </tableViewCell>
+    </objects>
+</document>

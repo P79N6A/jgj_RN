@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <com.jizhi.jongg.widget.SquareReLativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@id/roundImageHashText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp" />
+
+      <!--  <com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha
+            android:id="@+id/remove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/remove_picture" />
+
+        </com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha>-->
+
+
+    </com.jizhi.jongg.widget.SquareReLativeLayout>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:textColor="@color/gray_666666"
+        android:textSize="@dimen/text_size_12" />
+
+
+</LinearLayout>

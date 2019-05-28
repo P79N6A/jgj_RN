@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_date_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/sunday"
+                        android:textColor="@color/app_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/monday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/thesday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/wednesday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/thursday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/friday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/saturday"
+                        android:textColor="@color/app_color" />
+                </TableRow>
+            </TableLayout>
+
+            <View style="@style/line" />
+
+            <com.jizhi.jongg.widget.ResetHeightViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+
+            <View
+                style="@style/line"
+                android:layout_marginTop="70dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/notes_selcte_bg"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="这一天有记事"
+                        android:textColor="@color/color_333333"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/important_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/notes_important_icon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/color_333333"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

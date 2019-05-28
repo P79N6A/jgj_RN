@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/dialog_top_style"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp">
+
+        <TextView
+            android:id="@+id/tv_account_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/select_account_count"
+            android:textStyle="bold"
+            android:textColor="@color/color_000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="工资金额设置为:"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:id="@+id/ed_price"
+                android:layout_width="170dp"
+                android:textSize="13sp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:background="@drawable/sk_dbdbdb_bg_ebebeb_2radius" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/ed_price"
+                android:text="元/个工"
+                android:textColor="#ff010101"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="选中点工记账,表示对未设置工资标准的点工，新设置工资标准;对已设置工资标准的点工，表示修改该笔账的工资标准。"
+            android:textColor="#ff666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/linecolor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/red_button_height"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_gray_bottom_round_right"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_525c68"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/btn_accsess"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/assign"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+
+</LinearLayout>

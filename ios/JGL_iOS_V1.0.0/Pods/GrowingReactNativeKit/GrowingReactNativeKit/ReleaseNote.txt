@@ -1,0 +1,11 @@
+2.7.4 Release Note
+
+无
+
+2.7.5 Release Note
+
+1.修复对于特殊情况下react native page event发不出来的问题
+
+2.7.6 Release Note
+
+无

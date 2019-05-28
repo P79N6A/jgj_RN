@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_date_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/sunday"
+                        android:textColor="@color/app_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/monday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/thesday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/wednesday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/thursday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/friday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/saturday"
+                        android:textColor="@color/app_color" />
+                </TableRow>
+            </TableLayout>
+
+            <View style="@style/line" />
+
+            <com.jizhi.jongg.widget.ResetHeightViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fafafa"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="在吉工家记工 数据永远不会丢失"
+                    android:textColor="@color/color_333333"
+                    android:textSize="12sp" />
+
+                <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+                    android:id="@+id/sundryDayIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="6dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/sundry_day_icon" />
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView style="@style/item_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:id="@+id/worker_record_btn_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+                        android:id="@+id/borrow_btn_worker"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="90dp"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/sk_gy_666666_5radius"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:text="借支/结算"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/button_size" />
+
+                    <Button
+                        android:id="@+id/recordOneAccount"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_marginLeft="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/draw_eb4e4e_5radius"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:text="马上记一笔工"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/button_size" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/foreman_record_btn_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+                        android:id="@+id/borrow_btn_foreman"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/sk_gy_666666_5radius"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@drawable/borrow_record_icon"
+                            android:text="借支/结算"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/button_size" />
+
+                    </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+                    <Button
+                        android:id="@+id/recordMultipartBtn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_toRightOf="@id/borrow_btn_foreman"
+                        android:background="@drawable/draw_eb4e4e_5radius"
+                        android:onClick="onClick"
+                        android:text="批量记工"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/button_size" />
+
+                    <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+                        android:id="@+id/recordSingleBtn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_below="@id/recordMultipartBtn"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/borrow_btn_foreman"
+                        android:background="@drawable/draw_sk_eb4e4e_5radius"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick"
+                        android:text="记一笔工"
+                        android:textColor="@color/color_eb4e4e"
+                        android:textSize="@dimen/button_size" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView style="@style/item_background" />
+
+            <com.jizhi.jongg.widget.LineGridView
+                android:id="@+id/navigation_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:listSelector="#00000000"
+                android:numColumns="3" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_white_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_f1f1f1"
+        android:paddingBottom="5dip"
+        android:paddingLeft="16dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/gray_cccccc"
+        android:textSize="@dimen/catalog_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/gray_background"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:background="@color/gray_f1f1f1"
+        android:visibility="gone"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50">
+
+        <RelativeLayout
+            android:id="@id/background"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/y35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/first_name_size"
+                android:visibility="gone" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/head_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y36"
+            android:layout_alignTop="@id/background"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_toRightOf="@id/background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/telph"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/gray_666666"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/red_telphone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="联系他"
+                android:textColor="@color/gray_99999"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/layout"
+            android:layout_alignTop="@id/layout"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:layout_toLeftOf="@id/layout"
+            android:background="@color/gray_dbdbdb"></View>
+    </RelativeLayout>
+
+
+</LinearLayout>

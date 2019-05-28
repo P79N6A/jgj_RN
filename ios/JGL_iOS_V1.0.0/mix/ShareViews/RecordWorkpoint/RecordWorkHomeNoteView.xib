@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordWorkHomeNoteView">
+            <connections>
+                <outlet property="alreadyRecordButton" destination="S1C-Go-qBP" id="l24-6c-7xq"/>
+                <outlet property="alreadyRecordView" destination="hMF-Ts-KEx" id="Gza-Ug-Zv0"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="LBN-nn-Xdn"/>
+                <outlet property="noRecordView" destination="XYk-lD-kAf" id="elz-nM-6Wk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMF-Ts-KEx" userLabel="AlreadyRecordView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1C-Go-qBP">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="recordNoteBtnClick:" destination="-1" eventType="touchUpInside" id="QUh-5M-R3B"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="S1C-Go-qBP" firstAttribute="top" secondItem="hMF-Ts-KEx" secondAttribute="top" id="JJI-oT-1DV"/>
+                        <constraint firstAttribute="trailing" secondItem="S1C-Go-qBP" secondAttribute="trailing" id="JdH-CE-Msm"/>
+                        <constraint firstAttribute="bottom" secondItem="S1C-Go-qBP" secondAttribute="bottom" id="Zo0-ON-KiI"/>
+                        <constraint firstItem="S1C-Go-qBP" firstAttribute="leading" secondItem="hMF-Ts-KEx" secondAttribute="leading" id="f4t-5N-jap"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYk-lD-kAf" userLabel="NoRecordView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                    <subviews>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9u-3v-ZeH">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                            <inset key="titleEdgeInsets" minX="-69" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="recordNoteBtnClick:" destination="-1" eventType="touchUpInside" id="Y0E-Eq-FNu"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="马上记一笔工" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-vp-9eI">
+                            <rect key="frame" x="50" y="10" width="100" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Blb-8v-tx7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点工 / 包工 / 借支 / 结算" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-I5-fwB">
+                            <rect key="frame" x="162" y="10" width="148" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="WAP-vp-9eI" secondAttribute="bottom" constant="10" id="4DA-Ci-bpx"/>
+                        <constraint firstItem="5Fu-I5-fwB" firstAttribute="top" secondItem="XYk-lD-kAf" secondAttribute="top" constant="10" id="9aG-Mc-Spt"/>
+                        <constraint firstItem="WAP-vp-9eI" firstAttribute="centerX" secondItem="XYk-lD-kAf" secondAttribute="centerX" constant="-60" id="GvG-UQ-wP6"/>
+                        <constraint firstAttribute="trailing" secondItem="5Fu-I5-fwB" secondAttribute="trailing" constant="10" id="Ke0-0W-bOM"/>
+                        <constraint firstItem="Z9u-3v-ZeH" firstAttribute="leading" secondItem="XYk-lD-kAf" secondAttribute="leading" id="MYf-zr-hv1"/>
+                        <constraint firstItem="Z9u-3v-ZeH" firstAttribute="top" secondItem="XYk-lD-kAf" secondAttribute="top" id="Uag-B4-XP9"/>
+                        <constraint firstItem="WAP-vp-9eI" firstAttribute="top" secondItem="XYk-lD-kAf" secondAttribute="top" constant="10" id="Yts-25-58B"/>
+                        <constraint firstAttribute="bottom" secondItem="Z9u-3v-ZeH" secondAttribute="bottom" id="fl2-6y-vYJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Z9u-3v-ZeH" secondAttribute="trailing" id="gxG-eJ-z4Q"/>
+                        <constraint firstAttribute="bottom" secondItem="5Fu-I5-fwB" secondAttribute="bottom" constant="10" id="hwG-Tt-cw8"/>
+                        <constraint firstItem="5Fu-I5-fwB" firstAttribute="leading" secondItem="WAP-vp-9eI" secondAttribute="trailing" constant="12" id="z9K-pJ-pnj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hMF-Ts-KEx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1E2-Aj-alk"/>
+                <constraint firstItem="XYk-lD-kAf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4uY-xe-Gkf"/>
+                <constraint firstAttribute="trailing" secondItem="XYk-lD-kAf" secondAttribute="trailing" id="5is-u9-mxB"/>
+                <constraint firstAttribute="bottom" secondItem="hMF-Ts-KEx" secondAttribute="bottom" id="8rG-Ys-kBb"/>
+                <constraint firstItem="hMF-Ts-KEx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Unn-07-UzJ"/>
+                <constraint firstAttribute="trailing" secondItem="hMF-Ts-KEx" secondAttribute="trailing" id="g6z-M2-S4z"/>
+                <constraint firstItem="XYk-lD-kAf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="i5T-Ad-qzc"/>
+                <constraint firstAttribute="bottom" secondItem="XYk-lD-kAf" secondAttribute="bottom" id="oek-yC-zhf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="478" y="-26"/>
+        </view>
+    </objects>
+</document>

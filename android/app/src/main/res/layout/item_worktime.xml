@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dip">
+
+    <RelativeLayout
+        android:id="@+id/rea"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/draw_rectangle_gray_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="text"
+                android:textColor="@color/gray_333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="(1个工)"
+                android:textColor="@color/gray_666666"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

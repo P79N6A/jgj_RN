@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJInputContentView">
+            <connections>
+                <outlet property="addButton" destination="auM-Q3-fH6" id="zAv-bX-Qfn"/>
+                <outlet property="containNameView" destination="oLC-Jw-wme" id="bx3-kU-hMg"/>
+                <outlet property="containView" destination="iN0-l3-epB" id="fvG-dB-0II"/>
+                <outlet property="inputTagTextField" destination="bfd-zq-rHe" id="75R-Sn-pls"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auM-Q3-fH6">
+                    <rect key="frame" x="283" y="20" width="82" height="35"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.29803921570000003" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="3Ze-Sb-WaG"/>
+                        <constraint firstAttribute="height" constant="35" id="o25-ZQ-4PV"/>
+                    </constraints>
+                    <state key="normal" title="添加"/>
+                    <connections>
+                        <action selector="addButtonPressed:" destination="-1" eventType="touchUpInside" id="ip1-SI-f7h"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLC-Jw-wme">
+                    <rect key="frame" x="10" y="20" width="263" height="35"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入你对他的印象(最多6个字)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfd-zq-rHe" customClass="LengthLimitTextField">
+                            <rect key="frame" x="6" y="0.0" width="257" height="35"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bfd-zq-rHe" firstAttribute="top" secondItem="oLC-Jw-wme" secondAttribute="top" id="2en-oh-uVB"/>
+                        <constraint firstItem="bfd-zq-rHe" firstAttribute="leading" secondItem="oLC-Jw-wme" secondAttribute="leading" constant="6" id="Zui-cY-3qG"/>
+                        <constraint firstAttribute="bottom" secondItem="bfd-zq-rHe" secondAttribute="bottom" id="kP6-F4-d9f"/>
+                        <constraint firstAttribute="trailing" secondItem="bfd-zq-rHe" secondAttribute="trailing" id="wbo-ex-pEW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="auM-Q3-fH6" firstAttribute="leading" secondItem="oLC-Jw-wme" secondAttribute="trailing" constant="10" id="5z1-sX-qJa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="auM-Q3-fH6" secondAttribute="trailing" constant="10" id="FaW-fN-9Sa"/>
+                <constraint firstItem="oLC-Jw-wme" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="gkQ-be-gQI"/>
+                <constraint firstItem="auM-Q3-fH6" firstAttribute="centerY" secondItem="oLC-Jw-wme" secondAttribute="centerY" id="lWg-Kk-yEE"/>
+                <constraint firstItem="oLC-Jw-wme" firstAttribute="height" secondItem="auM-Q3-fH6" secondAttribute="height" id="nBc-s4-R20"/>
+                <constraint firstItem="oLC-Jw-wme" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="qpX-PM-4Fg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

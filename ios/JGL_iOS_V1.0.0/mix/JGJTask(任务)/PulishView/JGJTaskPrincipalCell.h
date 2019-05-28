@@ -1,0 +1,15 @@
+//
+//  JGJTaskPrincipalCell.h
+//  mix
+//
+//  Created by yj on 2017/5/31.
+//  Copyright © 2017年 JiZhi. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface JGJTaskPrincipalCell : UITableViewCell
+
+@property (nonatomic, strong) JGJSynBillingModel *principalModel;
+
+@end

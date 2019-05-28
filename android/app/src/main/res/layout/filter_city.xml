@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="16dip"
+            android:text="@string/derect_select"
+            android:textColor="@color/gray_cccccc"
+            android:textSize="@dimen/text_size_12" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="6dip"
+            android:background="@color/gray_dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/provinceListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+            <ListView
+                android:id="@+id/cityListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rea_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="5dip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/draw_radius_guide_gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_5dp"
+                android:src="@drawable/search_a" />
+
+            <com.hcs.cityslist.widget.ClearEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@null"
+                android:hint="@string/keywordhint"
+                android:lines="1"
+                android:maxLength="10"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="@color/gray_a0a0a0"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/searchListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

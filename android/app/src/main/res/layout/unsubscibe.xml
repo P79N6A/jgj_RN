@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/un_sub_tips" />
+
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="50dp"
+                 android:background="@color/color_f1f1f1"
+                 android:gravity="center_vertical"
+                 android:paddingLeft="20dp"
+                 android:paddingRight="20dp"
+                 android:text="@string/unsubscribe_tips1"
+                 android:textColor="@color/color_999999"
+                 android:textSize="@dimen/text_size_12" />
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:text="重要提醒" />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:layout_marginTop="15dp"
+                     android:background="@drawable/bg_fdf1e0_10radius"
+                     android:paddingBottom="20dp"
+                     android:paddingLeft="15dp"
+                     android:paddingRight="15dp">
+
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:text="@string/unsubscribe_tips9"
+                         android:textColor="#f18215" />
+
+                 </RelativeLayout>
+
+             </RelativeLayout>-->
+
+            <!--     <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:paddingLeft="24dp"
+                     android:paddingRight="10dp">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="36dp"
+                         android:drawableLeft="@drawable/star_icon"
+                         android:drawablePadding="10dp"
+                         android:text="@string/unsubscribe_tips2"
+                         android:textColor="@color/color_eb4e4e"
+                         android:textSize="17sp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:text="@string/unsubscribe_tips3"
+                         android:textColor="@color/color_333333"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="36dp"
+                         android:drawableLeft="@drawable/star_icon"
+                         android:drawablePadding="10dp"
+                         android:text="@string/unsubscribe_tips4"
+                         android:textColor="@color/color_eb4e4e"
+                         android:textSize="17sp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:text="@string/unsubscribe_tips5"
+                         android:textColor="@color/color_333333"
+                         android:textSize="15sp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="36dp"
+                         android:drawableLeft="@drawable/star_icon"
+                         android:drawablePadding="10dp"
+                         android:text="@string/unsubscribe_tips6"
+                         android:textColor="@color/color_eb4e4e"
+                         android:textSize="17sp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:text="@string/unsubscribe_tips7"
+                         android:textColor="@color/color_333333"
+                         android:textSize="15sp" />
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="120dp"
+                     android:layout_marginTop="36dp"
+                     android:background="#fdf1e0"
+                     android:gravity="center_horizontal"
+                     android:orientation="vertical"
+                     android:paddingLeft="20dp"
+                     android:paddingRight="20dp">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="15dp"
+                         android:drawableLeft="@drawable/yellow_waring"
+                         android:drawablePadding="5dp"
+                         android:text="@string/unsubscribe_tips8"
+                         android:textColor="#f18215"
+                         android:textSize="12sp" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="15dp"
+                         android:lineSpacingExtra="5dp"
+                         android:text="@string/unsubscribe_tips9"
+                         android:textColor="#f18215"
+                         android:textSize="12sp" />
+
+                 </LinearLayout>-->
+
+
+            <TextView
+                android:id="@+id/unSubscribeReasonText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="注销原因"
+                android:textColor="@color/color_333333"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <com.jizhi.jongg.widget.WrapListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/draw_bg_f1f1f1_sk_dbdbdb_5radius"
+                    android:divider="@null" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <View style="@style/line" />
+
+    <FrameLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/reqeustUnsubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/red_button_height"
+            android:background="@drawable/draw_sk_eb4e4e_2radius"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/request_unsubscribe"
+            android:textColor="@color/color_eb4e4e" />
+
+        <TextView
+            android:id="@+id/applying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

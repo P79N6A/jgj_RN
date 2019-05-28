@@ -1,0 +1,17 @@
+//
+//  JGJQuickCreatChatHeaderView.h
+//  mix
+//
+//  Created by yj on 2018/12/12.
+//  Copyright © 2018年 JiZhi. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#import "JGJQuickCreatChatModel.h"
+
+@interface JGJQuickCreatChatHeaderView : UIView
+
+@property (nonatomic, strong) JGJQuickCreatChatHeaderViewModel *headerViewModel;
+
+@end

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./ipa-build .;./ipa-push -d .

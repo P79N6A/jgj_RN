@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="21dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.hcs.cityslist.widget.ClearEditText
+                android:id="@+id/telEdit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:nextFocusForward="@+id/codeEdit"
+                android:background="@drawable/editor"
+                android:drawableLeft="@drawable/login_number"
+                android:drawablePadding="15dp"
+                android:gravity="left|center_vertical"
+                android:hint="@string/login_pwd"
+                android:maxLength="11"
+                android:numeric="integer"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/getCodeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sk_draw_white_5radius"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/get_code"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <com.hcs.cityslist.widget.ClearEditText
+            android:id="@+id/codeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/editor"
+            android:drawableLeft="@drawable/login_password"
+            android:drawablePadding="15dp"
+            android:gravity="center_vertical"
+            android:hint="@string/input_news_code"
+            android:maxLength="4"
+            android:numeric="integer"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/bindBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/draw_dis_app_btncolor_5radius"
+            android:clickable="false"
+            android:onClick="onClick"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/almanac_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_almanac_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+                android:id="@+id/rea_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_back_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/draw_rectangle_yellow_back_toady"
+                    android:includeFontPadding="false"
+                    android:padding="3dp"
+                    android:text="@string/back_today"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_solar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/solar"
+                    android:textColor="@color/yellow_bd7911"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/icon_almanan_calender" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="5dip"
+                    android:src="@drawable/icon_almanan_bottom" />
+            </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="17"
+                    android:textColor="@color/balck_4b4b4b"
+                    android:textSize="87sp" />
+
+                <TextView
+                    android:id="@+id/tv_jieqi"
+                    android:layout_width="20dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_toRightOf="@id/tv_date"
+                    android:background="@drawable/almanan_jieqi_bg"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="夏至"
+                    android:textColor="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/img_arrows_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dip"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/selector_almannac_arrows_left" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/img_arrows_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dip"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/selector_almannac_arrows_right" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="星期天"
+                android:textColor="@color/balck_4b4b4b"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_lunar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/almanac_lunar"
+                    android:textColor="@color/app_color"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@id/tv_lunar"
+                    android:layout_alignRight="@id/tv_lunar"
+                    android:background="@color/yellow_f4e9d1" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/icon_almanac_bg_bottom"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                android:paddingLeft="18dip"
+                android:paddingRight="18dip"
+                android:paddingTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp">
+
+                    <ImageView
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:src="@drawable/icon_yi" />
+
+                    <com.jizhi.jongg.widget.MultipleTextViewGroup xmlns:my="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/mul_yi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:textStyle="bold"
+                        my:textColor="@color/gray_333333"
+                        my:textLineMargin="2dp"
+                        my:textPaddingBottom="0dp"
+                        my:textPaddingLeft="2dp"
+                        my:textPaddingRight="2dp"
+                        my:textPaddingTop="0dp"
+                        my:textSize="@dimen/text_size_14"
+                        my:textWordMargin="@dimen/margin_5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dp">
+
+                    <ImageView
+                        android:layout_width="25dip"
+                        android:layout_height="25dip"
+                        android:src="@drawable/icon_ji" />
+
+                    <com.jizhi.jongg.widget.MultipleTextViewGroup xmlns:my="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/mul_ji"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:textStyle="bold"
+                        my:textColor="@color/gray_333333"
+                        my:textLineMargin="2dp"
+                        my:textPaddingBottom="0dp"
+                        my:textPaddingLeft="2dp"
+                        my:textPaddingRight="2dp"
+                        my:textPaddingTop="0dp"
+                        my:textSize="@dimen/text_size_14"
+                        my:textWordMargin="@dimen/margin_5dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/yellow_f4e9d1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="诸神方位"
+                    android:textColor="@color/yellow_bd7911"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_xs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xs"
+                        android:textColor="@color/gray_333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_fs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="28dip"
+                        android:text="@string/fs"
+                        android:textColor="@color/gray_333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/cs"
+                        android:textColor="@color/gray_333333"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/icon_almanac_bg_bottom"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_sc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="28dip"
+                        android:ems="1"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/sc"
+                        android:textColor="@color/yellow_bd7911"
+                        android:textSize="12sp" />
+
+                    <com.jizhi.jongg.widget.MultipleTextViewGroup xmlns:my="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/mul_sc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_toRightOf="@+id/tv_sc"
+                        android:gravity="center_vertical"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        my:textColor="@color/gray_333333"
+                        my:textLineMargin="@dimen/margin_5dp"
+                        my:textPaddingBottom="1dp"
+                        my:textPaddingLeft="2dp"
+                        my:textPaddingRight="2dp"
+                        my:textPaddingTop="1dp"
+                        my:textSize="@dimen/text_size_14"
+                        my:textWordMargin="@dimen/margin_5dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="2dp">
+
+                    <TextView
+                        android:id="@+id/tv_jx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="28dip"
+                        android:ems="1"
+                        android:lineSpacingExtra="2dp"
+                        android:text="@string/jx"
+                        android:textColor="@color/yellow_bd7911"
+                        android:textSize="12sp" />
+
+                    <com.jizhi.jongg.widget.MultipleTextViewGroup xmlns:my="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/mul_jx"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_toRightOf="@+id/tv_jx"
+                        android:gravity="center_vertical"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        my:textColor="@color/gray_333333"
+                        my:textLineMargin="@dimen/margin_5dp"
+                        my:textPaddingBottom="1dp"
+                        my:textPaddingLeft="2dp"
+                        my:textPaddingRight="2dp"
+                        my:textPaddingTop="1dp"
+                        my:textSize="@dimen/text_size_14"
+                        my:textWordMargin="@dimen/margin_5dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--<include layout="@layout/layout_recommend" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/draw_white_5radius"
+    android:gravity="center_horizontal"
+    android:minHeight="160dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/realName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:maxLength="6"
+            android:textColor="@color/app_color"
+            android:textSize="20sp" />
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/closeBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/dialog_close" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/callPhoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/realName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/draw_sk_666666_10radius"
+            android:drawableLeft="@drawable/tel_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/draw_bg_f5f5f5_5radius"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp" />
+
+    <LinearLayout
+        android:id="@+id/synchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gray_bottom_round_right"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/requestSynchPro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="要求同步其他项目"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/cognateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/synchCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="要求同步项目"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/correlation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关联到本组"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

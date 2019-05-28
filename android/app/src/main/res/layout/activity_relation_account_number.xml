@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_ebebeb"
+    android:orientation="vertical">
+    <include layout="@layout/head_only_title" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ImageView
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_wechat_logo"
+            style="@style/imageValue" />
+        <TextView
+            android:id="@+id/menu"
+            android:layout_marginLeft="10dp"
+            android:text="微信"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="@color/color_000000" />
+
+        <TextView
+            android:id="@+id/tv_state_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/color_999999"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_marginLeft="12dp"
+            android:id="@+id/clickIcon"
+            style="@style/imageValue" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gray_height"
+        android:background="@color/color_f1f1f1"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/itemDiver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_dbdbdb"
+        android:visibility="gone" />
+
+
+</LinearLayout>

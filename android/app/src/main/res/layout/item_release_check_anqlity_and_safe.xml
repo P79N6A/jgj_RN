@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rea_check_people"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:paddingLeft="10dp"
+            android:text="检查执行人"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/ck_check"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center|right"
+            android:paddingLeft="10dp"
+            android:button="@drawable/check_box_selector"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/itemDiver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_dbdbdb"
+        android:visibility="visible"/>
+</RelativeLayout>

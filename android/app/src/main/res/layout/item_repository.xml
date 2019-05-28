@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_white_gray"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/floder_icon"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/houtui"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_size_15" />
+
+    <View
+        android:id="@+id/itemDiver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb" />
+
+</LinearLayout>

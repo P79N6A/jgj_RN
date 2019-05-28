@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/firstPositionTips"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center"
+        android:text="为了保证你的资金安全,最多只能添加三个提现账户"
+        android:textColor="#F18215" />
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/payIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/zhifubao_big_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/payAccountInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="dealmoon@163.com"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/default_title_size" />
+
+            <TextView
+                android:id="@+id/payAccountState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="正在使用"
+                android:textColor="@color/color_b9b9b9"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/deleteAccountBtn"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:background="@drawable/draw_sk_666666_3radius"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <Button
+        android:id="@+id/addAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/draw_app_btncolor_5radius"
+        android:gravity="center"
+        android:text="添加提现账户"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_size" />
+
+
+</LinearLayout>

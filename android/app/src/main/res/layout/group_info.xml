@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <include layout="@layout/search_edit_layout" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:divider="@color/color_dbdbdb"
+            android:dividerHeight="1px" />
+
+        <LinearLayout
+            android:id="@+id/defaultLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/no_data" />
+
+            <TextView
+                android:id="@+id/defaultDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="10dp"
+                android:text="你还未创建任何班组"
+                android:textColor="@color/color_b9b9b9"
+                android:textSize="@dimen/default_title_size" />
+
+            <TextView
+                android:id="@+id/defaultDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="无法了解工钱与借支情况"
+                android:textColor="@color/color_333333"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+                    android:id="@+id/left_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:background="@drawable/sk_gy_333333_3radius"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="记工案例"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/button_size" />
+
+                <Button
+                    android:id="@+id/right_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/margin_20dp"
+                    android:background="@drawable/draw_app_btncolor_5radius"
+                    android:drawableLeft="@drawable/white_add_icon"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/create_group"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/button_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saveProjectLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/color_fafafa"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <com.hcs.cityslist.widget.ClearEditText
+                android:id="@+id/newProjectEdit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/editor"
+                android:hint="@string/projectnamehint"
+                android:maxLength="20"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/saveProBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sk_dbdbdb_bg_white_5radius"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/save"
+                android:textColor="@color/color_333333" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_red_button_layout_new" />
+
+</LinearLayout>

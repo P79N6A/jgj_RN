@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJShareMenuView">
+            <connections>
+                <outlet property="cancelBtn" destination="WEf-Wr-kjz" id="2Gz-Ub-cPW"/>
+                <outlet property="contentBtnMenuView" destination="MtE-kr-6PF" id="Wmt-Gl-5Y1"/>
+                <outlet property="contentDetailView" destination="AU3-YP-BAu" id="q5x-gy-sin"/>
+                <outlet property="contentView" destination="9MI-OW-5AS" id="R25-jb-hwG"/>
+                <outlet property="savePhotoBtn" destination="zzk-DK-gHM" id="exQ-4H-yXD"/>
+                <outlet property="savePhotoBtnH" destination="t8A-3E-9gF" id="GKf-ST-LPB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9MI-OW-5AS">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AU3-YP-BAu">
+                    <rect key="frame" x="0.0" y="404" width="414" height="263"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEf-Wr-kjz">
+                            <rect key="frame" x="10" y="198" width="394" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fW4-7U-o69"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnPressed:" destination="-1" eventType="touchUpInside" id="5lf-Iz-agK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzk-DK-gHM">
+                            <rect key="frame" x="10" y="125" width="394" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="t8A-3E-9gF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="保存图片到相册">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="savePhotoBtnPressed:" destination="-1" eventType="touchUpInside" id="P4S-Za-QWg"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtE-kr-6PF">
+                            <rect key="frame" x="10" y="0.0" width="394" height="118"/>
+                            <subviews>
+                                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2m-Bk-9RD" userLabel="微信好友">
+                                    <rect key="frame" x="0.0" y="25" width="98.5" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="4JU-pU-vQ2"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" image="RecordWorkpoints_wx"/>
+                                    <connections>
+                                        <action selector="handleShareButtonAction:" destination="-1" eventType="touchUpInside" id="xhe-DU-A5X"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq7-fC-nRS">
+                                    <rect key="frame" x="27" y="66" width="45" height="26.5"/>
+                                    <string key="text">分享给
+微信好友     </string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t15-k5-yh7" userLabel="朋友圈">
+                                    <rect key="frame" x="98.5" y="25" width="98.5" height="60"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" image="JGJWXChat"/>
+                                    <connections>
+                                        <action selector="handleShareButtonAction:" destination="-1" eventType="touchUpInside" id="sVZ-qS-9HX"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAh-RT-Dup">
+                                    <rect key="frame" x="119.5" y="66" width="56.5" height="26.5"/>
+                                    <string key="text">分享到
+微信朋友圈               </string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6L8-44-G13" userLabel="QQ" customClass="TYButton">
+                                    <rect key="frame" x="197" y="25" width="98.5" height="60"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-27" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" image="RecordWorkpoints_QQ">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="handleShareButtonAction:" destination="-1" eventType="touchUpInside" id="RXa-ti-jtS"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dti-0w-7dq">
+                                    <rect key="frame" x="226.5" y="66" width="40" height="26.5"/>
+                                    <string key="text">分享给
+QQ好友       </string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puu-gy-63Z" userLabel="QQZone">
+                                    <rect key="frame" x="295.5" y="25" width="98.5" height="60"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" image="JGJQQZone"/>
+                                    <connections>
+                                        <action selector="handleShareButtonAction:" destination="-1" eventType="touchUpInside" id="PtE-ER-129"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksi-L0-n7Y">
+                                    <rect key="frame" x="325" y="66" width="40" height="26.5"/>
+                                    <string key="text">分享到
+QQ空间     </string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="t15-k5-yh7" firstAttribute="leading" secondItem="G2m-Bk-9RD" secondAttribute="trailing" id="0dz-UW-hLR"/>
+                                <constraint firstItem="puu-gy-63Z" firstAttribute="leading" secondItem="6L8-44-G13" secondAttribute="trailing" id="24B-to-2UJ"/>
+                                <constraint firstItem="bq7-fC-nRS" firstAttribute="centerX" secondItem="G2m-Bk-9RD" secondAttribute="centerX" id="2sG-3G-I6x"/>
+                                <constraint firstItem="G2m-Bk-9RD" firstAttribute="leading" secondItem="MtE-kr-6PF" secondAttribute="leading" id="3gT-vt-afd"/>
+                                <constraint firstItem="puu-gy-63Z" firstAttribute="height" secondItem="G2m-Bk-9RD" secondAttribute="height" id="5oS-GB-7OD"/>
+                                <constraint firstItem="dti-0w-7dq" firstAttribute="centerX" secondItem="6L8-44-G13" secondAttribute="centerX" id="7AY-Xx-Rc9"/>
+                                <constraint firstItem="G2m-Bk-9RD" firstAttribute="width" secondItem="MtE-kr-6PF" secondAttribute="width" multiplier="0.25" id="9iU-FS-hh5"/>
+                                <constraint firstItem="bq7-fC-nRS" firstAttribute="top" secondItem="MtE-kr-6PF" secondAttribute="top" constant="66" id="Ftu-ic-QNT"/>
+                                <constraint firstItem="ksi-L0-n7Y" firstAttribute="top" secondItem="bq7-fC-nRS" secondAttribute="top" id="HPQ-e0-JjW"/>
+                                <constraint firstItem="G2m-Bk-9RD" firstAttribute="top" secondItem="MtE-kr-6PF" secondAttribute="top" constant="25" id="Llp-Hl-GI3"/>
+                                <constraint firstItem="iAh-RT-Dup" firstAttribute="centerX" secondItem="t15-k5-yh7" secondAttribute="centerX" id="Nse-hJ-ShU"/>
+                                <constraint firstItem="ksi-L0-n7Y" firstAttribute="centerX" secondItem="puu-gy-63Z" secondAttribute="centerX" id="P71-Y5-qTF"/>
+                                <constraint firstItem="puu-gy-63Z" firstAttribute="top" secondItem="G2m-Bk-9RD" secondAttribute="top" id="PCJ-gS-efv"/>
+                                <constraint firstItem="6L8-44-G13" firstAttribute="height" secondItem="G2m-Bk-9RD" secondAttribute="height" id="UO2-C1-9Xr"/>
+                                <constraint firstItem="t15-k5-yh7" firstAttribute="height" secondItem="G2m-Bk-9RD" secondAttribute="height" id="V33-U2-F6M"/>
+                                <constraint firstItem="iAh-RT-Dup" firstAttribute="top" secondItem="bq7-fC-nRS" secondAttribute="top" id="XIf-3H-rhL"/>
+                                <constraint firstAttribute="height" constant="118" id="fDY-9n-6x1"/>
+                                <constraint firstItem="6L8-44-G13" firstAttribute="width" secondItem="G2m-Bk-9RD" secondAttribute="width" id="fMZ-mS-3qO"/>
+                                <constraint firstItem="dti-0w-7dq" firstAttribute="top" secondItem="bq7-fC-nRS" secondAttribute="top" id="gxn-1h-t5M"/>
+                                <constraint firstItem="t15-k5-yh7" firstAttribute="top" secondItem="G2m-Bk-9RD" secondAttribute="top" id="gzF-Km-m0c"/>
+                                <constraint firstItem="puu-gy-63Z" firstAttribute="width" secondItem="G2m-Bk-9RD" secondAttribute="width" id="iQg-5I-Rxw"/>
+                                <constraint firstItem="6L8-44-G13" firstAttribute="leading" secondItem="t15-k5-yh7" secondAttribute="trailing" id="p6o-93-vga"/>
+                                <constraint firstItem="t15-k5-yh7" firstAttribute="width" secondItem="G2m-Bk-9RD" secondAttribute="width" id="ro0-GQ-gaf"/>
+                                <constraint firstItem="6L8-44-G13" firstAttribute="top" secondItem="G2m-Bk-9RD" secondAttribute="top" id="spc-db-E6e"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="MtE-kr-6PF" secondAttribute="trailing" constant="10" id="ASa-cb-mJJ"/>
+                        <constraint firstAttribute="bottom" secondItem="WEf-Wr-kjz" secondAttribute="bottom" constant="15" id="D1j-k0-Fhz"/>
+                        <constraint firstItem="MtE-kr-6PF" firstAttribute="leading" secondItem="AU3-YP-BAu" secondAttribute="leading" constant="10" id="FoE-2j-ewt"/>
+                        <constraint firstItem="WEf-Wr-kjz" firstAttribute="top" secondItem="zzk-DK-gHM" secondAttribute="bottom" constant="23" id="PR8-hD-JBP"/>
+                        <constraint firstAttribute="trailing" secondItem="WEf-Wr-kjz" secondAttribute="trailing" constant="10" id="VLM-Un-Csh"/>
+                        <constraint firstAttribute="trailing" secondItem="zzk-DK-gHM" secondAttribute="trailing" constant="10" id="Xme-4G-WCA"/>
+                        <constraint firstItem="zzk-DK-gHM" firstAttribute="leading" secondItem="AU3-YP-BAu" secondAttribute="leading" constant="10" id="fQo-xs-MFO"/>
+                        <constraint firstItem="WEf-Wr-kjz" firstAttribute="leading" secondItem="AU3-YP-BAu" secondAttribute="leading" constant="10" id="mKr-CG-aiJ"/>
+                        <constraint firstItem="zzk-DK-gHM" firstAttribute="top" secondItem="MtE-kr-6PF" secondAttribute="bottom" constant="7" id="ptW-Ke-5CH"/>
+                        <constraint firstAttribute="height" constant="263" id="yZS-bG-QLl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AU3-YP-BAu" secondAttribute="bottom" id="9df-2c-4VB"/>
+                <constraint firstAttribute="trailing" secondItem="AU3-YP-BAu" secondAttribute="trailing" id="p04-L5-OVB"/>
+                <constraint firstItem="AU3-YP-BAu" firstAttribute="leading" secondItem="9MI-OW-5AS" secondAttribute="leading" id="yY2-oE-qSy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="JKP-a3-p1l"/>
+            <point key="canvasLocation" x="25.600000000000001" y="50.824587706146929"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="JGJQQZone" width="39" height="39"/>
+        <image name="JGJWXChat" width="39" height="39"/>
+        <image name="RecordWorkpoints_QQ" width="21.5" height="23"/>
+        <image name="RecordWorkpoints_wx" width="32" height="26"/>
+    </resources>
+</document>

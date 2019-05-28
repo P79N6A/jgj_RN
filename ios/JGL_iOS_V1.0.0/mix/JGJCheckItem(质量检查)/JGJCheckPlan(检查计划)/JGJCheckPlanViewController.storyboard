@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Check Plan View Controller-->
+        <scene sceneID="JcE-QR-oc9">
+            <objects>
+                <viewController storyboardIdentifier="JGJCheckPlanVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U53-Ox-s9c" customClass="JGJCheckPlanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Enw-s1-Dgd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q6t-Ar-sgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OwV-do-CxP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGY-XU-lai">
+                                <rect key="frame" x="0.0" y="30" width="375" height="573"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJc-mg-no4">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tJc-mg-no4" firstAttribute="leading" secondItem="OwV-do-CxP" secondAttribute="leading" id="Cs7-Lk-Q8c"/>
+                            <constraint firstItem="tJc-mg-no4" firstAttribute="top" secondItem="qGY-XU-lai" secondAttribute="bottom" id="GdZ-dK-Vz6"/>
+                            <constraint firstItem="qGY-XU-lai" firstAttribute="top" secondItem="Enw-s1-Dgd" secondAttribute="bottom" constant="10" id="Meo-wS-IAu"/>
+                            <constraint firstAttribute="trailing" secondItem="qGY-XU-lai" secondAttribute="trailing" id="UZa-ey-Mz9"/>
+                            <constraint firstItem="qGY-XU-lai" firstAttribute="leading" secondItem="OwV-do-CxP" secondAttribute="leading" id="Vas-hA-yfd"/>
+                            <constraint firstAttribute="trailing" secondItem="tJc-mg-no4" secondAttribute="trailing" id="biA-Gi-TFJ"/>
+                            <constraint firstItem="Q6t-Ar-sgL" firstAttribute="top" secondItem="tJc-mg-no4" secondAttribute="bottom" id="ito-qV-yRb"/>
+                            <constraint firstItem="Q6t-Ar-sgL" firstAttribute="top" secondItem="qGY-XU-lai" secondAttribute="bottom" constant="64" id="j0v-Pt-snd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bootmBaseView" destination="tJc-mg-no4" id="pFM-mE-zJl"/>
+                        <outlet property="bottomConstance" destination="j0v-Pt-snd" id="7tx-5n-6Xf"/>
+                        <outlet property="tabelView" destination="qGY-XU-lai" id="Uwm-un-XvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5H-gn-qxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="150.67466266866569"/>
+        </scene>
+    </scenes>
+</document>

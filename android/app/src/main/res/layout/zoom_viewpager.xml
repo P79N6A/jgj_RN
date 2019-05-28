@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:fitsSystemWindows="true">
+
+    <!-- uk.co.senab.photoview.PViewPager -->
+
+    <uk.co.senab.photoview.PViewPager
+        android:id="@+id/frashowimgs_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/showimgs_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_edit_5radius"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

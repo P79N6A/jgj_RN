@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_8_radius"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:id="@+id/changeTeamInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:orientation="horizontal">
+
+            <com.jizhi.jlongg.groupimageviews.NineGroupChatGridImageView
+                android:id="@+id/teamHeads"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:id="@+id/changeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:text="新建/切换项目"
+                    android:textColor="@color/color_666666" />
+
+                <View
+                    android:id="@+id/otherGroupRedCircle"
+                    style="@style/red_circle"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="-6dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/houtui" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/changeLayout"
+                android:layout_toRightOf="@id/teamHeads"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/is_myself_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/icon_home_my_team" />
+
+                    <ImageView
+                        android:id="@+id/proxyFlag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/proName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:lines="1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View style="@style/line" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp">
+
+            <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+                android:id="@+id/teamMessageLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/draw_bg_f1f1f1_5radius"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/main_group_message_icon"
+                    android:gravity="center_vertical"
+                    android:text="群聊消息"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/teamMessageCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:minHeight="18dp"
+                    android:minWidth="18dp"
+                    android:textStyle="bold" />
+
+            </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+            <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+                android:id="@+id/workReplyLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/draw_bg_f1f1f1_5radius"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/group_reply"
+                    android:gravity="center_vertical"
+                    android:text="工作回复"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/workReplyCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:minHeight="18dp"
+                    android:minWidth="18dp"
+                    android:textStyle="bold" />
+
+            </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+        </LinearLayout>
+
+        <com.jizhi.jongg.widget.WrapGridview
+            android:id="@+id/messageGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="30dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/isClosedIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+

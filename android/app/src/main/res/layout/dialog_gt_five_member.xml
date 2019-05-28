@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5dip"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/color_666666"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/redBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_bottom_btn_height"
+        android:background="@drawable/dialog_bottom_style"
+        android:text="我知道了"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size" />
+</LinearLayout>

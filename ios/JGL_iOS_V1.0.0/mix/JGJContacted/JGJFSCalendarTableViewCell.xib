@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16E144f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="202" id="KGk-i7-Jjw" customClass="JGJFSCalendarTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="201"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Io-z7-olv" customClass="FSCalendar">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="201"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Io-z7-olv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fwn-yE-fjN"/>
+                    <constraint firstAttribute="trailing" secondItem="0Io-z7-olv" secondAttribute="trailing" id="Go4-BJ-fe7"/>
+                    <constraint firstAttribute="bottom" secondItem="0Io-z7-olv" secondAttribute="bottom" id="Rje-ox-K5u"/>
+                    <constraint firstItem="0Io-z7-olv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XyR-lg-aLK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DayCalendar" destination="0Io-z7-olv" id="583-ao-VFM"/>
+            </connections>
+            <point key="canvasLocation" x="82" y="131"/>
+        </tableViewCell>
+    </objects>
+</document>

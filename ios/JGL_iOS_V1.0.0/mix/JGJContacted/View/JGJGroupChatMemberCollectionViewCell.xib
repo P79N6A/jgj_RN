@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JGJGroupChatMemberCollectionViewCell" id="fnl-P9-GMT" customClass="JGJGroupChatMemberCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmH-Wz-Q6f">
+                        <rect key="frame" x="10" y="5" width="53" height="44"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="TJ3-LJ-QQl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TJ3-LJ-QQl"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ol-Rn-rQw">
+                        <rect key="frame" x="0.0" y="55" width="73" height="18"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Rfg-f5-jsK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nmH-Wz-Q6f" firstAttribute="top" secondItem="fnl-P9-GMT" secondAttribute="top" constant="5" id="CpS-EX-CXX"/>
+                <constraint firstItem="4Ol-Rn-rQw" firstAttribute="top" secondItem="nmH-Wz-Q6f" secondAttribute="bottom" constant="6" id="PfT-th-1Pa"/>
+                <constraint firstAttribute="trailing" secondItem="nmH-Wz-Q6f" secondAttribute="trailing" constant="10" id="SJT-z5-Ybm"/>
+                <constraint firstItem="4Ol-Rn-rQw" firstAttribute="leading" secondItem="fnl-P9-GMT" secondAttribute="leading" id="aNy-9d-pFf"/>
+                <constraint firstAttribute="trailing" secondItem="4Ol-Rn-rQw" secondAttribute="trailing" id="s5k-iT-dbk"/>
+                <constraint firstAttribute="bottom" secondItem="4Ol-Rn-rQw" secondAttribute="bottom" id="tIl-vX-hQ9"/>
+                <constraint firstItem="nmH-Wz-Q6f" firstAttribute="leading" secondItem="fnl-P9-GMT" secondAttribute="leading" constant="10" id="vQz-l0-uOs"/>
+            </constraints>
+            <size key="customSize" width="50" height="87"/>
+            <connections>
+                <outlet property="headButton" destination="nmH-Wz-Q6f" id="GyY-Sl-ts3"/>
+                <outlet property="name" destination="4Ol-Rn-rQw" id="5SB-wf-QVR"/>
+            </connections>
+            <point key="canvasLocation" x="407.5" y="298"/>
+        </collectionViewCell>
+    </objects>
+</document>

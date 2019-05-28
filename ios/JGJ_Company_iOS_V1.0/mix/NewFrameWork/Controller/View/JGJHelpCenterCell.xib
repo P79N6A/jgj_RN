@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJHelpCenterCell" id="KGk-i7-Jjw" customClass="JGJHelpCenterCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uie-U4-eRG">
+                        <rect key="frame" x="12" y="14" width="275" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgl-2i-pS3" customClass="LineView">
+                        <rect key="frame" x="10" y="48" width="300" height="1"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ifG-ag-lSR"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar_right_lightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-hx-5D0">
+                        <rect key="frame" x="299" y="17" width="9" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="J5B-J6-4Dj"/>
+                            <constraint firstAttribute="height" constant="15" id="eZK-28-55D"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i3C-hx-5D0" firstAttribute="leading" secondItem="Uie-U4-eRG" secondAttribute="trailing" constant="12" id="2tN-xM-1do"/>
+                    <constraint firstAttribute="bottom" secondItem="Fgl-2i-pS3" secondAttribute="bottom" id="Ah1-QE-QMh"/>
+                    <constraint firstItem="Fgl-2i-pS3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Igq-xq-ddy"/>
+                    <constraint firstItem="Fgl-2i-pS3" firstAttribute="top" secondItem="Uie-U4-eRG" secondAttribute="bottom" constant="14" id="Pjs-yY-sfT"/>
+                    <constraint firstItem="Uie-U4-eRG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="RV9-rc-OPb"/>
+                    <constraint firstItem="Uie-U4-eRG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cdb-J0-NUs"/>
+                    <constraint firstItem="Uie-U4-eRG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="i2B-5C-2IK"/>
+                    <constraint firstAttribute="trailing" secondItem="i3C-hx-5D0" secondAttribute="trailing" constant="12" id="oQw-ky-7dV"/>
+                    <constraint firstAttribute="trailing" secondItem="Fgl-2i-pS3" secondAttribute="trailing" constant="10" id="p3l-Zq-8kg"/>
+                    <constraint firstItem="i3C-hx-5D0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xEM-ZA-7SL"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="cdb-J0-NUs"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLable" destination="Uie-U4-eRG" id="tiu-NQ-xlg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar_right_lightArrow" width="9" height="14"/>
+    </resources>
+</document>

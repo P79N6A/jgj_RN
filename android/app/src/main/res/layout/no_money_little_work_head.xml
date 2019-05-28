@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/clickConfirmText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fef1e1"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/no_money_little_work_tips"
+        android:textColor="@color/color_ff6600"
+        android:textSize="@dimen/text_size_14" />
+
+</LinearLayout>

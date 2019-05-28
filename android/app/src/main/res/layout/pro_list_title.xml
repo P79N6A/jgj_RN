@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_fafafa"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="已关闭且已存档的项目"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/openStateIcon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/guide_image" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/itemDiver"
+        style="@style/line" />
+
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.jizhi.jlongg.x5webview.jsbridge.BridgeX5WebView
+        android:id="@+id/webView"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:alpha="0.95"
+        android:background="@color/color_fafafa"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/work_circle_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_bottom_work_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/main_bottom_work"
+                android:textColor="@drawable/main_bottom_textcolor"
+                android:textSize="@dimen/bottom_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/find_work_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_bottom_group_chat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/main_bottom_group_chat"
+                android:textColor="@drawable/main_bottom_textcolor"
+                android:textSize="@dimen/bottom_text_size" />
+
+            <TextView
+                android:id="@+id/unreadChatmessageCount"
+                style="@style/badge_shape"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/icon2"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/find_worker_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTabClicked">
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_bottom_find_foreman" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/main_bottom_advertises"
+                android:textColor="@drawable/main_bottom_textcolor"
+                android:textSize="@dimen/bottom_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/discovered_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTabClicked">
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_bottom_discovered" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/main_bottom_discovered"
+                android:textColor="@drawable/main_bottom_textcolor"
+                android:textSize="@dimen/bottom_text_size" />
+
+            <View
+                android:id="@+id/discoveredView"
+                style="@style/red_circle"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/icon4"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTabClicked">
+
+            <ImageView
+                android:id="@+id/icon5"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_bottom_my" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/main_bottom_my"
+                android:textColor="@drawable/main_bottom_textcolor"
+                android:textSize="@dimen/bottom_text_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

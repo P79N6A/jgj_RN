@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJNewNotifyDetailHeadCell" id="KGk-i7-Jjw" customClass="JGJNewNotifyDetailHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ge-BH-oTf">
+                        <rect key="frame" x="141" y="16" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0j-4s-vje">
+                        <rect key="frame" x="120" y="50" width="80" height="88"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mate_Defulat_Headpic" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-wH-S9Y">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="W6M-ye-pU3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FgA-wH-S9Y" secondAttribute="trailing" id="7bU-gN-GiI"/>
+                            <constraint firstAttribute="width" constant="80" id="84e-Gx-CF8"/>
+                            <constraint firstItem="FgA-wH-S9Y" firstAttribute="leading" secondItem="E0j-4s-vje" secondAttribute="leading" id="F7c-Ec-vkT"/>
+                            <constraint firstItem="FgA-wH-S9Y" firstAttribute="top" secondItem="E0j-4s-vje" secondAttribute="top" id="Oed-9S-ZO3"/>
+                            <constraint firstAttribute="height" constant="88" id="uH6-zp-MAi"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJH-jJ-GQ9">
+                        <rect key="frame" x="80" y="157" width="15" height="22"/>
+                        <state key="normal" image="tel"/>
+                        <connections>
+                            <action selector="handleCallButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2FE-qC-un7"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678901" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NK-oc-UmO">
+                        <rect key="frame" x="112" y="159" width="96" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN6-FE-A33" customClass="LineView">
+                        <rect key="frame" x="103" y="159" width="1" height="18"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.32156862749999998" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="sCE-En-Lo6"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ToT-Cl-bro">
+                        <rect key="frame" x="120" y="125" width="80" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="OPL-sR-Ff9"/>
+                            <constraint firstAttribute="height" constant="22" id="XD1-wC-WZT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="唐杰" backgroundImage="bg_icon"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E0j-4s-vje" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="96m-Ym-Eg0"/>
+                    <constraint firstItem="7NK-oc-UmO" firstAttribute="top" secondItem="E0j-4s-vje" secondAttribute="bottom" constant="21" id="98x-PA-i1o"/>
+                    <constraint firstItem="UN6-FE-A33" firstAttribute="leading" secondItem="jJH-jJ-GQ9" secondAttribute="trailing" constant="8" id="Cga-AP-bFK"/>
+                    <constraint firstItem="7NK-oc-UmO" firstAttribute="top" secondItem="ToT-Cl-bro" secondAttribute="bottom" constant="12" id="PWJ-GT-9MX"/>
+                    <constraint firstItem="0Ge-BH-oTf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="R3p-yw-nUb"/>
+                    <constraint firstItem="UN6-FE-A33" firstAttribute="centerY" secondItem="7NK-oc-UmO" secondAttribute="centerY" id="SPt-1n-Vwp"/>
+                    <constraint firstItem="jJH-jJ-GQ9" firstAttribute="centerY" secondItem="7NK-oc-UmO" secondAttribute="centerY" id="XDh-C0-vKy"/>
+                    <constraint firstItem="E0j-4s-vje" firstAttribute="top" secondItem="0Ge-BH-oTf" secondAttribute="bottom" constant="16" id="dvN-Jc-e87"/>
+                    <constraint firstItem="ToT-Cl-bro" firstAttribute="centerX" secondItem="FgA-wH-S9Y" secondAttribute="centerX" id="kgV-FI-qRF"/>
+                    <constraint firstItem="7NK-oc-UmO" firstAttribute="trailing" secondItem="E0j-4s-vje" secondAttribute="trailing" id="new-Rq-qub"/>
+                    <constraint firstItem="0Ge-BH-oTf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="pew-IG-xor"/>
+                    <constraint firstItem="7NK-oc-UmO" firstAttribute="centerX" secondItem="E0j-4s-vje" secondAttribute="centerX" id="sdk-AA-hAV"/>
+                    <constraint firstItem="7NK-oc-UmO" firstAttribute="leading" secondItem="UN6-FE-A33" secondAttribute="trailing" constant="8" id="sjm-Ia-K87"/>
+                    <constraint firstItem="UN6-FE-A33" firstAttribute="height" secondItem="7NK-oc-UmO" secondAttribute="height" id="ykb-61-YDQ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="new-Rq-qub"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImageView" destination="FgA-wH-S9Y" id="Igb-qg-ZoO"/>
+                <outlet property="headInfoLable" destination="0Ge-BH-oTf" id="76z-SO-xx5"/>
+                <outlet property="headNameButton" destination="ToT-Cl-bro" id="eqy-T9-eDj"/>
+                <outlet property="telephoneButton" destination="jJH-jJ-GQ9" id="UrH-42-PI8"/>
+                <outlet property="telephoneLable" destination="7NK-oc-UmO" id="VB1-Yh-JO0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_icon" width="75" height="21"/>
+        <image name="mate_Defulat_Headpic" width="75" height="75"/>
+        <image name="tel" width="15" height="16"/>
+    </resources>
+</document>

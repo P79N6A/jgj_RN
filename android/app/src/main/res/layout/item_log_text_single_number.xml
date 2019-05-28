@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/ed_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_company"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@color/white"
+            android:gravity="right|center_vertical"
+            android:inputType="numberDecimal"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+</RelativeLayout>

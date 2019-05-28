@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16F71b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJPersonLastWageListView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="vu4-Rb-IKD"/>
+                <outlet property="leftMonthLabel" destination="HcG-o7-j6O" id="auM-C0-cNK"/>
+                <outlet property="rightMonthLabel" destination="0qe-3l-F9V" id="7G2-Pw-b0Z"/>
+                <outlet property="titleLabel" destination="8HU-8t-hqP" id="oKa-xu-oqn"/>
+                <outlet property="totalLabel" destination="Asl-nz-oSx" id="2Ch-ZI-WDR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-nz-oSx">
+                    <rect key="frame" x="129" y="43" width="63.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.84313725490196079" green="0.14509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBF-nt-i1V">
+                    <rect key="frame" x="281" y="27" width="29" height="29"/>
+                    <state key="normal" backgroundImage="RecordWorkpoints_WageListR"/>
+                    <connections>
+                        <action selector="rightBtnClick:" destination="-1" eventType="touchUpInside" id="qZU-yg-peC"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qe-3l-F9V">
+                    <rect key="frame" x="287" y="63" width="17" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1月" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcG-o7-j6O">
+                    <rect key="frame" x="17" y="63" width="16" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTD-ca-QeE" customClass="LineView">
+                    <rect key="frame" x="0.0" y="91" width="320" height="1"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="2C8-6b-WFY"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="收入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HU-8t-hqP">
+                    <rect key="frame" x="145" y="15" width="30" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo0-h3-zUI">
+                    <rect key="frame" x="10" y="27" width="29" height="29"/>
+                    <state key="normal" backgroundImage="RecordWorkpoints_WageListL"/>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="-1" eventType="touchUpInside" id="NV6-9e-mA2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LTD-ca-QeE" secondAttribute="bottom" id="1ex-VS-a61"/>
+                <constraint firstItem="0qe-3l-F9V" firstAttribute="centerX" secondItem="DBF-nt-i1V" secondAttribute="centerX" id="4BH-1z-yo7"/>
+                <constraint firstItem="DBF-nt-i1V" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4wo-yl-fkg"/>
+                <constraint firstItem="8HU-8t-hqP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="87A-Iv-cc5"/>
+                <constraint firstItem="8HU-8t-hqP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9El-8r-7X2"/>
+                <constraint firstAttribute="trailing" secondItem="DBF-nt-i1V" secondAttribute="trailing" constant="10" id="FYb-Ek-3zx"/>
+                <constraint firstItem="DBF-nt-i1V" firstAttribute="centerY" secondItem="mo0-h3-zUI" secondAttribute="centerY" id="G2t-ts-oOQ"/>
+                <constraint firstAttribute="trailing" secondItem="LTD-ca-QeE" secondAttribute="trailing" id="GoX-cL-tAs"/>
+                <constraint firstItem="Asl-nz-oSx" firstAttribute="top" secondItem="8HU-8t-hqP" secondAttribute="bottom" constant="10" id="LgS-L0-qxG"/>
+                <constraint firstItem="0qe-3l-F9V" firstAttribute="top" secondItem="DBF-nt-i1V" secondAttribute="bottom" constant="7" id="Q4B-61-5yv"/>
+                <constraint firstItem="8HU-8t-hqP" firstAttribute="top" secondItem="mo0-h3-zUI" secondAttribute="top" id="QBk-Sp-yVD"/>
+                <constraint firstItem="Asl-nz-oSx" firstAttribute="centerX" secondItem="8HU-8t-hqP" secondAttribute="centerX" id="R6g-Ka-yVi"/>
+                <constraint firstItem="8HU-8t-hqP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="SPo-M0-NMr"/>
+                <constraint firstItem="HcG-o7-j6O" firstAttribute="centerX" secondItem="mo0-h3-zUI" secondAttribute="centerX" id="XI2-fF-1o5"/>
+                <constraint firstItem="Asl-nz-oSx" firstAttribute="top" secondItem="8HU-8t-hqP" secondAttribute="bottom" constant="10" id="a5M-lr-xoh"/>
+                <constraint firstAttribute="bottom" secondItem="Asl-nz-oSx" secondAttribute="bottom" constant="13" id="bHb-rg-hnk"/>
+                <constraint firstItem="LTD-ca-QeE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bNn-8u-ZEW"/>
+                <constraint firstItem="mo0-h3-zUI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="dRh-Ry-9cS"/>
+                <constraint firstItem="mo0-h3-zUI" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="mz1-wi-di4"/>
+                <constraint firstItem="8HU-8t-hqP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="r7X-GF-3QX"/>
+                <constraint firstItem="HcG-o7-j6O" firstAttribute="top" secondItem="mo0-h3-zUI" secondAttribute="bottom" constant="7" id="slt-uF-6jR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9El-8r-7X2"/>
+                    <exclude reference="QBk-Sp-yVD"/>
+                    <exclude reference="r7X-GF-3QX"/>
+                    <exclude reference="a5M-lr-xoh"/>
+                    <exclude reference="bHb-rg-hnk"/>
+                    <exclude reference="4wo-yl-fkg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="220" y="-24"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RecordWorkpoints_WageListL" width="29" height="29"/>
+        <image name="RecordWorkpoints_WageListR" width="29" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_nodata"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/icon_nodata"/>
+
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
+            android:text="未搜索到相关内容"
+            android:textColor="@color/gray_b9b9b9"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dip"
+            android:text="未搜索到相关内容"
+            android:textColor="@color/color_cccccc"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_press_effect"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="马上记一笔"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

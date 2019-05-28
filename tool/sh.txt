@@ -1,0 +1,12 @@
+
+//生成ss.js文件
+python ./g.py iconfont.ttf ss.js
+
+//copy到项目文件
+copy  ../tool/iconfont.js ./node_modules/react-native-vector-icons/iconfont.js
+copy  ../tool/iconfont.ttf ./node_modules/react-native-vector-icons/Fonts/iconfont.ttf
+copy  ../tool/iconfont.ttf ./android/app/src/main/assets/fonts/iconfont.ttf
+
+//正则转换引号
+"([0-9]+)"
+$1

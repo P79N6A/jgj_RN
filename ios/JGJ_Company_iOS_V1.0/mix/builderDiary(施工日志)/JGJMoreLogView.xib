@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G18a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJMoreLogView">
+            <connections>
+                <outlet property="baseView" destination="FKE-eB-5Es" id="ngj-pW-ZRX"/>
+                <outlet property="collectionView" destination="yvV-Ue-Y4N" id="4aA-BA-IzA"/>
+                <outlet property="contentView" destination="dQn-AO-Cpa" id="gDJ-mK-2Pw"/>
+                <outlet property="titleLable" destination="m3J-Rg-BTn" id="ezL-nJ-umS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dQn-AO-Cpa">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKE-eB-5Es">
+                    <rect key="frame" x="0.0" y="320" width="375" height="0.0"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0W-Fa-fuz">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="j0W-Fa-fuz" firstAttribute="top" secondItem="FKE-eB-5Es" secondAttribute="top" id="jc6-ov-5g2"/>
+                        <constraint firstItem="j0W-Fa-fuz" firstAttribute="leading" secondItem="FKE-eB-5Es" secondAttribute="leading" id="rY6-g5-4CN"/>
+                        <constraint firstAttribute="trailing" secondItem="j0W-Fa-fuz" secondAttribute="trailing" id="zNb-ym-WBW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择模板" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3J-Rg-BTn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.14509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yHd-I4-sxC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXD-Bc-6to">
+                    <rect key="frame" x="295" y="0.0" width="80" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="49Q-80-Q0Y"/>
+                        <constraint firstAttribute="height" constant="40" id="ZS5-ne-GnI"/>
+                    </constraints>
+                    <state key="normal" title="关闭">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="op3-8T-9kY"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yvV-Ue-Y4N">
+                    <rect key="frame" x="0.0" y="40" width="375" height="280"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XNd-xB-sBc">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m3J-Rg-BTn" secondAttribute="trailing" id="5uc-LP-DXQ"/>
+                <constraint firstAttribute="trailing" secondItem="yvV-Ue-Y4N" secondAttribute="trailing" id="CmH-Oy-MPY"/>
+                <constraint firstAttribute="trailing" secondItem="wXD-Bc-6to" secondAttribute="trailing" id="D5c-Sk-5JR"/>
+                <constraint firstAttribute="bottom" secondItem="yvV-Ue-Y4N" secondAttribute="bottom" id="Me6-NW-3CP"/>
+                <constraint firstAttribute="bottom" secondItem="FKE-eB-5Es" secondAttribute="bottom" id="QjJ-Dd-ePg"/>
+                <constraint firstItem="FKE-eB-5Es" firstAttribute="top" secondItem="yvV-Ue-Y4N" secondAttribute="bottom" id="SV1-Hn-m9Q"/>
+                <constraint firstItem="yvV-Ue-Y4N" firstAttribute="leading" secondItem="dQn-AO-Cpa" secondAttribute="leading" id="TgJ-1O-9YW"/>
+                <constraint firstItem="FKE-eB-5Es" firstAttribute="leading" secondItem="dQn-AO-Cpa" secondAttribute="leading" id="Tga-ml-6Eq"/>
+                <constraint firstItem="m3J-Rg-BTn" firstAttribute="leading" secondItem="dQn-AO-Cpa" secondAttribute="leading" id="gAd-YM-jbH"/>
+                <constraint firstItem="m3J-Rg-BTn" firstAttribute="top" secondItem="dQn-AO-Cpa" secondAttribute="top" id="odX-aa-20A"/>
+                <constraint firstItem="wXD-Bc-6to" firstAttribute="top" secondItem="dQn-AO-Cpa" secondAttribute="top" id="trM-4x-mNX"/>
+                <constraint firstItem="yvV-Ue-Y4N" firstAttribute="top" secondItem="m3J-Rg-BTn" secondAttribute="bottom" id="vBs-PM-isj"/>
+                <constraint firstAttribute="trailing" secondItem="FKE-eB-5Es" secondAttribute="trailing" id="wLo-Nj-AD4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="450.5" y="-322"/>
+        </view>
+    </objects>
+</document>

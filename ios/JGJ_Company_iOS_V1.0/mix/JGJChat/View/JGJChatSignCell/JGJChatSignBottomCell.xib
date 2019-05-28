@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJChatsignBottomCell" rowHeight="224" id="KGk-i7-Jjw" customClass="JGJChatSignBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYj-rN-kY2">
+                        <rect key="frame" x="134" y="90" width="138" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="            " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyj-A2-mhA">
+                                <rect key="frame" x="67" y="0.0" width="48" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Chat_notSign" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-uR-JgS">
+                                <rect key="frame" x="120" y="0.0" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1ce-uR-JgS" secondAttribute="height" multiplier="1:1" id="aXh-up-9UY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我的签到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGG-Ui-FZG">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FGG-Ui-FZG" firstAttribute="centerY" secondItem="dYj-rN-kY2" secondAttribute="centerY" id="5fh-bX-6OG"/>
+                            <constraint firstItem="Cyj-A2-mhA" firstAttribute="centerY" secondItem="dYj-rN-kY2" secondAttribute="centerY" id="9Au-rb-mJL"/>
+                            <constraint firstItem="Cyj-A2-mhA" firstAttribute="top" secondItem="dYj-rN-kY2" secondAttribute="top" id="ICi-OP-GtY"/>
+                            <constraint firstItem="1ce-uR-JgS" firstAttribute="leading" secondItem="Cyj-A2-mhA" secondAttribute="trailing" constant="5" id="Klr-1E-buf"/>
+                            <constraint firstAttribute="trailing" secondItem="1ce-uR-JgS" secondAttribute="trailing" id="Lnw-hU-WKy"/>
+                            <constraint firstAttribute="bottom" secondItem="Cyj-A2-mhA" secondAttribute="bottom" id="YlK-8A-n0a"/>
+                            <constraint firstItem="1ce-uR-JgS" firstAttribute="centerY" secondItem="dYj-rN-kY2" secondAttribute="centerY" id="jab-an-jPo"/>
+                            <constraint firstItem="Cyj-A2-mhA" firstAttribute="leading" secondItem="FGG-Ui-FZG" secondAttribute="trailing" constant="7" id="mRk-f2-v9y"/>
+                            <constraint firstItem="1ce-uR-JgS" firstAttribute="height" secondItem="dYj-rN-kY2" secondAttribute="height" id="pB8-3O-58b"/>
+                            <constraint firstItem="FGG-Ui-FZG" firstAttribute="leading" secondItem="dYj-rN-kY2" secondAttribute="leading" id="s5Q-n3-S87"/>
+                            <constraint firstItem="Cyj-A2-mhA" firstAttribute="centerY" secondItem="dYj-rN-kY2" secondAttribute="centerY" id="xBB-oD-biR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9Au-rb-mJL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h21-jf-8SA">
+                        <rect key="frame" x="170" y="19" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="h21-jf-8SA" secondAttribute="height" multiplier="1:1" id="5e0-o7-T8D"/>
+                            <constraint firstAttribute="height" constant="65" id="ZDz-Q3-YbH"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZo-3q-rrf">
+                        <rect key="frame" x="0.0" y="133" width="405" height="7"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="yCA-dv-vZq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h21-jf-8SA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2WE-P3-MK0"/>
+                    <constraint firstItem="h21-jf-8SA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="3Cf-nM-S3W"/>
+                    <constraint firstItem="dYj-rN-kY2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5eT-Rt-z5b"/>
+                    <constraint firstItem="dYj-rN-kY2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="87Y-D8-FbK"/>
+                    <constraint firstAttribute="trailing" secondItem="AZo-3q-rrf" secondAttribute="trailing" id="J42-nE-UtQ"/>
+                    <constraint firstItem="h21-jf-8SA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="L2v-eC-Qvz"/>
+                    <constraint firstItem="AZo-3q-rrf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lhp-T0-X8T"/>
+                    <constraint firstItem="AZo-3q-rrf" firstAttribute="top" secondItem="dYj-rN-kY2" secondAttribute="bottom" constant="25" id="WUI-6W-fOV"/>
+                    <constraint firstItem="dYj-rN-kY2" firstAttribute="centerX" secondItem="h21-jf-8SA" secondAttribute="centerX" id="ang-fT-4Xh"/>
+                    <constraint firstItem="dYj-rN-kY2" firstAttribute="top" secondItem="h21-jf-8SA" secondAttribute="bottom" constant="6" id="oNe-8N-MW5"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="5eT-Rt-z5b"/>
+                        <exclude reference="ang-fT-4Xh"/>
+                        <exclude reference="L2v-eC-Qvz"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImage" destination="h21-jf-8SA" id="5oE-N1-w1G"/>
+                <outlet property="descLabel" destination="Cyj-A2-mhA" id="mtQ-Bd-0RS"/>
+                <outlet property="signImage" destination="1ce-uR-JgS" id="ZhQ-e9-c3v"/>
+            </connections>
+            <point key="canvasLocation" x="70" y="13"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Chat_notSign" width="16" height="16"/>
+    </resources>
+</document>

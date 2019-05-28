@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:gravity="right|center"
+    android:paddingRight="20dp">
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:text="休息"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/color_000000"
+        android:background="@drawable/login_pwd_bck_999999_ebebeb"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:text="半个工"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+
+        android:textSize="14sp"
+        android:textColor="@color/color_000000"
+        android:background="@drawable/login_pwd_bck_999999_ebebeb"/>
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:text="一个工"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/color_000000"
+        android:background="@drawable/login_pwd_bck_999999_ebebeb"/>
+
+</LinearLayout>

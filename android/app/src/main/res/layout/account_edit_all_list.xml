@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/head_only_title_account"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include
+                layout="@layout/layout_account_all_edit"/>
+
+            <include
+                layout="@layout/layout_account_edit_all_bottom"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_del"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/white_bottom_left"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/delete"-->
+    <!--android:textColor="@color/color_666666"/>-->
+
+    <!--<View-->
+    <!--android:layout_width="1px"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="@color/color_dbdbdb"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_save"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/white_bottom_right"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/save"-->
+    <!--android:textColor="@color/color_eb4e4e"/>-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/layout_del_save_bottom"/>
+    </LinearLayout>
+</LinearLayout>

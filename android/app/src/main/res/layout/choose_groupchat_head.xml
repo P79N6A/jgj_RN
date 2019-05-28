@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb" />
+
+    <RelativeLayout
+        android:id="@+id/selecteExistGroupLayout"
+        style="@style/click_layout"
+        android:gravity="left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/houtui"
+            android:text="@string/selecte_exist_group"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/faceToFaceCreateTeamLayout"
+        style="@style/click_layout"
+        android:gravity="left">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/houtui"
+            android:text="@string/face_to_face_create_team"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/workCircleCreateTeamLayout"
+        style="@style/click_layout"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/fromWorkCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/houtui"
+            android:text="@string/work_circle_groupchat"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/invinteHimLayout"
+        style="@style/click_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/houtui"
+            android:text="@string/invinte_him"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

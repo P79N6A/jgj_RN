@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/workType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:text="总预算"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:id="@+id/money_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:text="元"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:text="总规模"
+        android:textColor="@color/gray_333333"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/total_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/balanceway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5dp"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_size_12" />
+</LinearLayout>

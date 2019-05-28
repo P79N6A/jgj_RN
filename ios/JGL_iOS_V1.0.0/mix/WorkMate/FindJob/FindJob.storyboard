@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--晒手艺-->
+        <scene sceneID="nUs-md-UJw">
+            <objects>
+                <viewController storyboardIdentifier="baseSkill" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c5G-3z-iGS" customClass="JLGBasekSkillViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yLP-R6-ups"/>
+                        <viewControllerLayoutGuide type="bottom" id="eUB-Lw-OY0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMm-An-q0x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="晒手艺" id="pjO-6p-BKT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NbT-0C-aKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339" y="3030"/>
+        </scene>
+        <!--评价详情-->
+        <scene sceneID="JUF-uX-Y1t">
+            <objects>
+                <viewController storyboardIdentifier="findJobAppraiseDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MZG-j6-xzF" userLabel="评价详情" customClass="JLGAppraiseDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Eu-v9-5eE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yhk-l9-qDz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UXS-xS-AtV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8d-fI-VZm" customClass="JLGTotalAppraiseView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="135"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="mLn-to-fHZ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r3c-Nh-T89">
+                                <rect key="frame" x="0.0" y="155" width="375" height="512"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="MZG-j6-xzF" id="NEB-h8-aFn"/>
+                                    <outlet property="delegate" destination="MZG-j6-xzF" id="PHM-Ma-oID"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="M8d-fI-VZm" secondAttribute="trailing" id="Ba6-a0-9M7"/>
+                            <constraint firstItem="r3c-Nh-T89" firstAttribute="leading" secondItem="UXS-xS-AtV" secondAttribute="leading" id="Dyn-72-GzZ"/>
+                            <constraint firstItem="Yhk-l9-qDz" firstAttribute="top" secondItem="r3c-Nh-T89" secondAttribute="bottom" id="Ntg-nc-KPd"/>
+                            <constraint firstItem="M8d-fI-VZm" firstAttribute="leading" secondItem="UXS-xS-AtV" secondAttribute="leading" id="QA7-V5-VkI"/>
+                            <constraint firstItem="r3c-Nh-T89" firstAttribute="top" secondItem="M8d-fI-VZm" secondAttribute="bottom" id="bFm-2N-PZe"/>
+                            <constraint firstItem="M8d-fI-VZm" firstAttribute="top" secondItem="8Eu-v9-5eE" secondAttribute="bottom" id="jbs-3Z-xvg"/>
+                            <constraint firstAttribute="trailing" secondItem="r3c-Nh-T89" secondAttribute="trailing" id="tDI-zE-Zki"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="评价" id="FKv-dg-RKC"/>
+                    <connections>
+                        <outlet property="tableView" destination="r3c-Nh-T89" id="ThM-Vl-C5b"/>
+                        <outlet property="totalAppraiseView" destination="M8d-fI-VZm" id="Brt-KX-wmS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QpE-iW-3la" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1251" y="3030"/>
+        </scene>
+        <!--查看地址-->
+        <scene sceneID="Q6E-mK-Tmg">
+            <objects>
+                <viewController storyboardIdentifier="proMap" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k8o-4O-U6D" customClass="JLGProMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fjK-sb-y4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="Msf-3f-pgD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XaA-EJ-3Y9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-AT-Uao">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDP-sI-rfL">
+                                        <rect key="frame" x="299" y="7" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XDP-sI-rfL" secondAttribute="height" multiplier="1:1" id="xv4-Lt-jHm"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="BMap_Open"/>
+                                        <connections>
+                                            <action selector="openNativeNavi" destination="k8o-4O-U6D" eventType="touchUpInside" id="faj-p9-zc3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkI-gU-cok">
+                                        <rect key="frame" x="20" y="23" width="204" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6e-ma-zKa">
+                                        <rect key="frame" x="20" y="28" width="204" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XDP-sI-rfL" firstAttribute="height" secondItem="aCQ-AT-Uao" secondAttribute="height" multiplier="0.8" id="1FZ-x8-dcR"/>
+                                    <constraint firstItem="A6e-ma-zKa" firstAttribute="width" secondItem="RkI-gU-cok" secondAttribute="width" id="864-mk-Vop"/>
+                                    <constraint firstItem="RkI-gU-cok" firstAttribute="leading" secondItem="aCQ-AT-Uao" secondAttribute="leading" constant="20" id="RUW-xa-qzc"/>
+                                    <constraint firstAttribute="height" constant="70" id="RZk-4Z-Mre"/>
+                                    <constraint firstAttribute="trailing" secondItem="XDP-sI-rfL" secondAttribute="trailing" constant="20" id="T1c-o5-vEl"/>
+                                    <constraint firstItem="A6e-ma-zKa" firstAttribute="top" secondItem="RkI-gU-cok" secondAttribute="bottom" constant="5" id="XVQ-Lb-DVS"/>
+                                    <constraint firstItem="XDP-sI-rfL" firstAttribute="centerY" secondItem="aCQ-AT-Uao" secondAttribute="centerY" id="Ytt-Ri-Jdb"/>
+                                    <constraint firstItem="A6e-ma-zKa" firstAttribute="leading" secondItem="RkI-gU-cok" secondAttribute="leading" id="e1x-HP-5yn"/>
+                                    <constraint firstItem="XDP-sI-rfL" firstAttribute="leading" secondItem="RkI-gU-cok" secondAttribute="trailing" constant="20" id="kK6-aD-rU5"/>
+                                    <constraint firstItem="RkI-gU-cok" firstAttribute="centerY" secondItem="aCQ-AT-Uao" secondAttribute="centerY" constant="-13" id="ouX-Za-zhD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jEg-BO-3l4" customClass="JLGBaseBMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="533"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aCQ-AT-Uao" firstAttribute="top" secondItem="jEg-BO-3l4" secondAttribute="bottom" id="6xi-iE-ksa"/>
+                            <constraint firstItem="jEg-BO-3l4" firstAttribute="top" secondItem="fjK-sb-y4W" secondAttribute="bottom" id="EWP-bg-gFe"/>
+                            <constraint firstAttribute="trailing" secondItem="aCQ-AT-Uao" secondAttribute="trailing" id="NuV-Uw-8kN"/>
+                            <constraint firstItem="Msf-3f-pgD" firstAttribute="top" secondItem="aCQ-AT-Uao" secondAttribute="bottom" id="QpA-vp-UEM"/>
+                            <constraint firstAttribute="trailing" secondItem="jEg-BO-3l4" secondAttribute="trailing" id="a7n-Qo-eCi"/>
+                            <constraint firstItem="jEg-BO-3l4" firstAttribute="leading" secondItem="XaA-EJ-3Y9" secondAttribute="leading" id="nmT-N8-Olf"/>
+                            <constraint firstItem="aCQ-AT-Uao" firstAttribute="leading" secondItem="XaA-EJ-3Y9" secondAttribute="leading" id="o5H-lC-Ejl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="查看地址" id="tZz-fI-Pu2"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="jEg-BO-3l4" id="KcT-js-DnU"/>
+                        <outlet property="proAddressLabel" destination="A6e-ma-zKa" id="QBE-HV-Ibd"/>
+                        <outlet property="proNameLabel" destination="RkI-gU-cok" id="CT6-EY-Q4q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhe-Nb-j9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1256" y="3709"/>
+        </scene>
+        <!--Citys List View Controller-->
+        <scene sceneID="zR3-ZM-GVr">
+            <objects>
+                <viewController storyboardIdentifier="citysListVc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Kf-gK-P90" customClass="JLGCitysListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gl2-fc-lHx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Of6-X5-ZBL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56d-fF-k5n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gke-nb-yhk" customClass="JLGCitysListView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gke-nb-yhk" secondAttribute="trailing" id="5T4-C5-km2"/>
+                            <constraint firstItem="Of6-X5-ZBL" firstAttribute="top" secondItem="gke-nb-yhk" secondAttribute="bottom" id="ASd-YA-YB9"/>
+                            <constraint firstItem="gke-nb-yhk" firstAttribute="leading" secondItem="56d-fF-k5n" secondAttribute="leading" id="QNj-IS-Dtx"/>
+                            <constraint firstItem="gke-nb-yhk" firstAttribute="top" secondItem="gl2-fc-lHx" secondAttribute="bottom" id="h6h-Qh-mB6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityListView" destination="gke-nb-yhk" id="IlC-aa-VOO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDA-if-Hrv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1783" y="2424"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BMap_Open" width="55" height="55"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

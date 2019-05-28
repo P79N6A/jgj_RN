@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                    android:id="@+id/headImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/userNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_15" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <TextView
+                android:id="@+id/projectCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/evaluate_icon"
+                android:drawablePadding="10dp"
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:id="@+id/workTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/evaluate_icon1"
+                android:drawablePadding="10dp"
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_f1f1f1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="你对他的印象"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <com.jizhi.jongg.widget.FlowTagView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tagView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:lineSpacing="15dp"
+                app:tagSpacing="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                    android:id="@+id/inputTagText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/sk_dbdbdb_5radius"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:hint="输入你对他的印象(最多6个字)"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/gray_cccccc" />
+
+                <Button
+                    android:id="@+id/addTagBtn"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/draw_eb4e4e_5radius"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/add"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_f1f1f1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="你对他的评价"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <com.hcs.cityslist.widget.AppCursorEditText
+                android:id="@+id/evaluateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:gravity="left"
+                android:maxLength="200"
+                android:padding="10dp"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/color_f1f1f1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="你对他的评分"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="满意请给5星哦"
+                    android:textColor="@color/color_999999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/star1Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="工作态度"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_15" />
+
+                <com.jizhi.jongg.widget.StarBar
+                    android:id="@+id/workingAttitudeStarBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ratingbar:starCount="5"
+                    ratingbar:starDistance="16dp"
+                    ratingbar:starEmpty="@drawable/star_empty"
+                    ratingbar:starFill="@drawable/star_full"
+                    ratingbar:starSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/star2Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="专业技能"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_15" />
+
+                <com.jizhi.jongg.widget.StarBar
+                    android:id="@+id/professionalSkillsStarBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ratingbar:starCount="5"
+                    ratingbar:starDistance="16dp"
+                    ratingbar:starEmpty="@drawable/star_empty"
+                    ratingbar:starFill="@drawable/star_full"
+                    ratingbar:starSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="靠谱程度"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_15" />
+
+                <com.jizhi.jongg.widget.StarBar
+                    android:id="@+id/degreeOfReliabilitystarBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ratingbar:starCount="5"
+                    ratingbar:starDistance="16dp"
+                    ratingbar:starEmpty="@drawable/star_empty"
+                    ratingbar:starFill="@drawable/star_full"
+                    ratingbar:starSize="16dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/guYongText"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_f1f1f1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="有新的项目，是否愿意再次雇佣他"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+                    android:id="@+id/likeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/likeIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/singlebtn_selected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="愿意"
+                        android:textColor="@color/color_333333"
+                        android:textSize="14sp" />
+
+                </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/bottom_red_button_layout" />
+
+</LinearLayout>

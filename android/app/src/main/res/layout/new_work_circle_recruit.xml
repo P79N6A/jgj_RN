@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/noDataBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_white_8_radius"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="你还没加入任何班组"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_18" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击右上角 + 按钮即可"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_12" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/unLoginCreateTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="新建班组"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="或者"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_12" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/unLoginScanCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="扫描二维码"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加入已有班组"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstTips"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="最新招工信息"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/houtui"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/color_666666"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/work_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_eb4e4e_3radius"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingBottom="0.5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="0.5dp"
+                android:text="包工"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pro_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="成都市金牛区找电工"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pro_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_eeeeee_3radius"
+                android:includeFontPadding="false"
+                android:padding="5dp"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/money_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单价："
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="450元"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/money_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元/dun"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/total_scale_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="规模："
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:id="@+id/total_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="0.3万"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/total_scale_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吨"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/pro_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="content"
+            android:textColor="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/welfare_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待遇："
+                android:textColor="@color/color_333333" />
+
+            <com.jizhi.jongg.widget.MultipleTextViewGroup xmlns:my="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/welfare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                my:textBackground="@drawable/bg_eeeeee_3radius"
+                my:textColor="@color/color_666666"
+                my:textLineMargin="@dimen/margin_5dp"
+                my:textPaddingBottom="5dp"
+                my:textPaddingLeft="5dp"
+                my:textPaddingRight="5dp"
+                my:textPaddingTop="5dp"
+                my:textSize="@dimen/text_size_12"
+                my:textWordMargin="@dimen/margin_5dp" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/create_time_txt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center|right"
+        android:paddingRight="10dp"
+        android:text="time"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/search_more_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/houtui"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:paddingTop="10dp"
+        android:text="查看更多"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp" />
+
+</LinearLayout>

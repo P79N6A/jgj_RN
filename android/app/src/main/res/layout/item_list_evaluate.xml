@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@id/realname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_b"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@id/ctime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/realname"
+            android:gravity="center"
+            android:textColor="@color/gray_s"
+            android:textSize="@dimen/text_size_12" />
+
+        <com.jizhi.jongg.widget.MyRattingBar
+            android:id="@id/store_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:isClick="false"
+            app:star_height="@dimen/x14"
+            app:star_margin="@dimen/x5"
+            app:star_width="@dimen/y12" >
+        </com.jizhi.jongg.widget.MyRattingBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/store_avg"
+            android:text="@string/grade"
+            android:textColor="@color/gray_s"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingBottom="10dp"
+        android:text="hi呀,这个包工头只好哟!不仅按时给我们发工资,没有拖欠.还带我们切洗脚.洗脚的那个妹儿硬是漂亮的很!简直不摆咯"
+        android:textColor="@color/gray_ss"
+        android:textSize="@dimen/text_size_12" />
+
+</LinearLayout>

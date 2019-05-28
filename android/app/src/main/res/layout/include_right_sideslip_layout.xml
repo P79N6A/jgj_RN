@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1">
+
+
+    <RelativeLayout
+        android:id="@+id/rea_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_fafafa">
+
+        <ImageView
+            android:id="@+id/img_back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_filter_back" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搜索条件"
+            android:textColor="@color/color_000000"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_dbdbdb" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rea_title"
+        android:layout_marginBottom="65dp"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/layout_line_10px" />
+                <RelativeLayout
+                    android:id="@+id/rea_year_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="选择月份"
+                        android:textColor="@color/color_000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_rea_year_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/houtui"
+                        android:drawablePadding="10dp"
+                        android:textColor="@color/color_eb4e4e"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_10px" />
+                <RelativeLayout
+                    android:id="@+id/rea_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/select_project"
+                        android:textColor="@color/color_000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/project"
+                        android:button="@null"
+                        android:drawableRight="@drawable/houtui"
+                        android:drawablePadding="10dp"
+                        android:ellipsize="end"
+                        android:gravity="right|center"
+                        android:maxLines="1"
+                        android:text="全部项目"
+                        android:textColor="@color/color_eb4e4e"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_10px" />
+
+                <RelativeLayout
+                    android:id="@+id/rea_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_select_tole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/selectForeman"
+                        android:textColor="@color/color_000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@null"
+                        android:drawableRight="@drawable/houtui"
+                        android:drawablePadding="10dp"
+                        android:text="全部班组长"
+                        android:textColor="@color/color_eb4e4e"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_10px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp"
+                    android:visibility="visible">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rea_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="记工分类"
+                            android:textColor="@color/color_000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_type"
+                            android:text="(可多选)"
+                            android:textColor="@color/color_666666"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/color_eb4e4e"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lin_type_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rea_account">
+
+                        <RelativeLayout
+                            android:id="@+id/rea_hour"
+                            style="@style/rememer_workinfo_filter_type_layout">
+
+                            <CheckBox
+                                android:id="@+id/ck_hour"
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:text="@string/pricemode_hour" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rea_all_account"
+                            style="@style/rememer_workinfo_filter_type_layout">
+
+                            <CheckBox
+                                android:id="@+id/ck_all_account"
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="5dp"
+                                android:text="@string/account_allwork_bill" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rea_borrow"
+                            style="@style/rememer_workinfo_filter_type_layout">
+
+                            <CheckBox
+                                android:id="@+id/ck_borrow"
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="5dp"
+                                android:text="@string/borrowing" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lin_type_top"
+                        android:layout_marginTop="15dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rea_wage"
+                            style="@style/rememer_workinfo_filter_type_layout">
+
+                            <CheckBox
+                                android:id="@+id/ck_wage"
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="5dp"
+                                android:text="@string/wages_settlement" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rea_all_kq"
+                            style="@style/rememer_workinfo_filter_type_layout">
+
+                            <CheckBox
+                                android:id="@+id/ck_all_kq"
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="2dp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:text="包工记工天" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            style="@style/rememer_workinfo_filter_type_layout"
+                            android:visibility="invisible">
+
+                            <CheckBox
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="5dp"
+                                android:text="@string/borrowing" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_line_10px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="其他"
+                            android:textColor="@color/color_000000"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_remark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/color_eb4e4e"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_type"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rea_remark"
+                            style="@style/rememer_workinfo_filter_type_layout">
+
+                            <CheckBox
+                                android:id="@+id/ck_remark"
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="5dp"
+                                android:text="有备注" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rea_agency"
+                            style="@style/rememer_workinfo_filter_type_layout">
+
+                            <CheckBox
+                                android:id="@+id/ck_agency"
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawablePadding="5dp"
+                                android:text="有代班长" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            style="@style/rememer_workinfo_filter_type_layout"
+                            android:visibility="invisible">
+
+                            <CheckBox
+                                style="@style/rememer_workinfo_filter_type"
+                                android:layout_centerInParent="true"
+                                android:drawableLeft="@drawable/icon_filter_gou"
+                                android:drawablePadding="5dp"
+                                android:text="有备注" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<include layout="@layout/layout_line_10px" />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/layout_remember_workinfo_filter_bottom" />
+    </RelativeLayout>
+
+    <include layout="@layout/include_right_sideslip_child_layout" />
+
+</RelativeLayout>

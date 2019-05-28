@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJEditProExperienceCell" id="eZI-gK-hhO" customClass="JGJEditProExperienceCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eZI-gK-hhO" id="WUt-HM-egc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTD-dg-TDb" customClass="LineView">
+                        <rect key="frame" x="10" y="42" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VCh-OP-n2Q"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="具体地址" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7Z-b7-sA8">
+                        <rect key="frame" x="12" y="0.0" width="69" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="vEm-em-ueE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgT-KF-3dn">
+                        <rect key="frame" x="91" y="0.0" width="219" height="42"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T7Z-b7-sA8" firstAttribute="top" secondItem="WUt-HM-egc" secondAttribute="top" id="1tO-ze-BDw"/>
+                    <constraint firstItem="T7Z-b7-sA8" firstAttribute="centerY" secondItem="WUt-HM-egc" secondAttribute="centerY" id="27t-hM-xcW"/>
+                    <constraint firstItem="SgT-KF-3dn" firstAttribute="leading" secondItem="T7Z-b7-sA8" secondAttribute="trailing" constant="10" id="2Ft-Op-a5U"/>
+                    <constraint firstItem="T7Z-b7-sA8" firstAttribute="leading" secondItem="WUt-HM-egc" secondAttribute="leading" constant="12" id="CRj-5h-E1I"/>
+                    <constraint firstItem="VTD-dg-TDb" firstAttribute="top" secondItem="SgT-KF-3dn" secondAttribute="bottom" id="Dei-Md-aGl"/>
+                    <constraint firstAttribute="trailing" secondItem="T7Z-b7-sA8" secondAttribute="trailing" constant="12" id="FAa-Ya-jMl"/>
+                    <constraint firstAttribute="bottom" secondItem="VTD-dg-TDb" secondAttribute="bottom" id="Gzh-mf-l9p"/>
+                    <constraint firstItem="VTD-dg-TDb" firstAttribute="leading" secondItem="WUt-HM-egc" secondAttribute="leading" constant="10" id="TM0-B2-qeF"/>
+                    <constraint firstAttribute="trailing" secondItem="SgT-KF-3dn" secondAttribute="trailing" constant="10" id="Ucz-tY-iXE"/>
+                    <constraint firstItem="VTD-dg-TDb" firstAttribute="top" secondItem="T7Z-b7-sA8" secondAttribute="bottom" id="bth-9l-S7v"/>
+                    <constraint firstItem="SgT-KF-3dn" firstAttribute="top" secondItem="WUt-HM-egc" secondAttribute="top" id="gOU-S2-tDe"/>
+                    <constraint firstAttribute="trailing" secondItem="VTD-dg-TDb" secondAttribute="trailing" constant="10" id="lE4-Og-2qS"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="27t-hM-xcW"/>
+                        <exclude reference="FAa-Ya-jMl"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="proDes" destination="T7Z-b7-sA8" id="TZn-OI-VPs"/>
+                <outlet property="proDesDetail" destination="SgT-KF-3dn" id="sDS-XZ-X94"/>
+            </connections>
+            <point key="canvasLocation" x="264" y="166"/>
+        </tableViewCell>
+    </objects>
+</document>

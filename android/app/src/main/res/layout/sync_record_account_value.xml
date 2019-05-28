@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/syncFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+        <!--   android:scrollHorizontally="true" -->
+
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/cancelSyncBtn"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/draw_sk_666666_3radius"
+            android:gravity="center"
+            android:text="取消同步"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/itemDiverLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/line" />
+
+    <com.jizhi.jongg.widget.AppDiverView
+        android:id="@+id/itemDiverBackground"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+</LinearLayout>

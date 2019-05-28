@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="请确认结算结果："
+            android:textColor="@color/color_666666"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/account_wage_background"
+            android:paddingBottom="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="14dp">
+
+            <ImageView
+                android:id="@+id/img_src1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_account_wages_wage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/img_src1"
+                android:text="本次结算金额"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_wage_wage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6dp"
+                android:text="0.00"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="17sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_src1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tv_wage_wage_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本次结算金额"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_wage_wage_hint1"
+                    android:text=" = 本次实付金额 + 抹零金额 + 罚款金额 - 补贴金额 - 奖励金额"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/account_wage_background"
+            android:paddingBottom="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <ImageView
+                android:id="@+id/img_src2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/icon_account_price"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/img_src2"
+                android:text="剩余未结金额"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_wage_supplus_unset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6dp"
+                android:text="0.00"
+                android:textColor="@color/color_333333"
+                android:textSize="17sp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_src2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tv_wage_supplus_unset_hint1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余未结金额"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_wage_supplus_unset_hint1"
+                    android:text=" = 未结工资 + 补贴金额 + 奖励金额 - 罚款金额 - 本次实付金额 - 抹零金额"
+                    android:textColor="@color/color_666666"
+                    android:textSize="10sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/red_button_height"
+                android:background="@drawable/bg_gray_bottom_round_right"
+                android:orientation="horizontal">
+
+                <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                    android:id="@+id/tv_finish"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="修改"
+                    android:textColor="@color/gray_525c68"
+                    android:textSize="@dimen/text_size_14"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_dbdbdb"/>
+
+                <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                    android:id="@+id/tv_asscess"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_14"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_dbdbdb"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

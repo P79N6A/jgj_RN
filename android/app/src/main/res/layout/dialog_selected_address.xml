@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_top_style"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/proName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请确认"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="四川成都高新区天府达到阿打算能单刷的那件"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/city_icon"
+            android:drawablePadding="5dp"
+            android:text="项目地址保存后不可再修改,请正确设置"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dedede" />
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="@dimen/red_button_height"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_gray_bottom_round_right"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/redBtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/color_525c68"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/btn_asscess"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/assign"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+
+</LinearLayout>

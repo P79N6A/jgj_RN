@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/downLoadPath"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="#dadada"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="文件下载至:/storage/emulated/0/Backup"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:childDivider="@null"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <include layout="@layout/empty_view" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

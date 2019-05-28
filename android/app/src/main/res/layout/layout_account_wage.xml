@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusableInTouchMode="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rea_role"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_role"/>
+
+        <TextView
+            android:id="@+id/tv_role_title"
+            style="@style/account_left_text"
+            android:text="title"/>
+
+        <ImageView
+            android:id="@+id/img_role_arrow"
+            style="@style/account_right_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_role"
+            style="@style/account_right_text"
+            android:hint="hint"/>
+
+        <ImageView
+            style="@style/account_driver_1px"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rea_date"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_date"/>
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="日期"/>
+
+        <ImageView
+            style="@style/account_right_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/account_right_text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_unAccountCountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+            android:id="@+id/unAccountCountLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_f9a00f_20_radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/unAccountCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:id="@+id/confirmIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/confirm_icon"/>
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_driver_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_line_10px"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rea_wage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_account_salary"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="未结工资"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/img_hint_wage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/icon_account_wage_ques"/>
+
+            <TextView
+                android:id="@+id/tv_textview_wage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/color_000000"
+                android:textColorHint="@color/color_999999"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lin_unset"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/rea_wage"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/line_dash"/>
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/account_wage_mark"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="你还有?笔点工的工资标准未设置金额"
+                android:textColor="@color/color_666666"/>
+
+            <TextView
+                android:id="@+id/tv_salary"
+                android:layout_width="44dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_rd_eb4e4e_1radius"
+                android:gravity="center"
+                android:text="查看"
+                android:textColor="@color/color_eb4e4e"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <include
+            layout="@layout/layout_line_10px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_s_r_f"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_wages_s_r_f"/>
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="补贴、奖励、罚款"
+            android:textStyle="normal"
+            />
+
+        <ImageView
+            android:id="@+id/img_s_r_f"
+            style="@style/account_right_arrow"
+            android:background="@drawable/account_arrow_down"/>
+
+        <TextView
+            android:id="@+id/tv_s_r_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/color_999999"
+            android:textColorHint="@color/color_999999"
+            android:textSize="15sp"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_wages_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33dp"
+                android:text="补贴金额(+)"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/ed_wage_subsidy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="17dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入金额(可不填)"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="33dp"
+                android:background="@color/color_dbdbdb"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33dp"
+                android:text="奖励金额(+)"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/ed_wage_reward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="17dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入金额(可不填)"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="33dp"
+                android:background="@color/color_dbdbdb"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33dp"
+                android:text="罚款金额(-)"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/ed_wage_fine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="17dp"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入金额(可不填)"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="15sp"/>
+
+            <ImageView
+                style="@style/account_driver_1px"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_wages_income"/>
+
+        <TextView
+            android:id="@+id/tv_income_money"
+            style="@style/account_left_text"
+            android:text="本次实付金额"/>
+
+        <ImageView
+            android:id="@+id/view_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/houtui"
+            android:visibility="gone"/>
+
+
+        <EditText
+            android:id="@+id/ed_income_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请输入金额"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/color_eb4e4e"
+            android:textColorHint="@color/color_999999"
+            android:textSize="15sp"/>
+
+        <ImageView
+            style="@style/account_driver_1px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_wages_del"/>
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="抹零金额"
+            android:textStyle="normal"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/houtui"
+            android:visibility="gone"/>
+
+
+        <EditText
+            android:id="@+id/ed_wage_del"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="请输入金额(可不填)"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="15sp" />
+
+        <ImageView
+            style="@style/account_driver_1px"/>
+
+
+    </RelativeLayout>
+    <include
+        layout="@layout/layout_line_10px"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:visibility="gone"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_wages_wage"/>
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="本次结算金额"/>
+
+        <ImageView
+            android:id="@+id/img_hint_wage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/icon_account_wage_ques"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/houtui"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_wage_wage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/color_999999"
+            android:textColorHint="@color/color_999999"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_driver_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_line_10px"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:visibility="gone"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_price"/>
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="剩余未结金额"/>
+
+        <ImageView
+            android:id="@+id/img_hint_wage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/icon_account_wage_ques"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/houtui"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_wage_supplus_unset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/color_999999"
+            android:textColorHint="@color/color_999999"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <!--<include-->
+        <!--layout="@layout/layout_line_10px"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rea_project"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_project"/>
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="所在项目"/>
+
+
+        <ImageView
+            android:id="@+id/img_pro_arrow"
+            style="@style/account_right_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_proname"
+            style="@style/account_right_text"
+            android:hint="可不填"/>
+
+        <ImageView
+            style="@style/account_driver_1px"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_marks"/>
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="备注"/>
+
+
+        <ImageView
+            style="@style/account_right_arrow"/>
+
+        <TextView
+            android:id="@+id/tv_remarks"
+            style="@style/account_right_text"
+            android:hint="可填写备注信息"/>
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/account_driver_1px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f1f1f1"/>
+</LinearLayout>

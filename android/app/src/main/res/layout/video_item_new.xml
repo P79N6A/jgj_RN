@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.xiao.nicevideoplayer.NiceVideoPlayer
+        android:id="@+id/nice_video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/cms_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/color_999999"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/head_pic"
+            android:layout_width="27dp"
+            android:layout_height="27dp" />
+
+        <TextView
+            android:id="@+id/real_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_999999"
+            android:textSize="14sp" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/comment_num"
+            style="@style/video_text"
+            android:drawableLeft="@drawable/comment_num" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/like_num"
+            style="@style/video_text"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/like_num" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/share_video"
+            style="@style/video_text"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/share_video"
+            android:text="@string/share" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/scrollFootLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="别拉了，没有更多啦"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

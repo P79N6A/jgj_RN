@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/dialog_top_style"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:text="本项目成员人数已达上限如需添加更多成员，请升级人数"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_15" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/red_button_height"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_gray_bottom_round_right"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/redBtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="我再想想"
+            android:textColor="@color/color_525c68"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/btn_asscess"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="立即升级"
+            android:textColor="@color/color_d7252c"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+
+</LinearLayout>

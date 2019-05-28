@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJQuickCreatChatFooterView">
+            <connections>
+                <outlet property="actionBtn" destination="VpC-Nh-DOf" id="zdP-Gy-y43"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bSh-Ej-vA9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完善工种信息，还能快速加入工种群哦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKv-as-00V">
+                    <rect key="frame" x="80" y="35" width="261" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpC-Nh-DOf">
+                    <rect key="frame" x="160.5" y="67" width="100" height="29"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="dFx-gK-GDY"/>
+                        <constraint firstAttribute="width" constant="100" id="nJ9-G6-1Th"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="-21" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-98" maxY="0.0"/>
+                    <state key="normal" title="去完善" image="check_right_icon">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="compleInfoBtnPressed:" destination="-1" eventType="touchUpInside" id="jk5-AJ-ybj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VpC-Nh-DOf" firstAttribute="top" secondItem="oKv-as-00V" secondAttribute="bottom" constant="14" id="IqD-4y-0ja"/>
+                <constraint firstItem="oKv-as-00V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="LWS-hO-REK"/>
+                <constraint firstItem="oKv-as-00V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QQA-a9-nYG"/>
+                <constraint firstItem="VpC-Nh-DOf" firstAttribute="centerX" secondItem="oKv-as-00V" secondAttribute="centerX" id="nmJ-nI-tSk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="367.19999999999999" y="165.51724137931035"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_right_icon" width="6.5" height="10.5"/>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+//
+//  JGJSecondCollectionViewCell.m
+//  JGJCompany
+//
+//  Created by Tony on 2017/1/16.
+//  Copyright © 2017年 JiZhi. All rights reserved.
+//
+
+#import "JGJSecondCollectionViewCell.h"
+#import "UIImageView+WebCache.h"
+@implementation JGJSecondCollectionViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+-(void)setUrl_str:(NSString *)Url_str
+{
+//    [_photoImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",JLGHttpRequest_UpLoadPicUrl,Url_str]] placeholderImage:nil];
+    //NSLog(@"center_url %@",[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",JLGHttpRequest_UpLoadPicUrl_center_image,Url_str]]);
+   // NSLog(@"old_url %@",[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",JLGHttpRequest_UpLoadPicUrl,Url_str]]);
+
+    [_photoImage sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@media/simages/m/%@",JLGHttpRequest_UpLoadPicUrl_center_image,Url_str]] placeholderImage:nil];
+    NSLog(@"%@",[NSURL URLWithString:[NSString stringWithFormat:@"%@media/simages/m/%@",JLGHttpRequest_UpLoadPicUrl_center_image,Url_str]]);
+
+}
+@end

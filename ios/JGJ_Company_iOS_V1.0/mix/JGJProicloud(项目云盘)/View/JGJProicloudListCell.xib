@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJProicloudListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufx-ko-ztd">
+                        <rect key="frame" x="0.0" y="70" width="375" height="39"/>
+                        <subviews>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPh-Fc-Jqp">
+                                <rect key="frame" x="247" y="0.0" width="70" height="39"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="bNc-u8-vYY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="9" maxY="-16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-19" maxX="-44" maxY="0.0"/>
+                                <state key="normal" title="重命名" image="cloud_rename_icon">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfm-JR-g59">
+                                <rect key="frame" x="59" y="0.0" width="70" height="39"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="jBW-pV-uCW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="19" maxY="-16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-19" maxX="-25" maxY="0.0"/>
+                                <state key="normal" title="下载" image="cloud_download_icon">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZP-Hy-Aeh">
+                                <rect key="frame" x="150" y="0.0" width="75" height="39"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="QHD-8T-mmM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="9" maxY="-16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-19" maxX="-44" maxY="0.0"/>
+                                <state key="normal" title="重命名" image="cloud_share_icon">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QZP-Hy-Aeh" firstAttribute="centerY" secondItem="Ufx-ko-ztd" secondAttribute="centerY" id="6N8-xC-vDx"/>
+                            <constraint firstItem="HPh-Fc-Jqp" firstAttribute="top" secondItem="Ufx-ko-ztd" secondAttribute="top" id="ATl-6b-8q2"/>
+                            <constraint firstItem="bfm-JR-g59" firstAttribute="centerX" secondItem="Ufx-ko-ztd" secondAttribute="centerX" multiplier="0.5" id="HS5-HR-LM6"/>
+                            <constraint firstItem="HPh-Fc-Jqp" firstAttribute="centerX" secondItem="Ufx-ko-ztd" secondAttribute="centerX" multiplier="1.5" id="NUi-IY-j7D"/>
+                            <constraint firstItem="bfm-JR-g59" firstAttribute="top" secondItem="Ufx-ko-ztd" secondAttribute="top" id="S7T-ZB-Rk0"/>
+                            <constraint firstItem="HPh-Fc-Jqp" firstAttribute="centerY" secondItem="Ufx-ko-ztd" secondAttribute="centerY" id="bjV-Kj-rvM"/>
+                            <constraint firstItem="bfm-JR-g59" firstAttribute="centerY" secondItem="Ufx-ko-ztd" secondAttribute="centerY" id="dgq-Nh-FSa"/>
+                            <constraint firstItem="QZP-Hy-Aeh" firstAttribute="top" secondItem="Ufx-ko-ztd" secondAttribute="top" id="smX-14-ST7"/>
+                            <constraint firstItem="QZP-Hy-Aeh" firstAttribute="centerX" secondItem="Ufx-ko-ztd" secondAttribute="centerX" id="wRE-Dp-E15"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5f-VL-q11">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uW5-0v-YiI">
+                                <rect key="frame" x="50" y="0.0" width="50" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xu9-as-c2D">
+                                        <rect key="frame" x="8" y="16" width="35" height="38"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="Hsa-gC-4JZ"/>
+                                            <constraint firstAttribute="height" constant="38" id="Zgh-D2-rfv"/>
+                                        </constraints>
+                                        <state key="normal" image="cloud_folder_icon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xu9-as-c2D" firstAttribute="centerX" secondItem="uW5-0v-YiI" secondAttribute="centerX" id="hym-LM-mSk"/>
+                                    <constraint firstAttribute="width" constant="50" id="m6e-4E-reh"/>
+                                    <constraint firstItem="Xu9-as-c2D" firstAttribute="centerY" secondItem="uW5-0v-YiI" secondAttribute="centerY" id="qCm-R9-Wp3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEV-C9-ri9">
+                                <rect key="frame" x="100" y="15" width="215" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="Av1-Iz-Y38"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I90-bC-MzD">
+                                <rect key="frame" x="100" y="40" width="213" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="C4p-mI-fxo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7o-fW-hde" customClass="LineView">
+                                <rect key="frame" x="50" y="69" width="315" height="1"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="z23-kU-N9f"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJe-Tb-Sl7">
+                                <rect key="frame" x="325" y="10" width="50" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud_down_icon" translatesAutoresizingMaskIntoConstraints="NO" id="DkR-6I-33z">
+                                        <rect key="frame" x="19" y="11" width="12" height="7"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mV-Hu-SEG">
+                                        <rect key="frame" x="10" y="27" width="31" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="47P-Hj-iMs"/>
+                                    <constraint firstAttribute="width" constant="50" id="5Vd-E4-1Ua"/>
+                                    <constraint firstItem="0mV-Hu-SEG" firstAttribute="centerY" secondItem="YJe-Tb-Sl7" secondAttribute="centerY" constant="10" id="BNL-v3-lRw"/>
+                                    <constraint firstItem="0mV-Hu-SEG" firstAttribute="centerX" secondItem="YJe-Tb-Sl7" secondAttribute="centerX" id="LfY-LL-jw3"/>
+                                    <constraint firstItem="DkR-6I-33z" firstAttribute="centerY" secondItem="YJe-Tb-Sl7" secondAttribute="centerY" constant="-10" id="u6O-9y-lOc"/>
+                                    <constraint firstItem="DkR-6I-33z" firstAttribute="centerX" secondItem="YJe-Tb-Sl7" secondAttribute="centerX" id="uSf-hf-Yeh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBy-31-lOc">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="bOS-R5-uF7"/>
+                                </constraints>
+                                <state key="normal" image="EllipseIcon"/>
+                                <state key="selected" image="MultiSelected"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.50980392159999999" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YJe-Tb-Sl7" secondAttribute="trailing" id="97b-lM-UNH"/>
+                            <constraint firstItem="I90-bC-MzD" firstAttribute="leading" secondItem="uW5-0v-YiI" secondAttribute="trailing" id="BRS-nP-dse"/>
+                            <constraint firstItem="C7o-fW-hde" firstAttribute="top" secondItem="WBy-31-lOc" secondAttribute="bottom" id="FtG-yz-JZH"/>
+                            <constraint firstItem="WBy-31-lOc" firstAttribute="leading" secondItem="o5f-VL-q11" secondAttribute="leading" id="GAw-Qc-ZoX"/>
+                            <constraint firstItem="YJe-Tb-Sl7" firstAttribute="centerY" secondItem="o5f-VL-q11" secondAttribute="centerY" id="GMM-CH-ONR"/>
+                            <constraint firstItem="uW5-0v-YiI" firstAttribute="top" secondItem="o5f-VL-q11" secondAttribute="top" id="HpR-AM-NeV"/>
+                            <constraint firstItem="YJe-Tb-Sl7" firstAttribute="leading" secondItem="mEV-C9-ri9" secondAttribute="trailing" constant="10" id="JHy-0C-jSP"/>
+                            <constraint firstItem="mEV-C9-ri9" firstAttribute="leading" secondItem="uW5-0v-YiI" secondAttribute="trailing" id="LEA-jx-S0S"/>
+                            <constraint firstAttribute="height" constant="70" id="Y3T-JY-YEo"/>
+                            <constraint firstItem="C7o-fW-hde" firstAttribute="leading" secondItem="o5f-VL-q11" secondAttribute="leading" constant="50" id="YSu-hu-Otz"/>
+                            <constraint firstItem="mEV-C9-ri9" firstAttribute="top" secondItem="o5f-VL-q11" secondAttribute="top" constant="15" id="gih-Jj-MMj"/>
+                            <constraint firstItem="I90-bC-MzD" firstAttribute="top" secondItem="mEV-C9-ri9" secondAttribute="bottom" constant="6.5" id="j5R-uU-REC"/>
+                            <constraint firstAttribute="trailing" secondItem="C7o-fW-hde" secondAttribute="trailing" constant="10" id="la0-G9-M5p"/>
+                            <constraint firstItem="uW5-0v-YiI" firstAttribute="leading" secondItem="WBy-31-lOc" secondAttribute="trailing" constant="10" id="pzd-HD-6xg"/>
+                            <constraint firstItem="WBy-31-lOc" firstAttribute="top" secondItem="o5f-VL-q11" secondAttribute="top" id="rwT-U5-0Ii"/>
+                            <constraint firstAttribute="bottom" secondItem="uW5-0v-YiI" secondAttribute="bottom" id="s0H-xK-iyi"/>
+                            <constraint firstItem="YJe-Tb-Sl7" firstAttribute="leading" secondItem="I90-bC-MzD" secondAttribute="trailing" constant="12" id="tH1-kp-xLk"/>
+                            <constraint firstAttribute="bottom" secondItem="C7o-fW-hde" secondAttribute="bottom" id="utN-JV-FrJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o5f-VL-q11" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YpN-up-dmP"/>
+                    <constraint firstItem="Ufx-ko-ztd" firstAttribute="top" secondItem="o5f-VL-q11" secondAttribute="bottom" id="aKy-dj-M8s"/>
+                    <constraint firstAttribute="bottom" secondItem="Ufx-ko-ztd" secondAttribute="bottom" id="cEk-rh-o2C"/>
+                    <constraint firstItem="Ufx-ko-ztd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="l5Q-qb-QrR"/>
+                    <constraint firstAttribute="trailing" secondItem="o5f-VL-q11" secondAttribute="trailing" id="pyd-J2-mJp"/>
+                    <constraint firstAttribute="trailing" secondItem="Ufx-ko-ztd" secondAttribute="trailing" id="toZ-mX-6Wb"/>
+                    <constraint firstItem="o5f-VL-q11" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="y0n-b8-BzJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-225" y="-12"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EllipseIcon" width="20" height="20"/>
+        <image name="MultiSelected" width="20" height="20"/>
+        <image name="cloud_down_icon" width="12" height="7"/>
+        <image name="cloud_download_icon" width="17" height="17"/>
+        <image name="cloud_folder_icon" width="36" height="28"/>
+        <image name="cloud_rename_icon" width="17" height="17"/>
+        <image name="cloud_share_icon" width="17" height="17"/>
+    </resources>
+</document>

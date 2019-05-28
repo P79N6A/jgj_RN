@@ -1,0 +1,10 @@
+platform :ios, '8.0'
+
+target ‘JGJCompany’ do
+
+
+pod 'WCDB'   
+
+pod 'BaiduMobStatCodeless'
+
+end

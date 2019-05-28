@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/head_only_title"/>
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="30dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/certification_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/icon_authening"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/certification_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/top_first_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/top_second_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:textColor="@color/gray_8b8b8b"
+                android:textSize="@dimen/text_size_11"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/id_card_name"
+                android:textColor="@color/gray_5f5f5f"
+                android:textSize="@dimen/text_size_14"/>
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_toRightOf="@id/name"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/name_null"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_size_14"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/linecolor"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <TextView
+                android:id="@+id/id_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="身份证&#160;:&#160;"
+                android:textColor="@color/gray_5f5f5f"
+                android:textSize="@dimen/text_size_14"/>
+
+            <EditText
+                android:id="@+id/ed_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_toRightOf="@id/id_card"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入真实身份证号码"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_size_14"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/linecolor"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button_press_effect"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/sk_dbdbdb_2radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:background="@color/textviewback"
+            android:gravity="center_horizontal"
+            android:paddingBottom="7dip"
+            android:paddingTop="7dip"
+            android:text="@string/personauth_hint1"
+            android:textColor="@color/gray_666666"
+            android:textSize="@dimen/text_size_15"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/icon_person_auth"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:text="@string/personauth_hint2"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@drawable/icon_person_auth"/>
+
+            <TextView
+                android:id="@+id/personauth_hint3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/icon_order_sucess" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="如需开具发票,请管理员登录\n吉工宝网页版 www.jgongb.com 申请"
+        android:textColor="@color/color_b9b9b9" />
+
+    <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/color_b9b9b9" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/draw_radius_guide_btn_graycolor_5dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/back_home"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/button_size" />
+
+        <Button
+            android:id="@+id/btn_order"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/draw_radius_guide_btn_graycolor_5dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/look_order"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/button_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

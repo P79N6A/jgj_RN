@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <FrameLayout
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"></FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/start_end_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/re_time_startwork"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:paddingLeft="@dimen/margin_12dp"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/textview"
+                android:text="选择开工时间" />
+
+            <ImageView
+                android:id="@+id/point4"
+                android:layout_width="@dimen/margin_12dp"
+                android:layout_height="@dimen/margin_12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/guide_image" />
+
+            <TextView
+                android:id="@+id/tv_time_startwork"
+                style="@style/xj_textView"
+                android:layout_toLeftOf="@+id/point4"
+                android:hint="请选择开工时间" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/margin_12dp"
+            android:layout_marginRight="@dimen/margin_12dp"
+            android:background="@color/linecolor" />
+
+        <RelativeLayout
+            android:id="@+id/re_time_endwork"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:paddingLeft="@dimen/margin_12dp"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/textview"
+                android:text="选择完工时间" />
+
+            <ImageView
+                android:id="@+id/point6"
+                android:layout_width="@dimen/margin_12dp"
+                android:layout_height="@dimen/margin_12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/guide_image" />
+
+            <TextView
+                android:id="@+id/tv_time_endwork"
+                style="@style/xj_textView"
+                android:layout_toLeftOf="@+id/point6"
+                android:hint="请选择完工时间" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dip"
+            android:background="@color/gray_f1f1f1" />
+    </LinearLayout>
+
+    <include layout="@layout/voice_camera_layout_photo"></include>
+
+</LinearLayout>

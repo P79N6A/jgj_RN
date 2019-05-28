@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="76dp"
+        android:visibility="gone">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:scaleType="center"
+            android:src="@drawable/head2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/img_head_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="0000"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <!--<com.jizhi.jongg.widget.SWImageView-->
+                <!--android:id="@+id/bimg_left"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/experience"-->
+                <!--app:siv_borderColor="@color/color_cccccc"-->
+                <!--app:siv_type="round"/>-->
+                <ImageView
+                    android:id="@+id/bimg_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_message_fail_default"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:src="@drawable/head2" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_head_right">
+
+
+            <LinearLayout
+                android:id="@+id/rea_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="13dp">
+
+                    <TextView
+                        android:id="@+id/tv_unread_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/message_unread"
+                        android:textColor="@color/color_628ae0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_date_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_unread_right"
+                        android:text="000"
+                        android:textColor="@color/color_999999"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/img_sendfail"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/icon_sendfail"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_toRightOf="@id/img_sendfail">
+                        <ImageView
+                            android:id="@+id/bimg_right"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/icon_message_fail_default"
+                            android:layout_gravity="right" />
+
+                        <RelativeLayout
+                            android:id="@+id/layout_spnner"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="gone"
+                            android:layout_centerInParent="true">
+                            <ImageView
+                                android:id="@+id/spinner"
+                                android:layout_width="15dip"
+                                android:layout_height="15dip"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/load_spinner"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

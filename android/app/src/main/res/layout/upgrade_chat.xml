@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在项目:"
+            android:textColor="@color/color_333333" />
+
+        <com.hcs.cityslist.widget.ClearEditText
+            android:id="@+id/hostProjectEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/gray_cccccc"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_dbdbdb"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="班组名称:"
+            android:textColor="@color/color_333333" />
+
+        <com.hcs.cityslist.widget.ClearEditText
+            android:id="@+id/proNameEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/gray_cccccc"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+
+</LinearLayout>

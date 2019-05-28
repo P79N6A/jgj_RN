@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:filterTouchesWhenObscured="false" />
+
+    <com.jizhi.jongg.widget.CircleProgressView
+        android:id="@+id/circleProgressbar"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

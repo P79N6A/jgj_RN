@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="D9Y-VB-R69">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Worker View Controller-->
+        <scene sceneID="S7P-RO-nyB">
+            <objects>
+                <tabBarController storyboardIdentifier="JGJWorkerViewController" id="Kmu-jp-3TT" customClass="JGJWorkerViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oC3-tE-TZs"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="GtA-jg-0Ey">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqM-QK-yfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="3399"/>
+        </scene>
+        <!--Data Source-->
+        <scene sceneID="Pbj-ed-IrD">
+            <objects>
+                <viewController storyboardIdentifier="MateRecordWorkpoint" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iK8-eu-c1G" customClass="YZGMateRecordWorkpointsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J8s-Vw-zRy"/>
+                        <viewControllerLayoutGuide type="bottom" id="X6Q-yi-2IV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4p-hs-zC7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZJ-6Y-Vgy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="623"/>
+                                <subviews>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5O-Uc-4LY" customClass="YZGMateBillRecordWorkpointsView">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="60"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="B5O-Uc-4LY" secondAttribute="height" multiplier="25:4" id="D2r-2B-Eer"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRR-do-w2i" customClass="FSCalendar">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="320"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zRR-do-w2i" secondAttribute="height" multiplier="75:64" id="BIc-pS-N6n"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useVeryShortWeekdaySymbols" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="pagingEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="scrollEnabled" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fakeSubtitles" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                                <color key="value" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="headerMinimumDissolvedAlpha">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="YYYY年MM月"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                                <color key="value" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
+                                                <color key="value" red="0.52549019610000003" green="0.61176470589999998" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
+                                                <color key="value" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="subtitleSelectionColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="subtitleDefaultColor">
+                                                <color key="value" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="subtitleTodayColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="subtitlePlaceholderColor">
+                                                <color key="value" red="0.52549019610000003" green="0.61176470589999998" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="subtitleWeekendColor">
+                                                <color key="value" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                                <color key="value" red="0.27450980390000002" green="0.6588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                                <color key="value" red="0.79607844350000001" green="0.058823529630000003" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
+                                                <color key="value" red="0.79607844350000001" green="0.058823529630000003" blue="0.1294117719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitContentSize" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="iK8-eu-c1G" id="aZ8-vj-m42"/>
+                                            <outlet property="delegate" destination="iK8-eu-c1G" id="E9y-Es-k8r"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGf-x4-DJg" customClass="RecordWorkHomeNoteView">
+                                        <rect key="frame" x="15" y="477" width="345" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="FGf-x4-DJg" secondAttribute="height" multiplier="690:88" id="0VF-Dj-V9d"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9w-Nw-Qfz" customClass="RecordWorkHomeMoneyView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="C9w-Nw-Qfz" secondAttribute="height" multiplier="4" id="bQ7-41-0Fg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zRR-do-w2i" secondAttribute="trailing" id="0QN-Gy-A3g"/>
+                                    <constraint firstItem="C9w-Nw-Qfz" firstAttribute="top" secondItem="dZJ-6Y-Vgy" secondAttribute="top" id="1Vk-i4-oT2"/>
+                                    <constraint firstAttribute="trailing" secondItem="B5O-Uc-4LY" secondAttribute="trailing" id="7Bv-R7-hZu"/>
+                                    <constraint firstItem="zRR-do-w2i" firstAttribute="leading" secondItem="dZJ-6Y-Vgy" secondAttribute="leading" id="7dv-3M-msG"/>
+                                    <constraint firstAttribute="trailing" secondItem="C9w-Nw-Qfz" secondAttribute="trailing" id="8LB-q3-6PH"/>
+                                    <constraint firstItem="B5O-Uc-4LY" firstAttribute="top" secondItem="C9w-Nw-Qfz" secondAttribute="bottom" id="SIQ-x0-SXw"/>
+                                    <constraint firstItem="FGf-x4-DJg" firstAttribute="width" secondItem="dZJ-6Y-Vgy" secondAttribute="width" multiplier="0.92" id="Urf-Yh-wpc"/>
+                                    <constraint firstItem="FGf-x4-DJg" firstAttribute="top" secondItem="zRR-do-w2i" secondAttribute="bottom" constant="-5" id="VyE-Ex-mbt"/>
+                                    <constraint firstAttribute="bottom" secondItem="FGf-x4-DJg" secondAttribute="bottom" constant="100" id="dgH-v5-1lb"/>
+                                    <constraint firstItem="zRR-do-w2i" firstAttribute="top" secondItem="B5O-Uc-4LY" secondAttribute="bottom" constant="8" id="f1s-Gf-UbL"/>
+                                    <constraint firstItem="FGf-x4-DJg" firstAttribute="centerX" secondItem="dZJ-6Y-Vgy" secondAttribute="centerX" id="o9y-EU-TGR"/>
+                                    <constraint firstItem="C9w-Nw-Qfz" firstAttribute="leading" secondItem="dZJ-6Y-Vgy" secondAttribute="leading" id="vhZ-JW-c6K"/>
+                                    <constraint firstItem="B5O-Uc-4LY" firstAttribute="leading" secondItem="dZJ-6Y-Vgy" secondAttribute="leading" id="wSR-WT-bIB"/>
+                                    <constraint firstItem="C9w-Nw-Qfz" firstAttribute="centerX" secondItem="dZJ-6Y-Vgy" secondAttribute="centerX" id="xJ7-KB-DWx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dZJ-6Y-Vgy" firstAttribute="leading" secondItem="p4p-hs-zC7" secondAttribute="leading" id="7jI-P6-8aj"/>
+                            <constraint firstItem="dZJ-6Y-Vgy" firstAttribute="top" secondItem="J8s-Vw-zRy" secondAttribute="bottom" id="Fqn-bg-lzy"/>
+                            <constraint firstItem="X6Q-yi-2IV" firstAttribute="top" secondItem="dZJ-6Y-Vgy" secondAttribute="bottom" constant="-20" id="NA6-hB-LN4"/>
+                            <constraint firstAttribute="trailing" secondItem="dZJ-6Y-Vgy" secondAttribute="trailing" id="a8E-rC-DeQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="记工记账" id="sr4-W7-ywM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="billRecordWorkpointsView" destination="B5O-Uc-4LY" id="0Ii-Hq-HYy"/>
+                        <outlet property="calendar" destination="zRR-do-w2i" id="kTC-2N-Tx3"/>
+                        <outlet property="recordNoteMoney" destination="FGf-x4-DJg" id="jEs-LE-9sp"/>
+                        <outlet property="recordWorkHomeMoneyView" destination="C9w-Nw-Qfz" id="d95-Vn-Ych"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zju-5i-yaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-209" y="2960"/>
+        </scene>
+        <!--Custom View Controller-->
+        <scene sceneID="TOh-Ou-95z">
+            <objects>
+                <navigationController storyboardIdentifier="JLGCustomViewController" id="D9Y-VB-R69" customClass="JLGCustomViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ij1-M7-HwX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kmu-jp-3TT" kind="relationship" relationship="rootViewController" id="71L-Os-iGq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVW-es-iSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1427" y="3399"/>
+        </scene>
+    </scenes>
+</document>

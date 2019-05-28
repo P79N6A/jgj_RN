@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_top_style"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/supplemant_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:text="@string/complete_information"
+            android:textColor="@color/black_1b1b1b"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supplemant_reminder"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:lineSpacingExtra="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:paddingTop="5dip"
+            android:textColor="@color/gray_525c68"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@color/linecolor" />
+
+    <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+        android:id="@+id/supple"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:gravity="center"
+        android:text="@string/go_complete_information"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/text_size_14" />
+
+</LinearLayout>

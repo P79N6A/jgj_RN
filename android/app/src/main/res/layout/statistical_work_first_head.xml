@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/statisticalTotalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/red_right_point_small"
+            android:text="查看该时间段总的统计"
+            android:textColor="@color/app_color"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <com.jizhi.jongg.widget.NestRadioGroup
+        android:id="@+id/radioBtnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/leftBtn"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/radio_left_red_line"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textColor="@drawable/textcolor_guide_white"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                android:id="@+id/leftIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/sanjian_white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rightBtn"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/radio_right_red_line"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:textColor="@drawable/textcolor_guide_white"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                android:id="@+id/rightIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/sanjian_white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </com.jizhi.jongg.widget.NestRadioGroup>
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/gray_f7f7f7"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/itemTitleName"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="记工"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="金额"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/clickIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/houtui"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <include layout="@layout/empty_view" />
+
+</LinearLayout>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false">
+
+
+    <!-- 设置按钮的四个角为弧形 -->
+    <!-- android:radius 弧形的半径 -->
+    <corners android:radius="35dip" />
+
+    <solid android:color="@color/purple_rect"></solid>
+
+    <padding
+        android:left="1dp"
+        android:right="1dp"></padding>
+
+
+</shape>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_guide_right_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fef1e1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/yellow_background_text"
+            android:text="此处只显示班组长对工人的记工" />
+
+        <LinearLayout
+            android:id="@+id/accountConfirmLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/accountConfirmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/confirmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sk_f18215_half_radius"
+                android:clickable="true"
+                android:drawablePadding="2dp"
+                android:drawableRight="@drawable/small_yellow_right_point"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:text="去确认"
+                android:textColor="#f18215"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jizhi.jongg.widget.PageExpandableListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_f1f1f1"
+                android:cacheColorHint="#00000000"
+                android:childDivider="@null"
+                android:divider="@null"
+                android:drawSelectorOnTop="true"
+                android:groupIndicator="@null"
+                android:listSelector="#00000000" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/empty_view" />
+
+        <ImageView
+            android:id="@+id/closedIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/group_closed_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

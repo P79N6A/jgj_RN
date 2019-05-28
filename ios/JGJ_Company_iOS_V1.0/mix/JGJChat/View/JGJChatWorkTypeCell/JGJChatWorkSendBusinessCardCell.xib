@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="KGk-i7-Jjw" customClass="JGJChatWorkSendBusinessCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="224.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60a-T9-5P2" userLabel="businessCardInfoView">
+                        <rect key="frame" x="10" y="10" width="367" height="103"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-9U-Rsn">
+                                <rect key="frame" x="15" y="15" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Qgh-TP-8VS"/>
+                                    <constraint firstAttribute="height" constant="45" id="f70-1I-xZ0"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张晓阳" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V61-Pf-WDV">
+                                <rect key="frame" x="71" y="15" width="49" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="quB-ev-ckI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_noun_logo" translatesAutoresizingMaskIntoConstraints="NO" id="mJz-lq-ql8">
+                                <rect key="frame" x="130" y="15" width="46" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="HTm-kx-Yvg"/>
+                                    <constraint firstAttribute="height" constant="16" id="mcm-pi-ykM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_verb_logo" translatesAutoresizingMaskIntoConstraints="NO" id="umr-17-aIt">
+                                <rect key="frame" x="186" y="15" width="46" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Q9Y-1Q-dbh"/>
+                                    <constraint firstAttribute="width" constant="46" id="xGN-QV-oWL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="乌兹别克族  工龄 20 年  队伍 150 人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e33-zz-FKh">
+                                <rect key="frame" x="71" y="40" width="182" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="XKj-WR-Om9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玻璃幕墙工 | 水电工 | 水电工 | 水电工..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfV-1n-5Az">
+                                <rect key="frame" x="15" y="70" width="243" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="T3C-uu-dQX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqP-r3-OPr">
+                                <rect key="frame" x="273" y="64" width="79" height="25"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="Kh9-or-Xos"/>
+                                    <constraint firstAttribute="height" constant="25" id="j4r-ZT-UlD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="发送名片">
+                                    <color key="titleColor" red="1" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QqP-r3-OPr" firstAttribute="centerY" secondItem="mfV-1n-5Az" secondAttribute="centerY" id="53L-Kc-3ho"/>
+                            <constraint firstItem="PD9-9U-Rsn" firstAttribute="leading" secondItem="60a-T9-5P2" secondAttribute="leading" constant="15" id="Cv3-lu-sei"/>
+                            <constraint firstItem="umr-17-aIt" firstAttribute="leading" secondItem="mJz-lq-ql8" secondAttribute="trailing" constant="10" id="Hqk-UZ-uPA"/>
+                            <constraint firstItem="umr-17-aIt" firstAttribute="top" secondItem="mJz-lq-ql8" secondAttribute="top" id="OXi-Kv-Ojz"/>
+                            <constraint firstItem="mfV-1n-5Az" firstAttribute="leading" secondItem="PD9-9U-Rsn" secondAttribute="leading" id="SHz-ho-M6J"/>
+                            <constraint firstItem="PD9-9U-Rsn" firstAttribute="top" secondItem="60a-T9-5P2" secondAttribute="top" constant="15" id="b3V-Hw-w1B"/>
+                            <constraint firstItem="e33-zz-FKh" firstAttribute="leading" secondItem="PD9-9U-Rsn" secondAttribute="trailing" constant="11" id="cII-TO-bRs"/>
+                            <constraint firstItem="V61-Pf-WDV" firstAttribute="leading" secondItem="PD9-9U-Rsn" secondAttribute="trailing" constant="11" id="dTu-rr-mc1"/>
+                            <constraint firstItem="mfV-1n-5Az" firstAttribute="top" secondItem="PD9-9U-Rsn" secondAttribute="bottom" constant="10" id="dam-fk-I6k"/>
+                            <constraint firstItem="mJz-lq-ql8" firstAttribute="top" secondItem="V61-Pf-WDV" secondAttribute="top" id="mGB-1V-K05"/>
+                            <constraint firstItem="e33-zz-FKh" firstAttribute="top" secondItem="mJz-lq-ql8" secondAttribute="bottom" constant="9" id="nOt-m3-Acl"/>
+                            <constraint firstAttribute="height" constant="103" id="qhG-XQ-wfD"/>
+                            <constraint firstItem="mJz-lq-ql8" firstAttribute="leading" secondItem="V61-Pf-WDV" secondAttribute="trailing" constant="10" id="qpc-fk-pRE"/>
+                            <constraint firstItem="QqP-r3-OPr" firstAttribute="leading" secondItem="mfV-1n-5Az" secondAttribute="trailing" constant="15" id="yAk-XZ-EwD"/>
+                            <constraint firstItem="V61-Pf-WDV" firstAttribute="top" secondItem="PD9-9U-Rsn" secondAttribute="top" id="z2o-Gr-CDC"/>
+                            <constraint firstAttribute="trailing" secondItem="QqP-r3-OPr" secondAttribute="trailing" constant="15" id="zqU-CL-hdy"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T91-Ye-Sa3" userLabel="verbInfoView">
+                        <rect key="frame" x="10" y="159" width="367" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还未进行实名认证，实名认证能提高找工作的成功率" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naf-DS-3cj">
+                                <rect key="frame" x="0.0" y="0.0" width="367" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="aun-VK-j99"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnY-O7-XhN">
+                                <rect key="frame" x="10" y="26" width="347" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="EN1-fQ-sed"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="-29" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="122" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="立即认证" image="right_ orange_icon">
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoRealNameAuthentication:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="U44-sR-bbh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="naf-DS-3cj" firstAttribute="top" secondItem="T91-Ye-Sa3" secondAttribute="top" id="6A6-VY-Ovb"/>
+                            <constraint firstItem="PnY-O7-XhN" firstAttribute="top" secondItem="naf-DS-3cj" secondAttribute="bottom" constant="12" id="Jot-Q9-Rnf"/>
+                            <constraint firstItem="naf-DS-3cj" firstAttribute="leading" secondItem="T91-Ye-Sa3" secondAttribute="leading" id="NmN-J0-R03"/>
+                            <constraint firstAttribute="trailing" secondItem="PnY-O7-XhN" secondAttribute="trailing" constant="10" id="Wno-ib-CWa"/>
+                            <constraint firstItem="PnY-O7-XhN" firstAttribute="leading" secondItem="T91-Ye-Sa3" secondAttribute="leading" constant="10" id="eY9-ed-2e2"/>
+                            <constraint firstAttribute="height" constant="45" id="onq-Bb-ypf"/>
+                            <constraint firstAttribute="trailing" secondItem="naf-DS-3cj" secondAttribute="trailing" id="tbR-pe-o0C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="deviceRGB"/>
+                <constraints>
+                    <constraint firstItem="60a-T9-5P2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3vf-Wt-QQF"/>
+                    <constraint firstItem="T91-Ye-Sa3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Fq4-Qs-YCE"/>
+                    <constraint firstAttribute="trailing" secondItem="60a-T9-5P2" secondAttribute="trailing" constant="10" id="W6Y-7R-wgJ"/>
+                    <constraint firstItem="60a-T9-5P2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bdP-yb-7mp"/>
+                    <constraint firstAttribute="trailing" secondItem="T91-Ye-Sa3" secondAttribute="trailing" constant="10" id="p2i-1g-TLj"/>
+                    <constraint firstItem="T91-Ye-Sa3" firstAttribute="top" secondItem="60a-T9-5P2" secondAttribute="bottom" constant="46" id="z7T-nm-dBR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="businesCardInfoViewH" destination="qhG-XQ-wfD" id="XyV-GM-jkc"/>
+                <outlet property="businessCardInfoView" destination="60a-T9-5P2" id="VGw-lk-5g0"/>
+                <outlet property="isRealNameSymbol" destination="mJz-lq-ql8" id="hAm-TI-qQY"/>
+                <outlet property="isVerbSymbol" destination="umr-17-aIt" id="oX7-Po-jec"/>
+                <outlet property="sendBusinessCard" destination="QqP-r3-OPr" id="Esv-s2-fuL"/>
+                <outlet property="userAbilityInfo" destination="mfV-1n-5Az" id="j8l-fg-FYf"/>
+                <outlet property="userImage" destination="PD9-9U-Rsn" id="YcP-Qy-1Nt"/>
+                <outlet property="userInfoLabel" destination="e33-zz-FKh" id="owN-ca-nz8"/>
+                <outlet property="userName" destination="V61-Pf-WDV" id="T6f-AT-wry"/>
+                <outlet property="verbInfoView" destination="T91-Ye-Sa3" id="uXU-ql-MgJ"/>
+                <outlet property="verbInfoViewH" destination="onq-Bb-ypf" id="B8O-oW-mDN"/>
+                <outlet property="verbInfoViewTopConstraint" destination="z7T-nm-dBR" id="y3E-X1-Y4c"/>
+            </connections>
+            <point key="canvasLocation" x="124" y="137.18140929535232"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_noun_logo" width="46" height="16"/>
+        <image name="chat_verb_logo" width="45.5" height="16"/>
+        <image name="right_ orange_icon" width="6.5" height="11"/>
+    </resources>
+</document>

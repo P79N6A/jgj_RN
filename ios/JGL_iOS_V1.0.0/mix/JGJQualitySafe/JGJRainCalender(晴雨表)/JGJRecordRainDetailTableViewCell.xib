@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="JGJRecordRainDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="653" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="653" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-cW-lag">
+                        <rect key="frame" x="12" y="8" width="629" height="118"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无记录哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uew-ip-DSY">
+                        <rect key="frame" x="283.5" y="15" width="86" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyF-ZY-bSz">
+                        <rect key="frame" x="267" y="46" width="120" height="39"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="39" id="GkO-ec-RiL"/>
+                            <constraint firstAttribute="width" constant="120" id="OWd-IT-bO2"/>
+                        </constraints>
+                        <state key="normal" title="记录天气">
+                            <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickRecordWeather:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SPx-AZ-wTi"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxH-5i-QlV">
+                        <rect key="frame" x="10" y="0.0" width="633" height="1"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="egQ-DR-mD4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hEh-cW-lag" secondAttribute="bottom" constant="10" id="59C-Rl-N2c"/>
+                    <constraint firstAttribute="trailing" secondItem="dxH-5i-QlV" secondAttribute="trailing" constant="10" id="9Ht-Fq-2I7"/>
+                    <constraint firstItem="HyF-ZY-bSz" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="HS3-Bs-ZeY"/>
+                    <constraint firstItem="uew-ip-DSY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Lv2-fR-tjE"/>
+                    <constraint firstItem="dxH-5i-QlV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R0t-PN-XGK"/>
+                    <constraint firstItem="HyF-ZY-bSz" firstAttribute="top" secondItem="uew-ip-DSY" secondAttribute="bottom" constant="13" id="Rdy-6x-4oZ"/>
+                    <constraint firstItem="hEh-cW-lag" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Zq2-us-eQs"/>
+                    <constraint firstAttribute="trailing" secondItem="hEh-cW-lag" secondAttribute="trailing" constant="12" id="fkM-iK-sF6"/>
+                    <constraint firstItem="dxH-5i-QlV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vGe-0R-HRX"/>
+                    <constraint firstItem="uew-ip-DSY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xa0-Ga-iI0"/>
+                    <constraint firstItem="hEh-cW-lag" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yLu-k7-Otj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="departLable" destination="dxH-5i-QlV" id="1yC-Co-f4n"/>
+                <outlet property="detailLable" destination="hEh-cW-lag" id="3ry-ZK-rqd"/>
+                <outlet property="placeButton" destination="HyF-ZY-bSz" id="TA6-2p-thj"/>
+                <outlet property="placeLable" destination="uew-ip-DSY" id="I8R-J3-RGp"/>
+                <outlet property="recordButton" destination="HyF-ZY-bSz" id="eIP-lF-3Qe"/>
+            </connections>
+            <point key="canvasLocation" x="248.5" y="67.5"/>
+        </tableViewCell>
+    </objects>
+</document>

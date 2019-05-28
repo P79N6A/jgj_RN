@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rea_pop_layout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_f2a2a2a_5_radius">
+
+        <TextView
+            android:id="@+id/tv_pop_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:gravity=""
+            android:text="未结工资 = 点工工资 + 包工工资 - 借支金额 - 已结金额"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_pop_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_pop_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:text="我知道了"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rea_pop_layout"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/icon_account_pop_arrow"/>
+</RelativeLayout>

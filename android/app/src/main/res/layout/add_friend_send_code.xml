@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:padding="10dp"
+        android:text="添加朋友需要发送验证申请,等待对方同意"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_size_12" />
+
+    <EditText
+        android:id="@+id/sendEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@null"
+        android:gravity="left"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/gray_cccccc"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:padding="10dp"
+        android:text="你还可以选择以下常用申请模板:"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/text_size_12" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f1f1f1"
+        android:divider="@null" />
+
+
+</LinearLayout>

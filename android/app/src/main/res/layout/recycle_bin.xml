@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cloudy" />
+
+    <TextView
+        android:id="@+id/recycleTipsText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center"
+        android:text="回收站的文件会自动为你保留15天,15天之文件将自动彻底删除"
+        android:textColor="@color/color_999999"
+        android:textSize="12sp" />
+
+    <include layout="@layout/search_edit_layout" />
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:divider="@null" />
+
+        <include layout="@layout/empty_view" />
+
+    </RelativeLayout>
+
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/restoreText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_sk_666666_3radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="还原文件"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/button_size" />
+
+        <TextView
+            android:id="@+id/deleteText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="彻底删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

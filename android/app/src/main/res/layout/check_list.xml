@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_fafafa">
+
+        <com.flyco.tablayout.SlidingTabLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tl:tl_indicator_color="@color/color_eb4e4e"
+            tl:tl_indicator_height="2dp"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_padding="5dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/color_eb4e4e"
+            tl:tl_textUnselectColor="@color/color_999999"
+            tl:tl_textsize="@dimen/text_size_15" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/color_dbdbdb" />
+
+        <View
+            style="@style/line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

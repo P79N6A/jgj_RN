@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJChatListMinePicCell" rowHeight="227" id="zdQ-RA-RJr" userLabel="JGJChatListOtherCell" customClass="JGJChatListMinePicCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zdQ-RA-RJr" id="bFU-VX-C9D">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="220.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeS-KC-von" userLabel="leftTopView" customClass="JGJChatListCellTopTimeView">
+                        <rect key="frame" x="83" y="13" width="225" height="14"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="8RL-1y-Lab"/>
+                            <constraint firstAttribute="width" constant="134" id="c27-R8-c2H"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="c27-R8-c2H"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeM-mZ-1q3" userLabel="middleView">
+                        <rect key="frame" x="126" y="31" width="195" height="187"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FL-H2-P7v" customClass="JGJChatListPicView">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="187"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="MDZ-bl-g0o"/>
+                                    <constraint firstAttribute="width" constant="195" id="Ng5-RD-blN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7FL-H2-P7v" firstAttribute="top" secondItem="DeM-mZ-1q3" secondAttribute="top" id="Bzt-O4-Lhr"/>
+                            <constraint firstItem="7FL-H2-P7v" firstAttribute="leading" secondItem="DeM-mZ-1q3" secondAttribute="leading" id="CSc-Hs-h6Z"/>
+                            <constraint firstAttribute="bottom" secondItem="7FL-H2-P7v" secondAttribute="bottom" id="KP7-EE-HO9"/>
+                            <constraint firstAttribute="trailing" secondItem="7FL-H2-P7v" secondAttribute="trailing" id="wfT-lg-2uX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-sN-669" userLabel="bottomMarginView">
+                        <rect key="frame" x="0.0" y="218" width="375" height="2.5"/>
+                    </view>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chat_sendFail" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-X2-SYa">
+                        <rect key="frame" x="97" y="115.5" width="18" height="18"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="h0i-ec-ij9">
+                        <rect key="frame" x="96" y="114.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dRH-y6-joT">
+                        <rect key="frame" x="325" y="13" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="BQJ-uY-qey"/>
+                            <constraint firstAttribute="width" secondItem="dRH-y6-joT" secondAttribute="height" multiplier="1:1" id="W1I-5X-jnl"/>
+                            <constraint firstAttribute="height" constant="89" id="XgG-oW-dBH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XgG-oW-dBH"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eeS-KC-von" firstAttribute="width" secondItem="bFU-VX-C9D" secondAttribute="width" multiplier="0.6" id="12N-Fa-0Js"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eeS-KC-von" secondAttribute="trailing" constant="26" id="1qN-Wr-AJu"/>
+                    <constraint firstItem="dRH-y6-joT" firstAttribute="top" secondItem="bFU-VX-C9D" secondAttribute="topMargin" constant="2" id="5yb-BY-Uua"/>
+                    <constraint firstItem="VVs-X2-SYa" firstAttribute="centerY" secondItem="h0i-ec-ij9" secondAttribute="centerY" id="6Pz-hz-PgV"/>
+                    <constraint firstItem="DeM-mZ-1q3" firstAttribute="leading" secondItem="h0i-ec-ij9" secondAttribute="trailing" constant="10" id="ENj-7P-NVX"/>
+                    <constraint firstAttribute="trailing" secondItem="dRH-y6-joT" secondAttribute="trailing" constant="10" id="FMt-IV-KOv"/>
+                    <constraint firstItem="DeM-mZ-1q3" firstAttribute="leading" secondItem="eeS-KC-von" secondAttribute="trailing" constant="-134" id="IZc-id-BFU"/>
+                    <constraint firstItem="dRH-y6-joT" firstAttribute="leading" secondItem="DeM-mZ-1q3" secondAttribute="trailing" constant="4" id="OfQ-Ms-N7i"/>
+                    <constraint firstItem="VVs-X2-SYa" firstAttribute="centerX" secondItem="h0i-ec-ij9" secondAttribute="centerX" id="QWj-F8-31g"/>
+                    <constraint firstItem="DeM-mZ-1q3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bFU-VX-C9D" secondAttribute="leading" constant="70" id="SiU-no-gRF"/>
+                    <constraint firstItem="eeS-KC-von" firstAttribute="top" secondItem="bFU-VX-C9D" secondAttribute="top" constant="2" id="W4H-Dr-HTd"/>
+                    <constraint firstItem="DeM-mZ-1q3" firstAttribute="top" secondItem="eeS-KC-von" secondAttribute="bottom" constant="4" id="YiY-oV-pCp"/>
+                    <constraint firstItem="h0i-ec-ij9" firstAttribute="centerY" secondItem="DeM-mZ-1q3" secondAttribute="centerY" id="gc2-UT-iRP"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DeM-mZ-1q3" secondAttribute="trailing" constant="76" id="h4O-7l-HO4"/>
+                    <constraint firstItem="dRH-y6-joT" firstAttribute="top" secondItem="eeS-KC-von" secondAttribute="top" id="hI0-cu-JMK"/>
+                    <constraint firstItem="pGp-sN-669" firstAttribute="top" secondItem="DeM-mZ-1q3" secondAttribute="bottom" id="lHn-kB-4a9"/>
+                    <constraint firstAttribute="bottom" secondItem="pGp-sN-669" secondAttribute="bottom" id="mz7-gb-R6b"/>
+                    <constraint firstItem="DeM-mZ-1q3" firstAttribute="top" secondItem="eeS-KC-von" secondAttribute="bottom" constant="6" id="pOg-hh-q5X"/>
+                    <constraint firstAttribute="trailing" secondItem="pGp-sN-669" secondAttribute="trailing" id="qVR-e1-rI6"/>
+                    <constraint firstItem="dRH-y6-joT" firstAttribute="leading" secondItem="eeS-KC-von" secondAttribute="trailing" constant="17" id="r0k-0Q-JdV"/>
+                    <constraint firstItem="pGp-sN-669" firstAttribute="leading" secondItem="bFU-VX-C9D" secondAttribute="leading" id="tT2-wL-eGA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DeM-mZ-1q3" secondAttribute="trailing" constant="10" id="xjM-rl-HSC"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="1qN-Wr-AJu"/>
+                        <exclude reference="W4H-Dr-HTd"/>
+                        <exclude reference="IZc-id-BFU"/>
+                        <exclude reference="h4O-7l-HO4"/>
+                        <exclude reference="pOg-hh-q5X"/>
+                        <exclude reference="xjM-rl-HSC"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="avatarImageView" destination="dRH-y6-joT" id="fsu-5A-ggb"/>
+                <outlet property="bottomMarginViewConstraintLR" destination="SiU-no-gRF" id="Ewt-fg-A4k"/>
+                <outlet property="indicatorView" destination="h0i-ec-ij9" id="ch9-3d-jIS"/>
+                <outlet property="middleView" destination="DeM-mZ-1q3" id="0tI-oN-E2h"/>
+                <outlet property="picView" destination="7FL-H2-P7v" id="Nfk-I1-PPX"/>
+                <outlet property="sendFailImage" destination="VVs-X2-SYa" id="Uds-ws-5Fp"/>
+                <outlet property="sendPicFailImage" destination="VVs-X2-SYa" id="eK6-jy-gZn"/>
+                <outlet property="topTitleView" destination="eeS-KC-von" id="J5i-NS-gqJ"/>
+            </connections>
+            <point key="canvasLocation" x="-610" y="295.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Chat_sendFail" width="18" height="18"/>
+    </resources>
+</document>

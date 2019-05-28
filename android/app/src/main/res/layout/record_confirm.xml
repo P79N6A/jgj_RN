@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_image_wrap_helper" />
+
+    <LinearLayout
+        android:id="@+id/un_open_the_confirm_account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/badge_shape"
+                android:text="1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/confirm_account_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/badge_shape"
+                android:text="2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/confirm_account_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/badge_shape"
+                android:text="3"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/confirm_account_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/open_confirm_account_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="160dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/draw_sk_eb4e4e_5radius"
+            android:onClick="onClick"
+            android:text="点击开启[我要对账]"
+            android:textColor="@color/app_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/clickConfirmText"
+        style="@style/yellow_background_text"
+        android:text="点击“确认”即表示认可对方的记工\n去记工流水界面可查看对账完成的记工" />
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jizhi.jongg.widget.PageListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f1f1f1"
+                android:divider="@null" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/empty_view" />
+
+    </RelativeLayout>
+
+</LinearLayout>

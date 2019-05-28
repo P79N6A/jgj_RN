@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16E144f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7ve-FD-mHH" customClass="YZGPhoneCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gag-4d-0V5">
+                        <rect key="frame" x="0.0" y="14" width="123" height="123"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gag-4d-0V5" secondAttribute="height" multiplier="1:1" id="p82-Gn-m1h"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1D-7y-t0x">
+                        <rect key="frame" x="102" y="0.0" width="67" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="f1D-7y-t0x" secondAttribute="height" multiplier="1:1" id="ASU-sH-SZ9"/>
+                        </constraints>
+                        <state key="normal" image="findHelper_deletePhone"/>
+                        <connections>
+                            <action selector="deleteBtnClick:" destination="7ve-FD-mHH" eventType="touchUpInside" id="rTM-u1-Jtk"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gag-4d-0V5" secondAttribute="bottom" id="1bC-5f-QD8"/>
+                <constraint firstItem="gag-4d-0V5" firstAttribute="height" secondItem="7ve-FD-mHH" secondAttribute="height" multiplier="0.9" id="1gO-ij-Pj5"/>
+                <constraint firstItem="f1D-7y-t0x" firstAttribute="width" secondItem="7ve-FD-mHH" secondAttribute="width" multiplier="0.4" id="FKx-vU-otA"/>
+                <constraint firstItem="gag-4d-0V5" firstAttribute="leading" secondItem="7ve-FD-mHH" secondAttribute="leading" id="QBn-lg-JDc"/>
+                <constraint firstItem="f1D-7y-t0x" firstAttribute="top" secondItem="7ve-FD-mHH" secondAttribute="top" id="QSE-11-D3v"/>
+                <constraint firstItem="f1D-7y-t0x" firstAttribute="centerX" secondItem="gag-4d-0V5" secondAttribute="trailing" id="QxJ-Ju-PyB"/>
+                <constraint firstItem="gag-4d-0V5" firstAttribute="top" secondItem="7ve-FD-mHH" secondAttribute="top" id="Vio-Nd-0JH"/>
+                <constraint firstItem="gag-4d-0V5" firstAttribute="top" secondItem="f1D-7y-t0x" secondAttribute="centerY" id="Z44-0j-lKS"/>
+                <constraint firstAttribute="trailing" secondItem="f1D-7y-t0x" secondAttribute="trailing" id="hGA-t8-adS"/>
+                <constraint firstAttribute="trailing" secondItem="gag-4d-0V5" secondAttribute="trailing" id="nQS-zE-2jS"/>
+            </constraints>
+            <size key="customSize" width="211" height="181"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Vio-Nd-0JH"/>
+                    <exclude reference="Z44-0j-lKS"/>
+                    <exclude reference="nQS-zE-2jS"/>
+                    <exclude reference="QxJ-Ju-PyB"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backGroundImage" destination="gag-4d-0V5" id="dhP-kO-nRS"/>
+                <outlet property="deleteButton" destination="f1D-7y-t0x" id="KH2-do-iXJ"/>
+            </connections>
+            <point key="canvasLocation" x="271.5" y="477.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="findHelper_deletePhone" width="15" height="15"/>
+    </resources>
+</document>

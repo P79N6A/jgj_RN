@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <TextView
+        android:id="@+id/clickConfirmText"
+        style="@style/yellow_background_text" />
+
+    <include layout="@layout/search_edit_layout" />
+
+    <View style="@style/line" />
+
+    <include layout="@layout/side_layout" />
+
+
+    <RelativeLayout
+        android:id="@+id/editor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone">
+
+        <View style="@style/line" />
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+            android:id="@+id/selecte_all_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/selecte_all_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/checkbox_normal" />
+
+            <TextView
+                android:id="@+id/selecte_all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/selecte_all_icon"
+                android:text="全选"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+        </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/red_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/draw_sk_eb4e4e_5radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_size_12" />
+
+    </RelativeLayout>
+
+</LinearLayout>

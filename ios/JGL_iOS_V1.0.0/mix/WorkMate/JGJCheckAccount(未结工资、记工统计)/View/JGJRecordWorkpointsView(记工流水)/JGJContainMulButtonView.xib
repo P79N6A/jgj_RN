@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJBottomMulButtonView">
+            <connections>
+                <outlet property="allSelButton" destination="cLu-DS-lqS" id="sRZ-NT-8sY"/>
+                <outlet property="containView" destination="iN0-l3-epB" id="RlZ-0V-xjg"/>
+                <outlet property="delButton" destination="f9H-jW-CMz" id="d6a-ao-kP7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLu-DS-lqS">
+                    <rect key="frame" x="10" y="10" width="120" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0Ta-AC-JNt"/>
+                        <constraint firstAttribute="width" constant="120" id="9Se-q0-wrr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="全选本页" image="RecordWorkpoints_not_selected">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <state key="selected" image="MultiSelected"/>
+                    <connections>
+                        <action selector="allSelButtonPressed:" destination="-1" eventType="touchUpInside" id="K7D-cC-Nl2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-jW-CMz">
+                    <rect key="frame" x="261" y="10" width="104" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104" id="Uyo-8y-v6n"/>
+                        <constraint firstAttribute="height" constant="44" id="jn6-xx-wia"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="批量删除">
+                        <color key="titleColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="delButtonPressed:" destination="-1" eventType="touchUpInside" id="kxt-5E-sk2"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2t-gE-PNA" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Nj1-4c-O1g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h2t-gE-PNA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6YM-fJ-7Hj"/>
+                <constraint firstItem="h2t-gE-PNA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="C4z-dh-GKh"/>
+                <constraint firstItem="cLu-DS-lqS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="FZQ-Hv-915"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cLu-DS-lqS" secondAttribute="bottom" constant="10" id="Nod-mK-nks"/>
+                <constraint firstItem="f9H-jW-CMz" firstAttribute="centerY" secondItem="cLu-DS-lqS" secondAttribute="centerY" id="OHQ-f5-4oG"/>
+                <constraint firstItem="f9H-jW-CMz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="SM0-WC-6q7"/>
+                <constraint firstItem="f9H-jW-CMz" firstAttribute="height" secondItem="cLu-DS-lqS" secondAttribute="height" id="WoT-aR-TPS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h2t-gE-PNA" secondAttribute="trailing" id="a70-W9-qBG"/>
+                <constraint firstItem="cLu-DS-lqS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="dUA-mZ-Zkc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f9H-jW-CMz" secondAttribute="trailing" constant="10" id="ibA-Gd-h7J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="29.5" y="60"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MultiSelected" width="20" height="20"/>
+        <image name="RecordWorkpoints_not_selected" width="22" height="22"/>
+    </resources>
+</document>

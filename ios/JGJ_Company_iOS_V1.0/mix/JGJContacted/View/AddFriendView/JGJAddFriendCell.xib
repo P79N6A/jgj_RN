@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJAddFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWD-kw-9rx">
+                        <rect key="frame" x="60" y="20" width="203" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1el-bI-VdT">
+                        <rect key="frame" x="8" y="9" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="aiR-5f-uxU"/>
+                            <constraint firstAttribute="width" constant="40" id="lbX-zn-oH9"/>
+                        </constraints>
+                        <state key="normal" image="EllipseIcon"/>
+                        <state key="selected" image="MultiSelected"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已添加" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7k-Kn-8WY">
+                        <rect key="frame" x="268" y="5" width="40" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="hyg-yE-qqV"/>
+                            <constraint firstAttribute="width" constant="40" id="jAR-wS-Xej"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utg-UB-LLb" customClass="LineView">
+                        <rect key="frame" x="10" y="59.5" width="300" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="SiL-m3-TIS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="K7k-Kn-8WY" secondAttribute="trailing" constant="12" id="1bL-4O-nlC"/>
+                    <constraint firstItem="1el-bI-VdT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7Tr-hZ-7AE"/>
+                    <constraint firstItem="K7k-Kn-8WY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8dp-qS-4H3"/>
+                    <constraint firstItem="1el-bI-VdT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IeK-8P-EcE"/>
+                    <constraint firstItem="Utg-UB-LLb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eNx-GV-LdU"/>
+                    <constraint firstItem="K7k-Kn-8WY" firstAttribute="leading" secondItem="OWD-kw-9rx" secondAttribute="trailing" constant="5" id="iwV-Bk-eAe"/>
+                    <constraint firstAttribute="bottom" secondItem="Utg-UB-LLb" secondAttribute="bottom" id="kAC-fo-d7m"/>
+                    <constraint firstAttribute="trailing" secondItem="Utg-UB-LLb" secondAttribute="trailing" constant="10" id="ksB-sn-I7n"/>
+                    <constraint firstItem="OWD-kw-9rx" firstAttribute="centerY" secondItem="1el-bI-VdT" secondAttribute="centerY" id="uCp-Qv-GYO"/>
+                    <constraint firstItem="OWD-kw-9rx" firstAttribute="leading" secondItem="1el-bI-VdT" secondAttribute="trailing" constant="12" id="zwI-yk-a2i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="lineView" destination="Utg-UB-LLb" id="GeR-gi-kQ5"/>
+                <outlet property="name" destination="OWD-kw-9rx" id="rOe-0g-G2V"/>
+                <outlet property="selBtn" destination="1el-bI-VdT" id="h1K-Ek-X12"/>
+                <outlet property="selFlag" destination="K7k-Kn-8WY" id="tcs-j6-ZvZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EllipseIcon" width="20" height="20"/>
+        <image name="MultiSelected" width="20" height="20"/>
+    </resources>
+</document>

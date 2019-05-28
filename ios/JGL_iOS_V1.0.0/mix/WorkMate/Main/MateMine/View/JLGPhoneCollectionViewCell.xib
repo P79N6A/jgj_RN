@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="JLGPhoneCollectionViewCell" reuseIdentifier="JLGPhoneCollectionViewCell" id="gTV-IL-0wX" customClass="JLGPhoneCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="192"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="192"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oa9-jp-TeG">
+                        <rect key="frame" x="0.0" y="4" width="203" height="188"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="oa9-jp-TeG" secondAttribute="height" multiplier="1:1" id="zy1-Q8-hce"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zy1-Q8-hce"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDf-uI-uFu">
+                        <rect key="frame" x="149" y="0.0" width="58" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SDf-uI-uFu" secondAttribute="height" multiplier="1:1" id="uMp-C2-ehJ"/>
+                        </constraints>
+                        <state key="normal" image="findHelper_deletePhone"/>
+                        <connections>
+                            <action selector="deleteBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="O0U-H0-TEL"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oa9-jp-TeG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6mc-55-SsV"/>
+                <constraint firstAttribute="trailing" secondItem="oa9-jp-TeG" secondAttribute="trailing" id="9dY-Js-vKj"/>
+                <constraint firstAttribute="bottom" secondItem="oa9-jp-TeG" secondAttribute="bottom" id="DFS-fA-Q6p"/>
+                <constraint firstItem="oa9-jp-TeG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="I8b-FE-Of4"/>
+                <constraint firstItem="oa9-jp-TeG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="OVA-uD-mP5"/>
+                <constraint firstAttribute="bottom" secondItem="oa9-jp-TeG" secondAttribute="bottom" id="Ocb-2R-4DH"/>
+                <constraint firstItem="SDf-uI-uFu" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.28" id="PdB-a0-ufx"/>
+                <constraint firstItem="oa9-jp-TeG" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.96" id="cMW-Vv-BbY"/>
+                <constraint firstItem="oa9-jp-TeG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cv5-Fe-7N8"/>
+                <constraint firstAttribute="trailing" secondItem="oa9-jp-TeG" secondAttribute="trailing" constant="4" id="dY2-mS-IXm"/>
+                <constraint firstItem="oa9-jp-TeG" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.96" id="dYs-zM-xoV"/>
+                <constraint firstItem="SDf-uI-uFu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xug-SW-jEG"/>
+                <constraint firstAttribute="trailing" secondItem="SDf-uI-uFu" secondAttribute="trailing" id="zwu-xy-Zaw"/>
+            </constraints>
+            <size key="customSize" width="196" height="188"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6mc-55-SsV"/>
+                    <exclude reference="9dY-Js-vKj"/>
+                    <exclude reference="Ocb-2R-4DH"/>
+                    <exclude reference="cMW-Vv-BbY"/>
+                    <exclude reference="cv5-Fe-7N8"/>
+                    <exclude reference="dYs-zM-xoV"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backGroundImage" destination="oa9-jp-TeG" id="tzL-xS-Wzt"/>
+                <outlet property="deleteButton" destination="SDf-uI-uFu" id="4E6-Tw-uXY"/>
+            </connections>
+            <point key="canvasLocation" x="369.5" y="252"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="findHelper_deletePhone" width="15" height="15"/>
+    </resources>
+</document>

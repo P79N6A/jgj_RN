@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="310dp"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/open_notice_icon" />
+
+    <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+        android:id="@+id/open"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/draw_bg_eb4e4e_50radius"
+        android:gravity="center"
+        android:text="去开启"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size" />
+
+    <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+        android:id="@+id/close_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:src="@drawable/gray_close_icon" />
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:text="完善工种信息，还能快速加入工种群哦"
+            android:textColor="@color/color_666666"
+            android:textSize="15sp" />
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+            android:id="@+id/complete_work_layout"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sk_gy_333333_20radius"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/houtui"
+                android:text="去完善"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+
+    </LinearLayout>
+</RelativeLayout>

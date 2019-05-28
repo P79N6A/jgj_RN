@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+
+    <LinearLayout
+        android:id="@+id/defaultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/no_data" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/synchmanage_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="了解同步项目功能"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="@dimen/text_size_17" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_eb4e4e" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/defaultDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="你还没有给任何人同步项目"
+            android:textColor="@color/gray_b9b9b9"
+            android:textSize="@dimen/default_title_size" />
+
+        <Button
+            android:id="@+id/defaultBtn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/button_press_effect"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="新增同步人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+    </LinearLayout>
+
+    <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+        android:id="@+id/whatIsTheProLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fdf1e0"
+        android:clickable="true"
+        android:drawableRight="@drawable/yellow_right_arrow_icon"
+        android:gravity="center_vertical"
+        android:onClick="onClick"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:text="什么是同步管理"
+        android:textColor="#f18215"
+        android:textSize="@dimen/text_size_15" />
+
+    <include layout="@layout/search_edit_layout" />
+
+    <include layout="@layout/side_layout" />
+
+</LinearLayout>

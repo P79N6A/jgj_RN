@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gray_height"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:id="@+id/from_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/mobile"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="从手机通讯录添加"
+            android:textColor="@color/color_333333" />
+
+        <ImageView style="@style/imageValue" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gray_height"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:id="@+id/manual_add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/add_account_telephone"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="手动添加"
+            android:textColor="@color/color_333333" />
+
+        <ImageView style="@style/imageValue" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/code_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gray_height"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:id="@+id/from_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/group_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="从项目选择添加"
+            android:textColor="@color/color_333333" />
+
+        <ImageView style="@style/imageValue" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gray_height"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:id="@+id/from_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/rich_scan"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/invinte_him"
+            android:textColor="@color/color_333333" />
+
+        <ImageView style="@style/imageValue" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gray_height"
+        android:background="@color/color_f1f1f1" />
+
+    <LinearLayout
+        android:id="@+id/invinte_wx_freind_join_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/invinte_group_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="邀请微信好友加入班组"
+            android:textColor="@color/color_333333" />
+
+        <ImageView style="@style/imageValue" />
+
+    </LinearLayout>
+
+</LinearLayout>

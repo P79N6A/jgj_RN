@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJCreatPlansView">
+            <connections>
+                <outlet property="contentLable" destination="UKa-Vk-5Is" id="Uqz-WO-Go8"/>
+                <outlet property="heightConstance" destination="8LJ-Fl-ArU" id="hDF-cN-c6B"/>
+                <outlet property="planButton" destination="bul-WW-KsK" id="ILl-se-W97"/>
+                <outlet property="widthConstance" destination="GhW-mq-De6" id="0xX-Ek-p4G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ulc-qp-Uab">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新建检查内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-Vk-5Is">
+                    <rect key="frame" x="0.0" y="137" width="375" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.92156862745098034" green="0.30588235294117649" blue="0.30669615502450981" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bul-WW-KsK">
+                    <rect key="frame" x="124.5" y="13" width="125" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="8LJ-Fl-ArU"/>
+                        <constraint firstAttribute="width" constant="125" id="GhW-mq-De6"/>
+                    </constraints>
+                    <state key="normal" image="addPlan"/>
+                    <connections>
+                        <action selector="clickCrateView:" destination="-1" eventType="touchUpInside" id="R3i-df-znc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UKa-Vk-5Is" secondAttribute="bottom" constant="25" id="GaR-BA-cyS"/>
+                <constraint firstItem="UKa-Vk-5Is" firstAttribute="top" secondItem="bul-WW-KsK" secondAttribute="bottom" constant="4" id="iVV-my-mO7"/>
+                <constraint firstAttribute="trailing" secondItem="UKa-Vk-5Is" secondAttribute="trailing" id="mLR-4q-j5X"/>
+                <constraint firstItem="UKa-Vk-5Is" firstAttribute="leading" secondItem="Ulc-qp-Uab" secondAttribute="leading" id="pKf-bO-XeK"/>
+                <constraint firstItem="bul-WW-KsK" firstAttribute="centerX" secondItem="Ulc-qp-Uab" secondAttribute="centerX" id="yZd-aQ-dfi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="65.5" y="-148.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addPlan" width="125" height="120"/>
+    </resources>
+</document>

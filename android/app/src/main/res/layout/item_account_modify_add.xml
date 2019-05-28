@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_account_modify_center"/>
+
+    <RelativeLayout
+        android:id="@+id/rea_layout_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp"
+        android:visibility="visible">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/balck_4b4b4b"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head2"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/img_head_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_head_left"
+                android:text="name"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp"/>
+
+            <include layout="@layout/layout_account_modify_add_left"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_layout_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/balck_4b4b4b"
+            android:focusable="false"
+            android:src="@drawable/head2"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/img_head_right">
+
+            <LinearLayout
+                android:id="@+id/rea_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_username_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:text="name"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp"/>
+
+                <include layout="@layout/layout_account_modify_add_right"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

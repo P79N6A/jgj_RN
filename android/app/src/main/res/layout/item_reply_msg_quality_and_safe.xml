@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/listview_selector_white_gray"
+                android:orientation="vertical">
+
+    <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+        android:id="@+id/img_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:focusable="false"
+        android:src="@drawable/icon_video"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_14"/>
+    </LinearLayout>
+
+    <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+        android:id="@+id/img_contect"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:focusable="false"
+        android:src="@drawable/icon_video"/>
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_f1f1f1"
+        android:visibility="visible"/>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16F71b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kNq-tz-Bld" customClass="JGJUnLoginPopView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lD-S9-8N2">
+                    <rect key="frame" x="25" y="194" width="270" height="180"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bk-C0-Eca">
+                            <rect key="frame" x="0.0" y="130" width="270" height="50"/>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="csL-YF-YFh"/>
+                            </constraints>
+                            <state key="normal" title="马上登录"/>
+                            <connections>
+                                <action selector="didClickedButtonPressed:" destination="kNq-tz-Bld" eventType="touchUpInside" id="bXh-6m-9LS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建筑项目 轻松管理就在吉工宝App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Av-FS-hqc">
+                            <rect key="frame" x="65" y="62" width="140" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="FMV-vg-Rel"/>
+                                <constraint firstAttribute="width" constant="140" id="RrT-IW-W9C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_login_notice" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-VT-sEw">
+                            <rect key="frame" x="116" y="18" width="38" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="ZZn-QK-Ii2"/>
+                                <constraint firstAttribute="width" constant="38" id="a1W-Pq-eda"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="7Av-FS-hqc" firstAttribute="top" secondItem="qi8-VT-sEw" secondAttribute="bottom" constant="6" id="6AJ-ag-oWS"/>
+                        <constraint firstAttribute="trailing" secondItem="4Bk-C0-Eca" secondAttribute="trailing" id="77Q-Yx-MP2"/>
+                        <constraint firstItem="4Bk-C0-Eca" firstAttribute="leading" secondItem="2lD-S9-8N2" secondAttribute="leading" id="INi-38-Bs0"/>
+                        <constraint firstItem="7Av-FS-hqc" firstAttribute="centerX" secondItem="2lD-S9-8N2" secondAttribute="centerX" id="RzO-3x-sG4"/>
+                        <constraint firstItem="qi8-VT-sEw" firstAttribute="centerX" secondItem="2lD-S9-8N2" secondAttribute="centerX" id="cHx-pm-BIv"/>
+                        <constraint firstItem="qi8-VT-sEw" firstAttribute="top" secondItem="2lD-S9-8N2" secondAttribute="topMargin" constant="10" id="iHi-Dq-Cc3"/>
+                        <constraint firstAttribute="width" constant="270" id="kwT-aM-Nhc"/>
+                        <constraint firstItem="7Av-FS-hqc" firstAttribute="centerY" secondItem="2lD-S9-8N2" secondAttribute="centerY" constant="-15" id="sCc-9A-VFn"/>
+                        <constraint firstAttribute="bottom" secondItem="4Bk-C0-Eca" secondAttribute="bottom" id="uOv-uc-NVo"/>
+                        <constraint firstAttribute="height" constant="180" id="ucs-7c-rnj"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="sCc-9A-VFn"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2lD-S9-8N2" firstAttribute="centerX" secondItem="kNq-tz-Bld" secondAttribute="centerX" id="s1g-rj-Hay"/>
+                <constraint firstItem="2lD-S9-8N2" firstAttribute="centerY" secondItem="kNq-tz-Bld" secondAttribute="centerY" id="vOG-tC-dcb"/>
+            </constraints>
+            <connections>
+                <outlet property="confirmButton" destination="4Bk-C0-Eca" id="Lew-ux-5Ja"/>
+                <outlet property="message" destination="7Av-FS-hqc" id="h94-Lh-ShK"/>
+                <outlet property="popImageView" destination="qi8-VT-sEw" id="F64-NR-I6O"/>
+                <outlet property="popView" destination="2lD-S9-8N2" id="cl4-K6-OeZ"/>
+            </connections>
+            <point key="canvasLocation" x="365" y="259"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_login_notice" width="37" height="37"/>
+    </resources>
+</document>

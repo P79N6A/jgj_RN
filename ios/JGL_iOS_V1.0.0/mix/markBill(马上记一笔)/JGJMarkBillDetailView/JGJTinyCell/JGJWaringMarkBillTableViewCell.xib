@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJWaringMarkBillTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9K-v5-cRf">
+                        <rect key="frame" x="20" y="2" width="280" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HS-6p-Zlu">
+                                <rect key="frame" x="15" y="0.0" width="231" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.62745098039215685" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7HS-6p-Zlu" secondAttribute="bottom" id="Gh0-YQ-iCe"/>
+                            <constraint firstAttribute="trailing" secondItem="7HS-6p-Zlu" secondAttribute="trailing" constant="34" id="Ujm-Nt-j3h"/>
+                            <constraint firstItem="7HS-6p-Zlu" firstAttribute="leading" secondItem="v9K-v5-cRf" secondAttribute="leading" constant="15" id="cx9-Ji-cu1"/>
+                            <constraint firstAttribute="height" constant="30" id="drO-l5-UlT"/>
+                            <constraint firstItem="7HS-6p-Zlu" firstAttribute="top" secondItem="v9K-v5-cRf" secondAttribute="top" id="hrO-qw-49q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v9K-v5-cRf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JeL-uz-Oh9"/>
+                    <constraint firstItem="v9K-v5-cRf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-4" id="Olb-hD-m4D"/>
+                    <constraint firstAttribute="trailing" secondItem="v9K-v5-cRf" secondAttribute="trailing" constant="20" id="fO3-PP-ssV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="baseView" destination="v9K-v5-cRf" id="mq4-J9-NlY"/>
+                <outlet property="contentLable" destination="7HS-6p-Zlu" id="63L-LC-6OV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

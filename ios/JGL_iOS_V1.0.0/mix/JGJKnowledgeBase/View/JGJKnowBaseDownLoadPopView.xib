@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JGJKnowBaseDownLoadPopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eai-gA-AzM">
+                    <rect key="frame" x="53" y="244.5" width="270" height="178"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下载文件名字" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19b-Ax-W99">
+                            <rect key="frame" x="20" y="58.5" width="230" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="nJw-f8-RC6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-Uy-4c2" customClass="JGJDownLoadProGressView">
+                            <rect key="frame" x="20" y="105" width="230" height="7"/>
+                            <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="7" id="KZQ-ZI-ByD"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybj-AW-MmJ">
+                            <rect key="frame" x="202" y="0.0" width="68" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="68" id="8hT-Xd-6P0"/>
+                                <constraint firstAttribute="height" constant="44" id="RvS-W8-tFW"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="knowBase_cancel_icon"/>
+                            <connections>
+                                <action selector="handleCancelButtonPressedAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="DnY-dz-eaO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在读取..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpn-Ct-nv1">
+                            <rect key="frame" x="93.5" y="26" width="83.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1s-Rj-E5g">
+                            <rect key="frame" x="0.0" y="138" width="270" height="40"/>
+                            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="pKG-1w-ekF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="handleCancelButtonPressedAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bGB-MU-GXh"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4o-UX-UBs" customClass="LineView">
+                            <rect key="frame" x="0.0" y="137" width="270" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="RcM-mt-BqM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="eaB-Uy-4c2" firstAttribute="leading" secondItem="eai-gA-AzM" secondAttribute="leading" constant="20" id="4Q3-KC-jCC"/>
+                        <constraint firstItem="K1s-Rj-E5g" firstAttribute="leading" secondItem="eai-gA-AzM" secondAttribute="leading" id="51h-wO-Xgf"/>
+                        <constraint firstAttribute="height" constant="178" id="DxI-wU-vth"/>
+                        <constraint firstItem="K1s-Rj-E5g" firstAttribute="top" secondItem="V4o-UX-UBs" secondAttribute="bottom" id="Fwn-oE-cg6"/>
+                        <constraint firstItem="dpn-Ct-nv1" firstAttribute="centerX" secondItem="eai-gA-AzM" secondAttribute="centerX" id="Jqa-8l-Sjg"/>
+                        <constraint firstItem="V4o-UX-UBs" firstAttribute="leading" secondItem="eai-gA-AzM" secondAttribute="leading" id="Klz-7D-4sr"/>
+                        <constraint firstItem="dpn-Ct-nv1" firstAttribute="top" secondItem="eai-gA-AzM" secondAttribute="top" constant="26" id="Ksw-No-aya"/>
+                        <constraint firstItem="ybj-AW-MmJ" firstAttribute="top" secondItem="eai-gA-AzM" secondAttribute="top" id="SEF-7B-7yf"/>
+                        <constraint firstItem="19b-Ax-W99" firstAttribute="leading" secondItem="eai-gA-AzM" secondAttribute="leading" constant="20" id="Sxn-vN-lrv"/>
+                        <constraint firstItem="V4o-UX-UBs" firstAttribute="top" secondItem="eaB-Uy-4c2" secondAttribute="bottom" constant="25" id="WVu-qQ-wIM"/>
+                        <constraint firstAttribute="trailing" secondItem="eaB-Uy-4c2" secondAttribute="trailing" constant="20" id="dEc-K1-F5l"/>
+                        <constraint firstAttribute="bottom" secondItem="K1s-Rj-E5g" secondAttribute="bottom" id="f1F-bd-oJw"/>
+                        <constraint firstItem="19b-Ax-W99" firstAttribute="centerX" secondItem="eai-gA-AzM" secondAttribute="centerX" id="jZr-l8-SXI"/>
+                        <constraint firstAttribute="width" constant="270" id="oI7-v4-z6B"/>
+                        <constraint firstAttribute="trailing" secondItem="V4o-UX-UBs" secondAttribute="trailing" id="sUB-MY-REJ"/>
+                        <constraint firstItem="19b-Ax-W99" firstAttribute="top" secondItem="dpn-Ct-nv1" secondAttribute="bottom" constant="12" id="tY2-7C-PWS"/>
+                        <constraint firstAttribute="trailing" secondItem="ybj-AW-MmJ" secondAttribute="trailing" id="y71-EI-aAH"/>
+                        <constraint firstAttribute="trailing" secondItem="K1s-Rj-E5g" secondAttribute="trailing" id="zlM-W0-gVi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.345703125" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eai-gA-AzM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1wn-Di-qqj"/>
+                <constraint firstItem="eai-gA-AzM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lZF-YY-pf5"/>
+            </constraints>
+            <connections>
+                <outlet property="contentDetailView" destination="eai-gA-AzM" id="8qx-a0-O0k"/>
+                <outlet property="downDesLable" destination="dpn-Ct-nv1" id="41L-OG-ViI"/>
+                <outlet property="downProgressView" destination="eaB-Uy-4c2" id="lW8-vk-LNc"/>
+                <outlet property="fileNameLable" destination="19b-Ax-W99" id="zWz-ps-E7P"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="knowBase_cancel_icon" width="14" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JGJMyChatGroupsNoDataView" id="CwE-PI-zsS" customClass="JGJMyChatGroupsNoDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-sl-Eeq">
+                    <rect key="frame" x="52.5" y="153.5" width="270" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoDataDefault_NoManagePro" translatesAutoresizingMaskIntoConstraints="NO" id="GfL-o4-7ku">
+                            <rect key="frame" x="88.5" y="0.0" width="93" height="51"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还没加入任何班组" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMB-3k-4ol">
+                            <rect key="frame" x="57" y="74" width="156" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.72549019607843135" green="0.72549019607843135" blue="0.72549019607843135" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击右上角“" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="955-Ev-xlw">
+                            <rect key="frame" x="0.0" y="111" width="95" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatlist_more_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hLm-qz-vFD">
+                            <rect key="frame" x="95" y="111.5" width="22" height="22"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F34-q0-vww">
+                            <rect key="frame" x="117" y="105" width="152" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="”按钮即可 新建班组">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="creatGroupBtnPressed:" destination="CwE-PI-zsS" eventType="touchUpInside" id="Umh-Fi-MWa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48L-sK-5dE">
+                            <rect key="frame" x="17.5" y="167" width="235" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="或者 扫描二维码 加入已有班组">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sweepBtnPressed:" destination="CwE-PI-zsS" eventType="touchUpInside" id="Drk-5h-4VB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="955-Ev-xlw" firstAttribute="leading" secondItem="3ce-sl-Eeq" secondAttribute="leading" id="272-Oe-HbI"/>
+                        <constraint firstItem="955-Ev-xlw" firstAttribute="top" secondItem="bMB-3k-4ol" secondAttribute="bottom" constant="16" id="6gP-Dl-CKi"/>
+                        <constraint firstItem="bMB-3k-4ol" firstAttribute="top" secondItem="GfL-o4-7ku" secondAttribute="bottom" constant="23" id="6tR-sK-7p5"/>
+                        <constraint firstItem="hLm-qz-vFD" firstAttribute="leading" secondItem="955-Ev-xlw" secondAttribute="trailing" id="78u-xm-n71"/>
+                        <constraint firstItem="F34-q0-vww" firstAttribute="centerY" secondItem="955-Ev-xlw" secondAttribute="centerY" id="IH3-1c-xc8"/>
+                        <constraint firstItem="GfL-o4-7ku" firstAttribute="centerX" secondItem="3ce-sl-Eeq" secondAttribute="centerX" id="Ioe-1r-uFY"/>
+                        <constraint firstItem="hLm-qz-vFD" firstAttribute="centerY" secondItem="955-Ev-xlw" secondAttribute="centerY" constant="1" id="MyM-6M-YSw"/>
+                        <constraint firstAttribute="width" constant="270" id="NpV-sj-DAg"/>
+                        <constraint firstAttribute="bottom" secondItem="48L-sK-5dE" secondAttribute="bottom" id="UkO-93-TiJ"/>
+                        <constraint firstItem="48L-sK-5dE" firstAttribute="centerX" secondItem="bMB-3k-4ol" secondAttribute="centerX" id="Ws3-RC-EfO"/>
+                        <constraint firstItem="GfL-o4-7ku" firstAttribute="top" secondItem="3ce-sl-Eeq" secondAttribute="top" id="cYh-z8-eN0"/>
+                        <constraint firstItem="bMB-3k-4ol" firstAttribute="centerX" secondItem="GfL-o4-7ku" secondAttribute="centerX" id="hch-0H-VRP"/>
+                        <constraint firstAttribute="height" constant="200" id="iJX-Pc-ld2"/>
+                        <constraint firstItem="F34-q0-vww" firstAttribute="leading" secondItem="hLm-qz-vFD" secondAttribute="trailing" id="ju0-9e-yBH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3ce-sl-Eeq" firstAttribute="centerY" secondItem="CwE-PI-zsS" secondAttribute="centerY" constant="-80" id="5IX-XQ-mgn"/>
+                <constraint firstItem="3ce-sl-Eeq" firstAttribute="centerX" secondItem="CwE-PI-zsS" secondAttribute="centerX" id="FKA-OI-cc9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="d5u-eM-FwK"/>
+            <connections>
+                <outlet property="creatGroupBtn" destination="F34-q0-vww" id="l8z-lV-xBG"/>
+                <outlet property="sweepBtn" destination="48L-sK-5dE" id="E50-Og-pas"/>
+            </connections>
+            <point key="canvasLocation" x="240.80000000000001" y="-67.016491754122939"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="NoDataDefault_NoManagePro" width="93" height="51.5"/>
+        <image name="chatlist_more_icon" width="22" height="22"/>
+    </resources>
+</document>

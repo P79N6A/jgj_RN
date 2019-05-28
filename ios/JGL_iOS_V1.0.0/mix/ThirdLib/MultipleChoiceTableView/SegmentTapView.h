@@ -1,0 +1,91 @@
+//
+//  SegmentTapView.h
+//  SegmentTapView
+//
+//  Created by fujin on 15/6/20.
+//  Copyright (c) 2015年 fujin. All rights reserved.
+//
+
+
+#import <UIKit/UIKit.h>
+
+@protocol SegmentTapViewDelegate <NSObject>
+@optional
+/**
+ 选择index回调
+ 
+ @param index
+ */
+-(void)selectedIndex:(NSInteger)index;
+@end
+
+@interface SegmentTapView : UIView
+
+/**
+ 选择回调
+ */
+@property (nonatomic, assign)id<SegmentTapViewDelegate> delegate;
+/**
+ 数据源
+ */
+@property (nonatomic, strong)NSArray *dataArray;
+
+/**
+ 显示红点的数组
+ */
+@property (nonatomic, strong)NSMutableArray *showRedPointArray;
+
+/**
+ 字体非选中时颜色
+ */
+@property (nonatomic, strong)UIColor *textNomalColor;
+/**
+ 字体选中时颜色
+ */
+@property (nonatomic, strong)UIColor *textSelectedColor;
+/**
+ 横线颜色
+ */
+@property (nonatomic, strong)UIColor *lineColor;
+/**
+ 字体大小
+ */
+@property (nonatomic, assign)CGFloat titleFont;
+
+//选中的索引,Tony修改过的
+@property (nonatomic, assign, readonly) NSInteger selectedIndex;
+
+//能否滚动,yj修改过的 YES不能滚动、默认NO可以滚动
+@property (nonatomic, assign) BOOL is_unEnable_scro;
+
+/**
+Initialization
+ 
+ @param frame     fram
+ @param dataArray 标题数组
+ @param font      标题字体大小
+ 
+ @return instance
+ */
+-(instancetype)initWithFrame:(CGRect)frame withDataArray:(NSArray *)dataArray withFont:(CGFloat)font;
+
+/**
+ Initialization
+ 
+ @param frame     fram
+ @param dataArray 标题数组
+ @param font      标题字体大小
+ @param isNormalFont      是否是正常字体，YES:正常字体,NO:粗体
+ 
+ @return instance
+ */
+-(instancetype)initWithFrame:(CGRect)frame withDataArray:(NSArray *)dataArray withFont:(CGFloat)font isNormalFont:(BOOL )isNormalFont;
+    
+/**
+ 手动选择
+ 
+ @param index inde（从1开始）
+ */
+-(void)selectIndex:(NSInteger)index;
+
+@end

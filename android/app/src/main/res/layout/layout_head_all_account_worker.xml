@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <!--<include layout="@layout/layout_line_10px" />-->
+
+    <RelativeLayout
+        android:id="@+id/rea_project"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_driver_1px"
+            android:layout_alignParentBottom="false" />
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_project" />
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="所在项目" />
+
+
+        <ImageView
+            android:id="@+id/img_pro_arrow"
+            style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_proname"
+            style="@style/account_right_text"
+            android:layout_marginLeft="110dp"
+            android:ellipsize="end"
+            android:hint="例如：万科魅力之城"
+            android:maxEms="13"
+            android:singleLine="true" />
+
+        <ImageView style="@style/account_driver_1px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_role"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_role" />
+
+        <TextView
+            android:id="@+id/tv_role_title"
+            style="@style/account_left_text"
+            android:text="title" />
+
+        <ImageView
+            android:id="@+id/img_role_arrow"
+            style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_role_name"
+            style="@style/account_right_text"
+            android:hint="hint" />
+
+        <ImageView style="@style/account_driver_1px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rea_date"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_date" />
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="日期" />
+
+        <ImageView style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/account_right_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>

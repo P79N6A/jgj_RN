@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/gray_fafafa">
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+            style="@style/navigation_left_area_layout"
+            android:onClick="onFinish">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha style="@style/navigation_red_return_attribute"/>
+        </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+
+        <RelativeLayout
+            android:layout_width="156dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true">
+
+            <com.jizhi.jongg.widget.NestRadioGroup
+                android:id="@+id/guide_rg"
+                android:layout_width="156dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rb_question"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_black_background_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/quality_question"
+                    android:textColor="@drawable/textcolor_guide_white"
+                    android:textSize="@dimen/text_size_13"/>
+
+
+                <RadioButton
+                    android:id="@+id/rb_check"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_black_background_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/quality_check"
+                    android:textColor="@drawable/textcolor_guide_white"
+                    android:textSize="@dimen/text_size_13"/>
+            </com.jizhi.jongg.widget.NestRadioGroup>
+
+            <View
+                android:id="@+id/view_check_red_circle"
+                style="@style/red_circle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/view_question_red_circle"
+                style="@style/red_circle"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/right_image_statistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/icon_quality_statistics"/>
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/right_image_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/right_image_statistics"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/icon_quality_msg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb"/>
+
+    </RelativeLayout>
+
+</merge>

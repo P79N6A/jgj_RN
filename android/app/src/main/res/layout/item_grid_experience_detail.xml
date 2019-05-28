@@ -1,0 +1,27 @@
+<com.jizhi.jongg.widget.SquareReLativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jizhi.jongg.widget.SquareImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:scaleType="centerCrop" />
+
+    <com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha
+        android:id="@+id/remove"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="@dimen/remove_image_width"
+            android:layout_height="@dimen/remove_image_height"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/remove_picture" />
+    </com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha>
+
+
+</com.jizhi.jongg.widget.SquareReLativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_top_style">
+
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="正在加载中"
+            android:textColor="@color/gray_cccccc"
+            android:textSize="@dimen/text_size_13" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loadingText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/draw_oval_e3e3e3" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/draw_oval_e3e3e3" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/draw_oval_e3e3e3" />
+
+        </LinearLayout>
+
+
+        <com.jizhi.jongg.widget.AdvertisementImageView
+            android:id="@+id/advertisementImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+        android:id="@+id/closeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:src="@drawable/ad_close" />
+
+</LinearLayout>

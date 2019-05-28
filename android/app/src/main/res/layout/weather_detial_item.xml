@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9月 初五 星期三"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="孙强"
+            android:textColor="#628ae0"
+            android:textSize="@dimen/text_size_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/weatherStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="晴转多云 | 10 - 12 | 东南风 3级"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/windowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_size_12" />
+
+    <View
+        android:id="@+id/itemDiver"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_dbdbdb" />
+
+    <TextView
+        android:id="@+id/weatherDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="今天天气太复杂了,小编前几天给你们科普了一下婚纱的款式,和不同身材的新娘适合穿什么样的婚纱,结果引起了你们很大的反响,都在问我好久有婚纱活动"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/color_f1f1f1" />
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/batchBalanceTips"
+        style="@style/yellow_background_text"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:id="@+id/unBalanceTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="0.00"
+        android:textColor="@color/un_balance_color"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
+        android:text="未结"
+        android:textColor="@color/color_666666"
+        android:textSize="15sp" />
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/unBalanceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/unBalanceCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/un_balance_tag"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/searchUnBalanceCount"
+            style="@style/sk_eb4e4e_btn"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/search" />
+
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/itemTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/roleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未结工资"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+
+</LinearLayout>

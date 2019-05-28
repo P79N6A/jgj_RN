@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/payLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/payState"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_f1f1f1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="支付方式"
+            android:textColor="@color/color_999999" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_bg_f1f1f1_sk_dbdbdb_5radius"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/aliPayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/zfb_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="支付宝支付"
+                    android:textColor="@color/color_333333" />
+
+                <ImageView
+                    android:id="@+id/aliPayIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkbox_normal" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/wxPayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/wx_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="微信支付"
+                    android:textColor="@color/color_333333" />
+
+                <ImageView
+                    android:id="@+id/wxPayIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checkbox_pressed" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

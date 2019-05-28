@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原手机号码"
+            android:textColor="@color/color_666666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/telephoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_333333"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="问题"
+            android:textColor="@color/color_333333"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/questionTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="questionsTitle"
+        android:textColor="@color/color_333333"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/idCardLayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/draw_sk_dbdbdb_2radius"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/selectedIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/question_btn_normal" />
+
+            <TextView
+                android:id="@+id/options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="已实名认证"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.hcs.cityslist.widget.AppCursorEditText
+            android:id="@+id/idcardEdit"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_f1f1f1_sk_3_radius"
+            android:gravity="center"
+            android:hint="请输入身份证号码"
+            android:imeOptions="actionNext"
+            android:maxLength="18"
+            android:digits="0123456789xX"
+            android:nextFocusForward="@+id/codeEdit"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/text_size_17"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- 步骤4需要使用的电话号码 -->
+    <com.hcs.cityslist.widget.AppCursorEditText
+        android:id="@+id/telEdit"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editor"
+        android:gravity="center"
+        android:hint="请输入手机号码"
+        android:imeOptions="actionNext"
+        android:maxLength="11"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/text_size_18"
+        android:visibility="gone" />
+
+
+</LinearLayout>

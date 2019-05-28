@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <include layout="@layout/search_edit_layout" />
+
+    <LinearLayout
+        android:id="@+id/at_all"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.jizhi.jongg.widget.HashCodeGenerateText
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/at_member_10radius"
+            android:gravity="center"
+            android:text=" @ "
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_20"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="所有人"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/red_circle_shape"
+            android:gravity="center"
+            android:text="Z"
+            android:textColor="@color/white"
+            android:textSize="25dip"
+            android:visibility="invisible" />
+
+        <com.hcs.cityslist.widget.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="20.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:background="@drawable/sider_background" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

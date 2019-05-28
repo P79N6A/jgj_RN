@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_line_left" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/color_666666"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_line_right" />
+
+    </LinearLayout>
+
+    <com.jizhi.jongg.widget.AppDiverView
+        android:id="@+id/itemDiver"
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <TextView
+        android:id="@+id/recordType"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_f7f7f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="13dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="13dp">
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/recordTypeIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/hour_worker_flag" />
+
+            <ImageView
+                android:id="@+id/notesIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/icon_remark" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recordWorkName"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/workType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/proName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/workMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/foremanName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.jizhi.jongg.widget.DashView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:lineColors="@color/color_cccccc"
+        app:lineHeight="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/confirm_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/confirm"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/draw_sk_eb4e4e_2radius"
+            android:text="@string/confirm_wheel"
+            android:textColor="@color/color_d7252c"
+            android:textSize="@dimen/text_size_14" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/search"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/confirm"
+            android:background="@drawable/draw_sk_666666_3radius"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/scroll_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_line_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="已经没有啦~"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item_line_right" />
+    </LinearLayout>
+
+</LinearLayout>

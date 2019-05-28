@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/firstTips"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/color_333333"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_f1f1f1"
+        android:paddingBottom="5dip"
+        android:paddingLeft="16dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/gray_cccccc"
+        android:textSize="@dimen/catalog_size"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:background="@color/gray_f1f1f1"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="35dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/selectIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@id/roundImageHashText"
+            android:layout_width="@dimen/app_head_width"
+            android:layout_height="@dimen/app_head_height"
+            android:layout_gravity="top" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/workInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/leftBtn"
+            android:layout_width="64dp"
+            android:layout_height="26dp"
+            android:background="@drawable/bg_gy_333333_3radius"
+            android:gravity="center"
+            android:text="去评价"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/text_size_12" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/rightBtn"
+            android:layout_width="64dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_gy_333333_3radius"
+            android:gravity="center"
+            android:text="跟他对账"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

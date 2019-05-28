@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_666666"
+    android:orientation="vertical">
+
+    <com.jizhi.jongg.widget.SquareReLativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@id/roundImageHashText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_color"
+            android:visibility="gone" />
+
+        <com.jizhi.jlongg.groupimageviews.NineGroupChatGridImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/teamHeads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            custom:isSquare="true" />
+
+    </com.jizhi.jongg.widget.SquareReLativeLayout>
+
+
+</LinearLayout>

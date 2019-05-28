@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJChatListOtherPicCell" rowHeight="227" id="2dH-Gx-h33" customClass="JGJChatListOtherPicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="221"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2dH-Gx-h33" id="Wzk-rd-RGm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-Rp-dg5">
+                        <rect key="frame" x="10" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Wbi-Rp-dg5" secondAttribute="height" multiplier="1:1" id="ACv-Ef-EYz"/>
+                            <constraint firstAttribute="width" constant="40" id="EhS-2b-WHq"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGu-XK-G7R" userLabel="middleView" customClass="JGJChatListPicView">
+                        <rect key="frame" x="54" y="20" width="190" height="195"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAK-Vd-7ID" customClass="JGJChatListPicView">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="195"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="Gld-i1-l2R"/>
+                                    <constraint firstAttribute="width" constant="190" id="MPO-Nc-Xpb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="195" id="88y-zh-ZYy"/>
+                            <constraint firstItem="gAK-Vd-7ID" firstAttribute="top" secondItem="FGu-XK-G7R" secondAttribute="top" id="ATE-t4-tVC"/>
+                            <constraint firstAttribute="bottom" secondItem="gAK-Vd-7ID" secondAttribute="bottom" id="Krv-uP-UOk"/>
+                            <constraint firstAttribute="trailing" secondItem="gAK-Vd-7ID" secondAttribute="trailing" id="TMr-PL-xd1"/>
+                            <constraint firstItem="gAK-Vd-7ID" firstAttribute="leading" secondItem="FGu-XK-G7R" secondAttribute="leading" id="sw1-9Q-b2U"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-V0-XWa" userLabel="bottomMarginView">
+                        <rect key="frame" x="0.0" y="215" width="320" height="5.5"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chat_sendFail" translatesAutoresizingMaskIntoConstraints="NO" id="EEt-ml-EC5">
+                        <rect key="frame" x="255" y="108.5" width="18" height="18"/>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Q0A-bB-Lqy">
+                        <rect key="frame" x="254" y="107.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bom-tv-wZc" userLabel="leftTopView" customClass="JGJChatListCellTopTimeView">
+                        <rect key="frame" x="67" y="2" width="192" height="14"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="eVK-GB-xbZ"/>
+                            <constraint firstAttribute="width" constant="134" id="yni-vg-uEK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yni-vg-uEK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wbi-Rp-dg5" firstAttribute="top" secondItem="Wzk-rd-RGm" secondAttribute="top" constant="2" id="3gk-Ge-YNS"/>
+                    <constraint firstItem="Q0A-bB-Lqy" firstAttribute="centerY" secondItem="FGu-XK-G7R" secondAttribute="centerY" id="4Qe-eO-wjm"/>
+                    <constraint firstItem="xR4-V0-XWa" firstAttribute="leading" secondItem="Wzk-rd-RGm" secondAttribute="leading" id="54n-Rh-pmO"/>
+                    <constraint firstItem="FGu-XK-G7R" firstAttribute="leading" secondItem="bom-tv-wZc" secondAttribute="trailing" constant="-134" id="9Gs-XJ-EGR"/>
+                    <constraint firstItem="EEt-ml-EC5" firstAttribute="centerY" secondItem="Q0A-bB-Lqy" secondAttribute="centerY" id="DpD-SK-tuk"/>
+                    <constraint firstItem="FGu-XK-G7R" firstAttribute="leading" secondItem="Wbi-Rp-dg5" secondAttribute="trailing" constant="4" id="NSP-is-BhV"/>
+                    <constraint firstItem="Q0A-bB-Lqy" firstAttribute="leading" secondItem="FGu-XK-G7R" secondAttribute="trailing" constant="10" id="Q5g-Zf-QCi"/>
+                    <constraint firstItem="bom-tv-wZc" firstAttribute="width" secondItem="Wzk-rd-RGm" secondAttribute="width" multiplier="0.6" id="W6L-pe-rY7"/>
+                    <constraint firstItem="FGu-XK-G7R" firstAttribute="top" secondItem="bom-tv-wZc" secondAttribute="bottom" constant="4" id="Yfg-yk-nhP"/>
+                    <constraint firstItem="bom-tv-wZc" firstAttribute="top" secondItem="Wbi-Rp-dg5" secondAttribute="top" id="agM-R0-sTL"/>
+                    <constraint firstItem="Wbi-Rp-dg5" firstAttribute="leading" secondItem="Wzk-rd-RGm" secondAttribute="leading" constant="10" id="bd2-ir-hkQ"/>
+                    <constraint firstAttribute="trailing" secondItem="xR4-V0-XWa" secondAttribute="trailing" id="blY-4o-zZo"/>
+                    <constraint firstItem="EEt-ml-EC5" firstAttribute="centerX" secondItem="Q0A-bB-Lqy" secondAttribute="centerX" id="tHA-mv-kDG"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FGu-XK-G7R" secondAttribute="trailing" constant="76" id="tzy-wl-XKd"/>
+                    <constraint firstItem="bom-tv-wZc" firstAttribute="leading" secondItem="Wbi-Rp-dg5" secondAttribute="trailing" constant="17" id="vnB-ae-gk0"/>
+                    <constraint firstAttribute="bottom" secondItem="xR4-V0-XWa" secondAttribute="bottom" id="vtM-6W-sCV"/>
+                    <constraint firstItem="xR4-V0-XWa" firstAttribute="top" secondItem="FGu-XK-G7R" secondAttribute="bottom" id="xHW-r1-ke8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="9Gs-XJ-EGR"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="avatarImageView" destination="Wbi-Rp-dg5" id="DnH-rf-qSX"/>
+                <outlet property="bottomMarginViewConstraintLR" destination="tzy-wl-XKd" id="n4A-Tz-2qe"/>
+                <outlet property="indicatorView" destination="Q0A-bB-Lqy" id="YKP-I0-3YR"/>
+                <outlet property="middleView" destination="FGu-XK-G7R" id="oaI-OH-6GV"/>
+                <outlet property="picView" destination="gAK-Vd-7ID" id="crk-G6-aDy"/>
+                <outlet property="sendFailImage" destination="EEt-ml-EC5" id="ZWG-u6-QKM"/>
+                <outlet property="topTitleView" destination="bom-tv-wZc" id="EQL-qG-xIv"/>
+            </connections>
+            <point key="canvasLocation" x="-850" y="283.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Chat_sendFail" width="18" height="18"/>
+    </resources>
+</document>

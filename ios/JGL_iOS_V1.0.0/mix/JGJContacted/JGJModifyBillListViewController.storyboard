@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modify Bill List View Controller-->
+        <scene sceneID="yby-tL-7RZ">
+            <objects>
+                <viewController storyboardIdentifier="JGJModifyBillListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nzr-aA-cTe" customClass="JGJModifyBillListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J2b-CG-5UX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ow5-rX-dN1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i9r-tM-7PA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-min" translatesAutoresizingMaskIntoConstraints="NO" id="lf1-qE-X6t">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aw9-vL-dpv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="sFI-hA-Qcb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOT-lY-EFw">
+                                        <rect key="frame" x="0.0" y="587" width="375" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sFI-hA-Qcb" secondAttribute="trailing" id="BNO-9u-GhK"/>
+                                    <constraint firstAttribute="bottom" secondItem="sFI-hA-Qcb" secondAttribute="bottom" constant="60" id="bNU-Ie-fTz"/>
+                                    <constraint firstItem="LOT-lY-EFw" firstAttribute="top" secondItem="sFI-hA-Qcb" secondAttribute="bottom" id="g9E-hj-Jkj"/>
+                                    <constraint firstItem="sFI-hA-Qcb" firstAttribute="leading" secondItem="aw9-vL-dpv" secondAttribute="leading" id="iZb-qf-KpY"/>
+                                    <constraint firstAttribute="trailing" secondItem="LOT-lY-EFw" secondAttribute="trailing" id="jXo-ZG-KC2"/>
+                                    <constraint firstItem="LOT-lY-EFw" firstAttribute="leading" secondItem="aw9-vL-dpv" secondAttribute="leading" id="mj9-0P-Zl7"/>
+                                    <constraint firstItem="sFI-hA-Qcb" firstAttribute="top" secondItem="aw9-vL-dpv" secondAttribute="top" id="qVB-9g-JyG"/>
+                                    <constraint firstAttribute="bottom" secondItem="LOT-lY-EFw" secondAttribute="bottom" id="sON-4a-DTf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lf1-qE-X6t" secondAttribute="trailing" id="1Ur-oX-nfS"/>
+                            <constraint firstItem="lf1-qE-X6t" firstAttribute="top" secondItem="J2b-CG-5UX" secondAttribute="bottom" id="6w3-AE-hyi"/>
+                            <constraint firstItem="ow5-rX-dN1" firstAttribute="top" secondItem="lf1-qE-X6t" secondAttribute="bottom" id="82I-dg-A7R"/>
+                            <constraint firstItem="aw9-vL-dpv" firstAttribute="leading" secondItem="i9r-tM-7PA" secondAttribute="leading" id="AZQ-qT-Hjb"/>
+                            <constraint firstItem="aw9-vL-dpv" firstAttribute="top" secondItem="J2b-CG-5UX" secondAttribute="bottom" id="JBj-uT-c67"/>
+                            <constraint firstAttribute="trailing" secondItem="aw9-vL-dpv" secondAttribute="trailing" id="P2I-qt-YsO"/>
+                            <constraint firstItem="ow5-rX-dN1" firstAttribute="top" secondItem="aw9-vL-dpv" secondAttribute="bottom" id="f5v-P3-bxb"/>
+                            <constraint firstItem="lf1-qE-X6t" firstAttribute="leading" secondItem="i9r-tM-7PA" secondAttribute="leading" id="pBo-oS-Ye1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="baseView" destination="aw9-vL-dpv" id="k5g-6h-6GZ"/>
+                        <outlet property="buttomView" destination="LOT-lY-EFw" id="xlM-gi-Gft"/>
+                        <outlet property="tableview" destination="sFI-hA-Qcb" id="8bA-W2-xCh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhI-Cf-Tw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="151.57421289355324"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG-min" width="750" height="1334"/>
+    </resources>
+</document>

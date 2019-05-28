@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_white_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:paddingBottom="5dip"
+        android:paddingLeft="14dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/color_cccccc"
+        android:textSize="@dimen/catalog_size"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/color_f1f1f1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="7dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                android:id="@id/roundImageHashText"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/roundImageHashText"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/telph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_666666"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/isCrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_creator"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/deleteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/garbage_icon"
+            android:drawablePadding="5dp"
+            android:text="@string/delete"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/text_size_13" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

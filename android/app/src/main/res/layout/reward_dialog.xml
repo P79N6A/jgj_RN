@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/reward_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+        android:id="@+id/closedIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/closed_reward" />
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_f8c26a_sk_fde3b8_3dp_15radius"
+        android:gravity="center"
+        android:text="奖励"
+        android:textColor="#d66f2b" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/reward_tips"
+        android:textColor="#fde3b8"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖励 ￥"
+            android:textColor="#fde3b8"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/moneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fde3b8"
+                android:textSize="35sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#fde3b8" />
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/changeMoneyText"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sk_white_20radius"
+            android:gravity="center"
+            android:text="换个金额"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.hcs.cityslist.widget.AppCursorEditText
+        android:id="@+id/messageEdit"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_white_8_radius"
+        android:gravity="left"
+        android:hint="鼓励几句..."
+        android:maxLength="500"
+        android:padding="10dp"
+        android:textColorHint="@color/color_999999"
+        android:textSize="12sp" />
+
+    <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+        android:id="@+id/submitBtn"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_f8c26a_20radius"
+        android:text="奖励"
+        android:textColor="#d66f2b"
+        android:textSize="15dp" />
+
+</LinearLayout>

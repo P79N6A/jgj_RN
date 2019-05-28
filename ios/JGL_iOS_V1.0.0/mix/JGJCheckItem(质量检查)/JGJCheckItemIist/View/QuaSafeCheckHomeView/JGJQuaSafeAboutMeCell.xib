@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJQuaSafeAboutMeCell" id="KGk-i7-Jjw" customClass="JGJQuaSafeAboutMeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHN-wF-8xc">
+                        <rect key="frame" x="12" y="0.0" width="296" height="69.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07y-9U-Xew">
+                        <rect key="frame" x="12" y="0.0" width="296" height="69.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wait_me_ execute_icon" translatesAutoresizingMaskIntoConstraints="NO" id="h8u-60-DZp">
+                                <rect key="frame" x="16" y="10" width="25" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Iw7-Kn-bzS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-7L-bKC">
+                                <rect key="frame" x="266" y="22" width="8" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="Z4J-li-Y2G"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待我执行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jY-wy-qsO">
+                                <rect key="frame" x="51" y="24.5" width="69.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="IbQ-6q-yCN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRq-MY-3Dp">
+                                <rect key="frame" x="248" y="30.5" width="8" height="8"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="dF1-4t-4aQ"/>
+                                    <constraint firstAttribute="width" constant="8" id="x5q-Gb-s92"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bgq-7L-bKC" secondAttribute="trailing" constant="22" id="0N1-d2-Vth"/>
+                            <constraint firstItem="h8u-60-DZp" firstAttribute="centerY" secondItem="07y-9U-Xew" secondAttribute="centerY" id="D75-wZ-2Bt"/>
+                            <constraint firstItem="bgq-7L-bKC" firstAttribute="centerY" secondItem="07y-9U-Xew" secondAttribute="centerY" id="EJh-gX-g3a"/>
+                            <constraint firstItem="1jY-wy-qsO" firstAttribute="centerY" secondItem="07y-9U-Xew" secondAttribute="centerY" id="Efj-3O-NiG"/>
+                            <constraint firstItem="h8u-60-DZp" firstAttribute="leading" secondItem="07y-9U-Xew" secondAttribute="leading" constant="16" id="KtB-R8-uFx"/>
+                            <constraint firstItem="bgq-7L-bKC" firstAttribute="leading" secondItem="eRq-MY-3Dp" secondAttribute="trailing" constant="10" id="m3h-mO-dCW"/>
+                            <constraint firstItem="eRq-MY-3Dp" firstAttribute="centerY" secondItem="07y-9U-Xew" secondAttribute="centerY" id="x8x-zZ-Gwt"/>
+                            <constraint firstItem="1jY-wy-qsO" firstAttribute="leading" secondItem="h8u-60-DZp" secondAttribute="trailing" constant="10" id="zgu-Cr-sQl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CHN-wF-8xc" firstAttribute="bottom" secondItem="07y-9U-Xew" secondAttribute="bottom" id="1CB-b5-eBK"/>
+                    <constraint firstItem="07y-9U-Xew" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="2Y8-yd-gI7"/>
+                    <constraint firstAttribute="trailing" secondItem="07y-9U-Xew" secondAttribute="trailing" constant="12" id="FXR-oc-aKq"/>
+                    <constraint firstItem="CHN-wF-8xc" firstAttribute="top" secondItem="07y-9U-Xew" secondAttribute="top" id="TL5-KM-0EB"/>
+                    <constraint firstItem="CHN-wF-8xc" firstAttribute="leading" secondItem="07y-9U-Xew" secondAttribute="leading" id="jZa-H3-SJy"/>
+                    <constraint firstItem="07y-9U-Xew" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lRw-Dg-wnm"/>
+                    <constraint firstItem="CHN-wF-8xc" firstAttribute="trailing" secondItem="07y-9U-Xew" secondAttribute="trailing" id="sp3-8l-g2t"/>
+                    <constraint firstAttribute="bottom" secondItem="07y-9U-Xew" secondAttribute="bottom" constant="20" id="zw5-SF-fOg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containView" destination="07y-9U-Xew" id="ybB-f3-KER"/>
+                <outlet property="msgFlagView" destination="eRq-MY-3Dp" id="3DF-cl-F01"/>
+                <outlet property="shadowView" destination="CHN-wF-8xc" id="hHG-aE-8At"/>
+                <outlet property="typeImageView" destination="h8u-60-DZp" id="3YA-ie-PM4"/>
+                <outlet property="typeTitle" destination="1jY-wy-qsO" id="Eu5-P6-dwh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="8" height="12"/>
+        <image name="wait_me_ execute_icon" width="25" height="25"/>
+    </resources>
+</document>

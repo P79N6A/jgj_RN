@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJChatNoticeCell" rowHeight="97" id="KGk-i7-Jjw" customClass="JGJChatNoticeCell">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="106.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieY-0B-fgx">
+                        <rect key="frame" x="10" y="15" width="62" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y9-lQ-Dd6">
+                        <rect key="frame" x="328" y="15" width="71" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title=" 谁会收到?" image="CHat_notice_question">
+                            <color key="titleColor" red="0.92549019607843142" green="0.56862745098039214" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="noticeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IBF-BF-4ip"/>
+                        </connections>
+                    </button>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZEW-Nb-Sz6" userLabel="lineView">
+                        <rect key="frame" x="343" y="30" width="56" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="LFn-d0-Cbu"/>
+                        </constraints>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D6k-Ef-HvC" customClass="TYInputView">
+                        <rect key="frame" x="5" y="7" width="419" height="94.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZEW-Nb-Sz6" firstAttribute="leading" secondItem="8Y9-lQ-Dd6" secondAttribute="leading" constant="15" id="QMC-ea-pb4"/>
+                    <constraint firstItem="D6k-Ef-HvC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="YEf-m0-1Fu"/>
+                    <constraint firstItem="D6k-Ef-HvC" firstAttribute="leading" secondItem="ieY-0B-fgx" secondAttribute="leading" constant="-5" id="ZlQ-9U-287"/>
+                    <constraint firstItem="D6k-Ef-HvC" firstAttribute="leading" secondItem="ieY-0B-fgx" secondAttribute="trailing" constant="-43" id="a4I-2x-kC2"/>
+                    <constraint firstItem="ZEW-Nb-Sz6" firstAttribute="trailing" secondItem="8Y9-lQ-Dd6" secondAttribute="trailing" id="baQ-LL-vKu"/>
+                    <constraint firstItem="ieY-0B-fgx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eK7-NS-Icl"/>
+                    <constraint firstAttribute="trailing" secondItem="D6k-Ef-HvC" secondAttribute="trailing" constant="5" id="eR7-Im-9I5"/>
+                    <constraint firstItem="ieY-0B-fgx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="f0O-Rz-FrK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8Y9-lQ-Dd6" secondAttribute="trailing" constant="10" id="gAd-VU-zCN"/>
+                    <constraint firstItem="8Y9-lQ-Dd6" firstAttribute="bottom" secondItem="ieY-0B-fgx" secondAttribute="bottom" id="jFw-pD-Wfr"/>
+                    <constraint firstItem="8Y9-lQ-Dd6" firstAttribute="top" secondItem="ieY-0B-fgx" secondAttribute="top" id="mS6-mS-Dxe"/>
+                    <constraint firstAttribute="bottom" secondItem="D6k-Ef-HvC" secondAttribute="bottom" constant="5" id="mTn-rV-YER"/>
+                    <constraint firstItem="ZEW-Nb-Sz6" firstAttribute="bottom" secondItem="8Y9-lQ-Dd6" secondAttribute="bottom" constant="1" id="vBe-TP-TBz"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="a4I-2x-kC2"/>
+                        <exclude reference="jFw-pD-Wfr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputView" destination="D6k-Ef-HvC" id="n6g-hx-FjE"/>
+                <outlet property="lineView" destination="ZEW-Nb-Sz6" id="d2C-E1-Pna"/>
+                <outlet property="noticeButton" destination="8Y9-lQ-Dd6" id="DbV-2M-kR7"/>
+                <outlet property="noticeTitleLabel" destination="ieY-0B-fgx" id="Sv2-sH-o81"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="229"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CHat_notice_question" width="12" height="12"/>
+    </resources>
+</document>

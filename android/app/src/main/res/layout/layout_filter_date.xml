@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/gray_fafafa">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha style="@style/navigation_red_return_attribute" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/remberworkinfotitle"
+                android:textColor="@color/gray_333333"
+                android:textSize="@dimen/guide_title_size" />
+
+        </LinearLayout>
+
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/right_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/guide_right_title_size" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="更多"
+            android:lines="1"
+            android:onClick="onClick"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/guide_right_title_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_dbdbdb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img_date_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:onClick="onClick"
+                android:padding="20dp"
+                android:src="@drawable/left_sanjiao" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="title"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_15"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_date_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:onClick="onClick"
+                android:padding="20dp"
+                android:src="@drawable/right_sanjiao" />
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/rb_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/draw_app_filter_5radius"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio_remember_workinfo_filter"
+            android:drawablePadding="@dimen/margin_3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/filter"
+            android:textColor="@drawable/radio_rember_workinfo_filter_textcolor"
+            android:textSize="@dimen/text_size_13"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb" />
+    </RelativeLayout>
+</LinearLayout>

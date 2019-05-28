@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <com.hcs.cityslist.widget.ClearEditText
+                android:id="@+id/telEdit"
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/sk_dbdbdb_5radius_1px"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLength="11"
+                android:numeric="integer"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="18sp" />
+
+            <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+                android:id="@+id/getCodeBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/sk_draw_white_5radius"
+                android:onClick="onClick"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="点击获取验证码"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/color_dbdbdb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="请输入收到的短信验证码"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/firstNumber"
+                    style="@style/update_telphone_edit_style"
+                    android:layout_marginRight="15dp"
+                    android:imeOptions="actionNext" />
+
+                <EditText
+                    android:id="@+id/secondNumber"
+                    style="@style/update_telphone_edit_style"
+                    android:layout_marginRight="15dp"
+                    android:imeOptions="actionNext" />
+
+                <EditText
+                    android:id="@+id/threeNumber"
+                    style="@style/update_telphone_edit_style"
+                    android:layout_marginRight="15dp"
+                    android:imeOptions="actionNext" />
+
+                <EditText
+                    android:id="@+id/fourNumber"
+                    style="@style/update_telphone_edit_style"
+                    android:imeOptions="actionNext"
+                    android:maxLength="1" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextBtn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/draw_dis_app_btncolor_5radius"
+                android:onClick="onClick"
+                android:text="确认更换"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/search_edit_layout" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/unExistUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/user_does_not_exist"
+            android:textColor="@color/color_666666"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/existUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_selector_white_gray"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                android:id="@+id/userSearchResultHead"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/userSearchResultName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/userSearchResultHead"
+                android:gravity="center"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/userSearchResultTel"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/userSearchResultName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/userSearchResultHead"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/unInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/myContactLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listview_selector_white_gray"
+            android:onClick="onClick"
+            android:padding="10dp">
+
+            <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                android:id="@id/roundImageHashText"
+                android:layout_width="@dimen/app_head_width"
+                android:layout_height="@dimen/app_head_height" />
+
+            <TextView
+                android:id="@+id/userNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/roundImageHashText"
+                android:gravity="center"
+                android:text="@string/my_scan_code_title"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/telText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userNameText"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/roundImageHashText"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/scan_code_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phontContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:onClick="onClick"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mobile" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/icon3"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon3"
+                android:gravity="center"
+                android:text="从手机通讯录加朋友"
+                android:textColor="@color/color_333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/icon3"
+                android:gravity="center"
+                android:text="@string/invite_friend_tips"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/houtui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fromGroupAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:onClick="onClick"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/group_icon" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/icon4"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon4"
+                android:gravity="center"
+                android:text="从项目加朋友"
+                android:textColor="@color/color_333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/icon4"
+                android:gravity="center"
+                android:text="@string/invite_friend_pro_tips"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/houtui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scanLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:onClick="onClick"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rich_scan" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/icon2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon2"
+                android:gravity="center"
+                android:text="扫码加朋友"
+                android:textColor="@color/color_333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/icon2"
+                android:gravity="center"
+                android:text="@string/scan_info"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/houtui" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

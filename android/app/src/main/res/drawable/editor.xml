@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item android:drawable="@drawable/login_pwd_red_background" android:state_focused="true"/>
+    <item android:drawable="@drawable/login_pwd_background" android:state_focused="false"/>
+
+</selector>

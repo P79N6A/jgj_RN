@@ -1,0 +1,89 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+android/app/src/main/res/drawable-mdpi/src_assets_recruit_touying.png
+android/app/src/main/res/drawable-mdpi/src_assets_recruit_dingyue.png
+android/app/src/main/res/drawable-mdpi/src_assets_recruit_touying.png
+android/app/src/main/res/drawable-mdpi/src_assets_recruit_dingyue.png
+android/app/src/main/res/drawable-mdpi/src_assets_recruit_dingyue.png
+android/app/libs/zoomimage.jar
+android/app/libs/poi-scratchpad-3.14-20160307.jar
+android/app/libs/poi-ooxml-3.14-20160307.jar
+android/app/libs/poi-3.14-20160307.jar
+android/app/libs/ksoap2-assembly-3.0.0.jar
+android/app/libs/core-3.1.1-SNAPSHOT.jar
+android/app/libs/baidumapapi_search_v3_6_0.jar
+android/app/libs/baidumapapi_map_v3_6_0.jar
+android/app/libs/android-core-3.1.1-SNAPSHOT.jar
+android/app/libs/alipaySdk-20170725.jar
+android/app/libs/GifView.jar
+android/app/libs/xutils.jar
+android/app/libs/wechat-sdk-android-without-mta-5.1.4.jar
+android/app/libs/universal-image-loader-1.9.3.jar
+android/app/libs/umeng-sharetool-6.9.3.jar
+android/app/libs/tbs_sdk_thirdapp_v3.0.0.1038_43000_sharewithdownload_obfs_20170110_144724.jar
+android/app/libs/pinyin4j-2.5.0.jar
+android/app/libs/nineoldandroids-2.4.0.jar
+android/app/libs/baidumapapi_util_v3_6_0.jar
+android/app/libs/umeng-share-core-6.9.3.jar
+android/app/libs/umeng-share-QQ-simplify-6.9.3.jar
+android/app/libs/umeng-debug-1.0.0.jar
+android/app/libs/systemBarTint.jar
+android/app/libs/pushservice-5.6.0.30.jar
+android/app/libs/baidumapapi_base_v3_6_0.jar
+android/app/libs/umeng-shareboard-widget-6.9.3.jar
+android/app/libs/umeng-share-wechat-simplify-6.9.3.jar

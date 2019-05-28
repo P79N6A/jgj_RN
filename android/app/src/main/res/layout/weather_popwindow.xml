@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingRight="10dp">
+
+    <ImageView style="@style/navigationPopwindow_sanjiao" />
+
+    <LinearLayout style="@style/navigationPopwindowLayout">
+
+        <com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha
+            android:id="@+id/weather_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/weather_icon" />
+
+            <TextView
+                android:id="@+id/weather_detail_text"
+                style="@style/navigationPopwindowTextview"
+                android:layout_toRightOf="@id/icon1"
+                android:text="@string/weather_detal" />
+
+            <View
+                style="@style/navigationPopwindowItem"
+                android:layout_below="@id/weather_detail_text"
+                android:layout_toRightOf="@id/icon1" />
+
+        </com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha>
+
+        <com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha
+            android:id="@+id/set_recoder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/recorder_icon" />
+
+            <TextView
+                style="@style/navigationPopwindowTextview"
+                android:layout_toRightOf="@id/icon2"
+                android:text="@string/set_recorder" />
+
+        </com.jizhi.jlongg.main.custom.RelativeLayoutChangeAlpha>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

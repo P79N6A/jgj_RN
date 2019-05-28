@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJChatSynBottomBtnView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="DRV-66-quq"/>
+                <outlet property="leftBtn" destination="5uD-0v-brf" id="iuV-ku-JDf"/>
+                <outlet property="rightBtn" destination="EMw-x2-Pv3" id="uUw-hG-Igv"/>
+                <outlet property="rightW" destination="J5C-Id-WFI" id="y3P-MA-CaT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMw-x2-Pv3">
+                    <rect key="frame" x="260" y="12.5" width="105" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="J5C-Id-WFI"/>
+                        <constraint firstAttribute="height" constant="25" id="ah7-f6-WhX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="加入现有项目">
+                        <color key="titleColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="joinButtonPressed:" destination="-1" eventType="touchUpInside" id="jWn-Dc-IZp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uD-0v-brf">
+                    <rect key="frame" x="140" y="12.5" width="105" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="U8h-P3-ksG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="创建新项目组">
+                        <color key="titleColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="creatButtonPressed:" destination="-1" eventType="touchUpInside" id="vLE-zk-RIU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EMw-x2-Pv3" secondAttribute="trailing" constant="10" id="BaG-D7-9Bq"/>
+                <constraint firstItem="5uD-0v-brf" firstAttribute="width" secondItem="EMw-x2-Pv3" secondAttribute="width" id="GP8-oV-QbC"/>
+                <constraint firstItem="5uD-0v-brf" firstAttribute="centerY" secondItem="EMw-x2-Pv3" secondAttribute="centerY" id="ZY8-bw-eHn"/>
+                <constraint firstItem="EMw-x2-Pv3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iLp-tK-AOl"/>
+                <constraint firstItem="5uD-0v-brf" firstAttribute="height" secondItem="EMw-x2-Pv3" secondAttribute="height" id="ipT-iG-EJG"/>
+                <constraint firstItem="EMw-x2-Pv3" firstAttribute="leading" secondItem="5uD-0v-brf" secondAttribute="trailing" constant="15" id="w9S-KU-snQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

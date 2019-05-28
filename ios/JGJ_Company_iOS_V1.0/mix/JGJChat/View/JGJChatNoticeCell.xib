@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJChatNoticeCell" rowHeight="137" id="KGk-i7-Jjw" customClass="JGJChatNoticeCell">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="106.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieY-0B-fgx">
+                        <rect key="frame" x="10" y="15" width="61.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y9-lQ-Dd6">
+                        <rect key="frame" x="331" y="15" width="68" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="谁会收到?" image="CHat_notice_question">
+                            <color key="titleColor" red="0.89411764705882346" green="0.54509803921568623" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="noticeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IBF-BF-4ip"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D6k-Ef-HvC" customClass="TYInputView">
+                        <rect key="frame" x="5" y="7" width="419" height="85"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="85" id="Exy-Hf-uc4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66g-yF-vg6" userLabel="lineView">
+                        <rect key="frame" x="346" y="30" width="53" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YW9-gP-3ip"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="66g-yF-vg6" firstAttribute="trailing" secondItem="8Y9-lQ-Dd6" secondAttribute="trailing" id="3sH-fv-fa8"/>
+                    <constraint firstAttribute="bottom" secondItem="D6k-Ef-HvC" secondAttribute="bottom" constant="14.5" id="49m-dd-8qP"/>
+                    <constraint firstItem="8Y9-lQ-Dd6" firstAttribute="top" secondItem="ieY-0B-fgx" secondAttribute="top" id="URp-fc-2TQ"/>
+                    <constraint firstItem="D6k-Ef-HvC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Urh-hM-gR1"/>
+                    <constraint firstAttribute="trailing" secondItem="D6k-Ef-HvC" secondAttribute="trailing" constant="5" id="Wax-cc-3ux"/>
+                    <constraint firstItem="D6k-Ef-HvC" firstAttribute="leading" secondItem="ieY-0B-fgx" secondAttribute="leading" constant="-5" id="ZlQ-9U-287"/>
+                    <constraint firstItem="D6k-Ef-HvC" firstAttribute="leading" secondItem="ieY-0B-fgx" secondAttribute="trailing" constant="-43" id="a4I-2x-kC2"/>
+                    <constraint firstItem="ieY-0B-fgx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eK7-NS-Icl"/>
+                    <constraint firstItem="ieY-0B-fgx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="f0O-Rz-FrK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8Y9-lQ-Dd6" secondAttribute="trailing" constant="10" id="gAd-VU-zCN"/>
+                    <constraint firstItem="8Y9-lQ-Dd6" firstAttribute="bottom" secondItem="ieY-0B-fgx" secondAttribute="bottom" id="jFw-pD-Wfr"/>
+                    <constraint firstItem="66g-yF-vg6" firstAttribute="leading" secondItem="8Y9-lQ-Dd6" secondAttribute="leading" constant="15" id="mYy-Vb-3XN"/>
+                    <constraint firstItem="66g-yF-vg6" firstAttribute="bottom" secondItem="8Y9-lQ-Dd6" secondAttribute="bottom" constant="1" id="mo2-26-Smn"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="a4I-2x-kC2"/>
+                        <exclude reference="jFw-pD-Wfr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputView" destination="D6k-Ef-HvC" id="n6g-hx-FjE"/>
+                <outlet property="lineView" destination="66g-yF-vg6" id="42W-WQ-rYu"/>
+                <outlet property="noticeButton" destination="8Y9-lQ-Dd6" id="DbV-2M-kR7"/>
+                <outlet property="noticeTitleLabel" destination="ieY-0B-fgx" id="ROI-dI-bZK"/>
+            </connections>
+            <point key="canvasLocation" x="485.5" y="307"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CHat_notice_question" width="12" height="12"/>
+    </resources>
+</document>

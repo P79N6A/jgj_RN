@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G18a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JGJRightFromCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAl-nA-DRg">
+                        <rect key="frame" x="243" y="5" width="75" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="tt4-3n-wOA"/>
+                        </constraints>
+                        <state key="normal" title="回复">
+                            <color key="titleColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="replyButtonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="s6c-9V-FOx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQe-w9-her">
+                        <rect key="frame" x="326" y="5" width="75" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="RwP-XP-cdd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="tintColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="收到">
+                            <color key="titleColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="reciveButtonClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7vs-Qr-eaz"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aAl-nA-DRg" secondAttribute="bottom" constant="10" id="BRF-bY-zbD"/>
+                <constraint firstItem="aAl-nA-DRg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Dii-Vq-zkd"/>
+                <constraint firstItem="rQe-w9-her" firstAttribute="leading" secondItem="aAl-nA-DRg" secondAttribute="trailing" constant="8" id="Jux-ys-kj8"/>
+                <constraint firstItem="rQe-w9-her" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="NLo-V4-xB5"/>
+                <constraint firstAttribute="bottom" secondItem="rQe-w9-her" secondAttribute="bottom" constant="10" id="WKq-1f-kq2"/>
+                <constraint firstAttribute="trailing" secondItem="rQe-w9-her" secondAttribute="trailing" constant="10" id="e7F-vB-mvo"/>
+            </constraints>
+            <size key="customSize" width="411" height="48"/>
+            <connections>
+                <outlet property="reciveButton" destination="rQe-w9-her" id="ntJ-du-TQD"/>
+                <outlet property="replyButton" destination="aAl-nA-DRg" id="g6z-wm-0vw"/>
+            </connections>
+            <point key="canvasLocation" x="213.5" y="85"/>
+        </collectionViewCell>
+    </objects>
+</document>

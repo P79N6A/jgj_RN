@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cloudy" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/center_text"
+            android:layout_width="60.0dip"
+            android:layout_height="60.0dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/draw_oval_d7252c"
+            android:gravity="center"
+            android:text="Z"
+            android:textColor="@android:color/white"
+            android:textSize="25dip"
+            android:visibility="invisible" />
+
+        <com.hcs.cityslist.widget.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="20.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/draw_sider_background" />
+
+
+        <include layout="@layout/empty_view" />
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        style="@style/bottom_button_layout"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/personCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/confirmAdd"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_app_btncolor_5radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+
+</LinearLayout>

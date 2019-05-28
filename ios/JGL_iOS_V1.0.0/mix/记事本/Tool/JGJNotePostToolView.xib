@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJNotePostToolView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NRa-FX-eYr"/>
+                <outlet property="markButton" destination="Bgk-cT-KXA" id="pct-II-tdQ"/>
+                <outlet property="photoButton" destination="gRI-uy-ZkM" id="2UM-Hf-5F1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgk-cT-KXA">
+                    <rect key="frame" x="20" y="0.0" width="112" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="WtI-jk-Vl9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="6" maxY="0.0"/>
+                    <state key="normal" title="标记为重要" image="note_unImport_icon">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="markImportButtonPressed:" destination="-1" eventType="touchUpInside" id="OBN-1w-8wE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-uy-ZkM">
+                    <rect key="frame" x="255" y="0.0" width="100" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="C0I-zN-7VS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" title="添加图片" image="note_photo">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="photoButtonPressed:" destination="-1" eventType="touchUpInside" id="Qs2-Ib-R71"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyb-GO-tyb" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Rfj-ec-i0Y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gRI-uy-ZkM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="56w-7g-nf3"/>
+                <constraint firstItem="Bgk-cT-KXA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Jvm-8J-cVk"/>
+                <constraint firstItem="gRI-uy-ZkM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="NVY-rV-HiH"/>
+                <constraint firstItem="Zyb-GO-tyb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ofm-VK-xh2"/>
+                <constraint firstItem="Zyb-GO-tyb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UWN-dz-Hxu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zyb-GO-tyb" secondAttribute="trailing" id="Z19-MA-A8C"/>
+                <constraint firstAttribute="trailing" secondItem="gRI-uy-ZkM" secondAttribute="trailing" constant="20" id="edy-q8-x4P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bgk-cT-KXA" secondAttribute="bottom" id="lLe-vB-y2x"/>
+                <constraint firstItem="Bgk-cT-KXA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vdD-bo-XWO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="52" y="57.571214392803604"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="note_photo" width="30" height="30"/>
+        <image name="note_unImport_icon" width="24.5" height="26"/>
+    </resources>
+</document>

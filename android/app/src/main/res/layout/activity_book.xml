@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:id="@+id/web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/gray_fafafa">
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center_vertical"
+            android:onClick="onFinish">
+
+            <ImageView
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:src="@drawable/nav_left_awrros"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="返回"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/guide_return_size"/>
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/left"
+            android:text="关闭"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/guide_return_size"/>
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/guide_title_size"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_dbdbdb"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

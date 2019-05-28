@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.jizhi.jongg.widget.AppDiverView style="@style/app_diver_view_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.groupimageviews.NineGroupChatGridImageView
+            android:id="@+id/teamHeads"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/proName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/allMemberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/textViewKey_relativeLayout"
+            android:layout_width="0dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="成员" />
+
+        <TextView
+            android:id="@+id/memberCountTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/houtui"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.jizhi.jongg.widget.WrapGridview
+        android:id="@+id/memberGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="7"
+        android:padding="10dp" />
+
+    <com.jizhi.jongg.widget.AppDiverView style="@style/app_diver_view_style" />
+
+    <LinearLayout
+        android:id="@+id/reportLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="13dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="汇报对象"
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:id="@+id/reportMemberTxt"
+                style="@style/textValue"
+                android:hint="0人" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <com.jizhi.jongg.widget.WrapGridview
+            android:id="@+id/reportGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="5dp"
+            android:listSelector="#00000000"
+            android:numColumns="7"
+            android:padding="10dp"
+            android:verticalSpacing="5dp" />
+
+        <com.jizhi.jongg.widget.AppDiverView style="@style/app_diver_view_style" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

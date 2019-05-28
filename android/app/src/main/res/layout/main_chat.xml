@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_popwindow" />
+
+    <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+        android:id="@+id/netFailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffecec"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/network_error"
+            android:drawablePadding="5dp"
+            android:text="当前网络不可用"
+            android:textColor="@color/color_666666" />
+
+    </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+    <include layout="@layout/search_edit_layout" />
+
+    <View style="@style/line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <include layout="@layout/empty_chat_view" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

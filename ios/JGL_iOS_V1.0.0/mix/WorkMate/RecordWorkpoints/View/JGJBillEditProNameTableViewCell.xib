@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJBillEditProNameTableViewCell" rowHeight="50" id="nBr-FQ-ZT1" customClass="JGJBillEditProNameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nBr-FQ-ZT1" id="Fk3-u3-C6x">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mD-kG-leQ">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="proname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHL-Te-tfY">
+                                <rect key="frame" x="50" y="14" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPR-Ge-tiG">
+                                <rect key="frame" x="0.0" y="0.0" width="33" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="QmD-Ne-Ra1"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="findHelper_deletePhone"/>
+                                <connections>
+                                    <action selector="editProNameButtonPressed:" destination="nBr-FQ-ZT1" eventType="touchUpInside" id="3au-L6-K8x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xHL-Te-tfY" firstAttribute="centerY" secondItem="9mD-kG-leQ" secondAttribute="centerY" id="ENf-en-JDi"/>
+                            <constraint firstItem="xHL-Te-tfY" firstAttribute="leading" secondItem="gPR-Ge-tiG" secondAttribute="trailing" constant="17" id="NKz-xX-2kS"/>
+                            <constraint firstAttribute="width" constant="255" id="ThY-h3-wfU"/>
+                            <constraint firstItem="gPR-Ge-tiG" firstAttribute="centerY" secondItem="9mD-kG-leQ" secondAttribute="centerY" id="ZP3-ek-3DN"/>
+                            <constraint firstItem="gPR-Ge-tiG" firstAttribute="leading" secondItem="9mD-kG-leQ" secondAttribute="leading" id="gTY-Cv-emQ"/>
+                            <constraint firstItem="gPR-Ge-tiG" firstAttribute="height" secondItem="9mD-kG-leQ" secondAttribute="height" id="p2F-0s-wld"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ThY-h3-wfU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RES-rI-Xa1" customClass="LineView">
+                        <rect key="frame" x="0.0" y="48" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GOL-Q1-OYO"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="148-c0-FzY">
+                        <rect key="frame" x="265" y="15" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="q3X-hm-EqY"/>
+                            <constraint firstAttribute="height" constant="20" id="x1d-Os-VjN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="改名">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="editProNameButtonPressed:" destination="nBr-FQ-ZT1" eventType="touchUpInside" id="qG7-bc-FA6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="148-c0-FzY" firstAttribute="leading" secondItem="9mD-kG-leQ" secondAttribute="trailing" constant="10" id="CNx-Lo-Ciq"/>
+                    <constraint firstAttribute="bottom" secondItem="RES-rI-Xa1" secondAttribute="bottom" id="Djr-rs-0wH"/>
+                    <constraint firstItem="9mD-kG-leQ" firstAttribute="centerY" secondItem="Fk3-u3-C6x" secondAttribute="centerY" id="N0C-Vg-2hI"/>
+                    <constraint firstAttribute="trailing" secondItem="RES-rI-Xa1" secondAttribute="trailing" id="NTS-IO-YRO"/>
+                    <constraint firstItem="RES-rI-Xa1" firstAttribute="leading" secondItem="Fk3-u3-C6x" secondAttribute="leading" id="OJZ-ci-CFe"/>
+                    <constraint firstAttribute="trailing" secondItem="148-c0-FzY" secondAttribute="trailing" constant="15" id="TUq-C6-1sh"/>
+                    <constraint firstItem="148-c0-FzY" firstAttribute="leading" secondItem="9mD-kG-leQ" secondAttribute="trailing" constant="10" id="X5A-Vh-eh5"/>
+                    <constraint firstItem="9mD-kG-leQ" firstAttribute="leading" secondItem="Fk3-u3-C6x" secondAttribute="leading" id="ptU-Ux-2SV"/>
+                    <constraint firstItem="148-c0-FzY" firstAttribute="centerY" secondItem="Fk3-u3-C6x" secondAttribute="centerY" id="zOu-Hq-on4"/>
+                    <constraint firstItem="9mD-kG-leQ" firstAttribute="height" secondItem="Fk3-u3-C6x" secondAttribute="height" id="zq4-kl-ljN"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="X5A-Vh-eh5"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containView" destination="9mD-kG-leQ" id="Eet-SV-ijH"/>
+                <outlet property="deleteButton" destination="gPR-Ge-tiG" id="cRh-VT-b2e"/>
+                <outlet property="deleteIconW" destination="QmD-Ne-Ra1" id="JSr-bG-q2I"/>
+                <outlet property="modifyButton" destination="148-c0-FzY" id="2V5-oo-hog"/>
+                <outlet property="modifyButtonW" destination="q3X-hm-EqY" id="FpS-zP-562"/>
+                <outlet property="proName" destination="xHL-Te-tfY" id="2Vb-LC-ftw"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="281"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="findHelper_deletePhone" width="15" height="15"/>
+    </resources>
+</document>

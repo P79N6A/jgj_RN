@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vein_resouces_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/listview_selector_white_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="55dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/vein_resources_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/textViewKey"
+            android:layout_marginLeft="4dp"
+            android:text="人脉资源"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/textViewValue"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/houtui"
+            android:hint="朋友多了路好走"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

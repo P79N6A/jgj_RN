@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="go_to_change_role">去切换身份</string>
+    <string name="change_roler_foreman">切换成【班组长】</string>
+    <string name="change_roler_worker">切换成【工人】</string>
+    <string name="no_change_role">不切换</string>
+
+    <color name="bg_edittext_color">#00000000</color>
+
+    <color name="bg_horizontal_line_color">#80a3a4a7</color>
+    <color name="bg_horizontal_btn_normal">#eeeeee</color>
+    <color name="bg_horizontal_btn_selected">#70a3a4a7</color>
+
+    <color name="bg_indicator_point_normal">#D8D8D8</color>
+    <color name="bg_indicator_point_selected">#A6A6A6</color>
+
+    <string name="confirm_wheel">确认</string>
+    <string name="editor">编辑</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="current_source_list">现成数据源列表</string>
+
+    <string name="updateNow">立即更新</string>
+    <string name="delete">删除</string>
+    <string name="more_operation">更多操作</string>
+    <string name="service_err">加载失败,请稍后重试!</string>
+    <!-- 主页底部 -->
+
+    <!-- 注册 -->
+    <string name="realname">姓名:</string>
+    <string name="sexuality">性别:</string>
+    <string name="sexnan1">男</string>
+    <string name="sexnv1">女</string>
+    <string name="age">年龄:</string>
+    <string name="peopcount">工人规模:</string>
+    <string name="peopcount_hint">请输入工人规模</string>
+    <string name="hometown">家乡:</string>
+    <string name="workyear">工龄:</string>
+    <string name="familiarity">熟悉度</string>
+
+    <string name="engineering">工程类别</string>
+    <string name="craft">工种:</string>
+    <string name="expecttowork">期望工作地:</string>
+    <string name="expecttowork1">期望工作地</string>
+    <string name="ensurecorrect">请确认以上信息准确无误</string>
+    <string name="head">头像:</string>
+    <string name="uphead">点击上传头像</string>
+    <string name="realnamehint">请输入你的姓名</string>
+    <string name="agehint">请输入年龄</string>
+    <string name="hometownhint">选择家乡可以让朋友找到你</string>
+    <string name="engineering_hint">请选择你主要从事的工程类别</string>
+    <string name="crafthint">请选择你主要从事的工种</string>
+    <string name="selected_familiarity">请选择熟练度</string>
+    <string name="workyearhint">请输入工龄</string>
+    <string name="workyearRange">工龄范围0~50</string>
+    <string name="ageRange">年龄范围16~60</string>
+    <string name="expecttoworkhint">请选择工作地</string>
+    <string name="remind">为了提高工作的机会,请认真填写以下有效的真实信息</string>
+    <string name="workstate_hint">请选择工作状态</string>
+    <string name="lookAddr">查看地址</string>
+    <string name="format_showimgs_txt_title">%1$d/%2$d</string>
+    <string name="edit_project">编辑项目</string>
+    <string name="save">保存</string>
+
+
+    <!-- 去开工 -->
+    <string name="assign">确定</string>
+    <string name="single_batch_account_un_selecte">记工时</string>
+    <string name="single_batch_account_selecte">请从以上日历中选择要记工的日期</string>
+
+    <!-- 去开工详情 -->
+    <string name="review_cnt">%1$s次浏览</string>
+    <string name="filter">搜索查看</string>
+    <string name="synchpro">同步项目</string>
+    <string name="synch">同步</string>
+    <string name="add_pro">新建项目</string>
+    <string name="submit">提交</string>
+
+    <!-- 忘记密码 -->
+    <string name="save_update">保存修改</string>
+
+    <!-- 评价 -->
+    <string name="evaluation">评价</string>
+    <string name="add_evaluation">增加评价</string>
+    <string name="evaluation_details">评价详情</string>
+    <string name="overall_evaluation">总体评分</string>
+    <string name="personal_integrity">个人诚信</string>
+    <string name="knot_speed">结款速度</string>
+    <string name="attitude">为人态度</string>
+    <string name="all_evaluation">全部评分</string>
+    <string name="has_been_evaluated">已有%1$d人参与评价</string>
+
+    <!-- 新增评价 -->
+    <string name="project_name">项目名称&#160;:&#160;</string>
+    <string name="address">地&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;址&#160;:&#160;</string>
+    <string name="project_scope">项目评分</string>
+    <string name="project_evaluation">项目评价</string>
+    <string name="one_star">很恶劣</string>
+    <string name="two_star">太糟糕</string>
+    <string name="three_star">一般般</string>
+    <string name="four_star">还不错</string>
+    <string name="five_star">非常棒</string>
+    <!-- 登录 -->
+    <string name="login_pwd">请输入手机号</string>
+    <string name="login">登录</string>
+    <string name="set">设置</string>
+    <string name="agreenment">吉工家用户协议</string>
+    <!-- 获取验证码 -->
+    <string name="get_code">点击获取验证码</string>
+    <string name="get_unsubscibe_code">获取验证码</string>
+    <string name="next">下一步</string>
+    <string name="input_mobile">请输入手机号码</string>
+    <string name="input_message_code">请输入短信验证码</string>
+
+    <string name="input_sure_mobile">手机号码格式有误</string>
+    <string name="mobile_is_no_empty">手机号码不能为空</string>
+    <string name="please_input_code_first">请输入验证码</string>
+    <string name="input_news_code">请输入收到的短信验证码</string>
+
+    <!-- 班组长端主体框架 -->
+    <string name="location_error">未定位</string>
+
+    <!-- 城市列表 -->
+    <string name="keywordhint">请输入城市的中文名称或拼音</string>
+
+    <!-- 发布项目 -->
+
+    <!-- 详情 -->
+    <string name="photo_list">图片列表</string>
+
+    <!-- 管理项目详细信息 -->
+    <string name="projectnamehint">请输入项目名称</string>
+    <string name="select_date">选择日期</string>
+    <string name="grade">评分&#160;:&#160;</string>
+    <string name="modification">修改</string>
+    <!-- 工程报价 -->
+    <string name="experience">经验</string>
+    <string name="pricemode">计价方式</string>
+    <string name="peoplecount">人数/报酬</string>
+    <string name="peoplehint">输入需要人数</string>
+    <string name="wireman">电工</string>
+    <string name="pricemode_hour">点工</string>
+    <string name="pricemode_all">包工</string>
+    <string name="pricemode_square">平方</string>
+    <string name="pricemode_cube">立方</string>
+    <string name="pricemode_m">&#160;&#160;米&#160;&#160;</string>
+    <string name="pricemode_ton">&#160;&#160;吨&#160;&#160;</string>
+    <string name="foreman">班组长/工头</string>
+    <string name="foremans">班组长</string>
+    <string name="workers">工人</string>
+    <string name="paid_day">天结</string>
+    <string name="paid_month">月结</string>
+    <string name="rewardhint">输入报酬</string>
+
+    <!-- 网络链接 -->
+    <string name="conn_fail">网络连接异常,请检查网络后重试!</string>
+    <string name="searching">查询数据中,请稍候!</string>
+    <string name="submit_success">提交成功!</string>
+    <string name="photo_detail">图片详情</string>
+
+
+    <!-- 选择身份 -->
+    <string name="white_money">填写金额</string>
+    <!-- 注册输入提示 -->
+    <string name="name_null">请输入姓名</string>
+    <string name="name_length_error">姓名位数超出标注,请再次确认</string>
+    <string name="idcard_null">请输入号码</string>
+    <string name="idcard_error">身份证号码格式错误</string>
+    <string name="age_null">请输入年龄</string>
+    <string name="home_null">请选择你的家乡</string>
+    <string name="workpeopcount">工人规模1~99999</string>
+    <string name="worktype_null">所需工种</string>
+    <!-- 发布项目提示 -->
+
+    <!-- 班组长-管项目 -->
+
+
+    <!-- 项目经验 -->
+    <string name="select_project">选择项目</string>
+    <!-- 补充注册 -->
+    <string name="story">保存</string>
+    <string name="complete_information">完善资料</string>
+    <string name="go_complete_information">立即完善</string>
+    <string name="send_invite">发送</string>
+    <string name="put_working_years">请输入工龄</string>
+    <!-- 班组长、工人  顶部  显示文字 -->
+
+    <!-- 实名认证提示文字 -->
+    <string name="personauth_hint1">实名认证后，你会得到这些好处</string>
+    <string name="personauth_hint2">你的信息优先展示,用工方会首先看到</string>
+    <string name="personauth_hint3">你的项目发布成功后会优先展示,更快招到人</string>
+    <string name="personauth_hint4">恭喜你已通过实名认证</string>
+    <string name="personauth_hint5">赶紧去找工作/找活干吧</string>
+    <string name="personauth_hint6">信息正在认证中</string>
+    <string name="personauth_hint7">需要1~2个工作日</string>
+    <string name="personauth_hint8">真实姓名与身份证号码不一致</string>
+    <string name="personauth_hint9">无此身份证号码</string>
+    <string name="personauth">个人认证</string>
+    <string name="share">分享</string>
+    <string name="jump">跳过</string>
+    <string name="year">年</string>
+    <string name="yearsold">岁</string>
+    <string name="sunday">日</string>
+    <string name="monday">一</string>
+    <string name="thesday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="more">更多</string>
+
+    <string name="date_desc">%1$d年%2$d月%3$s</string>
+
+    <string name="income">工&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;资:</string>
+    <string name="borrow">借&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;支:</string>
+    <string name="account_laborage">结算:</string>
+    <string name="record_setting">记工设置 </string>
+
+
+    <string name="total_work">记工合计</string>
+    <string name="outstanding_wages">未结工资</string>
+    <string name="outstanding_wages_colon">未结工资:</string>
+
+    <!-- 发布记账功能 -->
+    <string name="pricemode_hour_wage">点工工钱</string>
+    <string name="pricemode_all_wage">包工工钱</string>
+    <string name="borrowing_wage">借支工钱</string>
+    <string name="borrowing">借支</string>
+    <string name="wages_settlement">结算</string>
+    <string name="remember_other">保存 再记一笔</string>
+    <string name="forman_headman">班组长/工头</string>
+    <string name="select_worker_hint">请选择要记账的工人</string>
+    <string name="salary_mode_setting">设置工资/上班时长/加班时长</string>
+    <string name="today_working">上班时长</string>
+    <string name="today_working_overtime">加班时长</string>
+    <string name="location_project">所在项目</string>
+    <string name="input_number">这里输入数量</string>
+    <string name="noworking_overtime">如有加班,点击选择</string>
+    <string name="unit_price">填写单价</string>
+    <string name="element">这里输入单价金额</string>
+    <string name="count">填写数量</string>
+    <string name="subentry_name">分项名称</string>
+    <string name="subentry_name_details">例如：包柱子/挂窗帘</string>
+    <string name="releasebookkeeping">发布记账</string>
+    <string name="useinstructions">使用说明</string>
+    <string name="everyDayTitle">每日考勤表</string>
+    <string name="remberworkinfotitle">记工流水</string>
+    <string name="select_all_page">全选本页</string>
+    <string name="select">选择</string>
+
+
+    <string name="hint_wps">如果无法正常查看，请下载安装WPS软件</string>
+
+
+    <string name="input_worker_name">请输入工人的姓名</string>
+    <string name="input_worker_phone">请输入工人的电话号码</string>
+    <string name="input_foreman_name">请输入班组长/工头的姓名</string>
+    <string name="input_foreman_phone">请输入班组长/工头的电话号码</string>
+    <string name="nickname_other">请输入对方的姓名</string>
+    <string name="telephone_way">请输入对方联系方式</string>
+
+    <string name="addMember">添加成员</string>
+
+    <string name="add_foreman">添加班组长</string>
+    <string name="optional">备注&#160;(例如公司名称等)</string>
+
+    <string name="select_person">选择成员</string>
+    <string name="eight_hour">8小时(1个工)</string>
+    <string name="input_team_name">请输入班组名称</string>
+    <string name="input_project_name">请输入项目名称</string>
+    <string name="new_add_project">新增</string>
+    <string name="edit">修改</string>
+
+    <string name="without_workerinfo">联系表中暂时没有工人的信息</string>
+    <string name="add_worker">添加工人</string>
+    <string name="add_contractor_person">添加承包对象</string>
+
+
+    <string name="address_release">隐患部位</string>
+    <string name="add">添加</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="shouzhishanghua">手指上滑，取消发送</string>
+    <string name="tooshort">录音时间过短</string>
+    <string name="project_name_title">项目</string>
+    <string name="amounts">差账</string>
+    <string name="total">金额</string>
+
+    <string name="about_project">与%1$s项目相关</string>
+    <string name="about_person">与%1$s相关的项目</string>
+
+    <string name="title_content">内容</string>
+    <string name="title_date">日期</string>
+
+
+    <string name="recordMerit">记工记账</string>
+    <string name="selectWorker">选择工人</string>
+    <string name="selectForeman_title">选择班组长</string>
+    <string name="selectForeman">选班组长</string>
+    <string name="selecte_member">选择班组成员</string>
+    <string name="pleaseSelectWorker">请选择要记账的工人</string>
+    <string name="pleaseSelectFM">请选择要记账的班组长/工头</string>
+    <string name="pressSpeck">按住说话,可以记录当天工作</string>
+    <string name="pressPhono">点击拍照或者选择照片可以记录当天工作</string>
+    <string name="seletRole">请根据需要选择你的身份</string>
+
+
+    <!-- 1.4 -->
+    <string name="derect_select">直接选择</string>
+    <string name="report">举报</string>
+
+
+    <string name="friend_size">你有%1$s个朋友认识他</string>
+    <string name="id_card_name">姓&#160;&#160;&#160;&#160;名&#160;:&#160;</string>
+    <string name="example_data">这些都是示例数据,无法操作,谢谢!</string>
+    <string name="ple_select_ob">请先选择记账对象</string>
+    <string name="remark_pic">[图片]</string>
+
+    <string name="sync_person">选择要同步给%1$s的项目</string>
+    <string name="please_select_record_object">请先选择记账对象</string>
+    <!-- 1.4.2 -->
+    <string name="syn_manage">同步项目管理</string>
+    <string name="contacts_title">手机通讯录</string>
+    <string name="add_syn_person">新增同步人</string>
+    <string name="mobile">电话:</string>
+    <string name="sorry_no_pro_add">对不起你没有可以\n添加的项目!</string>
+    <string name="iam_sure">我知道了</string>
+    <string name="go_login">马上登录</string>
+    <string name="sorry_delete_fail">由于现在有项目同步给此人\n暂时不能删除</string>
+    <string name="edit_synch_object">正在修改同步对象</string>
+    <string name="synstateprolisttitle">同步给%1$s的项目</string>
+    <string name="synchclose">确定要关闭%1$s\n的同步吗?</string>
+    <string name="current_version">V%1$s</string>
+    <string name="cache_size">包括聊聊和工友圈的消息、图片等缓存共&#160;%1$s</string>
+    <string name="delperson">确定要删除%1$s吗?</string>
+    <string name="text_unregister_team_manager">该用户还未注册,赶紧邀请他下载[吉工家]一起使用吧!</string>
+    <string name="text_from_people_team_manager">该用户还未同意向你同步项目</string>
+    <!-- 1.4.3 发布记账修改-->
+    <string name="select_workers">选择工人</string>
+    <string name="set_salary_mode_title">工资标准</string>
+    <string name="set_salary_mode_title_check">考勤模板</string>
+    <string name="set_salary_mode">请设置工资标准</string>
+    <string name="set_salarys">工资标准</string>
+    <string name="record_project">例如:万科魅力之城</string>
+    <string name="remark">备注</string>
+    <string name="remark_sy">备注:</string>
+    <string name="write_remark">可填写备注信息</string>
+    <string name="remark_title">备注信息</string>
+    <string name="write_remark_edit">此处请填写备注,也可以用下面的照片记录</string>
+
+    <string name="select_forman_hint">请选择要记账的班组长/工头</string>
+
+
+    <!-- 1.4.3 -->
+
+    <string name="syn_desc">仅同步工人的工作时长</string>
+    <string name="syning">正在发布...</string>
+    <string name="signing">正在签到...</string>
+    <!-- 1.4.4 -->
+    <string name="contact">通讯录</string>
+    <string name="please_callphone">请拨打联系人电话</string>
+    <string name="title_write_name">进行下一步操作之前\n需要请你完善姓名</string>
+    <string name="choosetime">选择时间</string>
+    <string name="seldate">选吉日</string>
+    <string name="back_today">回今天</string>
+    <string name="almanac_lunar">农历&#160;&#160;&#160;&#160;%1$s年&#160;&#160;&#160;&#160;%2$s月%3$s&#160;&#160;&#160;&#160;%4$s</string>
+    <string name="xs">喜神-%1$s</string>
+    <string name="fs">福神-%1$s</string>
+    <string name="cs">财神-%1$s</string>
+    <string name="solar">公元%1$s年%2$d月</string>
+    <string name="sc">时辰</string>
+    <string name="jx">吉凶</string>
+    <string name="play_game">玩游戏</string>
+    <string name="play_game_info">今天的你&#160;运气不错</string>
+    <string name="send_msg">发消息</string>
+    <string name="send_msg_info">心情不错&#160;讲个故事</string>
+    <string name="look_video">看视频</string>
+    <string name="look_video_info">诸事顺利&#160;心情愉快</string>
+    <string name="look_book">看小说</string>
+    <string name="look_book_info">阅读能带给你平静的心</string>
+    <string name="look_duanzi">看段子</string>
+    <string name="look_duanzi_info">你需要调节一下情绪</string>
+    <string name="select_luckday">选吉日</string>
+    <string name="select_tyoe">查询类别</string>
+    <string name="month_account">保存%1$d月账单到手机</string>
+    <string name="downloadbill">下载账单</string>
+    <string name="hint_bill">记账成功\n永不丢失，随时查看！</string>
+    <string name="hint_bill_date">修改记账成功 及时对账，避免纠纷！</string>
+    <string name="hint_changebill">修改记账成功\n及时对账，避免纠纷！</string>
+
+    <string name="msg_camera_framework_bug">抱歉，你未开启相机权限，请在设置里开启。</string>
+    <string name="button_ok">确定</string>
+    <string name="scanner_title">扫描二维码</string>
+
+    <!-- 2.0-->
+    <string name="work_circle">项目</string>
+    <string name="main_bottom_work">记工</string>
+    <string name="main_bottom_group_chat">消息</string>
+    <string name="main_bottom_advertises">找活招工</string>
+    <string name="main_bottom_discovered">发现</string>
+    <string name="main_bottom_my">我</string>
+    <string name="addteamgroup">加入班组</string>
+    <string name="join_team">进入项目组</string>
+
+    <string name="into_group">进入班组</string>
+
+    <string name="group_scan_desc">班组二维码</string>
+    <string name="team_scan_desc">项目组二维码</string>
+    <string name="group_chat_scan">群二维码</string>
+    <string name="item_group_name">班组名称</string>
+    <string name="curr_city">所在城市</string>
+    <string name="qrcode_hint_group">使用吉工家APP扫描以上二维码\n即可加入此班组</string>
+    <string name="qrcode_hint_team">使用吉工家APP扫描以上二维码\n即可加入此项目组</string>
+    <string name="qrcode_hint_group_chat">使用吉工家APP扫描以上二维码\n即可加入此群</string>
+
+    <string name="message_unread">%1$d人未读</string>
+    <string name="messsage_work_log">工作日志</string>
+
+    <string name="close_group_tips">关闭后仍然可以查看班组的数据,但不能进行工作通知、工作汇报
+    等操作;被关闭的班组可以重新打开,确认要关闭吗?</string>
+
+    <string name="work_message">工作消息</string>
+    <string name="recruit_message">找活招工小助手</string>
+    <string name="messsage_safety">安全</string>
+    <string name="messsage_work_inform">通知</string>
+    <string name="messsage_quality">质量</string>
+    <string name="remove_team_person">删除成员</string>
+    <string name="work_notice_title">通知</string>
+    <string name="remove_data_source_member">删除数据来源人</string>
+    <string name="sign_in">签到</string>
+    <string name="sign_in_now">立即签到</string>
+    <string name="sign_in_detail">签到详情</string>
+    <string name="messsage_bill_bottom_hint">马上记一笔</string>
+    <string name="reply">回复</string>
+    <string name="no_register_notice">该用户还未注册,平台已通过短信邀请他了！赶紧让他下载【吉工家%1$s】一起开展工作吧</string>
+    <string name="message_read_list">消息接收人列表</string>
+    <string name="message_read_detail">已读详情</string>
+
+    <string name="exit_group_desc">确认退出班组吗?</string>
+
+    <string name="report_receive_title">谁会收到？</string>
+    <string name="complete">已完成</string>
+    <string name="synch_desc">关闭同步后,对方将不再会收到\n关于&#160;%1$s&#160;项目\n的记工统计和报告内容</string>
+    <string name="report_receive_content">班组内的成员和其他与项目有关的人都会收到此报告</string>
+
+    <string name="current_cityname">当前所在城市&#160;:&#160;</string>
+
+    <string name="confirm_syn">确认同步</string>
+
+    <string name="permission_close">你已禁止该权限，需要重新开启!</string>
+    <string name="detail_look">查看详情</string>
+
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">展开全部</string>
+
+    <string name="add_data_source_member">添加数据来源人</string>
+
+    <string name="source_member_title">什么是数据来源人?</string>
+
+    <string name="quit_project">确认退出项目组吗?</string>
+    <string name="close_project">1.该项目组的所有项目数据自动归档;\n2.已归档的项目数据只能被查看;\n3.已关闭项目可在项目列表中重新打开。</string>
+    <string name="source_member_descript">1.&#160;数据来源人是指向你同步项目数据、班组数据的人\n2.&#160;你可以要求你的下级、班组长/工头将记工统计和其他项目信息同步给你</string>
+    <string name="input_remark">请输入项目组名称</string>
+    <string name="update_remark">修改项目组名称</string>
+
+    <string name="group_chat_creator">创建者&#160;:&#160;%1$s</string>
+    <string name="group_creator">班组创建者&#160;:&#160;%1$s</string>
+    <string name="team_creator">项目创建者&#160;:&#160;%1$s</string>
+
+    <string name="add_fail">操作失败,无法对自己同步项目!</string>
+
+
+    <string name="send_notice_proname">当前项目:%1$s\n接收对象:%2$s的所有成员</string>
+    <string name="send_notice_hint">请在此处描述%1$s</string>
+
+    <string name="isCallMe">%1$s</string>
+
+    <string name="loginTips">快速找活&#160;手机记工\n就用吉工家App</string>
+    <string name="inputOtherSideName">请输入对方的姓名</string>
+
+    <!-- 网络连接有误 -->
+    <string name="net_fail_server">未能连接到互联网</string>
+    <string name="net_fali_title">你的设备未启用移动网络或Wi-Fi网络</string>
+    <string name="net_fali_desc1">如需要连接到互联网，可以参照以下方法:</string>
+    <string name="net_fali_desc4">如果你已接入Wi-Fi网络:</string>
+    <string name="net_fali_desc5">请检查你所连接的Wi-Fi热点是否已接入互联网，或该热点是否已允许你的设别访问互联网。</string>
+
+    <string name="inGroupMyNameTips">该名字只会在本组显示</string>
+    <string name="inTeamMyName">我在本组的名字</string>
+    <!-- -->
+    <string name="remark_name">备注名字</string>
+    <string name="user_homepage">他的贴子</string>
+    <string name="chat_for_her_or_him">发消息</string>
+    <string name="call">拨打电话</string>
+    <string name="choose_team">选择群聊</string>
+    <string name="choose_member">选择成员</string>
+    <string name="search_member">项目成员</string>
+    <string name="choose_work_circle">选择项目</string>
+    <string name="up_for_cancel">手指上滑，取消发送</string>
+    <string name="selecte_exist_group">选择现有群</string>
+    <string name="work_circle_groupchat">从项目建群</string>
+
+    <string name="invinte_him">邀他扫描吉工家二维码加入</string>
+    <string name="time_too_short">录音时间过短</string>
+
+    <string name="group_chat">群聊</string>
+    <string name="blacklist">黑名单</string>
+    <string name="new_friend">新朋友</string>
+    <string name="donateSeniorCloud">恭喜你获得15天黄金服务版免费体验</string>
+
+    <string name="contact_person_count">共%1$d人</string>
+    <string name="black_person_count">共%1$d人</string>
+    <string name="userinfo">他的资料</string>
+    <string name="userinfo_my">我的资料</string>
+
+    <string name="join_groupchat_count">进入群聊&#160;&#160;(%1$d)</string>
+    <string name="add_member_count">添加&#160;&#160;(%1$d)</string>
+    <string name="confirm_add_member_count">确定&#160;&#160;(%1$d)</string>
+
+    <string name="remark_person_desc">给他备注一个你熟悉的名字</string>
+    <string name="input_group_name">请输入群聊名称</string>
+    <string name="group_name">群聊名称</string>
+    <string name="join_blacklist">加入黑名单</string>
+    <string name="remove_blacklist">移除黑名单</string>
+    <string name="face_to_face_create_team">面对面建群</string>
+    <string name="scan">扫一扫</string>
+    <string name="initiate_group_chat">发起群聊</string>
+
+    <string name="balcklist_hint">注意：拉黑后，你和他都将看不到对方的聊天消息，也不能再相互发送聊天消息了。你确定要将他拉黑吗？</string>
+    <string name="delete_and_exit_group_hint">删除并退出后,将不再接收此群消息你确定要删除并且退出此群吗？</string>
+    <string name="delete_friend_hint">删除朋友，同时将删除与他的聊天记录，你确定要删除吗？</string>
+
+    <string name="group_remark">请输入班组名称</string>
+    <string name="team_remark">请输入项目组名称</string>
+    <string name="host_proname">请输入所在项目名称</string>
+    <string name="inGroupChatShow">该名字只在本群显示</string>
+    <string name="inGroupChatMyName">我在本群的名字</string>
+    <string name="group_message">聊天信息</string>
+    <string name="delete_and_exit">删除并退出</string>
+    <string name="group_chat_members_num">聊天信息(%1$d)</string>
+    <string name="memebers_num">所有成员(%1$d)</string>
+    <string name="group_num">群成员(%1$d)</string>
+    <string name="switch_manager_tips">你确定要将本群的管理权转让给%1$s吗?</string>
+    <string name="upgrade_group">升级为班组</string>
+    <string name="what_administrator_permission">管理员有哪些权限</string>
+    <string name="set_administrator">设置管理员</string>
+    <string name="transfer_management">转让管理权</string>
+    <string name="add_administrator">添加管理员</string>
+    <string name="upgrade_group_tips">升级为工作中的班组，便于进行班组沟通管理</string>
+
+
+    <!-- 2.1.1 -->
+    <string name="single_person_batch_account">批量记多天</string>
+    <string name="record_once_account">记一笔工</string>
+    <string name="add_friend">添加朋友</string>
+    <string name="add_friends">加为朋友</string>
+    <string name="scan_info">扫描吉工家二维码名片</string>
+    <string name="phone_contact">手机联系人</string>
+    <string name="invite_friend_tips">添加或邀请手机通讯录中的朋友</string>
+    <string name="invite_friend_pro_tips">添加或邀请项目中的朋友</string>
+    <string name="user_does_not_exist">该用户不存在</string>
+    <string name="save_and_keepgo">保存并继续添加</string>
+    <string name="my_group_list">选择班组</string>
+    <string name="my_scan_code_title">我的吉工家二维码</string>
+    <string name="record_single">记单笔</string>
+
+    <!-- 2.1.3 -->
+    <string name="update_telphone">更换手机号</string>
+    <!-- 2.1.5 -->
+    <string name="select_company">填写数量</string>
+    <string name="account_input_number">这里输入数量</string>
+    <string name="release_textview_hint1">生产情况记录</string>
+    <string name="release_textview_hint2">技术质量工作记录</string>
+    <string name="release_edit_hint1">施工生产的调度，存在问题及处理情况；安全生产和文明施工活动及存在问题等</string>
+    <string name="release_edit_hint2">技术质量活动、存在问题、处理情况等</string>
+    <string name="morning">上午</string>
+    <string name="afternoon">下午</string>
+    <!--<string name="send_log">发工作日志</string>-->
+    <string name="pro_addres_hint">请搜索项目详细地址</string>
+
+    <string name="bill_book">记工账单</string>
+    <string name="def_nodata">暂无记录哦~</string>
+    <string name="selected_foreman">按班组长查看</string>
+    <string name="selected_worker">按工人查看</string>
+    <string name="according_name">按姓名查看</string>
+
+
+    <string name="selected_pro">按项目查看</string>
+    <string name="payroll_list">工资清单</string>
+
+    <string name="item_foreman_title">班组长</string>
+    <string name="item_proname_title">项目名称</string>
+
+    <string name="pro_list">项目列表</string>
+    <string name="delete_pro_desc">删除说明</string>
+    <string name="according_forman">请选择工头</string>
+    <string name="close_team_already">%1$s已关闭,不能执行此操作</string>
+
+    <string name="remove_group_tips">注意：删除班组，将删除与本班组相关的所有数据，同时也将取消该班组对他人的同步，班组删除后不能找回。你确定要删除吗？</string>
+    <string name="remove_team_tips">注意：删除项目组，同时将删除与本项目相关的所有数据，项目删除后将不能找回，请谨慎操作。你确定要删除吗？</string>
+
+    <string name="collection_list">资料收藏夹</string>
+    <string name="download_repository">已下载资料</string>
+    <string name="repository">资料库</string>
+    <string name="authentication_titile">通过实名认证后,你可以</string>
+    <string name="authentication_hint">1.拨打招工方的电话，联系他\n2.发布招工信息,让工人或班组长/工头联系到你\n3.找到全国各地的工人或班组长/工头</string>
+    <string name="authentication_name">姓名:</string>
+    <string name="authentication_number">身份证号码:</string>
+    <string name="authentication_name_hint">填写你的姓名</string>
+    <string name="authentication_number_hint">填写18位身份证号码</string>
+    <string name="authentication_submit">提交实名认证</string>
+    <string name="notice_top_all">全部</string>
+    <string name="notice_top2">待整改</string>
+    <string name="notice_top3">待复查</string>
+    <string name="notice_top4">我提交的</string>
+    <string name="notice_top5">待我复查</string>
+    <string name="notice_top6">待我整改</string>
+
+
+    <!-- 2.2.3 -->
+
+    <string name="pro_address">项目地址</string>
+    <string name="team_setting">项目设置</string>
+    <string name="group_setting">班组设置</string>
+
+    <string name="all_task">任务</string>
+    <string name="i_responsibly">我负责的任务</string>
+    <string name="publish">发布</string>
+    <string name="publish_task">发任务</string>
+    <string name="selected_prini">选择负责人</string>
+    <string name="selected_actor">选择参与者</string>
+
+    <string name="weather_table">晴雨表</string>
+    <string name="weather_detal">天气详情</string>
+    <string name="set_recorder">设置记录员</string>
+    <string name="recorde_weather">记录天气</string>
+
+    <!-- ver_2.3.0 -->
+    <string name="quality_question">质量问题</string>
+    <string name="quality_check">质量检查</string>
+    <string name="safe_question">安全问题</string>
+    <string name="safe_check">安全检查</string>
+    <string name="release_quality_question">发质量问题</string>
+    <string name="release_safe_question">发安全问题</string>
+    <string name="release_check">发检查计划</string>
+    <string name="r_check">检查计划</string>
+    <string name="r_check_detail">检查记录</string>
+
+    <string name="order_detail">订单详情</string>
+    <string name="pro_cloud">项目云盘</string>
+
+
+    <string name="delete_pro_cloudfile_recycle_tips">确认要删除文件,一经删除无法恢复</string>
+
+    <string name="delete_pro_cloudfile_tips">确认要删除文件？已删除的文件可以在回收站里恢复</string>
+
+
+    <string name="add_withdraw_cash_account">正在添加提现账户</string>
+
+    <string name="balance_withdrawa">余额提现</string>
+
+
+    <string name="my_order">我的订单</string>
+    <string name="confirm_order">确认订单</string>
+    <string name="selecte_service_pro">选择服务项目</string>
+    <string name="back_home">返回首页</string>
+    <string name="look_order">查看订单</string>
+    <string name="order_success">支付成功</string>
+
+    <string name="input_zfb_account">请输入支付宝账号</string>
+    <string name="max_balance">最多可提现 0.00 元</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+
+    <string name="bail_cash">缴纳保证金</string>
+
+    <string name="create_folder_tips">新建文件夹</string>
+
+    <string name="balance">最多可提现 %1$s</string>
+
+
+    <string name="can_not_open_pdf">未找到能打开PDF的软件</string>
+    <string name="can_not_open_word">未找到能打开WORD的软件</string>
+    <string name="can_not_open_excel">未找到能打开EXCEL的软件</string>
+    <string name="can_not_open_ppt">未找到能打开PPT的软件</string>
+    <string name="can_not_open_cad">未找到能打开CAD的软件</string>
+    <string name="can_not_open_txt">未找到能打开TXT的软件</string>
+
+
+    <string name="move_location">选择移动位置</string>
+    <string name="download_path">文件下载至:%1$s</string>
+    <string name="download">下载</string>
+    <string name="i_downloaded">我下载的</string>
+    <string name="i_uploaded">我上传的</string>
+    <string name="more_actions">更多操作</string>
+    <string name="recycle_bin">回收站</string>
+    <string name="cancel_check_all">取消全选</string>
+    <string name="check_all">全选</string>
+    <string name="selecte">选择</string>
+    <string name="transmission">传输列表</string>
+    <string name="delete_file">删除文件</string>
+
+    <string name="degrade_free_version">降级使用免费版</string>
+    <string name="use_free_version">使用免费版</string>
+    <string name="now_renew">立即续期</string>
+    <string name="now_renew_1">立即订购</string>
+    <string name="waring_tips">我再想想</string>
+    <string name="keeping_pay">继续支付</string>
+    <string name="go_auth">我也去认证</string>
+
+    <!-- 2.3.2 -->
+    <string name="search">查看</string>
+    <string name="work_confirm">我要对账</string>
+    <string name="album">相册</string>
+
+
+    <string name="from_group_add">从班组选择</string>
+    <string name="from_contact_add">从手机通讯录选择</string>
+    <string name="manual_add_worker">添加工人</string>
+    <string name="manual_add_foreman">添加班组长</string>
+    <string name="create_group">新建班组</string>
+    <string name="server_order">服务订单</string>
+
+    <string name="invinte_now">立即邀请</string>
+
+    <string name="expand_memory">立即扩容</string>
+    <string name="check_release_hint">请尽快整改以上内容！整改完成后,请回复该消息。</string>
+
+
+    <string name="no_check_plan">暂无检查项</string>
+    <string name="no_check_content">暂无检查内容</string>
+    <string name="no_check_point">暂无检查点</string>
+
+    <string name="check">检查</string>
+    <string name="create_check_list">新建检查项</string>
+    <string name="create_check_content">新建检查内容</string>
+    <string name="update_check_content">修改检查内容</string>
+    <string name="pending">待处理</string>
+    <string name="task_complete">已完成</string>
+    <string name="i_response">我负责的</string>
+    <string name="i_join">我参与的</string>
+    <string name="i_commit">我提交的</string>
+
+    <string name="check_point">检查内容分项</string>
+    <string name="check_content">检查内容</string>
+
+    <string name="check_list_formate">检查项%1$s</string>
+    <string name="all_the_plan_formate">所有计划%1$s</string>
+    <string name="complete_check_list_count_formate">已完成%1$s</string>
+    <string name="waitting_for_me_to_execute_text_formate">待我执行%1$s</string>
+    <string name="i_create_formate">我创建的%1$s</string>
+
+    <string name="check_list">检查项</string>
+    <string name="all_the_plan">所有计划</string>
+    <string name="complete_check_list_count">已完成</string>
+    <string name="waitting_for_me_to_execute_text">待我执行</string>
+    <string name="i_create">我创建的</string>
+
+    <string name="input_check_list_name">请输入检查项名称</string>
+    <string name="input_check_list_address">请输入位置信息</string>
+
+    <string name="new_check_list">新建检查项</string>
+    <string name="update_check_list">修改检查项</string>
+    <string name="selecte_check_content">选择检查内容</string>
+
+    <string name="add_check_point">添加检查内容分项</string>
+
+    <string name="input_check_content">请输入检查内容名称</string>
+    <string name="input_check_point_hint">请输入检查内容分项要求</string>
+    <string name="plan_name">计划名称</string>
+    <string name="execute_time">执行时间</string>
+    <string name="input_plan_name_hint">请输入计划名称</string>
+    <string name="selecte_execute_time">请选择执行时间</string>
+    <string name="execute_person">执行人</string>
+    <string name="click_head_tips">(点击头像可删除)</string>
+    <string name="new_check_plan">新建检查计划</string>
+    <string name="update_plan">修改计划</string>
+    <string name="selecte_check_list">选择检查项</string>
+
+    <string name="selecte_execute">选择执行人</string>
+    <string name="selecte_recive">选择接收人</string>
+
+    <string name="no_check_list_tips">暂无检查项</string>
+
+    <string name="selecte_complete">选择完成</string>
+
+
+    <string name="empty_check_list_tips">暂无检查项，请先设置检查项</string>
+    <string name="go_setting">去设置</string>
+    <string name="put_aside">暂不考虑</string>
+    <string name="create">新建</string>
+
+
+    <string name="pending_formate">待处理%1$s</string>
+    <string name="i_response_formate">我负责的%1$s</string>
+    <string name="i_join_formate">我参与的%1$s</string>
+    <string name="i_commit_formate">我提交的%1$s</string>
+
+    <string name="start_time">开始时间：</string>
+    <string name="end_time">截止时间：</string>
+    <string name="own_pro">所在项目：</string>
+    <string name="work_name">工人名字：</string>
+    <string name="foreman_name">班组长名字：</string>
+    <string name="record_type">记工分类：</string>
+
+    <string name="start_date">选择开始时间</string>
+    <string name="end_date">选择截止时间</string>
+
+
+    <string name="statistical_work">记工统计</string>
+
+
+    <string name="unsubscribe">注销账户</string>
+
+    <string name="request_unsubscribe">申请注销</string>
+
+    <string name="unsubscribe_tips10">注意：注销账号后，该账号在吉工家和吉工宝中的数据将全部删除，请谨慎操作！</string>
+    <string name="unsubscribe_tips11">你正在申请注销账号 %1$s</string>
+
+    <string name="count_account_params">%1$d笔</string>
+
+
+    <string name="contractor_params">包工：%1$d&#160;笔</string>
+    <string name="borrow_params">借支：%1$d&#160;笔</string>
+    <string name="balance_params">结算：%1$d&#160;笔</string>
+
+    <string name="un_balance_money">未结工资</string>
+    <string name="no_money_little_work">无金额点工</string>
+    <string name="no_money_little_work_tips">点击以下记工可设置每天的工资金额\n或者点击右上角的“更多”，批量设置工资金额</string>
+    <string name="no_money_little_work_defalut">工资标准中未设置金额的点工\n已处理完毕</string>
+
+    <string name="name">姓名</string>
+
+
+    <string name="from_foreman">我在班组长 %1$s 处的记工</string>
+    <string name="from_worker">工人 %1$s 的记工</string>
+    <string name="from_project">我在 %1$s 的记工</string>
+
+
+    <string name="record_content_horizontal">点工 / 包工 / 借支 / 结算</string>
+    <string name="record_content_vertical">点工&#160;&#160;&#160;&#160;包工\n借支&#160;&#160;&#160;&#160;结算</string>
+
+    <string name="turn_out_for_work">出勤公示</string>
+    <string name="vein_resonce">人脉资源</string>
+
+
+    <string name="littler_hour_tips">点工：</string>
+    <string name="constrator_hour_tips">包工：</string>
+    <string name="borrowing_tips">借支：</string>
+    <string name="balance_tips">结算：</string>
+
+
+    <string name="permission_cus_title">权限申请</string>
+    <string name="permission_cus_content">为了你能够正常使用，需要开启以下权限</string>
+
+    <string name="need_synch_person">需同步项目的联系人</string>
+    <string name="add_sync_person">新增同步人</string>
+
+    <string name="account_manager">账号管理</string>
+    <string name="bind_tel_number">绑定手机号</string>
+    <string name="go_balance">去结算</string>
+
+
+    <string name="un_balance_worker_tips">有往年未结算的工资，点击对应工人的“去结算”，在本次实付金额栏输入以往未结金额即可完成老账结算</string>
+    <string name="un_balance_foreman_tips">有往年未结算的工资，点击对应班组长的“去结算”，在本次实收金额栏输入以往未结金额即可完成老账结算</string>
+
+    <string name="wonderful_video">精彩小视频</string>
+    <!-- 2.2.0 -->
+    <string name="account_allwork_bill">包工记账</string>
+    <string name="account_allwork_hint">如果是小工等，需要确定每天的固定工资，请去点工为他记工</string>
+
+    <string name="sync_type_tips1">向你的老板、上级班组长(工头)\n同步记工数据和记账金额，\n方便他查看班组里面的记工及其他数据。\n接收方在吉工家APP [我的记工账本 > 同步给我的记工]\n中查看已同步的数据</string>
+    <string name="sync_type_tips2">向施工单位项目管理人员同步记工数据，\n接收方在吉工宝APP [项目>记工报表]\n中查看已同步的数据</string>
+
+    <string name="add_sync">新增同步</string>
+    <string name="selecte_sync_type">选择同步类型</string>
+    <string name="selecte_sync_person">选择同步对象</string>
+    <string name="sync_account">同步记工</string>
+    <string name="sync_account_default_tips">暂无同步给他人的数据\n若需同步数据，请点击右上角的“新增同步”</string>
+    <string name="record_problem">记工说明</string>
+    <string name="worker_manager">工人管理</string>
+
+    <string name="worker_info">工人信息</string>
+    <string name="foreman_info">班组长信息</string>
+    <string name="reward_tips">十个手机记工，九个选择吉工家,你真棒！我们会持续和你一起把吉工家做得越来越好！</string>
+
+    <string name="reward_pay_tips">最好的体验，只为重要的你！\n你的赞赏是我们前进的动力！\n欢迎你多多提意见，帮助我们和你一同成长！</string>
+    <string name="reward">奖励开发者</string>
+
+    <string name="sync_to_me">同步给我的记工</string>
+    <string name="ask_user_to_sync">邀请他人向我同步</string>
+
+    <string name="account_show_type">记工显示方式</string>
+
+
+    <string name="find_pwd">找回账号</string>
+    <string name="start_validation">开始验证</string>
+
+
+    <string name="update_info">修改信息</string>
+
+
+    <string name="add_sync_record_account">新增同步记工记账</string>
+    <string name="add_sync_account">新增同步记工</string>
+
+    <string name="delete_account_tips">数据一经删除将无法恢复。\n请谨慎操作哦！</string>
+    <string name="confirm_delete">确认删除</string>
+    <string name="already_exit_administrator">已有管理员&#160;&#160;(%1$d/%2$d)</string>
+    <string name="administrator_title">管理员权限包括</string>
+    <string name="administrator_tips">查看项目统计报表\n导出项目数据\n记录晴雨表\n更换质量安全问题整改人等</string>
+    <string name="all_source_member">所有数据来源人(%1$d)</string>
+    <string name="request_sync_pro">要求同步其他项目</string>
+    <string name="currentSourceMember">选择现成的数据源&#160;&#160;(%1$d个)</string>
+
+    <string name="set_replace_foreman">设置代班长</string>
+    <string name="set_replace_foreman_tips">1、代班长可以代替班组长记工记账及管理班组成员；\n2、代班长在代班时间内，可以修改、删除自己代班记的账也可以修改班组长记的账；\n3、代班长只能记代班时间内的账；\n4、代班长不能看到代班时间以外的班组长的记工；\n5、代班长修改记账时，不能修改项目名称；</string>
+    <string name="account_change">记工变更</string>
+    <string name="account_add_count">新增记工记账%1$d笔</string>
+
+
+    <string name="activity_message">活动消息</string>
+
+
+    <string name="hour_work_space">点&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;工</string>
+    <string name="borrow_work_space">借&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;支</string>
+    <string name="balance_work_space">结&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;算</string>
+
+    <string name="work_manager_tips">记工完成后，记工对象自动加入该列表\n可以删除、修改、评价工人以及批量设置多个工人的工资标准</string>
+    <string name="foreman_manager_tips">记工完成后，记工对象自动加入该列表\n可以删除、修改、评价班组长以及批量设置多个班组长的工资标准</string>
+    <string name="add_sync_tips_one"> 什么是同步对象、同步项目？</string>
+    <string name="add_sync_tips_two">同步对象是指，你需要把某个项目的数据给那个人看\n同步项目是指，你需要给某个人看到的那个项目</string>
+    <string name="record_account_request">记工同步请求</string>
+    <string name="request_sync_project">要求同步项目</string>
+
+    <string name="search_detail">查看详情</string>
+    <string name="relation_accnum">关联账号</string>
+    <string name="open_service">开通微信服务</string>
+    <string name="question_detai">问题详情</string>
+
+    <string name="update_and_delete">修改及删除</string>
+
+    <string name="auth_type_tips">系统已验证其身份证与真人的对比照片\n系统已验证其名片资料\n系统已验证其在本系统未被曝光\n并严格保密身份证信息</string>
+    <string name="verified_tips">系统已验证及其身份证照片并严格保密身份信息</string>
+
+    <string name="all_work_hour">包工记工天</string>
+    <string name="savephoto_to_album">保存图片到相册</string>
+    <string name="save_photo">保存图片</string>
+    <string name="select_account_count">本次工选中1$d&#160;笔记工</string>
+    <string name="work_account_contract">承包</string>
+    <string name="work_account_subcontract">分包</string>
+
+    <string name="selecte_work_account_contract">选择承包对象</string>
+
+    <string name="account_hint_contract">承包：从他人那里接来的工程自己做</string>
+    <string name="account_hint_subcontract">分包:自己做不完的工程，将一部分或者某项分给他人做</string>
+
+    <string name="balance_of_account_title">开启对账详情</string>
+    <string name="set_hour_mode">批量修改点工工资标准</string>
+    <string name="my_group_team">我的项目班组</string>
+
+
+    <string name="quick_join_group">快速加群</string>
+    <string name="quick_join_work_group">快速加入工种群</string>
+    <string name="only_join_area_worker_group">(只能加一个地方工友群)</string>
+    <string name="only_join_work_group">(只能加一个工种群)</string>
+
+    <string name="confirm_count">本次确认的</string>
+    <string name="select_single_chat">选择一个聊天</string>
+    <string name="select_multipart_chat">选择多个聊天</string>
+    <string name="select_multipart">多选</string>
+    <string name="sign">个性签名</string>
+
+
+</resources>

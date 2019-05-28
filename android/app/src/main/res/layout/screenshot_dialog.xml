@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/translate_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_translate_80_alpha_5_radius"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/screenshot_image"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="8dp" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/share_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/screenshot_share_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="分享好友"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/feed_back"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/screenshot_feedback_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="问题反馈"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/close_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/screenshot_close_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

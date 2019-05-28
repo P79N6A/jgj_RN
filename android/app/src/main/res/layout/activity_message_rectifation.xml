@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/head_right_text"/>
+
+
+    <LinearLayout
+        android:id="@+id/rea_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:background="@color/color_f1f1f1"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="复查结果"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/rb_msg_rectifation"
+                android:button="@null"
+                android:checked="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="通过"
+                android:textColor="@color/app_color"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+            <RadioButton
+                android:id="@+id/rb_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rb_msg_rectifation"
+                android:button="@null"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="未通过"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+        </RadioGroup>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="@color/white">-->
+
+
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/color_f1f1f1">
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:text="整改说明"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_hint1"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:textColor="@color/color_333333"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ed_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="请输入整改说明(选填)"
+        android:maxLength="400"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_cccccc"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="添加图片"
+        android:textColor="@color/color_333333"
+        android:textSize="12sp"/>
+
+    <com.jizhi.jongg.widget.WrapGridview
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/white"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:verticalSpacing="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_centerVertical="true"
+        android:background="@color/color_f1f1f1"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:textColor="@color/color_333333"
+        android:textSize="12sp"/>
+</LinearLayout>

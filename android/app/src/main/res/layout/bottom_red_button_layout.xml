@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        style="@style/bottom_button_layout">
+
+        <View style="@style/line" />
+
+        <Button
+            android:id="@+id/red_btn"
+            style="@style/bottom_red_btn_style" />
+    </RelativeLayout>
+</merge>

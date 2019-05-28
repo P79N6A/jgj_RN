@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_color">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="清空"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wheel_view_left_text_size"
+            android:visibility="gone" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wheel_view_left_text_size" />
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wheel_view_center_text_size" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wheel_view_left_text_size" />
+    </RelativeLayout>
+
+    <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+        android:id="@+id/recordDays"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/draw_sk_eb4e4e_2radius"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/red_calendar_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/single_person_batch_account"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="@dimen/text_size_15" />
+
+    </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jizhi.wheelview.WheelView
+            android:id="@+id/id_year"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jizhi.wheelview.WheelView
+            android:id="@+id/id_month"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jizhi.wheelview.WheelView
+            android:id="@+id/id_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+</LinearLayout>

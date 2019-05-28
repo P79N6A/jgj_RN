@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJMemberDesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgt-GE-5nH">
+                        <rect key="frame" x="12" y="12.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6y-T7-96c">
+                        <rect key="frame" x="205" y="28" width="103" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Duj-1I-i2D"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bk-Xm-dhO">
+                        <rect key="frame" x="187" y="9" width="123" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="I0v-Ux-hIi"/>
+                            <constraint firstAttribute="width" constant="110" id="VPh-vL-CJ8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="什么是数据来源人?" image="CHat_notice_question">
+                            <color key="titleColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VPh-vL-CJ8"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="desBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EJt-gr-bd8"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nf5-Vd-WoT" customClass="LineView">
+                        <rect key="frame" x="12" y="43.5" width="296" height="0.5"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.29803921570000003" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="teB-1R-HbY"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Das-Ci-0EM">
+                        <rect key="frame" x="310" y="21.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nf5-Vd-WoT" firstAttribute="leading" secondItem="Kgt-GE-5nH" secondAttribute="leading" id="38G-nL-e3H"/>
+                    <constraint firstAttribute="trailing" secondItem="Nf5-Vd-WoT" secondAttribute="trailing" constant="12" id="FSF-bd-Le0"/>
+                    <constraint firstItem="Kgt-GE-5nH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ftv-is-vy9"/>
+                    <constraint firstAttribute="trailing" secondItem="0Bk-Xm-dhO" secondAttribute="trailing" constant="10" id="Gds-lX-jHA"/>
+                    <constraint firstItem="w6y-T7-96c" firstAttribute="leading" secondItem="0Bk-Xm-dhO" secondAttribute="leading" constant="18" id="Ihw-Zj-5Dl"/>
+                    <constraint firstItem="Das-Ci-0EM" firstAttribute="centerY" secondItem="Kgt-GE-5nH" secondAttribute="centerY" id="UMB-Xj-Yqc"/>
+                    <constraint firstAttribute="bottom" secondItem="Nf5-Vd-WoT" secondAttribute="bottom" id="UZn-3G-wCQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Das-Ci-0EM" secondAttribute="trailing" constant="10" id="fr2-Ln-WQD"/>
+                    <constraint firstItem="0Bk-Xm-dhO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gGu-bH-db6"/>
+                    <constraint firstItem="w6y-T7-96c" firstAttribute="top" secondItem="0Bk-Xm-dhO" secondAttribute="bottom" constant="-6" id="mgR-gG-LKi"/>
+                    <constraint firstItem="Kgt-GE-5nH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="rQ7-fA-f3i"/>
+                    <constraint firstItem="w6y-T7-96c" firstAttribute="trailing" secondItem="0Bk-Xm-dhO" secondAttribute="trailing" constant="-2" id="ys2-X4-Dal"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="desBtn" destination="0Bk-Xm-dhO" id="qak-75-N8s"/>
+                <outlet property="desLable" destination="Das-Ci-0EM" id="jPI-rN-YHA"/>
+                <outlet property="redLineView" destination="w6y-T7-96c" id="SKf-sX-LjR"/>
+                <outlet property="titleLable" destination="Kgt-GE-5nH" id="quF-Nj-noT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CHat_notice_question" width="12" height="12"/>
+    </resources>
+</document>

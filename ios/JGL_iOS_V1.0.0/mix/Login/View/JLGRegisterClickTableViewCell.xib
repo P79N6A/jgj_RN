@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16F71b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UvF-Td-7Xr" customClass="JLGRegisterClickTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UvF-Td-7Xr" id="VHb-2J-RAR">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBZ-k8-slH" userLabel="lineView" customClass="LineView">
+                        <rect key="frame" x="10" y="42" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cZJ-Og-ngg"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_RedStar" translatesAutoresizingMaskIntoConstraints="NO" id="8MS-h1-60Y">
+                        <rect key="frame" x="5" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8MS-h1-60Y" secondAttribute="height" multiplier="1:1" id="msm-Ug-A7d"/>
+                            <constraint firstAttribute="width" constant="15" id="uNC-x9-5kM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="760" misplaced="YES" text="标题" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rHX-Ns-Sq4">
+                        <rect key="frame" x="30" y="13" width="233" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2M-eF-kta">
+                        <rect key="frame" x="273" y="0.0" width="39" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="内容" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuu-kh-Hgg">
+                                <rect key="frame" x="0.0" y="13" width="28" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.72549019607843135" green="0.72549019607843135" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_More" translatesAutoresizingMaskIntoConstraints="NO" id="feX-bb-3tg">
+                                <rect key="frame" x="30" y="14" width="9" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="4MX-gp-DhZ"/>
+                                    <constraint firstAttribute="width" constant="9" id="MKW-X2-CRe"/>
+                                    <constraint firstAttribute="width" secondItem="feX-bb-3tg" secondAttribute="height" multiplier="1:2" id="kbT-rw-n1k"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kbT-rw-n1k"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="feX-bb-3tg" firstAttribute="centerY" secondItem="m2M-eF-kta" secondAttribute="centerY" id="6Rf-Op-zAM"/>
+                            <constraint firstAttribute="trailing" secondItem="feX-bb-3tg" secondAttribute="trailing" id="K7g-XO-kDG"/>
+                            <constraint firstItem="Kuu-kh-Hgg" firstAttribute="leading" secondItem="m2M-eF-kta" secondAttribute="leading" id="KLh-U0-qV7"/>
+                            <constraint firstAttribute="trailing" secondItem="feX-bb-3tg" secondAttribute="trailing" id="oTc-WA-BV1"/>
+                            <constraint firstItem="Kuu-kh-Hgg" firstAttribute="centerY" secondItem="feX-bb-3tg" secondAttribute="centerY" id="t5g-zI-mwY"/>
+                            <constraint firstItem="feX-bb-3tg" firstAttribute="leading" secondItem="Kuu-kh-Hgg" secondAttribute="trailing" constant="2" id="xp6-It-Kjq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="K7g-XO-kDG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sBZ-k8-slH" secondAttribute="bottom" id="4GT-9D-QSl"/>
+                    <constraint firstAttribute="trailing" secondItem="sBZ-k8-slH" secondAttribute="trailing" constant="10" id="76B-mm-Maq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="m2M-eF-kta" secondAttribute="trailing" id="7h5-6W-8WN"/>
+                    <constraint firstItem="m2M-eF-kta" firstAttribute="centerY" secondItem="VHb-2J-RAR" secondAttribute="centerY" id="I8H-2c-YnU"/>
+                    <constraint firstItem="rHX-Ns-Sq4" firstAttribute="centerY" secondItem="8MS-h1-60Y" secondAttribute="centerY" id="JTu-un-vVC"/>
+                    <constraint firstItem="sBZ-k8-slH" firstAttribute="leading" secondItem="VHb-2J-RAR" secondAttribute="leading" constant="10" id="QOJ-JT-wBr"/>
+                    <constraint firstItem="m2M-eF-kta" firstAttribute="leading" secondItem="rHX-Ns-Sq4" secondAttribute="trailing" constant="10" id="i57-JB-NwB"/>
+                    <constraint firstItem="8MS-h1-60Y" firstAttribute="leading" secondItem="VHb-2J-RAR" secondAttribute="leading" constant="5" id="qXi-av-0WB"/>
+                    <constraint firstItem="8MS-h1-60Y" firstAttribute="centerY" secondItem="VHb-2J-RAR" secondAttribute="centerY" id="tik-Uq-o66"/>
+                    <constraint firstItem="m2M-eF-kta" firstAttribute="height" secondItem="VHb-2J-RAR" secondAttribute="height" id="uIP-oJ-b3U"/>
+                    <constraint firstItem="rHX-Ns-Sq4" firstAttribute="leading" secondItem="8MS-h1-60Y" secondAttribute="trailing" constant="10" id="ugn-fm-qQU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="detailTF" destination="Kuu-kh-Hgg" id="yml-02-nud"/>
+                <outlet property="redStarImage" destination="8MS-h1-60Y" id="kdl-h7-AV3"/>
+                <outlet property="redStarLayoutW" destination="uNC-x9-5kM" id="87z-GN-Kfb"/>
+                <outlet property="titleLabel" destination="rHX-Ns-Sq4" id="Ob0-SE-3nR"/>
+            </connections>
+            <point key="canvasLocation" x="377" y="205"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="login_More" width="5" height="9"/>
+        <image name="login_RedStar" width="15" height="15"/>
+    </resources>
+</document>

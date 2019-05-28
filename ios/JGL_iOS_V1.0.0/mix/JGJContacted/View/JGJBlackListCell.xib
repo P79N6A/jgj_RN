@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJBlackListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAn-8h-Eq4">
+                        <rect key="frame" x="0.0" y="10" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="ATY-5e-5kh"/>
+                            <constraint firstAttribute="height" constant="46" id="IYJ-jc-mse"/>
+                        </constraints>
+                        <state key="normal" image="findHelper_deletePhone"/>
+                        <connections>
+                            <action selector="handleDelButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="N2d-9Y-kB8"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNb-v5-wbr">
+                        <rect key="frame" x="120" y="13" width="188" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7X9-ug-uHP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r23-zV-1NC">
+                        <rect key="frame" x="46" y="8" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.74117647060000003" green="0.47450980390000003" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="GWo-Lh-dyU"/>
+                            <constraint firstAttribute="width" constant="50" id="IHk-Yr-Xkj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5k-I0-hEn" customClass="LineView">
+                        <rect key="frame" x="12" y="65" width="296" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mCz-Mq-rYB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BNb-v5-wbr" firstAttribute="leading" secondItem="r23-zV-1NC" secondAttribute="trailing" constant="24" id="AA1-8y-4gE"/>
+                    <constraint firstItem="JAn-8h-Eq4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="E66-GP-CYF"/>
+                    <constraint firstItem="r23-zV-1NC" firstAttribute="leading" secondItem="JAn-8h-Eq4" secondAttribute="trailing" id="KJ2-f8-g8c"/>
+                    <constraint firstAttribute="trailing" secondItem="BNb-v5-wbr" secondAttribute="trailing" constant="12" id="OCA-Q1-ixx"/>
+                    <constraint firstAttribute="trailing" secondItem="w5k-I0-hEn" secondAttribute="trailing" constant="12" id="Qy5-7C-T7w"/>
+                    <constraint firstItem="JAn-8h-Eq4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ux0-r7-bvR"/>
+                    <constraint firstAttribute="bottom" secondItem="w5k-I0-hEn" secondAttribute="bottom" id="eXY-6J-RwE"/>
+                    <constraint firstItem="BNb-v5-wbr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fjf-b3-v0N"/>
+                    <constraint firstItem="r23-zV-1NC" firstAttribute="centerY" secondItem="JAn-8h-Eq4" secondAttribute="centerY" id="rdn-yL-K9j"/>
+                    <constraint firstItem="w5k-I0-hEn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="w6d-Xz-kbL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="delButton" destination="JAn-8h-Eq4" id="Lec-EV-uwi"/>
+                <outlet property="delButtonW" destination="ATY-5e-5kh" id="al9-3b-s8S"/>
+                <outlet property="headButton" destination="r23-zV-1NC" id="EMG-bf-W2X"/>
+                <outlet property="lineView" destination="w5k-I0-hEn" id="RDt-IP-sY9"/>
+                <outlet property="nameLable" destination="BNb-v5-wbr" id="dLi-98-Yez"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="findHelper_deletePhone" width="15" height="15"/>
+    </resources>
+</document>

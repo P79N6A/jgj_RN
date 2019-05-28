@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJCusHeaderView">
+            <connections>
+                <outlet property="checkButton" destination="bqc-rE-gdD" id="z39-aq-qDe"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="UYO-lx-azd"/>
+                <outlet property="title" destination="bqc-rE-gdD" id="Cm0-v5-ms4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新招工信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qut-MR-J6i">
+                    <rect key="frame" x="12" y="9" width="104" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="right" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-rE-gdD">
+                    <rect key="frame" x="0.0" y="0.0" width="363" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="7" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-39" maxY="0.0"/>
+                    <state key="normal" title="更多" image="check_more_pro_icon">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="checkButtonPressed:" destination="-1" eventType="touchUpInside" id="j7X-AI-oSV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bqc-rE-gdD" secondAttribute="bottom" id="QoU-75-Xcg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bqc-rE-gdD" secondAttribute="trailing" constant="12" id="TR6-BA-JiH"/>
+                <constraint firstItem="qut-MR-J6i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="i3e-lf-baH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qut-MR-J6i" secondAttribute="bottom" constant="9" id="kvZ-8s-ke1"/>
+                <constraint firstItem="bqc-rE-gdD" firstAttribute="centerY" secondItem="qut-MR-J6i" secondAttribute="centerY" id="mxa-0B-9If"/>
+                <constraint firstItem="bqc-rE-gdD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tVH-cT-xJt"/>
+                <constraint firstItem="bqc-rE-gdD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ta5-VR-FuY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_more_pro_icon" width="9" height="14"/>
+    </resources>
+</document>

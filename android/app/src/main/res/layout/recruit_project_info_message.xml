@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/recruit_message_icon" />
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message_type_and_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_white_cccccc_1px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="18dp">
+
+            <TextView
+                android:id="@+id/message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/today_num_text_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F8853F"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日拨打人数"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#f7f7f7"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/pro_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="项目名称:"
+                    android:textColor="@color/color_666666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/pro_name_text_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/pro_name_text"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/view_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pro_name_text"
+                    android:layout_marginBottom="5dp"
+                    android:text="累计被查看次数:"
+                    android:textColor="@color/color_666666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/view_count_text_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pro_name_text"
+                    android:layout_toRightOf="@id/view_count_text"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/all_num_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_count_text"
+                    android:text="累计拨打人数:"
+                    android:textColor="@color/color_666666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/all_num_text_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_count_text"
+                    android:layout_toRightOf="@id/all_num_text"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/system_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/color_999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/detail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/houtui"
+                android:text="@string/search_detail"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16F71b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="242" id="KGk-i7-Jjw" customClass="JGJSummarizeToTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="242"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="241.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本周工作总结" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFT-Hi-hyA">
+                        <rect key="frame" x="11" y="14" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dpU-9N-Vok">
+                        <rect key="frame" x="11" y="42" width="424" height="184"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhf-Ig-w8c">
+                        <rect key="frame" x="0.0" y="231" width="446" height="10"/>
+                        <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="jt2-Vl-oyk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   请输入本周工作总结" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQB-fs-xOF">
+                        <rect key="frame" x="11" y="44" width="150" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HQB-fs-xOF" firstAttribute="top" secondItem="xFT-Hi-hyA" secondAttribute="bottom" constant="12" id="2f0-dg-w1l"/>
+                    <constraint firstItem="xFT-Hi-hyA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="2hI-WK-xg2"/>
+                    <constraint firstItem="dpU-9N-Vok" firstAttribute="top" secondItem="xFT-Hi-hyA" secondAttribute="bottom" constant="10" id="HqE-ID-TQu"/>
+                    <constraint firstItem="dpU-9N-Vok" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="MEK-qT-bCS"/>
+                    <constraint firstItem="xFT-Hi-hyA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="R8k-bU-w0I"/>
+                    <constraint firstAttribute="trailing" secondItem="Jhf-Ig-w8c" secondAttribute="trailing" id="Wdp-LL-I4p"/>
+                    <constraint firstAttribute="bottom" secondItem="Jhf-Ig-w8c" secondAttribute="bottom" id="f6n-Ze-cWN"/>
+                    <constraint firstAttribute="trailing" secondItem="dpU-9N-Vok" secondAttribute="trailing" constant="11" id="m4H-9g-3Ap"/>
+                    <constraint firstItem="Jhf-Ig-w8c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qpE-Zl-yBK"/>
+                    <constraint firstItem="HQB-fs-xOF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="s27-m9-eor"/>
+                    <constraint firstAttribute="bottom" secondItem="dpU-9N-Vok" secondAttribute="bottom" constant="15" id="sE9-xd-6q9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="placeLable" destination="HQB-fs-xOF" id="dti-M1-i8b"/>
+                <outlet property="textview" destination="dpU-9N-Vok" id="gJv-pK-T91"/>
+                <outlet property="titleLable" destination="xFT-Hi-hyA" id="nHD-gH-CNr"/>
+            </connections>
+            <point key="canvasLocation" x="163" y="158"/>
+        </tableViewCell>
+    </objects>
+</document>

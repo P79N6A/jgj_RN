@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLGPickerVIew">
+            <connections>
+                <outlet property="contentView" destination="EYx-EB-uXz" id="JoU-Lx-77A"/>
+                <outlet property="datePicker" destination="Dp7-9t-qjI" id="hx9-tg-h9h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EYx-EB-uXz" userLabel="rootPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-iB-cFY">
+                    <rect key="frame" x="220" y="0.0" width="100" height="40"/>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="endSelectPickerView:" destination="-1" eventType="touchUpInside" id="a5q-Rh-2lG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择服务时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bph-Y2-7Ll">
+                    <rect key="frame" x="100" y="0.0" width="120" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gp-dE-BsC">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1b7-4O-xHy"/>
+                        <constraint firstAttribute="height" constant="40" id="U8Z-ym-cnK"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="endSelectPickerView:" destination="-1" eventType="touchUpInside" id="tT6-GJ-tfK"/>
+                    </connections>
+                </button>
+                <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp7-9t-qjI">
+                    <rect key="frame" x="0.0" y="40" width="320" height="162"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="QYl-h7-8dJ"/>
+                        <outlet property="delegate" destination="-1" id="twW-Ps-cL8"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="0.37647058823529411" green="0.78431372549019607" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Dp7-9t-qjI" secondAttribute="trailing" id="67K-Rg-SsP"/>
+                <constraint firstItem="8Gp-dE-BsC" firstAttribute="leading" secondItem="EYx-EB-uXz" secondAttribute="leading" id="7OJ-pT-0x3"/>
+                <constraint firstAttribute="bottom" secondItem="Dp7-9t-qjI" secondAttribute="bottom" id="8rH-Vc-Mu4"/>
+                <constraint firstItem="nSn-iB-cFY" firstAttribute="width" secondItem="8Gp-dE-BsC" secondAttribute="width" id="9Fk-Cm-ayL"/>
+                <constraint firstItem="8Gp-dE-BsC" firstAttribute="top" secondItem="EYx-EB-uXz" secondAttribute="top" id="ApE-4x-rLI"/>
+                <constraint firstItem="bph-Y2-7Ll" firstAttribute="height" secondItem="8Gp-dE-BsC" secondAttribute="height" id="IOc-TE-vIJ"/>
+                <constraint firstItem="nSn-iB-cFY" firstAttribute="leading" secondItem="bph-Y2-7Ll" secondAttribute="trailing" id="Lmb-hd-ZSA"/>
+                <constraint firstItem="bph-Y2-7Ll" firstAttribute="leading" secondItem="8Gp-dE-BsC" secondAttribute="trailing" id="Rpg-uF-0pV"/>
+                <constraint firstItem="Dp7-9t-qjI" firstAttribute="top" secondItem="8Gp-dE-BsC" secondAttribute="bottom" id="V7e-TX-usR"/>
+                <constraint firstItem="nSn-iB-cFY" firstAttribute="centerY" secondItem="8Gp-dE-BsC" secondAttribute="centerY" id="cNn-eD-R3S"/>
+                <constraint firstItem="nSn-iB-cFY" firstAttribute="height" secondItem="8Gp-dE-BsC" secondAttribute="height" id="fZQ-KR-n5y"/>
+                <constraint firstItem="bph-Y2-7Ll" firstAttribute="centerY" secondItem="8Gp-dE-BsC" secondAttribute="centerY" id="gFH-0z-Fpg"/>
+                <constraint firstItem="Dp7-9t-qjI" firstAttribute="leading" secondItem="EYx-EB-uXz" secondAttribute="leading" id="pHU-k8-IPw"/>
+                <constraint firstAttribute="trailing" secondItem="nSn-iB-cFY" secondAttribute="trailing" id="z5q-eB-BgN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="562" y="186"/>
+        </view>
+    </objects>
+</document>

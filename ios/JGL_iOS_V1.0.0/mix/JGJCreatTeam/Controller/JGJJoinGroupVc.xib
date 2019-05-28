@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJJoinGroupVc">
+            <connections>
+                <outlet property="QRCodeView" destination="egM-PA-LBb" id="Z5Y-jo-RzK"/>
+                <outlet property="joinButton" destination="TQ2-b0-RDK" id="rWA-ws-XO8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="553"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5S-PF-q5u">
+                    <rect key="frame" x="0.0" y="490" width="504" height="63"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ2-b0-RDK">
+                            <rect key="frame" x="13" y="7" width="478" height="50"/>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="加入班组">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="joinBtnClick:" destination="-1" eventType="touchUpInside" id="pzm-qI-AlL"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SjY-6X-2Dk" customClass="LineView">
+                            <rect key="frame" x="0.0" y="0.0" width="504" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="PZp-et-n4M"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="TQ2-b0-RDK" firstAttribute="width" secondItem="b5S-PF-q5u" secondAttribute="width" multiplier="0.95" id="FZi-Sv-znA"/>
+                        <constraint firstAttribute="trailing" secondItem="SjY-6X-2Dk" secondAttribute="trailing" id="HMT-Ds-uhy"/>
+                        <constraint firstItem="TQ2-b0-RDK" firstAttribute="height" secondItem="b5S-PF-q5u" secondAttribute="height" multiplier="0.8" id="UZQ-iy-J2T"/>
+                        <constraint firstItem="TQ2-b0-RDK" firstAttribute="centerY" secondItem="b5S-PF-q5u" secondAttribute="centerY" id="Was-Gi-bQ8"/>
+                        <constraint firstAttribute="height" constant="63" id="ahx-HY-kYa"/>
+                        <constraint firstItem="SjY-6X-2Dk" firstAttribute="top" secondItem="b5S-PF-q5u" secondAttribute="top" id="fkt-qJ-uap"/>
+                        <constraint firstItem="TQ2-b0-RDK" firstAttribute="centerX" secondItem="b5S-PF-q5u" secondAttribute="centerX" id="fq4-5x-elk"/>
+                        <constraint firstItem="SjY-6X-2Dk" firstAttribute="leading" secondItem="b5S-PF-q5u" secondAttribute="leading" id="lgi-Td-C8J"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egM-PA-LBb" customClass="JGJQRCodeView">
+                    <rect key="frame" x="0.0" y="0.0" width="504" height="490"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b5S-PF-q5u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1b1-qj-aJf"/>
+                <constraint firstItem="egM-PA-LBb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2vi-xM-yBF"/>
+                <constraint firstAttribute="trailing" secondItem="b5S-PF-q5u" secondAttribute="trailing" id="G22-Dt-rPu"/>
+                <constraint firstItem="egM-PA-LBb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O9G-YQ-8gF"/>
+                <constraint firstAttribute="bottom" secondItem="b5S-PF-q5u" secondAttribute="bottom" id="WXS-Sj-xwt"/>
+                <constraint firstAttribute="trailing" secondItem="egM-PA-LBb" secondAttribute="trailing" id="jxj-jo-oI1"/>
+                <constraint firstItem="b5S-PF-q5u" firstAttribute="top" secondItem="egM-PA-LBb" secondAttribute="bottom" id="utm-Pn-Kn7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="443" y="288.5"/>
+        </view>
+    </objects>
+</document>

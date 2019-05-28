@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJLogAlertView">
+            <connections>
+                <outlet property="baseView" destination="iqh-kK-kqw" id="2cP-Ms-Ljc"/>
+                <outlet property="contentLable" destination="8i5-6N-SV1" id="QUz-PL-zXt"/>
+                <outlet property="contentViews" destination="6J1-zg-8dw" id="BHw-ti-iWZ"/>
+                <outlet property="heightConstance" destination="bpv-LV-cGU" id="pe6-QP-gZx"/>
+                <outlet property="iKownButton" destination="ufb-4g-gTi" id="Ph5-Si-ShN"/>
+                <outlet property="widthConstance" destination="8ek-cS-y7h" id="PsO-oP-81i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6J1-zg-8dw">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqh-kK-kqw">
+                    <rect key="frame" x="52" y="243.5" width="270" height="180"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在电脑浏览器上登录吉工宝www.jgongb.com,进入[工作日志]进行模板设置" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i5-6N-SV1">
+                            <rect key="frame" x="12" y="16" width="246" height="99"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufb-4g-gTi">
+                            <rect key="frame" x="0.0" y="135" width="270" height="45"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.14509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Men-4C-xJT"/>
+                            </constraints>
+                            <state key="normal" title="我知道了">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickSureButton:" destination="-1" eventType="touchUpInside" id="sgj-Jn-92b"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8i5-6N-SV1" secondAttribute="trailing" constant="12" id="0iC-tC-faE"/>
+                        <constraint firstAttribute="bottom" secondItem="ufb-4g-gTi" secondAttribute="bottom" id="4eO-PG-QMs"/>
+                        <constraint firstAttribute="trailing" secondItem="ufb-4g-gTi" secondAttribute="trailing" id="6iT-4B-anI"/>
+                        <constraint firstAttribute="width" constant="270" id="8ek-cS-y7h"/>
+                        <constraint firstAttribute="bottom" secondItem="8i5-6N-SV1" secondAttribute="bottom" constant="65" id="Bes-4J-Zso"/>
+                        <constraint firstItem="8i5-6N-SV1" firstAttribute="leading" secondItem="iqh-kK-kqw" secondAttribute="leading" constant="12" id="WSv-9B-XwY"/>
+                        <constraint firstAttribute="height" constant="180" id="bpv-LV-cGU"/>
+                        <constraint firstItem="ufb-4g-gTi" firstAttribute="leading" secondItem="iqh-kK-kqw" secondAttribute="leading" id="by8-Dz-M07"/>
+                        <constraint firstItem="8i5-6N-SV1" firstAttribute="top" secondItem="iqh-kK-kqw" secondAttribute="top" constant="16" id="evK-8r-83G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.32836579623287671" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="iqh-kK-kqw" firstAttribute="centerY" secondItem="6J1-zg-8dw" secondAttribute="centerY" id="TH2-pO-de8"/>
+                <constraint firstItem="iqh-kK-kqw" firstAttribute="centerX" secondItem="6J1-zg-8dw" secondAttribute="centerX" id="u4S-DL-48v"/>
+            </constraints>
+            <point key="canvasLocation" x="611" y="39"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJRecordStaListHeaderView">
+            <connections>
+                <outlet property="containView" destination="iN0-l3-epB" id="6DW-5d-vI5"/>
+                <outlet property="moneyLable" destination="dsY-XH-6ge" id="jR0-yB-r6S"/>
+                <outlet property="recordTypeLable" destination="DOZ-Wa-AJY" id="wws-Jt-7gr"/>
+                <outlet property="staTypeLable" destination="fcd-lq-Gog" id="D4K-Bp-ulh"/>
+                <outlet property="topLineView" destination="aU6-0Q-VDg" id="pmb-O8-lw0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcd-lq-Gog">
+                    <rect key="frame" x="10" y="7" width="82.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsY-XH-6ge">
+                    <rect key="frame" x="308" y="7" width="27" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="记工" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOZ-Wa-AJY">
+                    <rect key="frame" x="92.5" y="7" width="27" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aU6-0Q-VDg" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="0jB-d8-zWf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aU6-0Q-VDg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Jj-Uj-0e0"/>
+                <constraint firstItem="fcd-lq-Gog" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="7Yv-hp-Vie"/>
+                <constraint firstItem="DOZ-Wa-AJY" firstAttribute="leading" secondItem="fcd-lq-Gog" secondAttribute="trailing" id="9WG-Hj-t5K"/>
+                <constraint firstAttribute="trailing" secondItem="dsY-XH-6ge" secondAttribute="trailing" constant="40" id="CrB-61-O5w"/>
+                <constraint firstAttribute="trailing" secondItem="aU6-0Q-VDg" secondAttribute="trailing" id="D3F-0o-7F3"/>
+                <constraint firstItem="DOZ-Wa-AJY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="I0A-ol-XUD"/>
+                <constraint firstItem="aU6-0Q-VDg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IBW-ww-3hU"/>
+                <constraint firstItem="fcd-lq-Gog" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.22" id="RSV-N6-mrS"/>
+                <constraint firstItem="fcd-lq-Gog" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="b5V-at-syZ"/>
+                <constraint firstItem="dsY-XH-6ge" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="blx-zI-ceD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.5" y="52"/>
+        </view>
+    </objects>
+</document>

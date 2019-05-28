@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_accounting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:text="@string/pricemode_hour_wage"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+        <com.jizhi.jongg.widget.NestRadioGroup
+            android:id="@+id/guide_rg"
+            android:layout_width="225dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tv_pricemode_hour"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_red_background_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/pricemode_hour"
+                android:textColor="@drawable/textcolor_guide_white"
+                android:textSize="@dimen/text_size_13" />
+
+            <RadioButton
+                android:id="@+id/tv_pricemode_all"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dip"
+                android:layout_weight="1"
+                android:background="@drawable/radio_red_background_center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/pricemode_all"
+                android:textColor="@drawable/textcolor_guide_white"
+                android:textSize="@dimen/text_size_13" />
+
+            <RadioButton
+                android:id="@+id/tv_borrowing"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dip"
+                android:layout_weight="1"
+                android:background="@drawable/radio_red_background_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/borrowing"
+                android:textColor="@drawable/textcolor_guide_white"
+                android:textSize="@dimen/text_size_13" />
+        </com.jizhi.jongg.widget.NestRadioGroup>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/page_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/linecolor" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/save_again"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_whitecolor_5dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/remember_other"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/button_size" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_appcolor"
+            android:gravity="center"
+            android:text="@string/story"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16F71b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JGJImageHeadCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="148" height="176"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eTo-h4-rw7">
+                        <rect key="frame" x="5" y="5" width="138" height="40"/>
+                        <color key="backgroundColor" red="0.51372549020000002" green="0.78039215689999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="gHp-EF-jiV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隔壁老刘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rr-bJ-y53">
+                        <rect key="frame" x="0.0" y="50" width="148" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3rr-bJ-y53" firstAttribute="top" secondItem="eTo-h4-rw7" secondAttribute="bottom" constant="5" id="2zc-3I-ECW"/>
+                <constraint firstAttribute="trailing" secondItem="3rr-bJ-y53" secondAttribute="trailing" id="7ga-wI-wrs"/>
+                <constraint firstItem="3rr-bJ-y53" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DoQ-mk-Wc5"/>
+                <constraint firstItem="eTo-h4-rw7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="NcE-Ne-Oen"/>
+                <constraint firstAttribute="trailing" secondItem="eTo-h4-rw7" secondAttribute="trailing" constant="5" id="PFk-J9-jJr"/>
+                <constraint firstItem="eTo-h4-rw7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="mf9-OB-Ga2"/>
+            </constraints>
+            <size key="customSize" width="148" height="176"/>
+            <connections>
+                <outlet property="imageView" destination="eTo-h4-rw7" id="wMn-kM-AfS"/>
+                <outlet property="nameLable" destination="3rr-bJ-y53" id="Znw-iy-zPe"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="115"/>
+        </collectionViewCell>
+    </objects>
+</document>

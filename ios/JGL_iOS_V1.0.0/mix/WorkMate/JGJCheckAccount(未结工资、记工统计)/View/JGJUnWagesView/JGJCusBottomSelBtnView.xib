@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJCusBottomSelBtnView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="gOr-gQ-ng9"/>
+                <outlet property="leftBtn" destination="ebg-fo-N87" id="aMy-cX-4mA"/>
+                <outlet property="rightBtn" destination="E6P-PF-PSn" id="vaD-AN-zWK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-fo-N87">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="m6h-8a-Yb2"/>
+                        <constraint firstAttribute="width" constant="120" id="wjJ-Na-YGu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="全选本页" image="RecordWorkpoints_not_selected">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <state key="selected" image="MultiSelected"/>
+                    <connections>
+                        <action selector="leftButtonPressed:" destination="-1" eventType="touchUpInside" id="xWI-0a-CgF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-PF-PSn">
+                    <rect key="frame" x="173" y="10" width="192" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="MBm-AA-7xB"/>
+                        <constraint firstAttribute="width" constant="192" id="WZB-4c-Dxr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="批量设置工资金额">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="rightButtonPressed:" destination="-1" eventType="touchUpInside" id="Exw-wI-xvF"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6W-vj-crK" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="YVC-rc-7jJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="z6W-vj-crK" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0DY-KS-cYf"/>
+                <constraint firstItem="ebg-fo-N87" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Fm-zB-yvM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="E6P-PF-PSn" secondAttribute="trailing" constant="10" id="MZI-hc-3Io"/>
+                <constraint firstItem="ebg-fo-N87" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RCS-nw-Yp5"/>
+                <constraint firstItem="z6W-vj-crK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cpf-fl-Ldl"/>
+                <constraint firstItem="E6P-PF-PSn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="kMW-lA-SOU"/>
+                <constraint firstItem="z6W-vj-crK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ojJ-vv-VRS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="154.72263868065968"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MultiSelected" width="20" height="20"/>
+        <image name="RecordWorkpoints_not_selected" width="22" height="22"/>
+    </resources>
+</document>

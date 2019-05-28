@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/gray_fafafa">
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onFinish"
+            android:padding="10dp"
+            android:src="@drawable/icon_notebook_cha" />
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/guide_title_size" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_dbdbdb" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.hcs.cityslist.widget.AppCursorEditText
+            android:id="@+id/inputTagText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:lines="1"
+            android:background="@drawable/sk_dbdbdb_5radius"
+            android:gravity="center_vertical"
+            android:hint="输入你对他的印象(最多6个字)"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/gray_cccccc"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/addTagBtn"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/add"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f1f1f1"
+        android:divider="@null" />
+
+
+</LinearLayout>

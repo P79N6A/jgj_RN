@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp">
+
+    <View
+        android:id="@+id/topRedLine"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/app_color"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/todayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:text="今天"
+            android:textColor="@color/app_color"
+            android:textSize="9sp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/weatherIcon1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/dateLayout"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp" />
+
+    <ImageView
+        android:id="@+id/weatherIcon2"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/dateLayout"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/weatherIcon1" />
+
+    <ImageView
+        android:id="@+id/weatherIcon3"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/weatherIcon1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp" />
+
+    <ImageView
+        android:id="@+id/weatherIcon4"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_below="@id/weatherIcon2"
+        android:layout_toRightOf="@id/weatherIcon3" />
+
+
+</RelativeLayout>

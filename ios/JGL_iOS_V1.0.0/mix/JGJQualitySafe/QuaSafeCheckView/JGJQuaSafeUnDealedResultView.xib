@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJQuaSafeUnDealedResultView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Uwa-iI-kwE"/>
+                <outlet property="modifyButton" destination="VuJ-rH-C15" id="gb5-Q4-ZDg"/>
+                <outlet property="passButton" destination="JP9-It-nT3" id="NTV-Bc-vgv"/>
+                <outlet property="unRelationButton" destination="eZh-ew-2ED" id="jnT-ZT-84P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP9-It-nT3">
+                    <rect key="frame" x="291" y="16" width="74" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="I1l-jc-tuy"/>
+                        <constraint firstAttribute="width" constant="74" id="kII-xh-bMV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="通过">
+                        <color key="titleColor" red="0.51372549019607838" green="0.7803921568627451" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handleButtonPressed:" destination="-1" eventType="touchUpInside" id="WJP-15-hWY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuJ-rH-C15">
+                    <rect key="frame" x="207" y="16" width="74" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="CUZ-Sc-5ya"/>
+                        <constraint firstAttribute="height" constant="28" id="hN9-w5-grx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="待整改">
+                        <color key="titleColor" red="0.51372549020000002" green="0.78039215689999997" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handleButtonPressed:" destination="-1" eventType="touchUpInside" id="B6f-40-NuM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZh-ew-2ED">
+                    <rect key="frame" x="123" y="16" width="74" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="bgw-S6-OKx"/>
+                        <constraint firstAttribute="width" constant="74" id="ufi-PC-Hgk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="不用检查">
+                        <color key="titleColor" red="0.51372549020000002" green="0.78039215689999997" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handleButtonPressed:" destination="-1" eventType="touchUpInside" id="BWV-qj-8Ph"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eZh-ew-2ED" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5MD-2w-Zwe"/>
+                <constraint firstItem="VuJ-rH-C15" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="63q-ce-KoS"/>
+                <constraint firstItem="VuJ-rH-C15" firstAttribute="leading" secondItem="eZh-ew-2ED" secondAttribute="trailing" constant="10" id="AT4-Np-Rfe"/>
+                <constraint firstItem="JP9-It-nT3" firstAttribute="leading" secondItem="VuJ-rH-C15" secondAttribute="trailing" constant="10" id="h9h-w1-okD"/>
+                <constraint firstItem="JP9-It-nT3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="s3T-x6-2X7"/>
+                <constraint firstAttribute="trailing" secondItem="JP9-It-nT3" secondAttribute="trailing" constant="10" id="wr9-b0-PxA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-19" y="51"/>
+        </view>
+    </objects>
+</document>

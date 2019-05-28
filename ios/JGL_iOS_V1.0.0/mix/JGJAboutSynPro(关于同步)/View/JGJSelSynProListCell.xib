@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJSelSynProListCell" id="KGk-i7-Jjw" customClass="JGJSelSynProListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hql-Uj-qet">
+                        <rect key="frame" x="10" y="14" width="260" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPb-Hf-LY8">
+                        <rect key="frame" x="280" y="5.5" width="30" height="34"/>
+                        <state key="selected" image="markBillSelectPro"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOX-JD-yiF" customClass="LineView">
+                        <rect key="frame" x="10" y="44.5" width="300" height="0.5"/>
+                        <color key="backgroundColor" red="1" green="0.5450980392" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="S1d-L9-fa1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kOX-JD-yiF" secondAttribute="bottom" id="GTX-yT-Fq2"/>
+                    <constraint firstItem="Hql-Uj-qet" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LqO-ca-vTt"/>
+                    <constraint firstItem="Hql-Uj-qet" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NeT-8J-fXP"/>
+                    <constraint firstItem="GPb-Hf-LY8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZEf-b5-5pH"/>
+                    <constraint firstAttribute="trailing" secondItem="GPb-Hf-LY8" secondAttribute="trailing" constant="10" id="arg-Id-yDF"/>
+                    <constraint firstAttribute="trailing" secondItem="kOX-JD-yiF" secondAttribute="trailing" constant="10" id="hOq-au-tjl"/>
+                    <constraint firstItem="GPb-Hf-LY8" firstAttribute="leading" secondItem="Hql-Uj-qet" secondAttribute="trailing" constant="10" id="mic-4U-6rH"/>
+                    <constraint firstItem="kOX-JD-yiF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pzD-VZ-1mb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="proName" destination="Hql-Uj-qet" id="Nz9-wd-epE"/>
+                <outlet property="selProButton" destination="GPb-Hf-LY8" id="hzl-y5-36P"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="markBillSelectPro" width="13" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16E189a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJBillWorkTopView">
+            <connections>
+                <outlet property="contentLable" destination="zhS-V9-a9f" id="1ou-bf-Uj7"/>
+                <outlet property="contentView" destination="kbt-yl-QZ0" id="iBG-Ji-tfW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kbt-yl-QZ0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目名字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhS-V9-a9f">
+                    <rect key="frame" x="0.0" y="7" width="320" height="17"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiG-Xa-fuO">
+                    <rect key="frame" x="10" y="30" width="300" height="0.0"/>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="lOr-vC-c6V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zhS-V9-a9f" firstAttribute="leading" secondItem="kbt-yl-QZ0" secondAttribute="leading" id="Bj6-2S-PyA"/>
+                <constraint firstAttribute="trailing" secondItem="zhS-V9-a9f" secondAttribute="trailing" id="Tma-k0-rIe"/>
+                <constraint firstAttribute="trailing" secondItem="QiG-Xa-fuO" secondAttribute="trailing" constant="10" id="Ucg-R3-vw7"/>
+                <constraint firstAttribute="bottom" secondItem="QiG-Xa-fuO" secondAttribute="bottom" id="ikA-J3-81M"/>
+                <constraint firstItem="QiG-Xa-fuO" firstAttribute="leading" secondItem="kbt-yl-QZ0" secondAttribute="leading" constant="10" id="mBQ-BL-YK5"/>
+                <constraint firstItem="zhS-V9-a9f" firstAttribute="centerY" secondItem="kbt-yl-QZ0" secondAttribute="centerY" id="qeY-Ny-m6E"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-349" y="-540"/>
+        </view>
+    </objects>
+</document>

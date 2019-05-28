@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.jizhi.jongg.widget.PageListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/empty_view" />
+
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/multipart_set_salary"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/color_fafafa"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/selecte_all_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/selecte_all_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/checkbox_normal" />
+
+            <TextView
+                android:id="@+id/selecte_all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="全选本页"
+                android:textColor="@color/color_000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/multipart_set_salary_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="190dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/draw_sk_eb4e4e_5radius"
+            android:onClick="onClick"
+            android:textColor="@color/app_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJAddFriendSendMsgCell" id="KGk-i7-Jjw" customClass="JGJAddFriendSendMsgCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6Lw-Aj-VtW">
+                        <rect key="frame" x="12" y="8" width="308" height="70"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="iZp-YL-dtc"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6Lw-Aj-VtW" secondAttribute="trailing" id="1Km-5A-aBB"/>
+                    <constraint firstItem="6Lw-Aj-VtW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="amM-cK-d9e"/>
+                    <constraint firstAttribute="bottom" secondItem="6Lw-Aj-VtW" secondAttribute="bottom" constant="8" id="bBn-Qo-cqs"/>
+                    <constraint firstItem="6Lw-Aj-VtW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hFi-FE-ezv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputMsgTextView" destination="6Lw-Aj-VtW" id="7rf-nr-gih"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53"/>
+        </tableViewCell>
+    </objects>
+</document>

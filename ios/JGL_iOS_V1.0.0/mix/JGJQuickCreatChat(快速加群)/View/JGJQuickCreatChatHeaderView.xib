@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJQuickCreatChatHeaderView">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="8dD-SD-yfU"/>
+                <outlet property="des" destination="HcL-f7-oWQ" id="aF0-qI-kW3"/>
+                <outlet property="icon" destination="78h-tv-NFx" id="VvR-vU-EVk"/>
+                <outlet property="title" destination="Gft-7g-Ngc" id="SIi-WH-FGB"/>
+                <outlet property="titleCenterY" destination="ylu-R3-ZZv" id="SYD-Y8-n1l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqK-n2-wB4" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="CDH-7f-alb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTP-qi-8NH" customClass="LineView">
+                    <rect key="frame" x="0.0" y="59.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="7l2-lZ-aKs"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creat_chat_local_icon" translatesAutoresizingMaskIntoConstraints="NO" id="78h-tv-NFx">
+                    <rect key="frame" x="8" y="19" width="22" height="22"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速加入工种群" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gft-7g-Ngc">
+                    <rect key="frame" x="40" y="11" width="107.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入你最擅长的工种群  技术交流无阻碍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcL-f7-oWQ">
+                    <rect key="frame" x="40" y="33" width="215.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="78h-tv-NFx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="30O-1O-PoP"/>
+                <constraint firstAttribute="trailing" secondItem="BTP-qi-8NH" secondAttribute="trailing" id="8Yx-ZK-4eg"/>
+                <constraint firstItem="78h-tv-NFx" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Djt-D6-PlH"/>
+                <constraint firstItem="HcL-f7-oWQ" firstAttribute="leading" secondItem="Gft-7g-Ngc" secondAttribute="leading" id="L5t-Qu-3Do"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XqK-n2-wB4" secondAttribute="trailing" id="UYZ-D1-d7L"/>
+                <constraint firstItem="XqK-n2-wB4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XJ6-Lu-CAi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BTP-qi-8NH" secondAttribute="bottom" id="e4h-53-j38"/>
+                <constraint firstItem="Gft-7g-Ngc" firstAttribute="leading" secondItem="78h-tv-NFx" secondAttribute="trailing" constant="10" id="hVe-F1-HET"/>
+                <constraint firstItem="XqK-n2-wB4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="iSt-n8-HX7"/>
+                <constraint firstItem="HcL-f7-oWQ" firstAttribute="top" secondItem="Gft-7g-Ngc" secondAttribute="bottom" constant="4" id="j9P-nV-Vzi"/>
+                <constraint firstItem="BTP-qi-8NH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sJb-dO-aDV"/>
+                <constraint firstItem="Gft-7g-Ngc" firstAttribute="centerY" secondItem="78h-tv-NFx" secondAttribute="centerY" constant="-10" id="ylu-R3-ZZv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="creat_chat_local_icon" width="22" height="22.5"/>
+    </resources>
+</document>

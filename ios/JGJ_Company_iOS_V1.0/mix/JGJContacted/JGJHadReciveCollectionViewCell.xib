@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JGJHadReciveCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="728" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="728" height="63"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZe-YF-pbF">
+                        <rect key="frame" x="0.0" y="0.0" width="728" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0M-cI-tss">
+                                <rect key="frame" x="0.0" y="15" width="70" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="lhb-9c-Rwp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="已收到">
+                                    <color key="titleColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hadRecive:" destination="gTV-IL-0wX" eventType="touchUpInside" id="RwL-I9-KVc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOu-xM-Dol">
+                                <rect key="frame" x="75" y="15" width="40" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="未反馈">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dontReply:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Wrv-u0-k1a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-1g-faz">
+                                <rect key="frame" x="116" y="15" width="4" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H0M-cI-tss" firstAttribute="top" secondItem="JZe-YF-pbF" secondAttribute="top" constant="15" id="8wS-f0-pEb"/>
+                            <constraint firstItem="GOu-xM-Dol" firstAttribute="leading" secondItem="H0M-cI-tss" secondAttribute="trailing" constant="5" id="DDK-Ks-vN0"/>
+                            <constraint firstItem="qf3-1g-faz" firstAttribute="top" secondItem="JZe-YF-pbF" secondAttribute="top" constant="15" id="TGx-ci-W0L"/>
+                            <constraint firstAttribute="bottom" secondItem="qf3-1g-faz" secondAttribute="bottom" constant="5" id="UI8-kR-ih1"/>
+                            <constraint firstAttribute="bottom" secondItem="GOu-xM-Dol" secondAttribute="bottom" constant="5" id="fgN-hJ-ROu"/>
+                            <constraint firstItem="H0M-cI-tss" firstAttribute="leading" secondItem="JZe-YF-pbF" secondAttribute="leading" id="gMq-ZL-J9T"/>
+                            <constraint firstItem="GOu-xM-Dol" firstAttribute="top" secondItem="JZe-YF-pbF" secondAttribute="top" constant="15" id="hxs-sv-rhF"/>
+                            <constraint firstAttribute="height" constant="45" id="nCg-Wf-y34"/>
+                            <constraint firstAttribute="bottom" secondItem="H0M-cI-tss" secondAttribute="bottom" constant="5" id="pvx-Ai-eiB"/>
+                            <constraint firstItem="qf3-1g-faz" firstAttribute="leading" secondItem="GOu-xM-Dol" secondAttribute="trailing" constant="1" id="wQN-G0-5gP"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ac-IW-WYK">
+                        <rect key="frame" x="0.0" y="0.0" width="728" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4mB-V7-33x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9ac-IW-WYK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0yh-S5-0lx"/>
+                <constraint firstAttribute="trailing" secondItem="JZe-YF-pbF" secondAttribute="trailing" id="4tj-er-Ei5"/>
+                <constraint firstItem="JZe-YF-pbF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yfo-I4-zyY"/>
+                <constraint firstItem="9ac-IW-WYK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aup-xJ-jUe"/>
+                <constraint firstAttribute="trailing" secondItem="9ac-IW-WYK" secondAttribute="trailing" id="bm0-us-V6c"/>
+                <constraint firstItem="JZe-YF-pbF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="um5-kX-K4G"/>
+            </constraints>
+            <size key="customSize" width="728" height="63"/>
+            <connections>
+                <outlet property="DontReply" destination="GOu-xM-Dol" id="Zw0-Yf-ICE"/>
+                <outlet property="hadRecive" destination="H0M-cI-tss" id="Qmf-zy-tkx"/>
+                <outlet property="numLable" destination="qf3-1g-faz" id="uLw-DK-17j"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="58.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/noDataBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_white_8_radius"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="你还没加入任何班组"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_marginBottom="5dp"
+            android:text="点击右上角 + 按钮即可"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_12" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/unLoginCreateTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/desc1"
+            android:text="新建班组"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc1"
+            android:text="或者"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_12" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/unLoginScanCodeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/desc2"
+            android:text="扫描二维码"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc1"
+            android:layout_toRightOf="@id/unLoginScanCodeText"
+            android:text="加入已有班组"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_12" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

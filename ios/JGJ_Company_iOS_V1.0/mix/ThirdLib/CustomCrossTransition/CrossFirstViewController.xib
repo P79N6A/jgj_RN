@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CrossFirstViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5z-bH-bEN">
+                    <rect key="frame" x="229" y="223" width="143" height="153"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="143" id="AUH-d2-PlA"/>
+                        <constraint firstAttribute="height" constant="153" id="SiS-8h-HiP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ6-zK-dL4">
+                    <rect key="frame" x="217" y="528" width="167" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="167" id="Jx0-Et-r1E"/>
+                        <constraint firstAttribute="height" constant="43" id="hc2-es-RAY"/>
+                    </constraints>
+                    <state key="normal" title="Present"/>
+                    <connections>
+                        <action selector="present:" destination="-1" eventType="touchUpInside" id="DLl-4t-pBe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.18239169620000001" blue="0.1790102579" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="x5z-bH-bEN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0vD-8j-ZPf"/>
+                <constraint firstItem="x5z-bH-bEN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZP4-hI-vEi"/>
+                <constraint firstAttribute="bottom" secondItem="xZ6-zK-dL4" secondAttribute="bottom" constant="29" id="Zye-Sc-Maq"/>
+                <constraint firstItem="xZ6-zK-dL4" firstAttribute="centerX" secondItem="x5z-bH-bEN" secondAttribute="centerX" id="mUM-xI-bvb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

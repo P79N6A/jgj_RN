@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_selector_white_gray"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.jizhi.jongg.widget.AppDiverView
+        android:id="@+id/divierLine"
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/gray_f7f7f7"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/color_666666"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/manhour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/overTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/contractorWorkCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/borrowCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/balanceCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/littleWorkText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="点工："
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkTwoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="包工(分包)："
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkOneText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="包工(承包)："
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/borrowText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="借支："
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/balanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结算："
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/amountLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/littleWorkAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/color_eb4e4e"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkTwoAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkOneAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/borrowAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/borrow_color"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/balanceAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/borrow_color"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contracotr_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="-"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/clickIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/houtui" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

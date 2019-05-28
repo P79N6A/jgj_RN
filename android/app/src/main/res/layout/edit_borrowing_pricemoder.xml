@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@id/main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_f1f1f1"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_left_hastext"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_account_edit_borrow_down"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="6dip">
+
+                    <TextView
+                        android:id="@+id/salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_22"/>
+
+                    <ImageView
+                        android:id="@+id/desc_image"
+                        android:layout_width="@dimen/diff_image_width"
+                        android:layout_height="@dimen/diff_image_height"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/salary"
+                        android:background="@drawable/blue_waring_account"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/submitTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dip"
+                        android:background="@drawable/bg_rd_pressed_green_5radius"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="8dip"
+                        android:paddingRight="8dip"
+                        android:paddingTop="5dip"
+                        android:text="times"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_12"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="16dip"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/borrowing_wage"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_13"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/linecolor"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="@dimen/margin_12dp"
+                android:layout_marginRight="@dimen/margin_12dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/roletype"
+                    style="@style/textview"
+                    android:text="@string/workers"/>
+
+                <TextView
+                    android:id="@+id/per_name"
+                    style="@style/edittext"
+                    android:layout_marginRight="@dimen/margin_12dp"
+                    android:hint="@string/select_worker_hint"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/linecolor"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="@dimen/margin_12dp"
+                android:layout_marginRight="@dimen/margin_12dp">
+
+                <TextView
+                    android:id="@+id/money"
+                    style="@style/textview"
+                    android:text="@string/white_money"/>
+
+
+                <TextView
+                    android:id="@+id/yuan"
+                    style="@style/textview"
+                    android:layout_alignParentRight="true"
+                    android:text="元"/>
+
+
+                <EditText
+                    android:id="@+id/ed_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toLeftOf="@id/yuan"
+                    android:layout_toRightOf="@id/money"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:hint="这里填写借支的金额"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/green"
+                    android:textColorHint="@color/texthintcolor"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@color/gray_f1f1f1"/>
+
+            <RelativeLayout
+                android:id="@+id/re_record_project"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="@dimen/margin_12dp"
+                android:layout_marginRight="@dimen/margin_12dp">
+
+                <TextView
+                    style="@style/textview"
+                    android:text="@string/location_project"/>
+
+                <TextView
+                    android:id="@+id/recordProject"
+                    style="@style/edittext"
+                    android:layout_marginRight="@dimen/margin_12dp"
+                    android:hint="@string/record_project"
+                    android:maxEms="12"
+                    android:singleLine="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/linecolor"/>
+
+            <include layout="@layout/voice_camera_layout"></include>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/linecolor"/>
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_graycolor_5dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/delete"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/button_size"/>
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_83c76e"
+            android:gravity="center"
+            android:text="@string/story"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+
+    </LinearLayout>
+</LinearLayout>

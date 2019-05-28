@@ -1,0 +1,246 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f1f1f1">
+
+    <ScrollView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@color/gray_f1f1f1" />
+
+            <RelativeLayout
+                android:id="@+id/account_object_layout"
+                style="@style/relative_layout_parameter"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/roletype"
+                    style="@style/textview"
+                    android:text="@string/select_workers" />
+
+                <ImageView
+                    android:id="@+id/ima_per_name"
+                    android:layout_width="@dimen/margin_12dp"
+                    android:layout_height="@dimen/margin_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/guide_image" />
+
+                <TextView
+                    android:id="@+id/per_name"
+                    style="@style/xj_textView"
+                    android:layout_toLeftOf="@+id/ima_per_name"
+                    android:hint="@string/select_worker_hint" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/gray_dbdbdb" />
+
+            <RelativeLayout
+                android:id="@+id/re_salary_mode_setting"
+                style="@style/relative_layout_parameter">
+
+                <TextView
+                    android:id="@+id/mode_seting"
+                    style="@style/textview"
+                    android:text="@string/set_salarys" />
+
+                <ImageView
+                    android:id="@+id/point"
+                    android:layout_width="@dimen/margin_12dp"
+                    android:layout_height="@dimen/margin_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/guide_image" />
+
+                <TextView
+                    android:id="@+id/tv_salary_mode_setting"
+                    style="@style/xj_textView"
+                    android:layout_toLeftOf="@+id/point"
+                    android:layout_toRightOf="@id/mode_seting"
+                    android:hint="@string/salary_mode_setting" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@color/gray_f1f1f1" />
+
+
+            <RelativeLayout
+                android:id="@+id/timeLayout"
+                style="@style/relative_layout_parameter">
+
+                <TextView
+                    style="@style/textview"
+                    android:text="@string/select_date" />
+
+                <ImageView
+                    android:id="@+id/point0"
+                    android:layout_width="@dimen/margin_12dp"
+                    android:layout_height="@dimen/margin_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/guide_image" />
+
+                <TextView
+                    android:id="@+id/submitTime"
+                    style="@style/xj_textView"
+                    android:layout_toLeftOf="@+id/point0"
+                    android:textColor="@color/app_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/gray_dbdbdb" />
+
+
+            <RelativeLayout
+                android:id="@+id/re_today_working_time"
+                style="@style/relative_layout_parameter">
+
+                <TextView
+                    style="@style/textview"
+                    android:text="@string/today_working" />
+
+                <ImageView
+                    android:id="@+id/point1"
+                    android:layout_width="@dimen/margin_12dp"
+                    android:layout_height="@dimen/margin_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/guide_image" />
+
+                <TextView
+                    android:id="@+id/tv_today_working_time"
+                    style="@style/xj_textView"
+                    android:layout_toLeftOf="@+id/point1"
+                    android:textColor="@color/app_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/gray_dbdbdb" />
+
+            <RelativeLayout
+                android:id="@+id/re_over_working_time"
+                style="@style/relative_layout_parameter">
+
+                <TextView
+                    style="@style/textview"
+                    android:text="@string/today_working_overtime" />
+
+                <ImageView
+                    android:id="@+id/point2"
+                    android:layout_width="@dimen/margin_12dp"
+                    android:layout_height="@dimen/margin_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/guide_image" />
+
+                <TextView
+                    android:id="@+id/tv_over_working_time"
+                    style="@style/xj_textView"
+                    android:layout_toLeftOf="@+id/point2"
+                    android:textColor="@color/app_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@color/gray_dbdbdb" />
+
+            <RelativeLayout
+                android:id="@+id/re_record_project"
+                style="@style/relative_layout_parameter">
+
+                <TextView
+                    style="@style/textview"
+                    android:text="@string/location_project" />
+
+                <ImageView
+                    android:id="@+id/point3"
+                    android:layout_width="@dimen/margin_12dp"
+                    android:layout_height="@dimen/margin_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/guide_image" />
+
+                <TextView
+                    android:id="@+id/record_text"
+                    style="@style/xj_textView"
+                    android:layout_toLeftOf="@+id/point3"
+                    android:hint="@string/record_project"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@color/gray_f1f1f1" />
+
+            <RelativeLayout
+                android:id="@+id/rea_remarks"
+                style="@style/relative_layout_parameter">
+
+                <TextView
+                    style="@style/textview"
+                    android:text="@string/remark" />
+
+                <ImageView
+                    android:id="@+id/point6"
+                    android:layout_width="@dimen/margin_12dp"
+                    android:layout_height="@dimen/margin_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/guide_image" />
+
+                <TextView
+                    android:id="@+id/remark_text"
+                    style="@style/xj_textView"
+                    android:layout_width="220dip"
+                    android:layout_toLeftOf="@+id/point6"
+                    android:ellipsize="end"
+                    android:hint="@string/write_remark"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+

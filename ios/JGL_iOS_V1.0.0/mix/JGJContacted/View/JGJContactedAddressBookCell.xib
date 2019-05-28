@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJContactedAddressBookCell" id="KGk-i7-Jjw" customClass="JGJContactedAddressBookCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuD-pk-k5W">
+                        <rect key="frame" x="263" y="17" width="45" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="PDW-yh-ExH"/>
+                            <constraint firstAttribute="width" constant="45" id="j53-9N-MPs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" title="help_cente_detail_question"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmA-2s-Umg">
+                        <rect key="frame" x="104" y="18.5" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uR6-Xc-aqa" customClass="LineView">
+                        <rect key="frame" x="12" y="53.5" width="296" height="1"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.47843137250000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="r4b-Gy-gXL"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKJ-kU-kGv">
+                        <rect key="frame" x="8" y="7.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7UP-ni-MxT"/>
+                            <constraint firstAttribute="height" constant="40" id="GL1-a2-BgQ"/>
+                        </constraints>
+                        <state key="normal" image="EllipseIcon"/>
+                        <state key="selected" image="MultiSelected"/>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7a-mD-zsd">
+                        <rect key="frame" x="54" y="10" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="2xf-1b-4X9"/>
+                            <constraint firstAttribute="height" constant="35" id="6fW-bi-yKC"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uR6-Xc-aqa" secondAttribute="bottom" id="Fen-Y7-DLG"/>
+                    <constraint firstItem="x7a-mD-zsd" firstAttribute="centerY" secondItem="GKJ-kU-kGv" secondAttribute="centerY" id="HwF-cr-Q4C"/>
+                    <constraint firstItem="uR6-Xc-aqa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="QKq-uu-zZq"/>
+                    <constraint firstItem="GKJ-kU-kGv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ZJx-Sd-q5y"/>
+                    <constraint firstAttribute="trailing" secondItem="uR6-Xc-aqa" secondAttribute="trailing" constant="12" id="cRV-OD-uS6"/>
+                    <constraint firstItem="GuD-pk-k5W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g48-gC-VXm"/>
+                    <constraint firstItem="x7a-mD-zsd" firstAttribute="leading" secondItem="GKJ-kU-kGv" secondAttribute="trailing" constant="6" id="gNv-XZ-v6i"/>
+                    <constraint firstAttribute="trailing" secondItem="GuD-pk-k5W" secondAttribute="trailing" constant="12" id="iKc-uK-r23"/>
+                    <constraint firstItem="TmA-2s-Umg" firstAttribute="leading" secondItem="x7a-mD-zsd" secondAttribute="trailing" constant="15" id="jZw-Ch-0cH"/>
+                    <constraint firstItem="TmA-2s-Umg" firstAttribute="centerY" secondItem="x7a-mD-zsd" secondAttribute="centerY" id="jqG-gH-olw"/>
+                    <constraint firstItem="x7a-mD-zsd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m7v-sv-gzh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBtn" destination="GuD-pk-k5W" id="z9x-AG-ifV"/>
+                <outlet property="headButton" destination="x7a-mD-zsd" id="q2G-m5-SZp"/>
+                <outlet property="lineView" destination="uR6-Xc-aqa" id="CeS-pQ-heG"/>
+                <outlet property="nameLable" destination="TmA-2s-Umg" id="VMx-Hw-gx2"/>
+                <outlet property="selectedButton" destination="GKJ-kU-kGv" id="IHV-Hn-x7b"/>
+                <outlet property="selectedButtonW" destination="7UP-ni-MxT" id="cKy-7E-UAl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EllipseIcon" width="20" height="20"/>
+        <image name="MultiSelected" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="JGJFSCalendarCell" reuseIdentifier="JGJFSCalendarCell" id="gTV-IL-0wX" customClass="JGJFSCalendarCell">
+            <rect key="frame" x="0.0" y="0.0" width="89" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="89" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="760" text="           " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anp-LL-IhK">
+                        <rect key="frame" x="5" y="2" width="38" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="           " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eV-o9-7qD">
+                        <rect key="frame" x="5" y="19" width="79" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recordWorkHome_Poor bill" translatesAutoresizingMaskIntoConstraints="NO" id="Qex-je-O5b">
+                        <rect key="frame" x="65" y="2" width="14" height="14"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg3-s2-0X4">
+                        <rect key="frame" x="5" y="33" width="79" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gJL-1L-JDy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qex-je-O5b" secondAttribute="trailing" constant="10" id="0HY-ed-Xpg"/>
+                <constraint firstItem="Qex-je-O5b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Anp-LL-IhK" secondAttribute="trailing" constant="5" id="4yY-iy-6Eu"/>
+                <constraint firstItem="Anp-LL-IhK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="CFb-wO-hf0"/>
+                <constraint firstItem="7eV-o9-7qD" firstAttribute="leading" secondItem="Anp-LL-IhK" secondAttribute="leading" id="CQZ-RN-NpW"/>
+                <constraint firstAttribute="trailing" secondItem="7eV-o9-7qD" secondAttribute="trailing" constant="5" id="GDI-sh-jud"/>
+                <constraint firstItem="hg3-s2-0X4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="LbZ-FA-xda"/>
+                <constraint firstItem="Anp-LL-IhK" firstAttribute="top" secondItem="Qex-je-O5b" secondAttribute="top" id="Rre-ze-8SV"/>
+                <constraint firstAttribute="trailing" secondItem="hg3-s2-0X4" secondAttribute="trailing" constant="5" id="uI7-RL-DOJ"/>
+                <constraint firstItem="hg3-s2-0X4" firstAttribute="top" secondItem="7eV-o9-7qD" secondAttribute="bottom" constant="2" id="vcM-tR-pVk"/>
+                <constraint firstItem="7eV-o9-7qD" firstAttribute="top" secondItem="Anp-LL-IhK" secondAttribute="bottom" constant="2" id="y3H-lk-gCX"/>
+                <constraint firstItem="Qex-je-O5b" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="y41-bs-GO2"/>
+            </constraints>
+            <size key="customSize" width="89" height="81"/>
+            <connections>
+                <outlet property="contentLabel" destination="7eV-o9-7qD" id="Axw-JC-TQk"/>
+                <outlet property="dateLabel" destination="Anp-LL-IhK" id="ZrZ-bD-bq8"/>
+                <outlet property="recordWorkImageView" destination="Qex-je-O5b" id="jN4-Db-mhx"/>
+                <outlet property="subDetailLable" destination="hg3-s2-0X4" id="SEV-jv-Shk"/>
+            </connections>
+            <point key="canvasLocation" x="-206" y="-51"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="recordWorkHome_Poor bill" width="14" height="14"/>
+    </resources>
+</document>

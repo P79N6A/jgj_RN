@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/defaultLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/no_data" />
+
+    <TextView
+        android:id="@+id/defaultDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:text="暂无数据哦"
+        android:textColor="@color/color_b9b9b9"
+        android:textSize="@dimen/default_title_size" />
+
+    <TextView
+        android:id="@+id/defaultDesc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:text="无法了解工钱与借支情况"
+        android:textColor="@color/color_b9b9b9"
+        android:textSize="@dimen/default_title_size"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/defaultBtn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/draw_app_btncolor_5radius"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/button_size"
+        android:visibility="gone" />
+
+</LinearLayout>
+

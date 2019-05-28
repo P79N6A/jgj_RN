@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="roundImageHashText" type="id" />
+
+    <item name="listView" type="id" />
+    <!-- listView -->
+    <item name="submit" type="id" />
+    <!-- 提交按钮 -->
+    <!-- 手机号 -->
+    <item name="username" type="id" />
+    <!-- 用户名 -->
+    <!-- 获取验证码 -->
+    <!-- 忘记密码 -->
+    <!-- 易找工协议 -->
+    <item type="id" name="guide_view"/>
+
+    <!-- 易找工协议 -->
+    <!-- 密码 -->
+    <!-- 下一步 -->
+    <!-- 旧密码 -->
+    <!-- 新密码 -->
+    <item name="save" type="id" />
+    <item name="title" type="id" />
+    <item name="project" type="id" />
+    <item name="address" type="id" />
+    <item name="project_name" type="id" />
+    <item name="main" type="id" />
+    <item name="share" type="id" />
+    <item name="headpic" type="id" />
+    <item name="friendName" type="id" />
+    <item name="protitle" type="id" />
+    <item name="proname" type="id" />
+    <item name="review_cnt" type="id"></item>
+    <item name="proaddress" type="id"></item>
+    <item name="ctime" type="id"></item>
+    <item name="name" type="id"></item>
+    <item name="content" type="id"></item>
+    <!-- 评论内容 -->
+    <!-- 是否匿名 -->
+
+    <!-- 被评人id -->
+    <!-- 评价人id -->
+
+    <item name="overall" type="id"></item>
+    <!-- 总体评价 -->
+    <item name="credibility" type="id"></item>
+    <!-- 诚信度 -->
+    <item name="payspeed" type="id"></item>
+    <!-- 付款速度 -->
+    <item name="appetence" type="id"></item>
+    <!-- 待人态度 -->
+    <!-- 是否需要垫资 -->
+
+    <item name="overall_text" type="id" />
+    <!-- 总体评价 文字 -->
+    <item name="credibility_text" type="id" />
+    <!-- 诚信度 文字 -->
+    <item name="payspeed_text" type="id" />
+    <!-- 结款速度 文字 -->
+    <item name="appetence_text" type="id" />
+    <!-- 带人态度 文字 -->
+
+    <!-- 评价分数 -->
+
+    <item name="worklevel_list" type="id" />
+    <!-- 评价星级 -->
+    <item name="realname" type="id" />
+    <!-- 评价姓名 -->
+    <item name="store_avg" type="id" />
+    <!-- 评价分数 -->
+    <item name="time" type="id" />
+    <!-- 评价分数 -->
+    <item name="money" type="id" />
+    <item name="background" type="id" />
+    <item name="converview" type="id" />
+
+
+    <!-- 二维码 相关 -->
+    <item name="decode" type="id" />
+    <item name="decode_failed" type="id" />
+    <item name="decode_succeeded" type="id" />
+    <item name="launch_product_query" type="id" />
+    <item name="quit" type="id" />
+    <item name="restart_preview" type="id" />
+    <item name="return_scan_result" type="id" />
+
+    <item name="message" type="id" />
+</resources>

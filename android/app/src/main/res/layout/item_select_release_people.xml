@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/listview_selector_white_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f1f1f1"
+        android:paddingBottom="5dip"
+        android:paddingLeft="16dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/color_cccccc"
+        android:textSize="@dimen/catalog_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:background="@drawable/head2"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_video" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                tools:text="好友"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_14" />
+            <TextView
+                android:id="@+id/source"
+                tools:text="来源：通过群聊添加"
+                android:textSize="12sp"
+                android:textColor="@color/color_666666"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/img_hook"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/red_g"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_active"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_no_active"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/background"
+        style="@style/line" />
+
+</LinearLayout>

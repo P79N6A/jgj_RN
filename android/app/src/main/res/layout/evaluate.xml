@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head_only_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overall_evaluation"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.jizhi.jongg.widget.MyRattingBar
+                    android:id="@id/overall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/x5"
+                    app:isClick="false"
+                    app:star_height="@dimen/x18"
+                    app:star_margin="@dimen/x15"
+                    app:star_width="@dimen/x18" >
+                </com.jizhi.jongg.widget.MyRattingBar>
+
+                <TextView
+                    android:id="@id/overall_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/evaluation"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_integrity"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.jizhi.jongg.widget.MyRattingBar
+                    android:id="@id/credibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/x5"
+                    app:isClick="false"
+                    app:star_height="@dimen/x18"
+                    app:star_margin="@dimen/x15"
+                    app:star_width="@dimen/x18" >
+                </com.jizhi.jongg.widget.MyRattingBar>
+
+                <TextView
+                    android:id="@id/credibility_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/evaluation"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/knot_speed"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.jizhi.jongg.widget.MyRattingBar
+                    android:id="@id/payspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/x5"
+                    app:isClick="false"
+                    app:star_height="@dimen/x18"
+                    app:star_margin="@dimen/x15"
+                    app:star_width="@dimen/x18" >
+                </com.jizhi.jongg.widget.MyRattingBar>
+
+                <TextView
+                    android:id="@id/payspeed_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/evaluation"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attitude"
+                    android:textColor="@color/gray_686868"
+                    android:textSize="@dimen/text_size_14" />
+
+                <com.jizhi.jongg.widget.MyRattingBar
+                    android:id="@id/appetence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20dp"
+                    android:layout_marginRight="@dimen/x5"
+                    app:isClick="false"
+                    app:star_height="@dimen/x18"
+                    app:star_margin="@dimen/x15"
+                    app:star_width="@dimen/x18" >
+                </com.jizhi.jongg.widget.MyRattingBar>
+
+                <TextView
+                    android:id="@id/appetence_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/evaluation"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e1e1e1" />
+
+        <View
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#f7f7f7" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/all_evaluation"
+                android:textColor="@color/all_evaluation"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/has_been_evaluated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:textColor="@color/has_been_evaluated"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e1e1e1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+</LinearLayout>

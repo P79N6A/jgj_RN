@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f1f1f1"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/workLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <com.jizhi.jongg.widget.NestRadioGroup
+                android:id="@+id/guide_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/hourWorkBtn"
+                    android:layout_width="138dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_title_allwork_left"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="点工"
+                    android:textColor="@drawable/textcolor_guide_white"
+                    android:textSize="@dimen/text_size_15" />
+
+                <RadioButton
+                    android:id="@+id/constactorBtn"
+                    android:layout_width="138dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_title_allwork_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="包工记工天"
+                    android:textColor="@drawable/textcolor_guide_white"
+                    android:textSize="@dimen/text_size_15" />
+            </com.jizhi.jongg.widget.NestRadioGroup>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/constratorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/account_allwork_hint"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="11sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/numberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/longClickHeadDescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="长按头像可修改工资标准"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/selecteAllBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/draw_sk_eb4e4e_bg_f1f1f1_3radius"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="全选"
+            android:textColor="@color/app_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JLGConfirmHelperTableViewCell" rowHeight="173" id="DJp-p2-2Ib" customClass="JLGConfirmHelperTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DJp-p2-2Ib" id="QgA-xe-fZs">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.确定找帮手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPu-Uk-pvq">
+                        <rect key="frame" x="10" y="10" width="88" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIg-CP-Bzg">
+                        <rect key="frame" x="55" y="38" width="85" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="DiC-dA-HCU"/>
+                            <constraint firstAttribute="height" constant="51" id="s8U-e4-zNq"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="找班组">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUR-m5-eOS">
+                        <rect key="frame" x="180" y="38" width="85" height="51"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="找工人">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DIg-CP-Bzg" firstAttribute="width" secondItem="QgA-xe-fZs" secondAttribute="width" multiplier="0.25" id="1kM-PE-V5G"/>
+                    <constraint firstItem="DIg-CP-Bzg" firstAttribute="centerY" secondItem="QgA-xe-fZs" secondAttribute="centerY" id="5Yg-Ip-acr"/>
+                    <constraint firstItem="VPu-Uk-pvq" firstAttribute="leading" secondItem="QgA-xe-fZs" secondAttribute="leading" constant="10" id="9DH-eb-a11"/>
+                    <constraint firstItem="VPu-Uk-pvq" firstAttribute="top" secondItem="QgA-xe-fZs" secondAttribute="top" constant="10" id="BEy-B1-mQE"/>
+                    <constraint firstItem="TUR-m5-eOS" firstAttribute="leading" secondItem="DIg-CP-Bzg" secondAttribute="trailing" constant="56" id="But-cb-Uk3"/>
+                    <constraint firstItem="DIg-CP-Bzg" firstAttribute="trailing" secondItem="QgA-xe-fZs" secondAttribute="centerX" constant="-20" id="Cn0-UZ-O4P"/>
+                    <constraint firstItem="TUR-m5-eOS" firstAttribute="centerY" secondItem="DIg-CP-Bzg" secondAttribute="centerY" id="DGL-xd-LbA"/>
+                    <constraint firstItem="DIg-CP-Bzg" firstAttribute="leading" secondItem="QgA-xe-fZs" secondAttribute="leading" constant="10" id="Mmp-9s-Q7L"/>
+                    <constraint firstItem="TUR-m5-eOS" firstAttribute="leading" secondItem="QgA-xe-fZs" secondAttribute="centerX" constant="20" id="Qb2-6S-nCy"/>
+                    <constraint firstItem="TUR-m5-eOS" firstAttribute="leading" secondItem="DIg-CP-Bzg" secondAttribute="trailing" constant="10" id="dzg-HW-FaG"/>
+                    <constraint firstItem="TUR-m5-eOS" firstAttribute="height" secondItem="DIg-CP-Bzg" secondAttribute="height" id="ftq-hx-UOs"/>
+                    <constraint firstItem="TUR-m5-eOS" firstAttribute="width" secondItem="DIg-CP-Bzg" secondAttribute="width" id="pzO-5H-Gsg"/>
+                    <constraint firstItem="TUR-m5-eOS" firstAttribute="width" secondItem="DIg-CP-Bzg" secondAttribute="width" id="rQy-YW-eeh"/>
+                    <constraint firstItem="DIg-CP-Bzg" firstAttribute="top" secondItem="VPu-Uk-pvq" secondAttribute="bottom" constant="10" id="uZQ-Be-pj9"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="1kM-PE-V5G"/>
+                        <exclude reference="5Yg-Ip-acr"/>
+                        <exclude reference="Mmp-9s-Q7L"/>
+                        <exclude reference="But-cb-Uk3"/>
+                        <exclude reference="dzg-HW-FaG"/>
+                        <exclude reference="pzO-5H-Gsg"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="findWorkLeader" destination="DIg-CP-Bzg" id="Otp-WF-JzO"/>
+                <outlet property="findWorkMate" destination="TUR-m5-eOS" id="qzS-fl-BDJ"/>
+            </connections>
+            <point key="canvasLocation" x="282" y="285"/>
+        </tableViewCell>
+    </objects>
+</document>

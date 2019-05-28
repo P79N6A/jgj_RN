@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_top_style">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/add_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/margin_30dp"
+                android:text="@string/foreman"
+                android:textColor="@color/gray_666666"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="邀请班组长向你同步记工记账数据"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="*"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/telph"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_pwd_background"
+                    android:hint="请输入班组长/工头的电话号码"
+                    android:maxLength="11"
+                    android:numeric="integer"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/gray_cccccc"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/margin_20dp"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:text="*"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/nickname"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_pwd_background"
+                    android:hint="请输入班组长/工头的姓名"
+                    android:maxLength="8"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/gray_cccccc"
+                    android:textSize="@dimen/text_size_14" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/redBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@id/layout1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dialog_close" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_asscess"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/red_button_height"
+        android:layout_alignLeft="@id/relativelayout"
+        android:layout_alignRight="@id/relativelayout"
+        android:layout_below="@id/relativelayout"
+        android:background="@drawable/dialog_bottom_style"
+        android:text="发送邀请"
+        android:textColor="@color/white" />
+</RelativeLayout>
+
+
+
+

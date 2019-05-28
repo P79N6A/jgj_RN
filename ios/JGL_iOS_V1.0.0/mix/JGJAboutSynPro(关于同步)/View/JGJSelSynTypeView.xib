@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJSelSynTypeView">
+            <connections>
+                <outlet property="containView" destination="iN0-l3-epB" id="zX7-Le-5Ft"/>
+                <outlet property="synWorkAccountDes" destination="ZAJ-b0-YOo" id="vh5-1A-bz1"/>
+                <outlet property="synWorkAccountTitle" destination="8HT-Us-f3L" id="cy7-bt-jzV"/>
+                <outlet property="synWorkAccountTop" destination="dvR-EL-Yyl" id="Aq7-i5-7Pb"/>
+                <outlet property="synWorkDes" destination="Nur-Ju-r3g" id="fyj-OJ-z22"/>
+                <outlet property="synWorkTitle" destination="cXQ-Ni-YSw" id="Kvu-6s-7gs"/>
+                <outlet property="synWorkTop" destination="bC3-ea-RxD" id="Gcx-a5-1ce"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alP-3p-PQo">
+                    <rect key="frame" x="0.0" y="54" width="375" height="90"/>
+                    <state key="normal" image="syn_record_Account_icon"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同步记工记账" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HT-Us-f3L">
+                    <rect key="frame" x="10" y="164" width="355" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAJ-b0-YOo" customClass="YYLable">
+                    <rect key="frame" x="10" y="196" width="355" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4q-5G-NYX">
+                    <rect key="frame" x="0.0" y="256.5" width="375" height="90"/>
+                    <state key="normal" image="syn_record_icon"/>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xER-Bf-4TE">
+                    <rect key="frame" x="0.0" y="256.5" width="375" height="156.5"/>
+                    <connections>
+                        <action selector="selSynButtonPressed:" destination="-1" eventType="touchUpInside" id="ZXJ-ce-ehG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同步记工" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXQ-Ni-YSw">
+                    <rect key="frame" x="10" y="366.5" width="355" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="K6J-GK-vIC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nur-Ju-r3g" customClass="YYLable">
+                    <rect key="frame" x="10" y="398.5" width="355" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8M-qz-Igk">
+                    <rect key="frame" x="0.0" y="54" width="375" height="156.5"/>
+                    <connections>
+                        <action selector="selSynButtonPressed:" destination="-1" eventType="touchUpInside" id="kCB-vv-C7q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xER-Bf-4TE" firstAttribute="top" secondItem="h4q-5G-NYX" secondAttribute="top" id="0Uv-S1-Igj"/>
+                <constraint firstItem="8HT-Us-f3L" firstAttribute="top" secondItem="alP-3p-PQo" secondAttribute="bottom" constant="20" id="2Sz-Bx-ZEC"/>
+                <constraint firstItem="8HT-Us-f3L" firstAttribute="centerX" secondItem="alP-3p-PQo" secondAttribute="centerX" id="3Aa-wA-K2y"/>
+                <constraint firstItem="ZAJ-b0-YOo" firstAttribute="centerX" secondItem="8HT-Us-f3L" secondAttribute="centerX" id="89S-rV-g6u"/>
+                <constraint firstAttribute="trailing" secondItem="ZAJ-b0-YOo" secondAttribute="trailing" constant="10" id="8b8-Gs-uXl"/>
+                <constraint firstItem="xER-Bf-4TE" firstAttribute="bottom" secondItem="Nur-Ju-r3g" secondAttribute="bottom" id="AF9-gV-vBA"/>
+                <constraint firstItem="h4q-5G-NYX" firstAttribute="centerX" secondItem="alP-3p-PQo" secondAttribute="centerX" id="E0b-68-KRn"/>
+                <constraint firstItem="alP-3p-PQo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ES6-TV-kwx"/>
+                <constraint firstAttribute="trailing" secondItem="8HT-Us-f3L" secondAttribute="trailing" constant="10" id="FoE-sd-GZo"/>
+                <constraint firstItem="Nur-Ju-r3g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Isc-ZZ-Iqd"/>
+                <constraint firstAttribute="trailing" secondItem="xER-Bf-4TE" secondAttribute="trailing" id="Md3-yx-xOD"/>
+                <constraint firstItem="h8M-qz-Igk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N8h-fO-Gn4"/>
+                <constraint firstItem="cXQ-Ni-YSw" firstAttribute="top" secondItem="h4q-5G-NYX" secondAttribute="bottom" constant="20" id="SWJ-4W-qUd"/>
+                <constraint firstItem="Nur-Ju-r3g" firstAttribute="top" secondItem="cXQ-Ni-YSw" secondAttribute="bottom" constant="10" id="XmM-qE-j62"/>
+                <constraint firstItem="cXQ-Ni-YSw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="YyA-00-Wkj"/>
+                <constraint firstItem="h4q-5G-NYX" firstAttribute="top" secondItem="ZAJ-b0-YOo" secondAttribute="bottom" constant="46" id="bC3-ea-RxD"/>
+                <constraint firstItem="xER-Bf-4TE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c0h-R8-xiO"/>
+                <constraint firstItem="alP-3p-PQo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="54" id="dvR-EL-Yyl"/>
+                <constraint firstItem="h8M-qz-Igk" firstAttribute="bottom" secondItem="ZAJ-b0-YOo" secondAttribute="bottom" id="fY9-Xa-UrA"/>
+                <constraint firstItem="Nur-Ju-r3g" firstAttribute="centerX" secondItem="cXQ-Ni-YSw" secondAttribute="centerX" id="fln-er-rLB"/>
+                <constraint firstAttribute="trailing" secondItem="h4q-5G-NYX" secondAttribute="trailing" id="hOZ-Ee-S4M"/>
+                <constraint firstItem="alP-3p-PQo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jOi-AX-A7a"/>
+                <constraint firstItem="ZAJ-b0-YOo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="jsX-dz-tcG"/>
+                <constraint firstItem="ZAJ-b0-YOo" firstAttribute="top" secondItem="8HT-Us-f3L" secondAttribute="bottom" constant="10" id="ksE-sK-lxA"/>
+                <constraint firstAttribute="trailing" secondItem="cXQ-Ni-YSw" secondAttribute="trailing" constant="10" id="nWg-xn-qFM"/>
+                <constraint firstAttribute="trailing" secondItem="h8M-qz-Igk" secondAttribute="trailing" id="o3G-HP-4L8"/>
+                <constraint firstItem="8HT-Us-f3L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="oc6-If-Mfd"/>
+                <constraint firstAttribute="trailing" secondItem="Nur-Ju-r3g" secondAttribute="trailing" constant="10" id="pS2-Nk-4Zw"/>
+                <constraint firstAttribute="trailing" secondItem="alP-3p-PQo" secondAttribute="trailing" id="qmd-cO-6AC"/>
+                <constraint firstItem="h8M-qz-Igk" firstAttribute="top" secondItem="alP-3p-PQo" secondAttribute="top" id="rg0-aQ-8Yg"/>
+                <constraint firstItem="h4q-5G-NYX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="waF-Zk-btb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="syn_record_Account_icon" width="90" height="90"/>
+        <image name="syn_record_icon" width="90" height="90"/>
+    </resources>
+</document>

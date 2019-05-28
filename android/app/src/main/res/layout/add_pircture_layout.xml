@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jizhi.jongg.widget.SquareReLativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:descendantFocusability="blocksDescendants"
+                                             android:orientation="vertical">
+
+
+    <com.jizhi.jongg.widget.SquareLinearLayout
+        android:id="@+id/add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:background="@drawable/draw_bg_f3f3f3_sk_cccccc_5radius"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/gray_add_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="添加图片"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_11"/>
+    </com.jizhi.jongg.widget.SquareLinearLayout>
+
+
+</com.jizhi.jongg.widget.SquareReLativeLayout>
+
+

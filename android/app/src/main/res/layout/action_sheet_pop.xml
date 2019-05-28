@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_eb4e4e"
+            android:gravity="center"
+            android:text="选择加班计算方式"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/work_over_day_pop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="按工天算加班"
+            android:textColor="@color/black_333333" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_dbdbdb"/>
+        <TextView
+            android:id="@+id/work_over_hour_pop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="按小时算加班工资"
+            android:textColor="@color/black_333333" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/color_dbdbdb"/>
+        <TextView
+            android:id="@+id/cancel_pop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="取消"
+            android:textColor="@color/black_333333" />
+
+    </LinearLayout>
+
+</RelativeLayout>

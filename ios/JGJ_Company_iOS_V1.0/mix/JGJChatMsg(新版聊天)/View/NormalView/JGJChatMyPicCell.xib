@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="JGJChatMyPicCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="247"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="246.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb9-Rj-rHN" customClass="JGJBaseMyMsgView">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="246.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhC-cg-5Sx" customClass="JGJChatListPicView">
+                        <rect key="frame" x="65" y="30" width="195" height="206.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="195" id="hye-lr-oFr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IhC-cg-5Sx" secondAttribute="trailing" constant="64" id="2RB-UK-Pth"/>
+                    <constraint firstItem="nb9-Rj-rHN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8uT-7E-qfd"/>
+                    <constraint firstAttribute="bottom" secondItem="nb9-Rj-rHN" secondAttribute="bottom" id="9Dn-kq-mjZ"/>
+                    <constraint firstAttribute="bottom" secondItem="IhC-cg-5Sx" secondAttribute="bottom" constant="10" id="PBy-NE-0DG"/>
+                    <constraint firstAttribute="trailing" secondItem="nb9-Rj-rHN" secondAttribute="trailing" id="lHg-Vi-rhK"/>
+                    <constraint firstItem="nb9-Rj-rHN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="n1o-dh-7CU"/>
+                    <constraint firstItem="IhC-cg-5Sx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="uIv-eH-5uI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="myMsgView" destination="nb9-Rj-rHN" id="2Nc-Jy-RVY"/>
+                <outlet property="picView" destination="IhC-cg-5Sx" id="n6c-3U-Tzr"/>
+            </connections>
+            <point key="canvasLocation" x="-47" y="16.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="140dip"
+        android:background="@drawable/dialog_top_style">
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/closeIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dialog_close" />
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="140dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lineSpacingExtra="5dip"
+            android:text="请联系客服解决!\n400 862 3818"
+            android:textColor="@color/color_666666"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/redBtn"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:background="@drawable/dialog_bottom_style"
+        android:text="拨打客服电话"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size" />
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJChatInputView">
+            <connections>
+                <outlet property="addImageButton" destination="yMo-P5-Uij" id="UOR-KK-lRI"/>
+                <outlet property="addImageButtonW" destination="7UH-LD-TFd" id="6Iz-Bk-AFd"/>
+                <outlet property="changeStatusButton" destination="Qoq-md-Bci" id="PTa-v2-sjA"/>
+                <outlet property="changeStatusButtonW" destination="00N-8V-OxF" id="DOd-Wp-MyU"/>
+                <outlet property="contentView" destination="lrE-Am-OhV" id="oX2-Lx-yQ7"/>
+                <outlet property="recordLabel" destination="EjU-8p-03v" id="tRJ-ck-Xbp"/>
+                <outlet property="switchEmotionButton" destination="W70-5A-a1D" id="tgM-aq-lnK"/>
+                <outlet property="textView" destination="eqj-eD-jrd" id="UEK-h3-mIu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lrE-Am-OhV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eqj-eD-jrd" customClass="TYInputView">
+                    <rect key="frame" x="48" y="11" width="179" height="36"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按住说话" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjU-8p-03v">
+                    <rect key="frame" x="48" y="12" width="179" height="35"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="FdO-8Z-tNK"/>
+                        <constraint firstAttribute="height" constant="38" id="TJs-nF-bFX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TJs-nF-bFX"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qoq-md-Bci">
+                    <rect key="frame" x="10" y="12.5" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="00N-8V-OxF"/>
+                        <constraint firstAttribute="height" constant="28" id="0Cb-C7-6is"/>
+                        <constraint firstAttribute="width" secondItem="Qoq-md-Bci" secondAttribute="height" multiplier="1:1" id="S40-uo-JMg"/>
+                        <constraint firstAttribute="width" constant="28" id="gvD-lk-wqg"/>
+                        <constraint firstAttribute="height" constant="28" id="izb-gz-Kh9"/>
+                    </constraints>
+                    <state key="normal" image="Chat_keyboard"/>
+                    <state key="selected" image="Chat_mic"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0Cb-C7-6is"/>
+                            <exclude reference="gvD-lk-wqg"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="switchStatus:" destination="-1" eventType="touchUpInside" id="Cej-BP-j7A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMo-P5-Uij">
+                    <rect key="frame" x="270" y="6" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="7UH-LD-TFd"/>
+                        <constraint firstAttribute="height" constant="40" id="Kmu-Wp-7Iz"/>
+                    </constraints>
+                    <state key="normal" image="chat_media_icon"/>
+                    <connections>
+                        <action selector="addPicBtnClick:" destination="-1" eventType="touchUpInside" id="Nwl-Hw-jy5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W70-5A-a1D">
+                    <rect key="frame" x="229" y="6" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="EFm-Xh-tmN"/>
+                        <constraint firstAttribute="height" constant="40" id="VcN-dh-btr"/>
+                    </constraints>
+                    <state key="normal" image="Chat_keyboard"/>
+                    <connections>
+                        <action selector="switchButtonPressed:" destination="-1" eventType="touchUpInside" id="SkO-ky-uuq"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77c-rc-Xos" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="QaY-rx-YnL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="77c-rc-Xos" firstAttribute="top" secondItem="lrE-Am-OhV" secondAttribute="top" id="0PX-ck-oGJ"/>
+                <constraint firstItem="EjU-8p-03v" firstAttribute="height" secondItem="lrE-Am-OhV" secondAttribute="height" multiplier="0.6" id="0fH-UP-3f8"/>
+                <constraint firstAttribute="trailing" secondItem="77c-rc-Xos" secondAttribute="trailing" id="46O-5q-2Xb"/>
+                <constraint firstItem="Qoq-md-Bci" firstAttribute="height" secondItem="EjU-8p-03v" secondAttribute="height" id="50o-G1-5pp"/>
+                <constraint firstAttribute="trailing" secondItem="yMo-P5-Uij" secondAttribute="trailing" constant="10" id="5b5-7o-9lA"/>
+                <constraint firstItem="Qoq-md-Bci" firstAttribute="leading" secondItem="lrE-Am-OhV" secondAttribute="leading" constant="10" id="6q3-gE-B1P"/>
+                <constraint firstItem="eqj-eD-jrd" firstAttribute="top" secondItem="lrE-Am-OhV" secondAttribute="top" constant="10" id="8Qu-gp-nmr"/>
+                <constraint firstItem="EjU-8p-03v" firstAttribute="bottom" secondItem="Qoq-md-Bci" secondAttribute="bottom" id="9OK-0a-dyf"/>
+                <constraint firstItem="eqj-eD-jrd" firstAttribute="height" secondItem="EjU-8p-03v" secondAttribute="height" id="BJ4-e1-mV1"/>
+                <constraint firstItem="W70-5A-a1D" firstAttribute="centerY" secondItem="yMo-P5-Uij" secondAttribute="centerY" id="JMj-AE-ALV"/>
+                <constraint firstItem="eqj-eD-jrd" firstAttribute="bottom" secondItem="EjU-8p-03v" secondAttribute="bottom" id="LJ6-Vi-QEI"/>
+                <constraint firstItem="77c-rc-Xos" firstAttribute="leading" secondItem="lrE-Am-OhV" secondAttribute="leading" id="Lfb-gJ-9Vn"/>
+                <constraint firstAttribute="bottom" secondItem="EjU-8p-03v" secondAttribute="bottom" constant="10" id="NGl-xl-KRD"/>
+                <constraint firstItem="eqj-eD-jrd" firstAttribute="leading" secondItem="Qoq-md-Bci" secondAttribute="trailing" constant="10" id="NGx-Gn-Zx1"/>
+                <constraint firstItem="EjU-8p-03v" firstAttribute="leading" secondItem="Qoq-md-Bci" secondAttribute="trailing" constant="10" id="S1O-8M-g9H"/>
+                <constraint firstItem="W70-5A-a1D" firstAttribute="leading" secondItem="eqj-eD-jrd" secondAttribute="trailing" constant="2" id="UaU-Ov-c0C"/>
+                <constraint firstItem="EjU-8p-03v" firstAttribute="height" secondItem="eqj-eD-jrd" secondAttribute="height" id="bfi-3U-o67"/>
+                <constraint firstItem="eqj-eD-jrd" firstAttribute="bottom" secondItem="Qoq-md-Bci" secondAttribute="bottom" id="cFD-mS-nrQ"/>
+                <constraint firstItem="eqj-eD-jrd" firstAttribute="top" secondItem="lrE-Am-OhV" secondAttribute="top" constant="11" id="gV6-pB-TBq"/>
+                <constraint firstItem="yMo-P5-Uij" firstAttribute="leading" secondItem="W70-5A-a1D" secondAttribute="trailing" constant="1" id="kd6-PH-bJO"/>
+                <constraint firstAttribute="bottom" secondItem="Qoq-md-Bci" secondAttribute="bottom" constant="10" id="ph4-yA-QTH"/>
+                <constraint firstAttribute="bottom" secondItem="yMo-P5-Uij" secondAttribute="bottom" constant="11" id="sJ4-cf-XLV"/>
+                <constraint firstAttribute="trailing" secondItem="EjU-8p-03v" secondAttribute="trailing" constant="10" id="sYB-uc-EpU"/>
+                <constraint firstAttribute="trailing" secondItem="eqj-eD-jrd" secondAttribute="trailing" constant="10" id="swW-O6-cDb"/>
+                <constraint firstItem="eqj-eD-jrd" firstAttribute="trailing" secondItem="EjU-8p-03v" secondAttribute="trailing" id="wpd-na-GqU"/>
+                <constraint firstItem="Qoq-md-Bci" firstAttribute="centerY" secondItem="EjU-8p-03v" secondAttribute="centerY" constant="-3" id="wwb-PO-bR2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="50o-G1-5pp"/>
+                    <exclude reference="ph4-yA-QTH"/>
+                    <exclude reference="8Qu-gp-nmr"/>
+                    <exclude reference="BJ4-e1-mV1"/>
+                    <exclude reference="cFD-mS-nrQ"/>
+                    <exclude reference="swW-O6-cDb"/>
+                    <exclude reference="0fH-UP-3f8"/>
+                    <exclude reference="9OK-0a-dyf"/>
+                    <exclude reference="bfi-3U-o67"/>
+                    <exclude reference="sYB-uc-EpU"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="220" y="181.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Chat_keyboard" width="27" height="27"/>
+        <image name="Chat_mic" width="27" height="27"/>
+        <image name="chat_media_icon" width="27" height="27"/>
+    </resources>
+</document>

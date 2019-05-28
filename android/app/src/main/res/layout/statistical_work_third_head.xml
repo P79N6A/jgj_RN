@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/manhour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/red_circle_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="上班："
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/overTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/red_circle_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="加班："
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/contractorWorkCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/green_circle_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/borrowTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/green_circle_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/borrowing_tips"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/balanceTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:drawableLeft="@drawable/green_circle_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/balance_tips"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/red_circle_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="@string/littler_hour_tips"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkTwoAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/red_circle_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="包工(分包):"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkOneAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="包工(承包):"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/green_circle_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="@string/borrowing_tips"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/green_circle_icon"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:text="@string/balance_tips"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/littleWorkAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkTwoAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/contractorWorkOneAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/borrowAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/borrow_color"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:id="@+id/balanceAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/borrow_color"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

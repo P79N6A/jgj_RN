@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        style="@style/bottom_button_layout">
+
+        <View style="@style/line" />
+
+        <RelativeLayout
+            android:id="@+id/red_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:clickable="true"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/red_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/white_add_icon"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_size" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</merge>

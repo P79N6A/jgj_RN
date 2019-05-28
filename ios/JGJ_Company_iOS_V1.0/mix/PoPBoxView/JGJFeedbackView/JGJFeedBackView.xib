@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJFeedBackView">
+            <connections>
+                <outlet property="cancelBtn" destination="NFk-HL-w63" id="K0F-a7-bVt"/>
+                <outlet property="contentDetailView" destination="LQ0-Ai-LFp" id="SIz-zk-uYP"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="2L7-dg-OBn"/>
+                <outlet property="feedBackBtn" destination="fSC-OY-EuT" id="YOm-gj-FxR"/>
+                <outlet property="shareBtn" destination="BPo-lH-z1P" id="01d-o4-0uY"/>
+                <outlet property="shotImageView" destination="CVH-ds-97u" id="Stq-ar-1Fd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQ0-Ai-LFp">
+                    <rect key="frame" x="277" y="247.5" width="85" height="172"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CVH-ds-97u">
+                            <rect key="frame" x="6.5" y="7" width="72" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="Afu-Me-lK9"/>
+                                <constraint firstAttribute="height" constant="72" id="F2m-wT-aRy"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSC-OY-EuT">
+                            <rect key="frame" x="0.0" y="130" width="85" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="WBP-lT-r3s"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="问题反馈" image="feedBack_icon"/>
+                            <connections>
+                                <action selector="feedBackBtnPressed:" destination="-1" eventType="touchUpInside" id="rc9-vt-zw0"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJO-YI-BUC">
+                            <rect key="frame" x="7" y="129" width="71" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="HKL-Kb-uGf"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPo-lH-z1P">
+                            <rect key="frame" x="0.0" y="88" width="85" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="ahi-gh-JAu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="分享好友" image="feedBack_share_icon"/>
+                            <connections>
+                                <action selector="shareBtnPressed:" destination="-1" eventType="touchUpInside" id="VA3-fI-ep2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70341012773722633" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="fSC-OY-EuT" firstAttribute="top" secondItem="VJO-YI-BUC" secondAttribute="bottom" id="0H8-qL-bCu"/>
+                        <constraint firstItem="BPo-lH-z1P" firstAttribute="leading" secondItem="LQ0-Ai-LFp" secondAttribute="leading" id="4Sj-ii-JuP"/>
+                        <constraint firstAttribute="width" constant="85" id="5jN-4W-By2"/>
+                        <constraint firstAttribute="trailing" secondItem="BPo-lH-z1P" secondAttribute="trailing" id="66E-Dt-uvQ"/>
+                        <constraint firstAttribute="height" constant="172" id="AhZ-CN-MRH"/>
+                        <constraint firstAttribute="trailing" secondItem="VJO-YI-BUC" secondAttribute="trailing" constant="7" id="IUb-uq-cTC"/>
+                        <constraint firstAttribute="bottom" secondItem="fSC-OY-EuT" secondAttribute="bottom" id="KYm-LL-QaD"/>
+                        <constraint firstItem="fSC-OY-EuT" firstAttribute="leading" secondItem="LQ0-Ai-LFp" secondAttribute="leading" id="Kms-pz-7rG"/>
+                        <constraint firstItem="VJO-YI-BUC" firstAttribute="leading" secondItem="LQ0-Ai-LFp" secondAttribute="leading" constant="7" id="Uuk-Zk-79o"/>
+                        <constraint firstAttribute="trailing" secondItem="fSC-OY-EuT" secondAttribute="trailing" id="gq4-5k-EyT"/>
+                        <constraint firstItem="CVH-ds-97u" firstAttribute="top" secondItem="LQ0-Ai-LFp" secondAttribute="top" constant="7" id="jIu-Et-W2L"/>
+                        <constraint firstItem="CVH-ds-97u" firstAttribute="centerX" secondItem="LQ0-Ai-LFp" secondAttribute="centerX" id="lJa-Qk-7CS"/>
+                        <constraint firstItem="fSC-OY-EuT" firstAttribute="top" secondItem="BPo-lH-z1P" secondAttribute="bottom" id="ri7-zg-Y8K"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFk-HL-w63">
+                    <rect key="frame" x="350" y="239.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="dqk-UC-NAh"/>
+                        <constraint firstAttribute="width" constant="20" id="efh-ML-8Qe"/>
+                    </constraints>
+                    <state key="normal" image="close_feedBack_icon"/>
+                    <connections>
+                        <action selector="cancelBtnPressed:" destination="-1" eventType="touchUpInside" id="9lM-Df-TH3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NFk-HL-w63" firstAttribute="top" secondItem="LQ0-Ai-LFp" secondAttribute="top" constant="-8" id="E5x-yT-fYA"/>
+                <constraint firstItem="LQ0-Ai-LFp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QoX-fK-KBp"/>
+                <constraint firstItem="NFk-HL-w63" firstAttribute="trailing" secondItem="LQ0-Ai-LFp" secondAttribute="trailing" constant="8" id="eWh-je-f2Z"/>
+                <constraint firstAttribute="trailing" secondItem="LQ0-Ai-LFp" secondAttribute="trailing" constant="13" id="rib-0r-Hze"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close_feedBack_icon" width="18" height="18"/>
+        <image name="feedBack_icon" width="14" height="14"/>
+        <image name="feedBack_share_icon" width="13" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JLGItemDescTableViewCell" id="kRs-2d-hed" customClass="JLGItemDescTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kRs-2d-hed" id="p6J-TW-eTH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-OC-6GX" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DLP-rl-Q2n"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_RedStar" translatesAutoresizingMaskIntoConstraints="NO" id="ZqV-Oj-utZ">
+                        <rect key="frame" x="5" y="14" width="15" height="15"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目描述:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yal-7k-xBg">
+                        <rect key="frame" x="30" y="13" width="65" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="请输入你对项目的描述" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkf-PP-ehg">
+                        <rect key="frame" x="105" y="13" width="205" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vkf-PP-ehg" secondAttribute="trailing" constant="10" id="1AS-Vl-Y1Y"/>
+                    <constraint firstAttribute="bottom" secondItem="VVs-OC-6GX" secondAttribute="bottom" id="CGC-mR-lLx"/>
+                    <constraint firstItem="vkf-PP-ehg" firstAttribute="centerY" secondItem="p6J-TW-eTH" secondAttribute="centerY" id="HWb-1e-1lK"/>
+                    <constraint firstItem="ZqV-Oj-utZ" firstAttribute="centerY" secondItem="p6J-TW-eTH" secondAttribute="centerY" id="UOt-5W-bTe"/>
+                    <constraint firstItem="ZqV-Oj-utZ" firstAttribute="leading" secondItem="p6J-TW-eTH" secondAttribute="leading" constant="5" id="gur-3j-1le"/>
+                    <constraint firstItem="VVs-OC-6GX" firstAttribute="leading" secondItem="p6J-TW-eTH" secondAttribute="leading" id="hfZ-UL-3FZ"/>
+                    <constraint firstItem="vkf-PP-ehg" firstAttribute="leading" secondItem="Yal-7k-xBg" secondAttribute="trailing" constant="10" id="t1K-Ah-rrt"/>
+                    <constraint firstItem="Yal-7k-xBg" firstAttribute="centerY" secondItem="ZqV-Oj-utZ" secondAttribute="centerY" id="wF3-6n-uSh"/>
+                    <constraint firstItem="Yal-7k-xBg" firstAttribute="leading" secondItem="ZqV-Oj-utZ" secondAttribute="trailing" constant="10" id="wj4-ge-De8"/>
+                    <constraint firstAttribute="trailing" secondItem="VVs-OC-6GX" secondAttribute="trailing" id="z9x-Dx-cf6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="detailTF" destination="vkf-PP-ehg" id="e0F-3b-Nnp"/>
+            </connections>
+            <point key="canvasLocation" x="333" y="61"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="login_RedStar" width="15" height="15"/>
+    </resources>
+</document>

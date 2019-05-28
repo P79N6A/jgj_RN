@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/unclick_layout"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/textViewKey_relativeLayout"
+            android:text="名称" />
+
+        <TextView
+            android:id="@+id/checkContentNameText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:maxLength="15"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <com.hcs.cityslist.widget.AppCursorEditText
+            android:id="@+id/checkContentNameEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:maxLength="15"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="@string/check_point"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_size_14" />
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/cancel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/account_close_image"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="0000000"
+            android:textColor="@color/gray_333333"
+            android:textSize="@dimen/text_size_13"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="13dp"
+            android:text="aaaaa"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_13"/>
+
+    </RelativeLayout>
+
+
+    <com.jizhi.jongg.widget.WrapListView
+        android:id="@id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:visibility="visible"/>
+
+
+    <View style="@style/line"/>
+
+    <LinearLayout
+        style="@style/bottom_button_layout"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/tv_change"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_sk_eb4e4e_5radius"
+            android:text="修改"
+            android:textColor="@color/color_eb4e4e"/>
+
+        <Button
+            android:id="@+id/tv_agree"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_radius_guide_btn_appcolor"
+            android:text="同意他的记工"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

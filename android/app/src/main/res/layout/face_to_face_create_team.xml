@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qwerjk="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1e1e1e"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_black_background" />
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="30dp"
+        android:text="和身边的朋友输入相同的数字\n进入同一个群聊"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_size_15" />
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.jizhi.jongg.widget.MagicTextView
+                android:id="@+id/firstNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_icon"
+                android:gravity="center"
+                android:textColor="#099aff"
+                android:textSize="20sp"
+                qwerjk:innerShadowColor="#FF000000"
+                qwerjk:innerShadowDy="2"
+                qwerjk:innerShadowRadius="1"
+                qwerjk:outerShadowColor="#7be1ff"
+                qwerjk:outerShadowDy="3"
+                qwerjk:outerShadowRadius="20"
+                qwerjk:strokeJoinStyle="miter" />
+
+
+            <com.jizhi.jongg.widget.MagicTextView
+                android:id="@+id/secondNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/black_icon"
+                android:gravity="center"
+                android:textColor="#099aff"
+                android:textSize="20sp"
+                qwerjk:innerShadowColor="#FF000000"
+                qwerjk:innerShadowDy="2"
+                qwerjk:innerShadowRadius="1"
+                qwerjk:outerShadowColor="#7be1ff"
+                qwerjk:outerShadowDy="3"
+                qwerjk:outerShadowRadius="20"
+                qwerjk:strokeJoinStyle="miter" />
+
+            <com.jizhi.jongg.widget.MagicTextView
+                android:id="@+id/threeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/black_icon"
+                android:gravity="center"
+                android:textColor="#099aff"
+                android:textSize="20sp"
+                qwerjk:innerShadowColor="#FF000000"
+                qwerjk:innerShadowDy="2"
+                qwerjk:innerShadowRadius="1"
+                qwerjk:outerShadowColor="#7be1ff"
+                qwerjk:outerShadowDy="3"
+                qwerjk:outerShadowRadius="20"
+                qwerjk:strokeJoinStyle="miter" />
+
+            <com.jizhi.jongg.widget.MagicTextView
+                android:id="@+id/fourNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/black_icon"
+                android:gravity="center"
+                android:textColor="#099aff"
+                android:textSize="20sp"
+                qwerjk:innerShadowColor="#FF000000"
+                qwerjk:innerShadowDy="2"
+                qwerjk:innerShadowRadius="1"
+                qwerjk:outerShadowColor="#7be1ff"
+                qwerjk:outerShadowDy="3"
+                qwerjk:outerShadowRadius="20"
+                qwerjk:strokeJoinStyle="miter" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="这些朋友也将进入群聊"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/memebersLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#131313"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <GridView
+                android:id="@+id/memebersGridView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:horizontalSpacing="10dp"
+                android:listSelector="#00000000"
+                android:numColumns="5"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:verticalSpacing="10dp" />
+
+            <Button
+                android:id="@+id/red_btn"
+                style="@style/bottom_red_btn_style" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.jizhi.jongg.widget.WrapGridview
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-1.5dp"
+        android:layout_marginRight="-1.5dp"
+        android:horizontalSpacing="0.0dip"
+        android:listSelector="#181818"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0.0dip" />
+
+
+</LinearLayout>

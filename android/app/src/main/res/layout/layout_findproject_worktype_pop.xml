@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@color/black"></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_f1f1f1"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gv_wy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="10dip"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:verticalSpacing="10dip" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/tv_cacel"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/cancel"
+            android:textColor="@color/app_color"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

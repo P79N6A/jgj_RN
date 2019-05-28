@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fef1e1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_sync_tips_one"
+            android:textColor="@color/color_ff6600"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:lineSpacingExtra="2dp"
+            android:text="@string/add_sync_tips_two"
+            android:textColor="@color/color_ff6600"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/syncPersonLayout"
+        style="@style/setting_click_linearlayout">
+
+        <TextView
+            style="@style/textViewKey_linearLayout"
+            android:text="同步对象" />
+
+        <TextView
+            android:id="@+id/syncPersonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999" />
+
+        <ImageView
+            android:id="@+id/syncPersonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/houtui" />
+
+    </LinearLayout>
+
+    <com.jizhi.jongg.widget.AppDiverView
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <LinearLayout
+        android:id="@+id/syncProjectLayout"
+        style="@style/setting_click_linearlayout"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            style="@style/textViewKey_linearLayout"
+            android:text="同步项目" />
+
+        <TextView
+            android:id="@+id/syncProjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/houtui"
+            android:textColor="@color/color_999999" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/red_btn"
+        style="@style/bottom_red_btn_style" />
+
+
+</LinearLayout>

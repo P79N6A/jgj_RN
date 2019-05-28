@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/drawable_rectangle_c8c8c8_white"
+            android:orientation="horizontal"
+            android:paddingRight="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:ems="1"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="天\n气"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.97"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rea_weather_morning"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_weather_morning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:hint="@string/morning"
+                        android:gravity="center_horizontal"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/color_333333"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="15sp" />
+                    <View
+                        android:id="@+id/view_cursor_morning"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/tv_weather_morning"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_666666" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_c8c8c8" />
+
+                <RelativeLayout
+                    android:id="@+id/rea_weather_afternoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_weather_afternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:hint="@string/afternoon"
+                        android:gravity="center_horizontal"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/color_333333"
+                        android:textColorHint="@color/color_cccccc"
+                        android:textSize="15sp" />
+                    <View
+                        android:id="@+id/view_cursor_adaternoon"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/tv_weather_afternoon"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_666666" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_c8c8c8" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="温\n度\n℃"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_temperature_morning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="@string/morning"
+                    android:maxLength="10"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_c8c8c8" />
+
+                <EditText
+                    android:id="@+id/ed_temperature_afternoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="@string/afternoon"
+                    android:maxLength="10"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_c8c8c8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="风\n力\n(级)"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_c8c8c8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/ed_wind_morning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="@string/morning"
+                    android:maxLength="10"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/color_c8c8c8" />
+
+                <EditText
+                    android:id="@+id/ed_wind_afternoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="@string/afternoon"
+                    android:maxLength="10"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

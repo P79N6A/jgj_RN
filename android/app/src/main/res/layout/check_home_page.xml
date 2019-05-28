@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_guide_center_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/checkList"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/listview_selector_white_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/checkListText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="14dp"
+                    android:drawableTop="@drawable/check_list"
+                    android:gravity="center"
+                    android:text="@string/check_list"
+                    android:textColor="@color/color_666666" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/color_dbdbdb" />
+
+            <LinearLayout
+                android:id="@+id/allThePlan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/listview_selector_white_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/allThePlanText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="14dp"
+                    android:drawableTop="@drawable/all_plan"
+                    android:gravity="center"
+                    android:text="@string/all_the_plan"
+                    android:textColor="@color/color_666666" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/color_dbdbdb" />
+
+            <LinearLayout
+                android:id="@+id/complete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/listview_selector_white_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick">
+
+                <TextView
+                    android:id="@+id/completeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="14dp"
+                    android:drawableTop="@drawable/complete_plan"
+                    android:gravity="center"
+                    android:text="@string/complete_check_list_count"
+                    android:textColor="@color/color_666666" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.jizhi.jongg.widget.ShadowLinearLayout
+            android:id="@+id/waittingForMeToExecuteItem"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/draw_listview_selector_white_gray_5radius"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/waittingForMeToExecuteText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/fix_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/waitting_for_me_to_execute_text"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/waittingForMeToExecuteRedCircle"
+                style="@style/red_circle"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/houtui" />
+
+
+        </com.jizhi.jongg.widget.ShadowLinearLayout>
+
+
+        <com.jizhi.jongg.widget.ShadowLinearLayout
+            android:id="@+id/iCreateItem"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/draw_listview_selector_white_gray_5radius"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/iCreateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/i_create_icon"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/houtui"
+                android:gravity="center_vertical"
+                android:text="@string/i_create"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+        </com.jizhi.jongg.widget.ShadowLinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/publishLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.jizhi.jongg.widget.ShakeAnimBtn
+            android:id="@+id/newPlanBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/create_btn_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_check_plan"
+            android:textColor="@color/color_eb4e4e"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/team_closed_icon"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

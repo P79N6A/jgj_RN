@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JLGValidityDateTableViewCell" id="8uX-Uh-eqa" customClass="JLGValidityDateTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8uX-Uh-eqa" id="AsB-wQ-4XI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hmk-tJ-bXF" userLabel="lineView">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9W2-ok-t53"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_RedStar" translatesAutoresizingMaskIntoConstraints="NO" id="xlm-FB-Qbz">
+                        <rect key="frame" x="5" y="14" width="15" height="15"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="有  效 期:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0j-Uq-7zL">
+                        <rect key="frame" x="30" y="12" width="62" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4C-5R-M6M" customClass="JLGBlueBorderButton">
+                        <rect key="frame" x="254" y="9" width="56" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="sIO-u4-Bk9"/>
+                            <constraint firstAttribute="width" secondItem="Y4C-5R-M6M" secondAttribute="height" multiplier="130:60" id="yYQ-gJ-fif"/>
+                        </constraints>
+                        <state key="normal" title="3个月"/>
+                        <connections>
+                            <action selector="thirdBtnClick:" destination="8uX-Uh-eqa" eventType="touchUpInside" id="qm5-lp-zDd"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzI-Bf-OiJ" customClass="JLGBlueBorderButton">
+                        <rect key="frame" x="188" y="9" width="56" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="ooP-yr-D6x"/>
+                            <constraint firstAttribute="width" secondItem="qzI-Bf-OiJ" secondAttribute="height" multiplier="130:60" id="zeY-BS-f7l"/>
+                        </constraints>
+                        <state key="normal" title="2个月"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zeY-BS-f7l"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="secondBtnClick:" destination="8uX-Uh-eqa" eventType="touchUpInside" id="2PG-JT-qCt"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQe-OP-xpx" customClass="JLGBlueBorderButton">
+                        <rect key="frame" x="122" y="9" width="56" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sQe-OP-xpx" secondAttribute="height" multiplier="130:60" id="M1T-X4-KWB"/>
+                            <constraint firstAttribute="width" constant="56" id="yap-C9-HN6"/>
+                        </constraints>
+                        <state key="normal" title="1个月"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="M1T-X4-KWB"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="firstBtnClick:" destination="8uX-Uh-eqa" eventType="touchUpInside" id="Awf-cN-Cbb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y4C-5R-M6M" firstAttribute="centerY" secondItem="AsB-wQ-4XI" secondAttribute="centerY" id="1dI-YO-FDW"/>
+                    <constraint firstItem="sQe-OP-xpx" firstAttribute="width" secondItem="sQe-OP-xpx" secondAttribute="height" multiplier="130:60" id="2mo-KI-ERb"/>
+                    <constraint firstItem="i0j-Uq-7zL" firstAttribute="centerY" secondItem="xlm-FB-Qbz" secondAttribute="centerY" id="B6d-dU-bCb"/>
+                    <constraint firstItem="i0j-Uq-7zL" firstAttribute="leading" secondItem="xlm-FB-Qbz" secondAttribute="trailing" constant="10" id="D1w-AR-8dI"/>
+                    <constraint firstItem="Y4C-5R-M6M" firstAttribute="leading" secondItem="qzI-Bf-OiJ" secondAttribute="trailing" constant="10" id="JPX-wG-Efs"/>
+                    <constraint firstAttribute="trailing" secondItem="Y4C-5R-M6M" secondAttribute="trailing" constant="10" id="PzB-Ed-bz7"/>
+                    <constraint firstItem="sQe-OP-xpx" firstAttribute="centerY" secondItem="Y4C-5R-M6M" secondAttribute="centerY" id="SEM-9c-cU9"/>
+                    <constraint firstItem="xlm-FB-Qbz" firstAttribute="leading" secondItem="AsB-wQ-4XI" secondAttribute="leading" constant="5" id="Xuz-Rr-6Wr"/>
+                    <constraint firstAttribute="bottom" secondItem="Hmk-tJ-bXF" secondAttribute="bottom" id="eAq-Eu-bC7"/>
+                    <constraint firstItem="Y4C-5R-M6M" firstAttribute="height" secondItem="AsB-wQ-4XI" secondAttribute="height" id="g8N-Sb-xNx"/>
+                    <constraint firstItem="qzI-Bf-OiJ" firstAttribute="width" secondItem="qzI-Bf-OiJ" secondAttribute="height" multiplier="130:60" id="kGp-sx-Mab"/>
+                    <constraint firstAttribute="trailing" secondItem="Hmk-tJ-bXF" secondAttribute="trailing" id="nuc-gK-fbp"/>
+                    <constraint firstItem="qzI-Bf-OiJ" firstAttribute="centerY" secondItem="Y4C-5R-M6M" secondAttribute="centerY" id="pPh-yS-BPF"/>
+                    <constraint firstItem="qzI-Bf-OiJ" firstAttribute="leading" secondItem="sQe-OP-xpx" secondAttribute="trailing" constant="10" id="qIX-Jh-zo8"/>
+                    <constraint firstItem="Hmk-tJ-bXF" firstAttribute="leading" secondItem="AsB-wQ-4XI" secondAttribute="leading" id="s5K-OF-l2d"/>
+                    <constraint firstItem="sQe-OP-xpx" firstAttribute="width" secondItem="sQe-OP-xpx" secondAttribute="height" multiplier="130:60" id="tdf-kn-vzr"/>
+                    <constraint firstItem="xlm-FB-Qbz" firstAttribute="centerY" secondItem="AsB-wQ-4XI" secondAttribute="centerY" id="ueZ-8n-7ax"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2mo-KI-ERb"/>
+                        <exclude reference="g8N-Sb-xNx"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <point key="canvasLocation" x="298" y="191"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="login_RedStar" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJCusFooterView">
+            <connections>
+                <outlet property="checkButton" destination="52g-aZ-Cnb" id="pir-We-GRh"/>
+                <outlet property="containView" destination="iN0-l3-epB" id="8tw-TZ-zjt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="right" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52g-aZ-Cnb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="3" maxX="39" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="-122" maxY="0.0"/>
+                    <state key="normal" title="查看更多" image="check_more_pro_icon">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="checkButtonPressed:" destination="-1" eventType="touchUpInside" id="JUH-1q-vTM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="52g-aZ-Cnb" secondAttribute="trailing" id="Hf3-My-6X2"/>
+                <constraint firstItem="52g-aZ-Cnb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Wdq-h8-Vhj"/>
+                <constraint firstItem="52g-aZ-Cnb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kZW-NY-Sw2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="52g-aZ-Cnb" secondAttribute="bottom" id="r9q-lf-yGJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_more_pro_icon" width="9" height="14"/>
+    </resources>
+</document>

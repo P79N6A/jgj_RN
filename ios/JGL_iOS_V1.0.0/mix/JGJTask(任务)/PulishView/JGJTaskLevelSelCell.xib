@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJTaskLevelSelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh0-D2-Gs2">
+                        <rect key="frame" x="15" y="0.0" width="255" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQk-Q2-6ec">
+                        <rect key="frame" x="270" y="-0.5" width="50" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="8m0-6a-clH"/>
+                            <constraint firstAttribute="width" constant="50" id="Ebo-cB-TlA"/>
+                        </constraints>
+                        <state key="selected" image="proType_selected"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAp-cL-set" customClass="LineView">
+                        <rect key="frame" x="12" y="43.5" width="296" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="SLn-Sh-Or6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cQk-Q2-6ec" secondAttribute="trailing" id="BJD-gL-jIX"/>
+                    <constraint firstItem="NAp-cL-set" firstAttribute="top" secondItem="Xh0-D2-Gs2" secondAttribute="bottom" id="GxA-Si-BYD"/>
+                    <constraint firstItem="Xh0-D2-Gs2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H5b-l8-PGu"/>
+                    <constraint firstItem="Xh0-D2-Gs2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HCh-z7-cKO"/>
+                    <constraint firstAttribute="trailing" secondItem="NAp-cL-set" secondAttribute="trailing" constant="12" id="Ky3-lk-MeE"/>
+                    <constraint firstAttribute="bottom" secondItem="NAp-cL-set" secondAttribute="bottom" id="N7K-JY-qGs"/>
+                    <constraint firstItem="cQk-Q2-6ec" firstAttribute="leading" secondItem="Xh0-D2-Gs2" secondAttribute="trailing" id="d1h-T0-eLs"/>
+                    <constraint firstAttribute="bottom" secondItem="cQk-Q2-6ec" secondAttribute="bottom" id="qAe-we-Ewl"/>
+                    <constraint firstItem="NAp-cL-set" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="sor-8l-jIg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="levelLable" destination="Xh0-D2-Gs2" id="unF-L8-Dm5"/>
+                <outlet property="lineView" destination="NAp-cL-set" id="hhW-Tk-cxK"/>
+                <outlet property="selButton" destination="cQk-Q2-6ec" id="udw-Qh-acL"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="proType_selected" width="12" height="10"/>
+    </resources>
+</document>

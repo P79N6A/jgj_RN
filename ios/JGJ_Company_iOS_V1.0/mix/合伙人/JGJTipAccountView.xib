@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G18a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJTipAccountView">
+            <connections>
+                <outlet property="accountButton" destination="GdC-pG-scY" id="xC8-9G-azH"/>
+                <outlet property="contentView" destination="RwW-ns-a5p" id="8Qo-Nd-q3w"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RwW-ns-a5p">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-pG-scY">
+                    <rect key="frame" x="87.5" y="303.5" width="200" height="50"/>
+                    <color key="backgroundColor" red="0.84313725490196079" green="0.14509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="dfk-lN-6z1"/>
+                        <constraint firstAttribute="height" constant="50" id="ktD-HR-rZj"/>
+                    </constraints>
+                    <state key="normal" title="添加提现账户">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAccountButton:" destination="-1" eventType="touchUpInside" id="uJt-be-1BZ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还未设置提现账户" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saX-yR-jSQ">
+                    <rect key="frame" x="10" y="257.5" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6xK-12-3FR">
+                    <rect key="frame" x="140" y="188.5" width="95" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="Jnt-fo-OCD"/>
+                        <constraint firstAttribute="height" constant="52" id="jqd-uJ-WRX"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GdC-pG-scY" firstAttribute="centerX" secondItem="RwW-ns-a5p" secondAttribute="centerX" id="CKa-iy-vB9"/>
+                <constraint firstAttribute="trailing" secondItem="saX-yR-jSQ" secondAttribute="trailing" constant="10" id="Et5-Iz-gaY"/>
+                <constraint firstItem="GdC-pG-scY" firstAttribute="centerY" secondItem="RwW-ns-a5p" secondAttribute="centerY" constant="-5" id="IGs-Qh-Lt6"/>
+                <constraint firstItem="saX-yR-jSQ" firstAttribute="top" secondItem="6xK-12-3FR" secondAttribute="bottom" constant="17" id="KAS-uN-xbw"/>
+                <constraint firstItem="GdC-pG-scY" firstAttribute="top" secondItem="saX-yR-jSQ" secondAttribute="bottom" constant="25" id="NAy-EE-y9N"/>
+                <constraint firstItem="6xK-12-3FR" firstAttribute="centerX" secondItem="RwW-ns-a5p" secondAttribute="centerX" id="mkm-4r-yAQ"/>
+                <constraint firstItem="saX-yR-jSQ" firstAttribute="leading" secondItem="RwW-ns-a5p" secondAttribute="leading" constant="10" id="odr-JW-0uO"/>
+            </constraints>
+            <point key="canvasLocation" x="-4" y="61"/>
+        </view>
+    </objects>
+</document>

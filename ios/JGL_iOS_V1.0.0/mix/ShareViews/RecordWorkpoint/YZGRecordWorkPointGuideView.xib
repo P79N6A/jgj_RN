@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YZGRecordWorkPointGuideView">
+            <connections>
+                <outlet property="GuideContentImage" destination="sF8-SC-O9j" id="tCr-NQ-dup"/>
+                <outlet property="GuideStripImage" destination="Jts-CO-eWx" id="2AC-tL-1vS"/>
+                <outlet property="GuideStripLayoutH" destination="JyZ-tD-5zw" id="20f-HT-Og0"/>
+                <outlet property="GuideStripLayoutL" destination="vYP-Vm-pdc" id="pJ5-XS-eq1"/>
+                <outlet property="GuideStripLayoutT" destination="sFg-6d-WWE" id="huO-MW-kGn"/>
+                <outlet property="GuideStripLayoutW" destination="psz-Gf-SaI" id="3KA-3W-Cab"/>
+                <outlet property="arrowImageView" destination="3ev-MC-4g5" id="9rN-nC-nPX"/>
+                <outlet property="arrowLayoutR" destination="1S1-vo-U57" id="YMM-4C-pce"/>
+                <outlet property="contentImageView" destination="75M-4N-7Pp" id="4Xj-zt-5He"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ok2-4t-5ye"/>
+                <outlet property="iNowLayoutT" destination="Skn-7w-36C" id="Tc6-69-dx0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="585"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEY-iy-8VH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="585"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RecordWorkpoints_Guide_SelectedLeader" translatesAutoresizingMaskIntoConstraints="NO" id="75M-4N-7Pp">
+                    <rect key="frame" x="222" y="255" width="88" height="14"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RecordWorkpoints_Guide_Strip" translatesAutoresizingMaskIntoConstraints="NO" id="Jts-CO-eWx">
+                    <rect key="frame" x="0.0" y="120" width="320" height="52"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="JyZ-tD-5zw"/>
+                        <constraint firstAttribute="width" constant="320" id="psz-Gf-SaI"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sF8-SC-O9j">
+                    <rect key="frame" x="8" y="129" width="304" height="34"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBr-3P-LMM">
+                    <rect key="frame" x="260" y="38" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="7vE-6x-zJC"/>
+                        <constraint firstAttribute="height" constant="44" id="BYa-zx-zaB"/>
+                        <constraint firstAttribute="width" secondItem="VBr-3P-LMM" secondAttribute="height" multiplier="1:1" id="hhy-Q3-Etl"/>
+                        <constraint firstAttribute="width" secondItem="VBr-3P-LMM" secondAttribute="height" multiplier="1:1" id="usU-e5-9AO"/>
+                    </constraints>
+                    <state key="normal" image="RecordWorkpoints_Guide_Close"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="7vE-6x-zJC"/>
+                            <exclude reference="BYa-zx-zaB"/>
+                            <exclude reference="usU-e5-9AO"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="deleteBtnClick:" destination="-1" eventType="touchUpInside" id="l0c-od-7q5"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RecordWorkpoints_Guide_RightTop" translatesAutoresizingMaskIntoConstraints="NO" id="3ev-MC-4g5">
+                    <rect key="frame" x="217" y="172" width="93" height="73"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZc-Ve-FPz">
+                    <rect key="frame" x="107" y="309" width="106" height="40"/>
+                    <state key="normal" image="RecordWorkpoints_Guide_IKnow"/>
+                    <connections>
+                        <action selector="IKnowBtnClick:" destination="-1" eventType="touchUpInside" id="17x-lQ-SK8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IEY-iy-8VH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0O0-Ic-ghH"/>
+                <constraint firstItem="Jts-CO-eWx" firstAttribute="trailing" secondItem="3ev-MC-4g5" secondAttribute="trailing" priority="999" constant="10" id="1S1-vo-U57"/>
+                <constraint firstItem="sF8-SC-O9j" firstAttribute="width" secondItem="Jts-CO-eWx" secondAttribute="width" multiplier="0.95" id="42g-Ks-bbJ"/>
+                <constraint firstItem="VBr-3P-LMM" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.14" id="BI3-mI-GN3"/>
+                <constraint firstItem="75M-4N-7Pp" firstAttribute="top" secondItem="3ev-MC-4g5" secondAttribute="bottom" constant="10" id="Cch-e4-VTB"/>
+                <constraint firstItem="sF8-SC-O9j" firstAttribute="height" secondItem="Jts-CO-eWx" secondAttribute="height" multiplier="0.65" id="CgY-PO-Dqp"/>
+                <constraint firstItem="VBr-3P-LMM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="38" id="D2C-6z-KXp"/>
+                <constraint firstItem="dZc-Ve-FPz" firstAttribute="top" secondItem="75M-4N-7Pp" secondAttribute="bottom" constant="10" id="DT9-aH-79d"/>
+                <constraint firstAttribute="trailing" secondItem="IEY-iy-8VH" secondAttribute="trailing" id="Sf4-eS-rIZ"/>
+                <constraint firstItem="dZc-Ve-FPz" firstAttribute="top" secondItem="75M-4N-7Pp" secondAttribute="bottom" constant="40" id="Skn-7w-36C"/>
+                <constraint firstAttribute="bottom" secondItem="IEY-iy-8VH" secondAttribute="bottom" id="UvZ-AO-yP1"/>
+                <constraint firstItem="sF8-SC-O9j" firstAttribute="centerX" secondItem="Jts-CO-eWx" secondAttribute="centerX" id="VfJ-a1-JTQ"/>
+                <constraint firstItem="IEY-iy-8VH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="at8-3b-MlW"/>
+                <constraint firstItem="3ev-MC-4g5" firstAttribute="top" secondItem="Jts-CO-eWx" secondAttribute="bottom" id="g8p-Tl-7yw"/>
+                <constraint firstAttribute="trailing" secondItem="VBr-3P-LMM" secondAttribute="trailing" constant="16" id="gWx-i4-GBy"/>
+                <constraint firstItem="sF8-SC-O9j" firstAttribute="centerY" secondItem="Jts-CO-eWx" secondAttribute="centerY" id="hBe-HC-Pso"/>
+                <constraint firstItem="dZc-Ve-FPz" firstAttribute="centerX" secondItem="3ev-MC-4g5" secondAttribute="centerX" id="q1L-Bf-Nrt"/>
+                <constraint firstItem="75M-4N-7Pp" firstAttribute="trailing" secondItem="3ev-MC-4g5" secondAttribute="trailing" id="rj9-uw-8bW"/>
+                <constraint firstItem="dZc-Ve-FPz" firstAttribute="centerX" secondItem="IEY-iy-8VH" secondAttribute="centerX" id="rpA-pK-mKm"/>
+                <constraint firstItem="Jts-CO-eWx" firstAttribute="top" secondItem="IEY-iy-8VH" secondAttribute="top" constant="120" id="sFg-6d-WWE"/>
+                <constraint firstItem="Jts-CO-eWx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vYP-Vm-pdc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="DT9-aH-79d"/>
+                    <exclude reference="q1L-Bf-Nrt"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="255" y="520"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="RecordWorkpoints_Guide_Close" width="28" height="28"/>
+        <image name="RecordWorkpoints_Guide_IKnow" width="106" height="40"/>
+        <image name="RecordWorkpoints_Guide_RightTop" width="93" height="73"/>
+        <image name="RecordWorkpoints_Guide_SelectedLeader" width="88" height="14"/>
+        <image name="RecordWorkpoints_Guide_Strip" width="372" height="52"/>
+    </resources>
+</document>

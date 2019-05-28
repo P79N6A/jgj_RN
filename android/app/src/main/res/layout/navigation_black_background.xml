@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/top_bar_normal_bg">
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center_vertical"
+            android:onClick="onFinish">
+
+            <ImageView
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:src="@drawable/fh_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="@dimen/guide_return_size" />
+
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/guide_title_size" />
+
+    </RelativeLayout>
+
+</merge>

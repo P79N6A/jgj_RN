@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJGroupChatInfoMemberCell" id="CZO-us-jzV" customClass="JGJGroupChatInfoMemberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CZO-us-jzV" id="c8Z-tr-DbS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NAN-R3-EOs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dAQ-hh-6sj">
+                            <size key="itemSize" width="60" height="92"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="CZO-us-jzV" id="9l6-zn-l7d"/>
+                            <outlet property="delegate" destination="CZO-us-jzV" id="n2p-9d-6JV"/>
+                        </connections>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJi-K9-7la" customClass="LineView">
+                        <rect key="frame" x="12" y="42" width="296" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7Ga-TO-EaV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="RJi-K9-7la" secondAttribute="bottom" id="3h3-fS-4mk"/>
+                    <constraint firstAttribute="trailing" secondItem="NAN-R3-EOs" secondAttribute="trailing" id="97c-ba-t0T"/>
+                    <constraint firstItem="RJi-K9-7la" firstAttribute="leading" secondItem="c8Z-tr-DbS" secondAttribute="leading" constant="12" id="J61-fg-KDC"/>
+                    <constraint firstAttribute="trailing" secondItem="RJi-K9-7la" secondAttribute="trailing" constant="12" id="UIb-Yw-dre"/>
+                    <constraint firstItem="NAN-R3-EOs" firstAttribute="top" secondItem="c8Z-tr-DbS" secondAttribute="top" id="VvG-H7-APV"/>
+                    <constraint firstItem="NAN-R3-EOs" firstAttribute="leading" secondItem="c8Z-tr-DbS" secondAttribute="leading" id="cvi-S2-3aT"/>
+                    <constraint firstItem="RJi-K9-7la" firstAttribute="top" secondItem="NAN-R3-EOs" secondAttribute="bottom" id="px9-cR-RZs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="collectionView" destination="NAN-R3-EOs" id="eC9-i9-3d0"/>
+                <outlet property="collectionViewLayout" destination="dAQ-hh-6sj" id="1c6-S8-3oE"/>
+                <outlet property="lineView" destination="RJi-K9-7la" id="CAO-Iu-WTt"/>
+            </connections>
+            <point key="canvasLocation" x="560" y="312"/>
+        </tableViewCell>
+    </objects>
+</document>

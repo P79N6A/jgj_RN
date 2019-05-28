@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/icon_red_arrows_top" />
+
+    <RelativeLayout
+        android:id="@+id/rea_red"
+        android:layout_width="wrap_content"
+        android:layout_height="70dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/img_arrows"
+        android:layout_marginRight="12dip"
+        android:background="@drawable/bg_rd_pressed_5radius">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_12dp"
+                android:paddingRight="@dimen/margin_12dp"
+                android:text="编辑此人资料"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:background="#b50508" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/right_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="删除此人"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

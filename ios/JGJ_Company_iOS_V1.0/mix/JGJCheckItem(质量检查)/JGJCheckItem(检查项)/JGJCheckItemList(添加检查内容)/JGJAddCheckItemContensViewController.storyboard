@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Check Item Contens View Controller-->
+        <scene sceneID="UGv-WK-eOr">
+            <objects>
+                <viewController storyboardIdentifier="JGJAddCheckItemContensVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="npI-lj-MTr" customClass="JGJAddCheckItemContensViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N4h-bZ-0xy"/>
+                        <viewControllerLayoutGuide type="bottom" id="mF8-pz-QEm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cG9-wo-a25">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-OK-Vsd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="582"/>
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNA-sd-Xcp">
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pih-Zj-Dre">
+                                        <rect key="frame" x="15" y="10" width="345" height="45"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="选择完成">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickAddbtn:" destination="npI-lj-MTr" eventType="touchUpInside" id="F4U-XS-oqh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pih-Zj-Dre" secondAttribute="trailing" constant="15" id="Kpl-ad-WGS"/>
+                                    <constraint firstItem="Pih-Zj-Dre" firstAttribute="top" secondItem="aNA-sd-Xcp" secondAttribute="top" constant="10" id="jba-Rx-jGw"/>
+                                    <constraint firstItem="Pih-Zj-Dre" firstAttribute="leading" secondItem="aNA-sd-Xcp" secondAttribute="leading" constant="15" id="mWU-Nx-IIA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pih-Zj-Dre" secondAttribute="bottom" constant="10" id="wSP-Fp-xOr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dQV-OK-Vsd" firstAttribute="top" secondItem="N4h-bZ-0xy" secondAttribute="bottom" id="01c-Qd-Wo1"/>
+                            <constraint firstAttribute="trailing" secondItem="dQV-OK-Vsd" secondAttribute="trailing" id="Bil-le-a2j"/>
+                            <constraint firstItem="aNA-sd-Xcp" firstAttribute="leading" secondItem="cG9-wo-a25" secondAttribute="leading" id="HBG-vU-c2r"/>
+                            <constraint firstItem="mF8-pz-QEm" firstAttribute="top" secondItem="aNA-sd-Xcp" secondAttribute="bottom" id="NHd-P1-Kw6"/>
+                            <constraint firstItem="dQV-OK-Vsd" firstAttribute="leading" secondItem="cG9-wo-a25" secondAttribute="leading" id="OWB-hw-IZE"/>
+                            <constraint firstItem="aNA-sd-Xcp" firstAttribute="top" secondItem="dQV-OK-Vsd" secondAttribute="bottom" id="TXV-R9-ADo"/>
+                            <constraint firstAttribute="trailing" secondItem="aNA-sd-Xcp" secondAttribute="trailing" id="Ugq-Oe-CLA"/>
+                            <constraint firstItem="mF8-pz-QEm" firstAttribute="top" secondItem="dQV-OK-Vsd" secondAttribute="bottom" constant="65" id="mUy-yE-wCp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="Pih-Zj-Dre" id="oea-f9-r3j"/>
+                        <outlet property="tableView" destination="dQV-OK-Vsd" id="WV9-cr-jKF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RT3-O9-uJt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="179.46026986506749"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <LinearLayout
+        android:id="@+id/default_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/default_top"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="你还没有任何项目同步给他"
+            android:textColor="@color/gray_b9b9b9"
+            android:textSize="@dimen/default_title_size" />
+
+        <Button
+            android:id="@+id/sync_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/button_press_effect"
+            android:onClick="onClick"
+            android:text="@string/synchpro"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_f1f1f1"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        style="@style/bottom_button_layout">
+
+        <View style="@style/line" />
+
+
+        <LinearLayout
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_radius_guide_btn_appcolor"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_add_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:text="新增同步"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

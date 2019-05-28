@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.001347">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: increment_build_number" time="1.458809">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: get_info_plist_value" time="0.005241">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: get_info_plist_value" time="0.00448">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: gym" time="527.946775">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: pgyer" time="50.539815">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

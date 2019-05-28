@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/head_only_title"/>
+
+    <LinearLayout
+        android:id="@+id/lin_message_def"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="140dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/no_data"/>
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/def_nodata"
+            android:textColor="@color/color_b9b9b9"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ExpandableListView
+                android:id="@+id/expanLv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f1f1f1"
+                android:cacheColorHint="#00000000"
+                android:childDivider="@null"
+                android:divider="@null"
+                android:drawSelectorOnTop="true"
+                android:groupIndicator="@null"
+                android:visibility="visible"/>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

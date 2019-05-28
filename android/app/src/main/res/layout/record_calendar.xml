@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_date_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/sunday"
+                        android:textColor="@color/app_color" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/monday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/thesday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/wednesday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/thursday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/friday"
+                        android:textColor="@color/color_999999" />
+
+                    <TextView
+                        style="@style/dateStyle"
+                        android:text="@string/saturday"
+                        android:textColor="@color/app_color" />
+                </TableRow>
+            </TableLayout>
+
+            <View style="@style/line" />
+
+
+            <com.jizhi.jongg.widget.ResetHeightViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/circle_gray"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/circle_gray"
+                        android:gravity="center"
+                        android:text="在吉工家记工 数据永远不会丢失"
+                        android:textColor="@color/color_333333"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+                    android:id="@+id/sundryDayIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="6dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/sundry_day_icon" />
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ebebeb"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp">
+
+                <LinearLayout
+                    android:id="@+id/recordOneAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/draw_eb4e4e_5radius"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="马上记一笔"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/record_content_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/foremanRecordBtnLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+                        android:id="@+id/recordMultipartBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/margin_20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/draw_sk_eb4e4e_5radius"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="批量记工"
+                            android:textColor="@color/color_eb4e4e"
+                            android:textSize="@dimen/text_size_15"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="点工  包工"
+                            android:textColor="@color/color_eb4e4e"
+                            android:textSize="10sp" />
+
+                    </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+
+                    <LinearLayout
+                        android:id="@+id/recordSingleBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/draw_eb4e4e_5radius"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="onClick">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="记单人"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_15"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:lineSpacingExtra="2dp"
+                            android:text="@string/record_content_vertical"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/line" />
+
+            <LinearLayout
+                android:id="@+id/workFlowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/workFlow"
+                    style="@style/text_weight_one"
+                    android:drawableLeft="@drawable/calendar_record_detaila_icon"
+                    android:text="记工流水" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_dbdbdb" />
+
+                <TextView
+                    android:id="@+id/workStatistical"
+                    style="@style/text_weight_one"
+                    android:drawableLeft="@drawable/calendar_work_statistical_icon"
+                    android:text="记工统计" />
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/unBalanceLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/click_text_attribute_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_click_background"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/calendar_un_balance_icon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/icon"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/unBalanceTips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未结工人工资"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/click_text_attribute_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/unBalanceAmounts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0.00"
+                            android:textColor="@color/un_balance_color"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_dbdbdb" />
+
+                <LinearLayout
+                    android:id="@+id/personManagerLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/click_text_attribute_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/listview_selector_white_gray"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:onClick="onClick"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/calendar_person_manager_icon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/personManager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_333333"
+                            android:textSize="@dimen/click_text_attribute_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/personManagerDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="right"
+                            android:textColor="@color/color_666666"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView
+                android:id="@+id/syncItem"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/synclayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_click_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/syncBill"
+                    style="@style/text_weight_one"
+                    android:drawableLeft="@drawable/calendar_sync_bill_icon"
+                    android:text="同步记工" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_dbdbdb" />
+
+                <RelativeLayout
+                    android:id="@+id/syncBillToMe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="onClick">
+
+                    <TextView
+                        android:id="@+id/synToMeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/sync_to_me_icon"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:text="同步给我的记工"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/click_text_attribute_text_size"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/is_red_flag"
+                        style="@style/red_circle"
+                        android:layout_toRightOf="@id/synToMeText"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/like"
+                    style="@style/text_weight_one"
+                    android:drawableLeft="@drawable/calendar_like_red_pack_icon"
+                    android:text="点个赞" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_dbdbdb" />
+
+                <TextView
+                    android:id="@+id/recommendOther"
+                    style="@style/text_weight_one"
+                    android:drawableLeft="@drawable/calendar_recommend_other_icon"
+                    android:text="推荐给他人" />
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/balanceOfAccount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/click_text_attribute_height"
+                android:background="@drawable/listview_selector_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/calendar_balance_account_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/work_confirm"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/unread_check_account_count"
+                    style="@style/badge_shape"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/houtui" />
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.AppDiverView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/showAccountType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/click_text_attribute_height"
+                android:background="@drawable/listview_selector_white_gray"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/calendar_account_show_type_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="设置记工显示方式"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/accountTypeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/houtui"
+                    android:gravity="right"
+                    android:textColor="@color/app_color"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!--  <View
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@color/color_f1f1f1" />-->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

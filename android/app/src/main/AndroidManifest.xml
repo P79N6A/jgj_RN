@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jizhi.jlongg">
+    <!-- renren sso Permission for Unit Test -->
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 百度定位权限开始 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 8.0增加安装apk权
+    限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 拍照111 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.permission.WRITE_APN_SETTINGS" />
+    <!-- 推送相关权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名-->
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.push.example" />
+    <!--设置调试 RN的权限-->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.jizhi.jlongg"
+        android:protectionLevel="normal" />
+    <!-- 百度定位权限结束 -->
+
+    <application
+        android:name="com.jizhi.jlongg.main.application.UclientApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme.base"
+        tools:replace="android:allowBackup">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="9pxmd4rt7hjwDTK0phTGIPTx" />
+        <!--添加debug模式Activity(正式打包注释掉就好了)-->
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <!--android:name="com.jizhi.jlongg.reactnative.LoadingReactActivity"-->
+
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.welcome.WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <!--// //https://a.app.qq.com/o/simple.jsp?pkgname=com.jizhi.jlongg-->
+                <data android:scheme="growing.a266f21c1089051c"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--<data-->
+                <!--android:host="a.app.qq"-->
+                <!--android:pathPrefix="/o/simple.jsp?pkgname"-->
+                <!--android:scheme="https" />-->
+                <data android:scheme="jigongjia" />
+            </intent-filter>
+        </activity>
+
+        <!--****************************联通****************************-->
+        <activity
+            android:name="com.sdk.mobile.ui.OauthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sdk.base.module.permission.PermissionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--************************移动********************************-->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.OAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--******************************电信***********************-->
+        <activity
+            android:name="com.chuanglan.shanyan_sdk.view.ShanYanOneKeyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.chuanglan.shanyan_sdk.view.CTCCPrivacyProtocolActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 注册provider 主要是Android 7.0获取uri使用 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.jizhi.jlongg.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--&lt;!&ndash; 消息转发页面  &ndash;&gt;-->
+        <!--<activity-->
+            <!--android:name="com.jizhi.jlongg.main.activity.welcome.WelcomeActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+        <!-- 消息转发页面  -->
+        <activity
+            android:name=".main.activity.ForwardMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 本次已确认的  -->
+        <activity
+            android:name=".main.activity.RecordWorkConfirmThisTimeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的项目班组  -->
+        <activity
+            android:name=".main.activity.MyGroupTeamActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 借支增加“一天记多人”（只有从班组内的“借支/结算”进入借支界面，才有此功能）  -->
+        <activity
+            android:name=".main.activity.AddAccountPersonMultipartActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 下载页面  -->
+        <activity
+            android:name=".main.activity.DownLoadExcelActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 开启对账详情  -->
+        <activity
+            android:name=".main.activity.BalanceOfAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 记工设置  -->
+        <activity
+            android:name=".main.activity.RecordAccountSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 记事本日历首页  -->
+        <activity
+            android:name=".main.activity.NotesCalendarActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 快速加群  -->
+        <activity
+            android:name=".main.activity.QuickJoinGroupChatActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 招聘消息  -->
+        <activity
+            android:name=".main.activity.RecruitMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 工作消息  -->
+        <activity
+            android:name=".main.activity.WorkMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 工作消息查看同步消息详情  -->
+        <activity
+            android:name=".main.activity.WorkMessageSyncDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 公共添加成员方式  -->
+        <activity
+            android:name=".main.activity.CommonSelecteMemberActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 群聊升级班组  -->
+        <activity
+            android:name=".main.activity.UpgradeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 群聊升级班组选择成员  -->
+        <activity
+            android:name=".main.activity.UpgradeMemberListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置代班组长  -->
+        <activity
+            android:name=".main.activity.SetReplaceForemanActivity"
+            android:screenOrientation="portrait" />
+        <!-- 面对面分享  -->
+        <activity
+            android:name=".main.activity.CustomFaceToFaceActivity"
+            android:theme="@style/dialogActivity" />
+        <!-- 添加数据来源人  -->
+        <activity
+            android:name=".main.activity.AddSourceMemberActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 数据来源人成员  -->
+        <activity
+            android:name=".main.activity.SourceMemberManagerActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 处理数据来源人  -->
+        <activity
+            android:name=".main.activity.DealSourceActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置管理员  -->
+        <activity
+            android:name=".main.activity.AdministratorListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增管理员  -->
+        <activity
+            android:name=".main.activity.SetAdministratorActivity"
+            android:screenOrientation="portrait" />
+        <!-- 记工统计第三层页面 -->
+        <activity
+            android:name=".main.activity.StatisticalWorkThirdActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 记工统计第二层页面 -->
+        <activity
+            android:name=".main.activity.StatisticalWorkSecondActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 记工统计第一层页面 -->
+        <activity
+            android:name=".main.activity.StatisticalWorkFirstActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 记账，添加对象  -->
+        <activity
+            android:name=".main.activity.AddWorkerActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 找回密码，第一步输入电话号码 -->
+        <activity
+            android:name=".main.activity.FindPwdInputTelphoneActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 找回密码,步骤1,2,3 -->
+        <activity
+            android:name=".main.activity.FindPwdStep123Activity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 找回密码,步骤4 -->
+        <activity
+            android:name=".main.activity.FindPwdStep4Activity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择项目 -->
+        <activity
+            android:name=".main.activity.SelecteProjectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 切换记工显示方式 -->
+        <activity
+            android:name=".main.activity.AccountShowTypeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 添加评价标签 -->
+        <activity
+            android:name=".main.activity.AddEvaluateTagActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme" />
+
+        <!-- 去评价 -->
+        <activity
+            android:name=".main.activity.GoEvaluateActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 奖励开发者支付页 -->
+        <activity
+            android:name=".main.activity.RewardPayActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 精彩小视频 -->
+        <activity
+            android:name=".main.activity.WonderfulVideoListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 工人、班组长评价详情 新页面 -->
+        <activity
+            android:name=".main.activity.EvaluationDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 工人、班组长评价信息 新页面 -->
+        <activity
+            android:name=".main.activity.PersonEvaluateInfoNewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 工人、班组长管理 -->
+        <activity
+            android:name=".main.activity.ForemanWorkerManagerActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 同步记工 -->
+        <activity
+            android:name=".main.activity.SyncActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择同步项目 -->
+        <activity
+            android:name=".main.activity.SyncSelecteProjectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 同步给我的记工 -->
+        <activity
+            android:name=".main.activity.SyncRecordToMeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增同步 -->
+        <activity
+            android:name=".main.activity.AddSyncActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增同步对象 -->
+        <activity
+            android:name=".main.activity.SyncReocrdAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择同步类型 -->
+        <activity
+            android:name=".main.activity.SelecteSyncTypeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 新增同步 -->
+        <activity
+            android:name=".main.activity.AddSyncPersonActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 绑定微信 -->
+        <activity
+            android:name=".main.activity.BindWxActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 人脉推荐 -->
+        <activity
+            android:name=".main.activity.VeinRecommendationActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 同步项目 -->
+        <activity
+            android:name=".main.activity.SynchMutipartProActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 出勤公示 -->
+        <activity
+            android:name=".main.activity.TurnOutForWorkActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 无金额点工 -->
+        <activity
+            android:name=".main.activity.NoMoneyLittleWorkActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 未结工资 -->
+        <activity
+            android:name=".main.activity.UnBalanceActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 注销账户 -->
+        <activity
+            android:name=".main.activity.UnSubscribeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 任务首页 -->
+        <activity
+            android:name=".main.activity.task.TaskHomePageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 检查项 -->
+        <activity
+            android:name=".main.activity.checkplan.CheckListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 检查首页 -->
+        <activity
+            android:name=".main.activity.checkplan.CheckPlanHomePageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 新建检查内容 -->
+        <activity
+            android:name=".main.activity.checkplan.NewOrUpdateCheckContentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 新建检查项 -->
+        <activity
+            android:name=".main.activity.checkplan.NewOrUpdateCheckListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 新建计划 -->
+        <activity
+            android:name=".main.activity.checkplan.NewPlanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 查看检查内容 -->
+        <activity
+            android:name=".main.activity.checkplan.SeeCheckContentActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 查看检查点 -->
+        <activity
+            android:name=".main.activity.checkplan.SeeCheckPointActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 查看检查项 -->
+        <activity
+            android:name=".main.activity.checkplan.SeeCheckListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择检查内容 -->
+        <activity
+            android:name=".main.activity.checkplan.SelecteCheckContentActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择检查项 -->
+        <activity
+            android:name=".main.activity.checkplan.SelecteCheckListActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 任务详情 -->
+        <activity
+            android:name=".main.activity.task.TaskListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 添加成员方式 -->
+        <activity
+            android:name=".main.activity.AddMemberWayActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的二维码 -->
+        <activity
+            android:name=".main.activity.MyScanQrCodeActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 待确认的记工清单 -->
+        <activity
+            android:name=".main.activity.RecordWorkConfirmActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 订单详情 -->
+        <activity
+            android:name=".main.activity.pay.OrderDeatilActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 缴纳保证金 -->
+        <activity
+            android:name=".main.activity.partner.BailCashActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 提现账户列表 -->
+        <activity
+            android:name=".main.activity.partner.BalanceWithdrawActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 添加提现账户 -->
+        <activity
+            android:name=".main.activity.partner.AddWithdrawCashAccountActiviy"
+            android:screenOrientation="portrait" />
+
+        <!-- 提现账户操作详情 -->
+        <activity
+            android:name=".main.activity.partner.BalanceWithdrawDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 知识库 -->
+        <activity
+            android:name=".main.activity.RepositoryGridViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 云盘支付 -->
+        <activity
+            android:name=".main.activity.pay.ConfirmCloudOrderNewActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 获取项目信息 -->
+        <activity
+            android:name=".main.activity.pay.GetProjectInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的订单 -->
+        <activity
+            android:name=".main.activity.pay.MyOrderListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 订单支付成功 -->
+        <activity
+            android:name=".main.activity.pay.OrderSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 扫码登录 -->
+        <activity
+            android:name=".main.activity.ScanLoginActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 加载云盘图片 -->
+        <activity
+            android:name=".main.activity.procloud.LoadCloudPicActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 视频播放 -->
+
+        <!-- 项目云盘主页 -->
+        <activity
+            android:name=".main.activity.procloud.ProCloudActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 项目云盘移动文件 -->
+        <activity
+            android:name=".main.activity.procloud.MoveFileActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 项目云盘传输列表 -->
+        <activity
+            android:name=".main.activity.procloud.TranmissionActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 项目云盘回收站 -->
+        <activity
+            android:name=".main.activity.procloud.RecycleBinActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 项目云盘文件删除 -->
+        <activity
+            android:name=".main.activity.procloud.DeleteFileActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 晴雨表 -->
+        <activity
+            android:name=".main.activity.WeatherTablelActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置记录员 -->
+        <activity
+            android:name=".main.activity.SetRecorderActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 天气详情列表 -->
+        <activity
+            android:name=".main.activity.WeatherListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 记录天气 -->
+        <activity
+            android:name=".main.activity.RecordWeatherActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 发布任务 -->
+        <activity
+            android:name=".main.activity.task.PubliskTaskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 单选框 -->
+        <activity
+            android:name=".main.activity.SingleSelectedActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择参与者 -->
+        <activity
+            android:name=".main.activity.SelecteActorActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择负责人 -->
+        <activity
+            android:name=".main.activity.SelectePriniActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 修改手机号码第一步 -->
+        <activity
+            android:name=".main.activity.UpdateTelFirstNewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改手机号码第二部 -->
+        <activity
+            android:name=".main.activity.UpdateTelSecondNewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 修改手机号码第二部 -->
+        <activity
+            android:name=".main.activity.UpdateTelSecondActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 选择城市 -->
+        <activity
+            android:name=".main.activity.SelecteCityActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 展示PDF -->
+        <activity
+            android:name=".main.activity.PdfActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 展示word、excel -->
+        <activity
+            android:name=".main.activity.FileReadActivity"
+            android:screenOrientation="portrait" />
+        <!-- 知识库已下载 -->
+        <activity
+            android:name=".main.activity.RepositoryDownLoadActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 知识库搜索 -->
+        <activity
+            android:name=".main.activity.RepositorySearchingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 知识库收藏 -->
+        <activity
+            android:name=".main.activity.RepositoryCollectionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 知识库 -->
+        <activity
+            android:name=".main.activity.RepositoryMainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 知识库详情 -->
+        <activity
+            android:name=".main.activity.RepositoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 其他项目列表 -->
+        <activity
+            android:name=".main.activity.ProListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.account.NewAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 腾讯X5浏览器内核 -->
+        <activity
+            android:name=".main.activity.X5WebViewActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 新朋友验证 -->
+        <activity
+            android:name=".main.activity.FriendApplicationListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择班组记账人员 -->
+        <activity
+            android:name=".main.activity.GetGroupAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 批量记账班组人员详情 -->
+        <activity
+            android:name=".main.activity.MultiPersonBatchAccountNewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 项目经验 -->
+        <activity
+            android:name=".main.activity.AddEditorExperience"
+            android:screenOrientation="portrait" />
+        <!-- 手机通讯录 -->
+        <activity
+            android:name=".main.activity.TelContactActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 添加朋友发送验证码 -->
+        <activity
+            android:name=".main.activity.AddFriendSendCodectivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加朋友主页 -->
+        <activity
+            android:name=".main.activity.AddFriendMainctivity"
+            android:screenOrientation="portrait" />
+        <!-- 工人记账日历滚动页 -->
+        <activity
+            android:name=".main.activity.NewCalendarDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 正在批量记账 -->
+        <activity
+            android:name=".main.activity.SingleBatchAccountActivity"
+            android:screenOrientation="portrait" />
+        <!-- 网络连接异常 -->
+        <activity
+            android:name=".main.activity.NetFailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新增项目 -->
+        <activity
+            android:name=".main.activity.AddProjectActivity"
+            android:screenOrientation="portrait" />
+        <!-- webSocket 心跳包 -->
+        <service
+            android:name=".service.WebSocketHeartRateService"
+            android:screenOrientation="portrait" />
+        <!-- WebSocket 重练 -->
+        <service
+            android:name=".service.WebSocketReconnectionService"
+            android:screenOrientation="portrait" />
+        <!-- -->
+        <activity
+            android:name=".main.activity.ModifyGroupTeamInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 项目组管理  -->
+        <activity
+            android:name=".main.activity.TeamManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- @成员 -->
+        <activity
+            android:name=".main.activity.AddAtMemberActivity"
+            android:screenOrientation="portrait" />
+        <!-- 删除成员 -->
+        <activity
+            android:name=".main.activity.DeleteMemberActivity"
+            android:screenOrientation="portrait" />
+        <!-- 班组管理 -->
+        <activity
+            android:name=".main.activity.GroupManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 记工统计 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.UserInfoBrageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.message.ActivityNoticeDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--  -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.SelectGroupOrTeamMemberActivity"
+            android:screenOrientation="portrait" />
+
+        <!--  所属项目管理 -->
+        <activity
+            android:name=".main.activity.ProjectListActivity"
+            android:screenOrientation="portrait" />
+        <!--  个人资料 -->
+        <activity
+            android:name=".main.activity.ChatUserInfoActivity"
+            android:screenOrientation="portrait" />
+        <!--  单聊详情 -->
+        <activity
+            android:name=".main.activity.SingleChatManagerActivity"
+            android:screenOrientation="portrait" />
+        <!--  通讯录 -->
+        <activity
+            android:name=".main.activity.ContactsActivity"
+            android:screenOrientation="portrait" />
+        <!--  面对面建群 -->
+        <activity
+            android:name=".main.activity.FaceToFaceCreateTeamActivity"
+            android:screenOrientation="portrait" />
+        <!--  选择成员 -->
+        <activity
+            android:name=".main.activity.ChooseMemberActivity"
+            android:screenOrientation="portrait" />
+        <!-- 成员数量管理 -->
+        <activity
+            android:name=".main.activity.MemberManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 转让管理权 -->
+        <activity
+            android:name=".main.activity.SwitchManagerActivity"
+            android:screenOrientation="portrait" />
+        <!--  选择群聊、项目 -->
+        <activity
+            android:name=".main.activity.ChooseTeamActivity"
+            android:screenOrientation="portrait" />
+        <!--  黑名单 -->
+        <activity
+            android:name=".main.activity.BlackListActivity"
+            android:screenOrientation="portrait" />
+        <!--  群聊管理 -->
+        <activity
+            android:name=".main.activity.GroupChatManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 发起群聊 -->
+        <activity
+            android:name=".main.activity.InitiateGroupChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.activity.AtMemberListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 聊天室 -->
+        <!-- 质量进度、工作通知、安全隐患 -->
+        <activity
+            android:name=".main.activity.ReleaseNoticeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加或者删除班组管理 -->
+
+
+        <!-- 工资清单 -->
+        <activity
+            android:name=".main.activity.PayrollDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 编辑项目 -->
+        <activity
+            android:name=".main.activity.EditorProjectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 每日考勤 -->
+        <activity
+            android:name=".main.activity.EveryDayAttenDanceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改账单联系人 -->
+        <activity
+            android:name=".main.activity.EditSynchPersonActivity"
+            android:screenOrientation="portrait" />
+        <!-- 黄历 -->
+        <activity
+            android:name=".main.activity.HuangliActivity"
+            android:screenOrientation="portrait" />
+        <!-- 游戏 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.GameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <!-- 同步账单、手机通讯录 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.SynContactsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 同步账单 -->
+        <activity
+            android:name=".main.activity.SyncManagerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 举报页面 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.ReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.activity.RemarksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.activity.FriendListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 登录页面 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.AppMainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.EditBorrowingBookKeepingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.EditAllBookKeepingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.EditWagesBookKeepingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AddAccountPersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.SalaryModeSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.RememberWorkerInfosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.ProjectGuideActivity"
+            android:screenOrientation="portrait" />
+        <!-- 完成项目 详情 -->
+        <!-- 个人认证 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.welcome.PersonalAuthenticationActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 选择角色 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.welcome.ChooseRoleActivity"
+            android:screenOrientation="portrait" />
+        <!-- 补充资料 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.welcome.RegisterPerfectDataActivity"
+            android:screenOrientation="portrait" />
+        <!-- yindaojiemian -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.welcome.FirstInActivity"
+            android:screenOrientation="portrait" />
+        <!-- 评价列表 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.EvaluationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 定位服务 -->
+        <service android:name="com.jizhi.jlongg.service.MyLoctionService" />
+        <!-- 发布项目分包信息 -->
+        <!-- 发布修改项目分包信息 -->
+        <!-- 发布修改项目需哦那个包信息 -->
+        <!-- 发布修改项目总包信息 -->
+        <!-- 班组长注册 -->
+        <!-- 管理项目.处理报名 -->
+        <!-- 选择注册类型 -->
+        <!-- 找帮手班组长 -->
+
+        <!-- 新增评价 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AddEvaluationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <!-- 图片缩放 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.PhotoZoomActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 相册列表 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AlbumActivity"
+            android:screenOrientation="portrait" />
+        <!-- 相册详情 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AlbumDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.welcome.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择发布的项目类型 -->
+        <!-- 填写需要发布项目的基本信息 -->
+        <!-- 同步账单项目列表界面 -->
+        <activity
+            android:name=".main.activity.SynchProjectListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 同步账单增加项目界面 -->
+        <activity
+            android:name=".main.activity.SynchSatementAddProjectActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改写需要发布项目的基本信息 -->
+        <!-- 选择工种多选 -->
+        <!-- 查看地址 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.map.LookAddrActivity"
+            android:screenOrientation="portrait" />
+        <!-- 班组长找帮手邀请界面 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.map.NearbyAddrActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <!-- 设置-->
+        <activity
+            android:name=".main.activity.SetActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选吉日 -->
+        <activity
+            android:name=".main.activity.LuckyDayActivity"
+            android:screenOrientation="portrait" />
+        <!--添加联系人 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AddContactsActivity"
+            android:screenOrientation="portrait" />
+        <!--扫描二维码 -->
+        <activity
+            android:name=".main.activity.ScanCodeAddTeamGroupActivity"
+            android:screenOrientation="portrait" />
+        <!--加入班组 -->
+        <activity
+            android:name="com.google.zxing.client.android.scanner.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <!--新建班组 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.CreateTeamGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.SelectWorkToMessageActivity"
+            android:screenOrientation="portrait" />
+        <!--新建班组 项目名称 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AddProjectNameActivity"
+            android:screenOrientation="portrait" />
+
+        <!--新建班组 选择城市 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.SelectProviceAndCityActivity"
+            android:screenOrientation="portrait" />
+        <!--二维码图片界面-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.TeamGroupQrCodeActivity"
+            android:screenOrientation="portrait" />
+        <!--包工选择单位-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AccountSelectCompanyActivity"
+            android:screenOrientation="portrait" />
+        <!--二维码图片界面-->
+        <activity
+            android:name=".main.message.SigninActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.message.SingleTodayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.message.SignDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.message.MessageReadInfoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.message.MessageImagePagerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".main.message.MessageBillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.message.NoticeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.utis.acp.AcpActivity"
+            android:screenOrientation="portrait" />
+        <!--2.2.3-->
+        <!--新发日志界面-->
+        <activity
+            android:name=".main.activity.ReleaseLogActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-->
+        <activity
+            android:name=".main.activity.ReleaseQualityAndSafeActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-隐患部位-->
+        <activity
+            android:name=".main.activity.SelectReleaseQualityAddressActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-隐患级别-->
+        <activity
+            android:name=".main.activity.ReleaseProjectLevelActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-整改负责人-->
+        <activity
+            android:name=".main.activity.ReleaseProjecPeopleActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-列表页-->
+        <activity
+            android:name=".main.message.MsgQualityAndSafeActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-列表页筛选-->
+        <activity
+            android:name=".main.activity.MsgQualityAndSafeFilterActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-回复消息-->
+        <activity
+            android:name=".main.activity.ReplyMsgQualityAndSafeActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-整改完成确认-->
+        <activity
+            android:name=".main.activity.RectificationInstructionsActivity"
+            android:screenOrientation="portrait" />
+        <!--新质量安全界面-详情-->
+        <activity
+            android:name=".main.message.ActivityQualityAndSafeDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--修改日志-->
+        <activity
+            android:name=".main.activity.UpdateLogActivity"
+            android:screenOrientation="portrait" />
+        <!--任务详情-->
+        <activity
+            android:name=".main.activity.task.TaskDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 2.3.0 -->
+        <!-- 2.3.0质量安全列表页-->
+        <activity
+            android:name=".main.activity.qualityandsafe.MsgQualityAndSafeFragmentActivity"
+            android:screenOrientation="portrait" />
+        <!--质量检查筛选-->
+        <activity
+            android:name=".main.activity.qualityandsafe.MsgQualityAndSafeFilterCheckActivity"
+            android:screenOrientation="portrait" />
+        <!--发检查计划-->
+        <activity
+            android:name=".main.activity.qualityandsafe.ReleaseCheckQualityAndSafeActivity"
+            android:screenOrientation="portrait" />
+        <!--检查计划检查大项列表-->
+        <activity
+            android:name=".main.activity.qualityandsafe.MsgQualityAndSafeCheckListActivity"
+            android:screenOrientation="portrait" />
+        <!--检查计划检查大项检查分项详情列表-->
+        <activity
+            android:name=".main.activity.qualityandsafe.MsgQualityAndSafeCheckDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 未涉及,通过确认-->
+        <activity
+            android:name=".main.activity.qualityandsafe.QualityAndSafeResultActivity"
+            android:screenOrientation="portrait" />
+        <!--新日志界面-->
+        <activity
+            android:name=".main.activity.log.MsgLogActivity"
+            android:screenOrientation="portrait" />
+        <!--新日志筛选界面-->
+        <activity
+            android:name=".main.activity.log.MsgLogFilterActivity"
+            android:screenOrientation="portrait" />
+        <!--发工作日志界面-->
+        <activity
+            android:name=".main.activity.log.ReleaseCustomLogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <!--发日志单选类型界面-->
+        <activity
+            android:name=".main.activity.log.ReleaseLogSelectorActivity"
+            android:screenOrientation="portrait" />
+        <!--新日志详情界面-->
+        <activity
+            android:name=".main.activity.log.LogDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--更新日志界面-->
+        <activity
+            android:name=".main.activity.log.UpdateCustomLogActivity"
+            android:screenOrientation="portrait" />
+        <!--签到详情-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.SigninDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--签到微调-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.SignAddressChangeActivity"
+            android:screenOrientation="portrait" />
+        <!--日志类型选择界面-->
+        <activity
+            android:name=".main.activity.log.FilterLogTypeActivity"
+            android:screenOrientation="portrait" />
+        <!--付费功能提示-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.PayHintActivity"
+            android:screenOrientation="portrait" />
+        <!-- 2.3.2 -->
+        <!-- 2.3.2记账详情页面-->
+        <activity
+            android:name="com.jizhi.jlongg.account.AccountDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.account.AccountEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--2.3.4-->
+        <!--质量，安全首页-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.qualityandsafe.QualityAndSafePageActivity"
+            android:screenOrientation="portrait" />
+        <!--质量，安全列表-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.qualityandsafe.QualityAndSafeListActivity"
+            android:screenOrientation="portrait" />
+        <!--检查计划2.3.4-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.check.CheckInspectioPlanActivity"
+            android:screenOrientation="portrait" />
+        <!--检查项2.3.4-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.check.CheckProjectActivity"
+            android:screenOrientation="portrait" />
+        <!--发整改通知2.3.4-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.check.ReleaseRectificationNoticeActivity"
+            android:screenOrientation="portrait" />
+        <!--不用检查,通过确认2.3.4-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.check.CheckResultActivity"
+            android:screenOrientation="portrait" />
+        <!--检查记录2.3.4-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.check.CheckHistoryActivity"
+            android:screenOrientation="portrait" />
+        <!--检查记录列表2.3.4-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.check.MsgCheckListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 消息回复列表2.3.4-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.ReplyMsgContentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!--修改结算界面2.3.7-->
+        <activity
+            android:name="com.jizhi.jlongg.account.AccountWagesEditActivty"
+            android:screenOrientation="portrait" />
+        <!--修改包工界面2.3.7-->
+        <activity
+            android:name="com.jizhi.jlongg.account.AccountAllEditActivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.BaseActivity"
+            android:launchMode="singleTask" />
+        <!--质量安全修改整改措施2.3.7-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.qualityandsafe.QualityAndSafeChangeStepActivity"
+            android:screenOrientation="portrait" />
+        <!--共同好友2.3.7-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.CommonFriendActivity"
+            android:screenOrientation="portrait" />
+        <!--3.2.0新页面-->
+        <!--记事本列表3.2.0-->
+        <activity
+            android:name="com.jizhi.jlongg.activity.notebook.NoteBookListActivity"
+            android:screenOrientation="portrait" />
+        <!--某日记事本列表3.5.0-->
+        <activity
+            android:name="com.jizhi.jlongg.activity.notebook.NoteBookTodayListActivity"
+            android:screenOrientation="portrait" />
+        <!--添加记事本3.2.0-->
+        <activity
+            android:name="com.jizhi.jlongg.activity.notebook.SaveNoteBookActivity"
+            android:theme="@style/activityTheme" />
+        <!--记事本详情3.2.0-->
+        <activity
+            android:name="com.jizhi.jlongg.activity.notebook.NoteBookDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--记工变更-->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AccountModifyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 3.4.0新消息 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.msg.NewMsgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 3.4.0新签到列表 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.message.SignListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 3.4.0新签到某个成员列表 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.message.UserSignListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 3.4.0开通微信服务 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.OpenWechatServiceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 3.4.0活动消息 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.msg.ShakyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 3.4.2关联账号 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.RelationAccountNumberActivity"
+            android:screenOrientation="portrait" />
+        <!-- 3.5.2选择分享模版 -->
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.AddSubProjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jizhi.jlongg.main.activity.ShareActivity"
+            android:theme="@style/dialogActivity" />
+
+        <activity
+            android:name="com.jizhi.jlongg.account.TestActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.jizhi.jlongg.MipushTestActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.jizhi.jlongg.reactnative.JobReactActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105013029" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信分享回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/activityTheme" />
+        <!-- 微信支付回调 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="Agnsw8jCQMqXQcCj4jI1akEB" />
+        <meta-data
+            android:name="QBSDKAppKey"
+            android:value="bSeJkkT8Cm41FvJjb4ElMq0/" />
+        <!-- 友盟AppKey，     zhengshi:573940a8e0f55af7ad000109-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="573940a8e0f55af7ad000109" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="9e795ed17c5cd0ed0181ea0a72068e5b" />
+        <!-- yzgong -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yzgong" />
+
+        <!-- alipay sdk begin -->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <!-- alipay sdk end -->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=10457140" />
+
+        <!--魅族push应用定义消息receiver声明 -->
+        <receiver android:name="com.jizhi.jlongg.MeizuTestReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <!-- 接收register消息 -->
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <!-- 接收unregister消息-->
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <!-- 兼容低版本Flyme3推送服务配置 -->
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.jizhi.jlongg" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

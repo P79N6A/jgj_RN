@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:id="@+id/rea_role"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_role" />
+
+        <TextView
+            android:id="@+id/tv_role_title"
+            style="@style/account_left_text"
+            android:text="title" />
+
+        <ImageView
+            android:id="@+id/img_role_arrow"
+            style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_role_name"
+            style="@style/account_right_text"
+            android:hint="hint" />
+
+        <ImageView style="@style/account_driver_1px" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rea_date"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            style="@style/account_left_image"
+            android:background="@drawable/icon_account_date" />
+
+        <TextView
+            style="@style/account_left_text"
+            android:text="日期" />
+
+        <ImageView style="@style/account_right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/account_right_text" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_10px" />
+
+    <RelativeLayout
+        android:id="@+id/rea_unAccountCountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+            android:id="@+id/unAccountCountLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_f9a00f_20_radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/unAccountCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/confirmIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/confirm_icon" />
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rea_salary"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_salary" />
+
+            <TextView
+                android:id="@+id/account_left_text"
+                style="@style/account_left_text"
+                android:text="考勤模板" />
+
+            <ImageView android:id="@+id/account_rr"
+                style="@style/account_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_salary"
+                style="@style/account_right_text"
+                android:hint="这里设置模板" />
+
+            <ImageView style="@style/account_driver_1px" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rea_worktime"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <include layout="@layout/layout_accout_hout_worktime_hint"
+                android:id="@+id/hout_work_time_hinet"/>
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_work_time" />
+
+            <TextView
+                style="@style/account_left_text"
+                android:text="上班时长" />
+
+            <ImageView style="@style/account_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_worktime"
+                style="@style/account_right_text" />
+            <ImageView style="@style/account_driver_1px" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rea_overtime"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_over_time" />
+
+            <TextView
+                style="@style/account_left_text"
+                android:text="加班时长" />
+
+
+            <ImageView style="@style/account_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_over_time"
+                style="@style/account_right_text" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_line_10px" />
+
+        <RelativeLayout
+            android:id="@+id/rea_project"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                style="@style/account_driver_1px"
+                android:layout_alignParentBottom="false" />
+
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_project" />
+
+            <TextView
+                style="@style/account_left_text"
+                android:text="所在项目" />
+
+
+            <ImageView
+                android:id="@+id/img_pro_arrow"
+                style="@style/account_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_proname"
+                style="@style/account_right_text"
+                android:layout_marginLeft="110dp"
+                android:ellipsize="end"
+                android:hint="例如：万科魅力之城"
+                android:maxEms="13"
+                android:singleLine="true" />
+
+            <ImageView style="@style/account_driver_1px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rea_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                style="@style/account_left_image"
+                android:background="@drawable/icon_account_marks" />
+
+            <TextView
+                style="@style/account_left_text"
+                android:text="备注" />
+
+
+            <ImageView style="@style/account_right_arrow" />
+
+            <TextView
+                android:id="@+id/tv_remarks"
+                style="@style/account_right_text"
+                android:hint="可填写备注信息" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView style="@style/account_driver_1px" />
+</LinearLayout>

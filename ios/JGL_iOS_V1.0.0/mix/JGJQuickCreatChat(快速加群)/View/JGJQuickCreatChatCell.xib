@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJQuickCreatChatCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quick_creat_group_icon" translatesAutoresizingMaskIntoConstraints="NO" id="iNm-xa-cRJ">
+                        <rect key="frame" x="10" y="23" width="17" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="9DD-lk-cBT"/>
+                            <constraint firstAttribute="height" constant="13" id="nqG-Yy-EbO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3z-on-sGS">
+                        <rect key="frame" x="37" y="11" width="178" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGx-H2-rKH">
+                        <rect key="frame" x="225" y="14" width="85" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="MrX-SE-08w"/>
+                            <constraint firstAttribute="height" constant="28" id="qW7-OQ-Fnf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-4" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="加入群聊" image="add_conRecom_icon">
+                            <color key="titleColor" red="0.92156862745098034" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="deviceRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="joinBtnPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oXC-TY-QUS"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3T9-BE-LMf" customClass="LineView">
+                        <rect key="frame" x="37" y="57" width="283" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="0oH-0v-ea9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N3z-on-sGS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="B7U-v5-AIL"/>
+                    <constraint firstItem="eGx-H2-rKH" firstAttribute="leading" secondItem="N3z-on-sGS" secondAttribute="trailing" constant="10" id="Eph-yg-48t"/>
+                    <constraint firstAttribute="trailing" secondItem="eGx-H2-rKH" secondAttribute="trailing" constant="10" id="Hpp-Dh-uRU"/>
+                    <constraint firstItem="3T9-BE-LMf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="37" id="JRd-hR-OOr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="N3z-on-sGS" secondAttribute="bottom" id="MPl-j0-6fH"/>
+                    <constraint firstItem="eGx-H2-rKH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="a20-3m-A9r"/>
+                    <constraint firstAttribute="bottom" secondItem="3T9-BE-LMf" secondAttribute="bottom" id="fYQ-eS-os0"/>
+                    <constraint firstItem="iNm-xa-cRJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gCv-Jc-W2x"/>
+                    <constraint firstAttribute="trailing" secondItem="3T9-BE-LMf" secondAttribute="trailing" id="kgo-x3-knS"/>
+                    <constraint firstItem="N3z-on-sGS" firstAttribute="leading" secondItem="iNm-xa-cRJ" secondAttribute="trailing" constant="10" id="vw4-X4-gfv"/>
+                    <constraint firstItem="iNm-xa-cRJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xJQ-Nj-JZv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="group_name" destination="N3z-on-sGS" id="wZg-fy-eIW"/>
+                <outlet property="joinBtn" destination="eGx-H2-rKH" id="GAF-XG-ldQ"/>
+                <outlet property="lineLeading" destination="JRd-hR-OOr" id="4bx-f3-zR0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_conRecom_icon" width="13" height="13"/>
+        <image name="quick_creat_group_icon" width="17" height="13"/>
+    </resources>
+</document>

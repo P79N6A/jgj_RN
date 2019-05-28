@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJSynRecordCell" id="KGk-i7-Jjw" customClass="JGJSynRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEt-yY-QFc">
+                        <rect key="frame" x="10" y="12" width="224" height="25.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1v5-KY-KmJ">
+                        <rect key="frame" x="246" y="11" width="64" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="LEl-E0-27t"/>
+                            <constraint firstAttribute="width" constant="64" id="VCA-hi-xrp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="取消同步">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="cancelButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6tV-Ru-fed"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-t8-sdZ" customClass="LineView">
+                        <rect key="frame" x="10" y="49.5" width="300" height="0.5"/>
+                        <color key="backgroundColor" red="0.96318274739999998" green="0.58368462320000003" blue="0.094501279290000004" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="SgR-mv-1aP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gDs-t8-sdZ" secondAttribute="trailing" constant="10" id="00X-cQ-U4y"/>
+                    <constraint firstItem="1v5-KY-KmJ" firstAttribute="leading" secondItem="FEt-yY-QFc" secondAttribute="trailing" constant="12" id="4gL-nk-xMs"/>
+                    <constraint firstItem="FEt-yY-QFc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="F1T-qB-1PB"/>
+                    <constraint firstItem="FEt-yY-QFc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="GaP-1f-yaE"/>
+                    <constraint firstAttribute="bottom" secondItem="gDs-t8-sdZ" secondAttribute="bottom" id="dlO-Kt-c6g"/>
+                    <constraint firstAttribute="bottom" secondItem="FEt-yY-QFc" secondAttribute="bottom" constant="12" id="fUT-Ku-ZNH"/>
+                    <constraint firstItem="1v5-KY-KmJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="izb-w3-KjP"/>
+                    <constraint firstAttribute="trailing" secondItem="1v5-KY-KmJ" secondAttribute="trailing" constant="10" id="qKT-D1-n8y"/>
+                    <constraint firstItem="FEt-yY-QFc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rgI-JE-ekR"/>
+                    <constraint firstItem="gDs-t8-sdZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="x7G-vh-zp3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="cancelButton" destination="1v5-KY-KmJ" id="hSx-Z6-7s2"/>
+                <outlet property="proNameLable" destination="FEt-yY-QFc" id="kwf-JW-fpJ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

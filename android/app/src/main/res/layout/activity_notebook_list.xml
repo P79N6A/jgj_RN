@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ebebeb"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_notebook_list" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/layout_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/icon_notebook_default" />
+
+            <TextView
+                android:id="@+id/tv_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="33dp"
+                android:text="从今天开始记录你的生活吧…"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rea_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <include layout="@layout/search_edit_layout" />
+        </RelativeLayout>
+
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/springview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rea_search"
+            android:layout_marginBottom="5dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/color_f1f1f1"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_line"
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="19dp"
+                    android:background="@color/color_cccccc" />
+            </RelativeLayout>
+
+
+        </com.liaoinstan.springview.widget.SpringView>
+
+        <ListView
+            android:id="@+id/listView_serch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rea_search"
+            android:divider="@color/color_f1f1f1"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <com.jizhi.jongg.widget.ShakeAnimNotebook
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/send_btn_press" />
+
+    </RelativeLayout>
+
+</LinearLayout>

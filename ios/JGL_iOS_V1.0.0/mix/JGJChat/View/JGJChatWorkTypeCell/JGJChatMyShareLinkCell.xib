@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="183" id="KGk-i7-Jjw" customClass="JGJChatMyShareLinkCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="182.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KgR-ad-n0V">
+                        <rect key="frame" x="281" y="13" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="30N-Di-mQK"/>
+                            <constraint firstAttribute="height" constant="40" id="J0X-Rk-cvM"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYb-44-4ZJ" userLabel="leftTopView" customClass="JGJChatListCellTopTimeView">
+                        <rect key="frame" x="39" y="13" width="225" height="14"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="8gJ-6r-17V"/>
+                            <constraint firstAttribute="width" constant="225" id="mOu-Y3-gXN"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-qg-Pj3" userLabel="middleView">
+                        <rect key="frame" x="76" y="31" width="201" height="138.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chat_listWhitePOP2" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-fo-RWx">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="138.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="纳木错，在途中遇见洗涤心灵 的地方" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJS-Vo-Hx2">
+                                <rect key="frame" x="15" y="14" width="164" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="grc-d6-938"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sb2-HW-7fM">
+                                <rect key="frame" x="134" y="61" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5jI-PJ-VHI"/>
+                                    <constraint firstAttribute="width" constant="45" id="h4n-PR-GMY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最接近天堂的地方 最美的地 方是和天空相对称的， 而最 美的地方也是最接近天堂..." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu1-m1-gcK">
+                                <rect key="frame" x="15" y="58" width="102" height="57.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57.5" id="mLo-Sy-YWj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ggl-fo-RWx" secondAttribute="bottom" id="0m5-95-9bc"/>
+                            <constraint firstItem="ggl-fo-RWx" firstAttribute="top" secondItem="lKQ-qg-Pj3" secondAttribute="top" id="4OT-nx-Q9b"/>
+                            <constraint firstItem="gJS-Vo-Hx2" firstAttribute="top" secondItem="lKQ-qg-Pj3" secondAttribute="top" constant="14" id="6M9-K7-p8T"/>
+                            <constraint firstItem="Sb2-HW-7fM" firstAttribute="top" secondItem="gJS-Vo-Hx2" secondAttribute="bottom" constant="7" id="Fmv-0r-ELD"/>
+                            <constraint firstItem="tu1-m1-gcK" firstAttribute="leading" secondItem="lKQ-qg-Pj3" secondAttribute="leading" constant="15" id="Gcz-Fb-IWR"/>
+                            <constraint firstAttribute="trailing" secondItem="Sb2-HW-7fM" secondAttribute="trailing" constant="22" id="bNe-Yr-ThZ"/>
+                            <constraint firstAttribute="trailing" secondItem="gJS-Vo-Hx2" secondAttribute="trailing" constant="22" id="ddq-WF-Ju5"/>
+                            <constraint firstAttribute="trailing" secondItem="ggl-fo-RWx" secondAttribute="trailing" id="lyM-xd-hzd"/>
+                            <constraint firstItem="gJS-Vo-Hx2" firstAttribute="leading" secondItem="lKQ-qg-Pj3" secondAttribute="leading" constant="15" id="pmA-m3-CgX"/>
+                            <constraint firstItem="Sb2-HW-7fM" firstAttribute="leading" secondItem="tu1-m1-gcK" secondAttribute="trailing" constant="17" id="qPM-lY-pbc"/>
+                            <constraint firstItem="tu1-m1-gcK" firstAttribute="top" secondItem="Sb2-HW-7fM" secondAttribute="top" constant="-3" id="uF7-qC-Ozi"/>
+                            <constraint firstItem="ggl-fo-RWx" firstAttribute="leading" secondItem="lKQ-qg-Pj3" secondAttribute="leading" id="zAj-K7-HXY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lKQ-qg-Pj3" firstAttribute="top" secondItem="QYb-44-4ZJ" secondAttribute="bottom" constant="4" id="DjN-3A-Xf3"/>
+                    <constraint firstAttribute="trailing" secondItem="KgR-ad-n0V" secondAttribute="trailing" constant="10" id="Mks-Kp-7lD"/>
+                    <constraint firstItem="KgR-ad-n0V" firstAttribute="leading" secondItem="QYb-44-4ZJ" secondAttribute="trailing" constant="17" id="Nt9-2a-rMQ"/>
+                    <constraint firstItem="lKQ-qg-Pj3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="76" id="Nvb-bc-Mxx"/>
+                    <constraint firstItem="QYb-44-4ZJ" firstAttribute="top" secondItem="KgR-ad-n0V" secondAttribute="top" id="SxS-kE-HTz"/>
+                    <constraint firstItem="KgR-ad-n0V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="bfA-fZ-wvI"/>
+                    <constraint firstAttribute="bottom" secondItem="lKQ-qg-Pj3" secondAttribute="bottom" constant="13" id="gb1-4Q-qY3"/>
+                    <constraint firstItem="KgR-ad-n0V" firstAttribute="leading" secondItem="lKQ-qg-Pj3" secondAttribute="trailing" constant="4" id="j1j-QO-MNW"/>
+                    <constraint firstItem="KgR-ad-n0V" firstAttribute="leading" secondItem="QYb-44-4ZJ" secondAttribute="trailing" constant="17" id="mEH-Zx-9SF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="avatarImageView" destination="KgR-ad-n0V" id="k6x-TL-e2P"/>
+                <outlet property="middleView" destination="lKQ-qg-Pj3" id="dt4-ir-mi1"/>
+                <outlet property="popImageView" destination="ggl-fo-RWx" id="NeD-vj-FFs"/>
+                <outlet property="shareImageConstraintH" destination="Fmv-0r-ELD" id="GKC-9g-wC3"/>
+                <outlet property="shareMsgContent" destination="tu1-m1-gcK" id="uGJ-6m-UVr"/>
+                <outlet property="shareMsgContentConstraintH" destination="mLo-Sy-YWj" id="GQl-PB-XVW"/>
+                <outlet property="shareMsgImageView" destination="Sb2-HW-7fM" id="jGI-xN-YH2"/>
+                <outlet property="shareMsgTitle" destination="gJS-Vo-Hx2" id="c8Q-9B-G7J"/>
+                <outlet property="shareTitleConstraintH" destination="grc-d6-938" id="FBD-fo-OPn"/>
+                <outlet property="topTitleView" destination="QYb-44-4ZJ" id="PUW-dV-APm"/>
+            </connections>
+            <point key="canvasLocation" x="34.399999999999999" y="93.103448275862078"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Chat_listWhitePOP2" width="36" height="38"/>
+    </resources>
+</document>

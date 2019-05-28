@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/click_text_attribute_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/red_tips"
+        style="@style/badge_shape"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/menu_layout"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/red_dot"
+        style="@style/red_circle"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/menu_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/forward_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:maxHeight="50dp"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/text_size_15"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/single_forward_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                android:id="@+id/forward_icon"
+                android:layout_width="@dimen/app_head_width"
+                android:layout_height="@dimen/app_head_height"
+                android:visibility="gone" />
+
+            <com.jizhi.jlongg.groupimageviews.NineGroupChatGridImageView
+                android:id="@+id/team_heads"
+                android:layout_width="@dimen/app_head_width"
+                android:layout_height="@dimen/app_head_height"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/forward_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_15" />
+
+        </LinearLayout>
+
+        <com.jizhi.jongg.widget.WrapGridview
+            android:id="@+id/multipart_member_head_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:horizontalSpacing="2dp"
+            android:numColumns="6"
+            android:verticalSpacing="2dp"
+            android:visibility="gone" />
+
+        <View
+            style="@style/line"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forward_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="[链接]建筑工人实行实名制管理 拖欠工资将提高保证金比例建筑工..."
+        android:textColor="@color/color_999999"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/forward_thumbnail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <com.hcs.cityslist.widget.AppCursorEditText
+        android:id="@+id/words_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sk_dbdbdb_bg_ebebeb_2radius"
+        android:gravity="center_vertical"
+        android:hint="留言"
+        android:minHeight="35dp"
+        android:paddingLeft="10dp"
+        android:scrollbars="vertical"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/text_size_14" />
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/red_button_height"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_gray_bottom_round_right"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/leftBtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_525c68"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray_dbdbdb" />
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/rightBtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

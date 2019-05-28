@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f1f1f1"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rea_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/head_only_title"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_message_def"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/color_f1f1f1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/icon_default_save"/>
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="该信息已被删除"
+            android:textColor="@color/color_b9b9b9"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/lin_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/color_f1f1f1">
+
+                <TextView
+                    android:id="@+id/tv_pro_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="@string/send_notice_proname"
+                    android:textColor="@color/color_666666"
+                    android:textSize="14sp"/>
+                x
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/drawable_rectangle_c8c8c8_white"
+                    android:orientation="horizontal"
+                    android:paddingRight="1dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.13"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"
+                        android:text="天\n气"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_c8c8c8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.97"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_weather_morning"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:hint="@string/morning"
+                            android:textColor="@color/color_333333"
+                            android:textColorHint="@color/color_cccccc"
+                            android:textSize="15sp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_c8c8c8"/>
+
+                        <TextView
+                            android:id="@+id/tv_weather_afternoon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="@string/afternoon"
+                            android:maxLength="1000"
+                            android:textColor="@color/color_333333"
+                            android:textColorHint="@color/color_cccccc"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_c8c8c8"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.13"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"
+                        android:text="温\n度\n℃"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_c8c8c8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/ed_temperature_morning"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="@string/morning"
+                            android:maxLength="10"
+                            android:textColor="@color/color_333333"
+                            android:textColorHint="@color/color_cccccc"
+                            android:textSize="15sp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_c8c8c8"/>
+
+                        <EditText
+                            android:id="@+id/ed_temperature_afternoon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="@string/afternoon"
+                            android:maxLength="10"
+                            android:textColor="@color/color_333333"
+                            android:textColorHint="@color/color_cccccc"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_c8c8c8"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.13"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"
+                        android:text="风\n力\n(级)"
+                        android:textColor="@color/color_666666"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_c8c8c8"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/ed_wind_morning"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="@string/morning"
+                            android:maxLength="10"
+                            android:textColor="@color/color_333333"
+                            android:textColorHint="@color/color_cccccc"
+                            android:textSize="15sp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/color_c8c8c8"/>
+
+                        <EditText
+                            android:id="@+id/ed_wind_afternoon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:hint="@string/afternoon"
+                            android:maxLength="10"
+                            android:textColor="@color/color_333333"
+                            android:textColorHint="@color/color_cccccc"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/release_textview_hint1"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp"/>
+
+                <com.jizhi.jlongg.main.custom.MyEditText
+                    android:id="@+id/ed_remarks1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="@string/release_edit_hint1"
+                    android:maxLength="1000"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:gravity="top"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="15dp"
+                    android:text="@string/release_textview_hint2"
+                    android:textColor="@color/color_333333"
+                    android:textSize="15sp"/>
+
+                <com.jizhi.jlongg.main.custom.MyEditText
+                    android:id="@+id/ed_remarks2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="@string/release_edit_hint2"
+                    android:maxLength="1000"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:gravity="top"
+                    android:textColor="@color/color_333333"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <com.jizhi.jongg.widget.WrapGridview
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:background="@color/white"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:verticalSpacing="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        style="@style/bottom_button_layout"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <View style="@style/line"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_radius_guide_btn_appcolor"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"/>
+    </RelativeLayout>
+</RelativeLayout>

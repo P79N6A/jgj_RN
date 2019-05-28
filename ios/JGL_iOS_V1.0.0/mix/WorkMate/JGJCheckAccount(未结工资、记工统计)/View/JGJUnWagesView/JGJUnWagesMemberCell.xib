@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJUnWagesMemberCell" id="KGk-i7-Jjw" customClass="JGJUnWagesMemberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfW-EC-zkr">
+                        <rect key="frame" x="40" y="17" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2p8-NY-dGV" customClass="LineView">
+                        <rect key="frame" x="12" y="49" width="296" height="0.5"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="93Y-ZK-5jp"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYs-sn-BCr">
+                        <rect key="frame" x="207" y="17" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oy4-QD-a8z">
+                        <rect key="frame" x="250" y="12.5" width="60" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="MdD-vi-D6b"/>
+                            <constraint firstAttribute="height" constant="25" id="kDd-Sn-3Gx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="去结算">
+                            <color key="titleColor" red="0.92156862745098034" green="0.30588235294117649" blue="0.29803921568627451" alpha="1" colorSpace="deviceRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="settleButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rcf-93-sA4"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fj-iU-wBq">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="gXR-FM-BPC"/>
+                        </constraints>
+                        <state key="normal" image="EllipseIcon"/>
+                        <state key="selected" image="MultiSelected"/>
+                        <connections>
+                            <action selector="selButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ech-X9-taG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Oy4-QD-a8z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Ts-sg-Ync"/>
+                    <constraint firstAttribute="trailing" secondItem="Oy4-QD-a8z" secondAttribute="trailing" constant="10" id="3dX-Pi-XbI"/>
+                    <constraint firstItem="uYs-sn-BCr" firstAttribute="centerY" secondItem="CfW-EC-zkr" secondAttribute="centerY" id="K9Z-b4-Xup"/>
+                    <constraint firstAttribute="trailing" secondItem="2p8-NY-dGV" secondAttribute="trailing" constant="12" id="LA1-Vw-RC3"/>
+                    <constraint firstItem="2p8-NY-dGV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="LRy-fS-TD3"/>
+                    <constraint firstItem="Oy4-QD-a8z" firstAttribute="leading" secondItem="uYs-sn-BCr" secondAttribute="trailing" constant="10" id="O4N-vZ-SAY"/>
+                    <constraint firstItem="0Fj-iU-wBq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Umg-pG-oqp"/>
+                    <constraint firstItem="2p8-NY-dGV" firstAttribute="top" secondItem="0Fj-iU-wBq" secondAttribute="bottom" id="Yg9-ox-8xc"/>
+                    <constraint firstItem="CfW-EC-zkr" firstAttribute="leading" secondItem="0Fj-iU-wBq" secondAttribute="trailing" id="f9l-9Z-SWk"/>
+                    <constraint firstItem="0Fj-iU-wBq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="joG-YW-a7T"/>
+                    <constraint firstAttribute="bottom" secondItem="2p8-NY-dGV" secondAttribute="bottom" id="ki7-i4-bVk"/>
+                    <constraint firstItem="CfW-EC-zkr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="w21-FZ-Eb1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="leading" destination="LRy-fS-TD3" id="fLw-cA-kAU"/>
+                <outlet property="moneyLable" destination="uYs-sn-BCr" id="xXe-6x-jbf"/>
+                <outlet property="moneyTrail" destination="O4N-vZ-SAY" id="tLa-ds-1G3"/>
+                <outlet property="nameLable" destination="CfW-EC-zkr" id="BzD-do-zKa"/>
+                <outlet property="selButton" destination="0Fj-iU-wBq" id="neR-mi-QIm"/>
+                <outlet property="selButtonW" destination="gXR-FM-BPC" id="UjV-av-PgA"/>
+                <outlet property="settleButton" destination="Oy4-QD-a8z" id="pO0-bV-2NT"/>
+                <outlet property="settleButtonW" destination="MdD-vi-D6b" id="20j-qU-nU0"/>
+                <outlet property="trail" destination="LA1-Vw-RC3" id="EpD-WY-OTg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EllipseIcon" width="20" height="20"/>
+        <image name="MultiSelected" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_work_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/gray_f7f7f7"
+                android:gravity="center"
+                android:text="日期"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/color_dbdbdb"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rea_amounts"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_below="@id/lin_top">
+
+            <TextView
+                android:id="@+id/tv_work_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:text="点工工钱"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_work_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_work_type"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="0.00"
+                android:textStyle="bold"
+                android:textColor="@color/color_eb4e4e"
+                android:textSize="30sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/color_dbdbdb"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="-7dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/draw_oval_3a3f4e"/>
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-7dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/draw_oval_3a3f4e"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rea_contractor_type"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_contractor_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="记工类型："
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dbdbdb"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_fm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="班组长："
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_dbdbdb"/>
+
+        <TextView
+            android:id="@+id/tv_work"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="工人："
+            android:textColor="@color/color_333333"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_dbdbdb"/>
+</LinearLayout>

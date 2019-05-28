@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JGJTeamMangerSourceSyncProCell" id="k3e-aP-Fpw" customClass="JGJTeamMangerSourceSyncProCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k3e-aP-Fpw" id="WTY-Sp-K6H">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tm7-jv-i3O">
+                        <rect key="frame" x="16" y="10" width="230" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jT0-82-gyA">
+                        <rect key="frame" x="266" y="1" width="46" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="A56-6w-OdR"/>
+                            <constraint firstAttribute="height" constant="40" id="gsp-zz-rMP"/>
+                        </constraints>
+                        <state key="normal" image="garbage_box"/>
+                        <connections>
+                            <action selector="handleRemoveSyncProButtonPressed:" destination="k3e-aP-Fpw" eventType="touchUpInside" id="qKC-5G-bud"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJb-HF-Gb2" customClass="LineView">
+                        <rect key="frame" x="16" y="42" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RV8-2t-uTm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="OJb-HF-Gb2" firstAttribute="leading" secondItem="WTY-Sp-K6H" secondAttribute="leading" constant="16" id="0l2-c3-hMq"/>
+                    <constraint firstItem="jT0-82-gyA" firstAttribute="centerY" secondItem="WTY-Sp-K6H" secondAttribute="centerY" id="5IE-0e-5mN"/>
+                    <constraint firstAttribute="trailing" secondItem="OJb-HF-Gb2" secondAttribute="trailing" constant="16" id="S1U-UU-Dh1"/>
+                    <constraint firstAttribute="trailing" secondItem="jT0-82-gyA" secondAttribute="trailing" constant="8" id="pOD-TK-zJk"/>
+                    <constraint firstItem="tm7-jv-i3O" firstAttribute="centerY" secondItem="WTY-Sp-K6H" secondAttribute="centerY" constant="-3" id="pbl-ha-t6a"/>
+                    <constraint firstItem="jT0-82-gyA" firstAttribute="leading" secondItem="tm7-jv-i3O" secondAttribute="trailing" constant="20" id="uYe-La-HIa"/>
+                    <constraint firstAttribute="bottom" secondItem="OJb-HF-Gb2" secondAttribute="bottom" id="wam-5m-yEx"/>
+                    <constraint firstItem="tm7-jv-i3O" firstAttribute="leading" secondItem="WTY-Sp-K6H" secondAttribute="leading" constant="16" id="wvd-lG-Pvy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="proNameLable" destination="tm7-jv-i3O" id="ofz-7M-h9v"/>
+                <outlet property="selectedButton" destination="jT0-82-gyA" id="mmM-Dd-mYc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="garbage_box" width="12" height="12"/>
+    </resources>
+</document>

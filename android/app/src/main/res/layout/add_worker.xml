@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <com.jizhi.jongg.widget.ClearEmojEditText
+            android:id="@+id/nameEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:maxLength="10"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/telephoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/telephoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+        <com.hcs.cityslist.widget.AppCursorEditText
+            android:id="@+id/telephoneEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:maxLength="11"
+            android:numeric="integer"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remark_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_f1f1f1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="添加备注"
+                android:textColor="@color/color_333333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(最多200个字)"
+                android:textColor="@color/color_666666"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <com.hcs.cityslist.widget.AppCursorEditText
+            android:id="@+id/remark_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="请输入备注内容"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:minHeight="100dp"
+            android:padding="10dp"
+            android:textColorHint="@color/color_cccccc"
+            android:textSize="@dimen/text_size_14" />
+
+        <com.jizhi.jongg.widget.WrapGridview
+            android:id="@+id/remark_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:padding="10dp"
+            android:verticalSpacing="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

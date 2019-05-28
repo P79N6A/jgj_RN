@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:orientation="vertical">
+
+    <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+        android:id="@+id/netFailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffecec"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/network_error"
+            android:drawablePadding="5dp"
+            android:text="当前网络不可用"
+            android:textColor="@color/color_666666" />
+
+    </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+
+    <com.jizhi.jongg.widget.CustomListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/netFailLayout"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/netFailLayout"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/scrollAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.0"
+            android:background="@color/color_fafafa" />
+
+        <ImageView
+            android:id="@+id/scrollAlphaBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/navigation_alpha" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+            <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+                android:id="@+id/changeRolerIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_roler_white" />
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/rolerText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="工人"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/messageAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/main_navigation_white_add" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/navigationNoticeLine"
+        style="@style/line"
+        android:layout_below="@id/navigationBar"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <com.jizhi.jlongg.main.custom.ImageViewTouchChangeAlpha
+            android:id="@+id/signIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/main_sign_icon" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

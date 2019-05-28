@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f1f1f1"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="111"
+            android:textColor="@color/color_999999"
+            android:textSize="15sp"
+            android:visibility="visible"/>
+
+        <com.jizhi.jongg.widget.WrapGridview
+            android:id="@+id/ngl_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="1dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:verticalSpacing="1dp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/rea_question_and_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="查看问题详情"
+                android:textColor="@color/app_color"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/lin_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/stroke_color333333"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_check_delete"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:text="删除结果"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14sp"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_state_not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btn_involved"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/stroke_color333333"
+                android:text="未涉及"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/btn_rectification"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/stroke_red"
+                android:text="整改"
+                android:textColor="@color/app_color"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+            <Button
+                android:id="@+id/btn_pass"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/stroke_color83c76e"
+                android:text="通过"
+                android:textColor="@color/color_83c76e"
+                android:textSize="14sp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"/>
+        <View
+            android:id="@+id/itemDiver"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_f1f1f1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

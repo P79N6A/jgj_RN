@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJMsgFlagView">
+            <connections>
+                <outlet property="contentView" destination="uAk-a9-SHY" id="rYl-mQ-Cxk"/>
+                <outlet property="flagView" destination="Zxr-6w-e7u" id="xoU-Xf-W7w"/>
+                <outlet property="msgFlagButton" destination="OOY-Id-DD5" id="14v-ds-DMm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uAk-a9-SHY">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOY-Id-DD5">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <inset key="imageEdgeInsets" minX="11" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="quality_msg_icon"/>
+                    <connections>
+                        <action selector="msgFlagButtonPressed:" destination="-1" eventType="touchUpInside" id="UdD-4X-9gP"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxr-6w-e7u">
+                    <rect key="frame" x="37" y="12" width="8" height="8"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.30588235289999999" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="N9D-Ha-V6p"/>
+                        <constraint firstAttribute="height" constant="8" id="nG1-u6-yN0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zxr-6w-e7u" firstAttribute="trailing" secondItem="OOY-Id-DD5" secondAttribute="trailing" constant="-5" id="23r-Ry-Nf8"/>
+                <constraint firstItem="Zxr-6w-e7u" firstAttribute="centerY" secondItem="OOY-Id-DD5" secondAttribute="centerY" constant="-9" id="OFo-uB-mCf"/>
+                <constraint firstAttribute="bottom" secondItem="OOY-Id-DD5" secondAttribute="bottom" id="VUl-kb-d63"/>
+                <constraint firstItem="OOY-Id-DD5" firstAttribute="top" secondItem="uAk-a9-SHY" secondAttribute="top" id="dUk-Ht-2MW"/>
+                <constraint firstItem="OOY-Id-DD5" firstAttribute="leading" secondItem="uAk-a9-SHY" secondAttribute="leading" id="nZy-dE-ldQ"/>
+                <constraint firstAttribute="trailing" secondItem="OOY-Id-DD5" secondAttribute="trailing" id="s9b-Lo-JNJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="-18"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="quality_msg_icon" width="13" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_right_image_new" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_ebebeb" />
+
+            <com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha
+                android:id="@+id/unread_msg_count_layout"
+                android:layout_width="105dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/draw_radius_rectangle_left"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/unread_msg_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/new_msg_unread_arrow"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/app_color"
+                    android:textSize="13sp" />
+
+            </com.jizhi.jlongg.main.custom.LinearLayoutTouchChangeAlpha>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/listView"
+                android:background="@color/app_color" />
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_emotionview_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

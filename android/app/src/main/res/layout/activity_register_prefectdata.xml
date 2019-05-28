@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/inc"
+        layout="@layout/head_right_text" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@color/textviewback"
+                android:gravity="center"
+                android:text="@string/remind"
+                android:textColor="@color/hinttext"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <RelativeLayout
+                android:id="@+id/realName_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star"
+                    style="@style/star" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star"
+                    android:text="@string/realname" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/ed_name"
+                    style="@style/register_edittext"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:hint="@string/realnamehint"
+                    android:inputType="text"
+                    android:maxLength="5" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sex_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star1"
+                    style="@style/star" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star1"
+                    android:text="@string/sexuality" />
+
+                <RadioGroup
+                    android:id="@+id/sex_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:checkedButton="@+id/sex_rb_nan"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sex_rb_nan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiobutton_man_background"
+                        android:drawablePadding="5dip"
+                        android:gravity="center"
+                        android:text="@string/sexnan1"
+                        android:textColor="@drawable/sexbacktextcolor"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <RadioButton
+                        android:id="@+id/sex_rb_nv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiobutton_woman_background"
+                        android:drawablePadding="5dip"
+                        android:gravity="center"
+                        android:text="@string/sexnv1"
+                        android:textColor="@drawable/sexnvbacktextcolor"
+                        android:textSize="@dimen/text_size_13" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/age_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    style="@style/star" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star2"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    style="@style/textview"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/yearsold" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/ed_age"
+                    style="@style/register_edittext"
+                    android:layout_toLeftOf="@id/desc"
+                    android:hint="@string/agehint"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hometown_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:onClick="onClick">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    style="@style/star"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star3"
+                    android:text="@string/hometown" />
+
+
+                <ImageView
+                    android:id="@+id/image1"
+                    style="@style/register_image" />
+
+                <TextView
+                    android:id="@+id/tv_myhome"
+                    style="@style/register_weight"
+                    android:layout_toLeftOf="@id/image1"
+                    android:hint="@string/hometownhint" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/work_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:onClick="onClick">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    style="@style/star" />
+
+                <TextView
+                    android:id="@+id/professional"
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star4"
+                    android:text="@string/craft" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    style="@style/register_image" />
+
+                <TextView
+                    android:id="@+id/tv_work_type"
+                    style="@style/register_weight"
+                    android:layout_toLeftOf="@id/image"
+                    android:hint="@string/crafthint" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/engineeringLayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:onClick="onClick">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star8"
+                    style="@style/star" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star8"
+                    android:text="@string/engineering" />
+
+                <ImageView
+                    android:id="@+id/guideImage"
+                    style="@style/register_image" />
+
+                <TextView
+                    android:id="@+id/engineeringText"
+                    style="@style/register_weight"
+                    android:layout_toLeftOf="@id/guideImage"
+                    android:hint="@string/engineering_hint" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/familiarityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:onClick="onClick">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star9"
+                    style="@style/star" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star9"
+                    android:text="@string/familiarity" />
+
+                <ImageView
+                    android:id="@+id/familiarityImageIcon"
+                    style="@style/register_image" />
+
+                <TextView
+                    android:id="@+id/familiarityText"
+                    style="@style/register_weight"
+                    android:layout_toLeftOf="@id/familiarityImageIcon"
+                    android:hint="@string/selected_familiarity" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/work_scale_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star5"
+                    style="@style/star" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star5"
+                    android:text="@string/peopcount" />
+
+
+                <TextView
+                    android:id="@+id/desc2"
+                    style="@style/textview"
+                    android:layout_alignParentRight="true"
+                    android:text="人" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/ed_pc"
+                    style="@style/register_weight"
+                    android:layout_toLeftOf="@id/desc2"
+                    android:hint="@string/peopcount_hint"
+                    android:inputType="number"
+                    android:maxLength="5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/work_year_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star6"
+                    style="@style/star" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star6"
+                    android:text="@string/workyear" />
+
+
+                <TextView
+                    android:id="@+id/desc3"
+                    style="@style/textview"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/year" />
+
+                <com.hcs.cityslist.widget.AppCursorEditText
+                    android:id="@+id/ed_workyear"
+                    style="@style/register_weight"
+                    android:layout_toLeftOf="@id/desc3"
+                    android:hint="@string/put_working_years"
+                    android:inputType="number"
+                    android:maxLength="2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/work_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:onClick="onClick">
+
+                <View style="@style/top_view" />
+
+                <ImageView
+                    android:id="@+id/star7"
+                    style="@style/star"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/register_textview"
+                    android:layout_toRightOf="@id/star7"
+                    android:text="@string/expecttowork" />
+
+
+                <ImageView
+                    android:id="@+id/image2"
+                    style="@style/register_image" />
+
+                <TextView
+                    android:id="@+id/tv_workaddr"
+                    style="@style/register_weight"
+                    android:layout_toLeftOf="@id/image2"
+                    android:hint="@string/expecttoworkhint" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/linecolor" />
+
+            <LinearLayout
+                android:id="@+id/head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/star"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        style="@style/register_textview"
+                        android:text="@string/head" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="145dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_gy_f1f1f1_5radius">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/register_foreman_head" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/workselfphoto" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rea_head"
+                        android:layout_width="0dip"
+                        android:layout_height="145dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_gy_f1f1f1_5radius"
+                        android:onClick="onClick">
+
+                        <ImageView
+                            android:id="@+id/img_photo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/photo"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img_photo"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dip"
+                            android:text="@string/uphead"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <ImageView
+                            android:id="@+id/img_photos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@null"
+                            android:scaleType="centerCrop" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/ensurecorrect"
+                    android:textColor="@color/hinttext"
+                    android:textSize="@dimen/text_size_15" />
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="1px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dip"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:background="@drawable/button_press_effect"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

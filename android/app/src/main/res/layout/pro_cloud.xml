@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_cloudy" />
+
+
+    <TextView
+        android:id="@+id/checkTextTips"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f9ccce"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
+    <include layout="@layout/search_edit_layout"/>
+
+    <View style="@style/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ExpandableListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f1f1f1"
+            android:childDivider="@null"
+            android:divider="@null"
+            android:drawSelectorOnTop="false"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <include layout="@layout/empty_view" />
+
+    </RelativeLayout>
+
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/transmissionLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:gravity="center">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/translateText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/translate"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="传输列表"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/createFileLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:gravity="center">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/createFileText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/white_add_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="@string/create_folder_tips"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uploadFileLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:gravity="center">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/uploadFileText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:drawableLeft="@drawable/upload_file"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="上传文件"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/moveFileLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/moveFileText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="将文件移动到..."
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deleteFileLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/draw_eb4e4e_5radius"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+                android:id="@+id/deleteFileText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

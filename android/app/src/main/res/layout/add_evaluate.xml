@@ -1,0 +1,393 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textviewback"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/head_only_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    style="@style/margin_fifteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@id/protitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_"
+                        android:textSize="@dimen/protitle_size" />
+
+                    <TextView
+                        android:id="@+id/ctime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:textColor="@color/gray_9d9d9d"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/margin_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/review_cnt_linearlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_10dp">
+
+                        <!--                     <ImageView
+                                                 android:id="@+id/review_image"
+                                                 android:layout_width="20dp"
+                                                 android:layout_height="20dp"
+                                                 android:layout_marginRight="@dimen/margin_5dp"
+                                                 android:src="@drawable/eyes" />-->
+
+                        <!--                        <TextView
+                                                    android:id="@id/review_cnt"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_toRightOf="@id/review_image"
+                                                    android:textColor="@color/gray_9d9d9d"
+                                                    android:textSize="@dimen/text_size_13" />-->
+                    </RelativeLayout>
+
+                    <com.jizhi.jongg.widget.WorkLinerLayout
+                        android:id="@+id/worklevel_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/review_cnt_linearlayout"
+                        android:orientation="vertical"></com.jizhi.jongg.widget.WorkLinerLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/margin_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@id/project_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/project_name"
+                        android:textColor="@color/gray_9d9d9d"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <TextView
+                        android:id="@id/proname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/project_name"
+                        android:textColor="@color/gray_676767"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/margin_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_15dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@color/gray_9d9d9d"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <TextView
+                        android:id="@id/proaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/address"
+                        android:ellipsize="end"
+                        android:textColor="@color/gray_676767"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e1e1e1" />
+
+            <View
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#f7f7f7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:text="@string/project_scope"
+                        android:textColor="@color/black_525151"
+                        android:textSize="@dimen/text_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:text="@string/personal_integrity"
+                        android:textColor="@color/gray_8b8b8b"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <com.jizhi.jongg.widget.MyRattingBar
+                        android:id="@id/credibility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20dp"
+                        android:layout_marginRight="@dimen/x5"
+                        app:isClick="true"
+                        app:star_height="@dimen/x18"
+                        app:star_margin="@dimen/x15"
+                        app:star_width="@dimen/x18"></com.jizhi.jongg.widget.MyRattingBar>
+
+                    <TextView
+                        android:id="@id/credibility_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/evaluation"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:text="@string/knot_speed"
+                        android:textColor="@color/gray_8b8b8b"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <com.jizhi.jongg.widget.MyRattingBar
+                        android:id="@id/payspeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20dp"
+                        android:layout_marginRight="@dimen/x5"
+                        app:isClick="true"
+                        app:star_height="@dimen/x18"
+                        app:star_margin="@dimen/x15"
+                        app:star_width="@dimen/x18"></com.jizhi.jongg.widget.MyRattingBar>
+
+                    <TextView
+                        android:id="@id/payspeed_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/evaluation"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:text="@string/attitude"
+                        android:textColor="@color/gray_8b8b8b"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <com.jizhi.jongg.widget.MyRattingBar
+                        android:id="@id/appetence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_20dp"
+                        android:layout_marginRight="@dimen/x5"
+                        app:isClick="true"
+                        app:star_height="@dimen/x18"
+                        app:star_margin="@dimen/x15"
+                        app:star_width="@dimen/x18"></com.jizhi.jongg.widget.MyRattingBar>
+
+                    <TextView
+                        android:id="@id/appetence_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/evaluation"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15dp"
+                        android:text="@string/project_evaluation"
+                        android:textColor="@color/black_525151"
+                        android:textSize="@dimen/text_size_14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginBottom="@dimen/margin_20dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_15dp">
+
+                    <EditText
+                        android:id="@id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/y55"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:hint="你可以对项目进行评价。如:项目负责人如何?工资是否按时发放?项目福利是否真实?等等"
+                        android:maxEms="500"
+                        android:paddingBottom="@dimen/margin_20dp"
+                        android:paddingLeft="@dimen/margin_10dp"
+                        android:paddingTop="@dimen/margin_10dp"
+                        android:textColor="@color/gray_9d9d9d"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:id="@+id/surplus_Words"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/margin_5dp"
+                        android:layout_marginRight="@dimen/margin_5dp"
+                        android:text="剩500字"
+                        android:textColor="@color/gray_a4a4a4"
+                        android:textSize="@dimen/text_size_12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e1e1e1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d4d4d4" />
+
+        <LinearLayout
+            android:id="@+id/hidename_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/anonymous"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:checked="true"
+                android:enabled="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/anonymous"
+                android:text="匿名评价"
+                android:textColor="#535252"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/submit"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/red_background_no_radius"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="发表评价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

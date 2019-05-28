@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <com.jizhi.jongg.widget.AppDiverView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/record_account_setting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/listview_selector_white_gray"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                style="@style/textViewKey_relativeLayout"
+                android:text="@string/account_show_type" />
+
+            <TextView
+                android:id="@+id/record_account_setting_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/houtui"
+                android:gravity="right"
+                android:textColor="@color/app_color" />
+
+        </LinearLayout>
+
+        <View style="@style/line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/color_f1f1f1" />
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我要对账"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+            <com.jizhi.jongg.widget.SwitchView
+                android:id="@+id/switch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="关闭“我要对账”，所有的记工记账只有自己可见，同时，对方也不能查看你对他的记工记账"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha
+            android:id="@+id/open_account_confirm_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="查看我的记工对象是否开启了“我要对账”"
+                android:textColor="#1892E7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/blue_arrow"
+                android:text="查看"
+                android:textColor="#1892E7"
+                android:textStyle="bold" />
+
+        </com.jizhi.jlongg.main.custom.LinearLayoutChangeAlpha>
+
+    </LinearLayout>
+
+
+</LinearLayout>

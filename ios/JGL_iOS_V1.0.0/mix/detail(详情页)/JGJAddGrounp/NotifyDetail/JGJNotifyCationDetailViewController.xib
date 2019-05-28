@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJNotifyCationDetailViewController">
+            <connections>
+                <outlet property="BottomButton" destination="kn6-IB-PMc" id="Vcj-5H-IWO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-IB-PMc">
+                    <rect key="frame" x="0.0" y="617" width="188" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pAq-EF-rzE"/>
+                    </constraints>
+                    <state key="normal" title="    回复">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ClickReplyButton:" destination="-1" eventType="touchUpInside" id="SMf-xc-4eJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xap-na-xEe">
+                    <rect key="frame" x="188" y="617" width="1" height="50"/>
+                    <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="dL0-dt-W6a"/>
+                        <constraint firstAttribute="width" constant="1" id="ljI-S6-Iqh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6n-NI-bSy">
+                    <rect key="frame" x="187" y="617" width="188" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="HKj-J1-QfK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="    收到">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ClickHadReciveButton:" destination="-1" eventType="touchUpInside" id="b9Z-fI-r8Y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q6n-NI-bSy" firstAttribute="width" secondItem="kn6-IB-PMc" secondAttribute="width" id="2bW-cP-5lp"/>
+                <constraint firstItem="q6n-NI-bSy" firstAttribute="leading" secondItem="kn6-IB-PMc" secondAttribute="trailing" id="JLG-g5-kxe"/>
+                <constraint firstAttribute="bottom" secondItem="Xap-na-xEe" secondAttribute="bottom" id="d6a-MN-lY7"/>
+                <constraint firstItem="kn6-IB-PMc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fch-nt-ds4"/>
+                <constraint firstItem="Xap-na-xEe" firstAttribute="leading" secondItem="kn6-IB-PMc" secondAttribute="trailing" id="kKG-IT-wOK"/>
+                <constraint firstAttribute="trailing" secondItem="q6n-NI-bSy" secondAttribute="trailing" id="l3b-ax-RQg"/>
+                <constraint firstAttribute="bottom" secondItem="q6n-NI-bSy" secondAttribute="bottom" id="tPf-qr-QZl"/>
+                <constraint firstAttribute="bottom" secondItem="kn6-IB-PMc" secondAttribute="bottom" id="zn8-cq-yF7"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

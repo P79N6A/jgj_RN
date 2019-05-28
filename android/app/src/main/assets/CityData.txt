@@ -1,0 +1,1692 @@
+﻿[
+  {
+    "city_name" : "阿坝藏族羌族自治州",
+    "city_code" : "513200",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "安康市",
+    "city_code" : "610900",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "阿克苏地区",
+    "city_code" : "652900",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "阿里地区",
+    "city_code" : "542500",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "阿拉善盟",
+    "city_code" : "152900",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "阿勒泰地区",
+    "city_code" : "654300",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "安庆市",
+    "city_code" : "340800",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "鞍山市",
+    "city_code" : "210300",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "安顺市",
+    "city_code" : "520400",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "安阳市",
+    "city_code" : "410500",
+    "sortLetters" : "A"
+  },
+  {
+    "city_name" : "蚌埠市",
+    "city_code" : "340300",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "白城市",
+    "city_code" : "220800",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "保定市",
+    "city_code" : "130600",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "博尔塔拉州",
+    "city_code" : "652700",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "北海市",
+    "city_code" : "450500",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "北京市",
+    "city_code" : "110100",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "宝鸡市",
+    "city_code" : "610300",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "毕节地区",
+    "city_code" : "522400",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "白山市",
+    "city_code" : "220600",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "百色市",
+    "city_code" : "451000",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "保山市",
+    "city_code" : "530500",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "包头市",
+    "city_code" : "150200",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "本溪市",
+    "city_code" : "210500",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "白银市",
+    "city_code" : "620400",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "巴音郭楞州",
+    "city_code" : "652800",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "巴彦淖尔市",
+    "city_code" : "150800",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "滨州市",
+    "city_code" : "371600",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "巴中市",
+    "city_code" : "511900",
+    "sortLetters" : "B"
+  },
+  {
+    "city_name" : "承德市",
+    "city_code" : "130800",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "常德市",
+    "city_code" : "430700",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "成都市",
+    "city_code" : "510100",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "昌都地区",
+    "city_code" : "542100",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "赤峰市",
+    "city_code" : "150400",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "巢湖市",
+    "city_code" : "341400",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "昌吉回族自治州",
+    "city_code" : "652300",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "楚雄州",
+    "city_code" : "532300",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "朝阳市",
+    "city_code" : "211300",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "沧州市",
+    "city_code" : "130900",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "常州市",
+    "city_code" : "320400",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "滁州市",
+    "city_code" : "341100",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "池州市",
+    "city_code" : "341700",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "郴州市",
+    "city_code" : "431000",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "潮州市",
+    "city_code" : "445100",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "崇左市",
+    "city_code" : "451400",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "长春市",
+    "city_code" : "220100",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "重庆市",
+    "city_code" : "500100",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "长沙市",
+    "city_code" : "430100",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "长治市",
+    "city_code" : "140400",
+    "sortLetters" : "C"
+  },
+  {
+    "city_name" : "丹东市",
+    "city_code" : "210600",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "东莞市",
+    "city_code" : "441900",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "德宏州",
+    "city_code" : "533100",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "大连市",
+    "city_code" : "210200",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "大理州",
+    "city_code" : "532900",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "大庆市",
+    "city_code" : "230600",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "迪庆州",
+    "city_code" : "533400",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "大同市",
+    "city_code" : "140200",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "定西市",
+    "city_code" : "621100",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "大兴安岭地区",
+    "city_code" : "232700",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "东营市",
+    "city_code" : "370500",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "德阳市",
+    "city_code" : "510600",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "德州市",
+    "city_code" : "371400",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "达州市",
+    "city_code" : "511700",
+    "sortLetters" : "D"
+  },
+  {
+    "city_name" : "鄂尔多斯市",
+    "city_code" : "150600",
+    "sortLetters" : "E"
+  },
+  {
+    "city_name" : "恩施土家族苗族自治州",
+    "city_code" : "422800",
+    "sortLetters" : "E"
+  },
+  {
+    "city_name" : "鄂州市",
+    "city_code" : "420700",
+    "sortLetters" : "E"
+  },
+  {
+    "city_name" : "防城港市",
+    "city_code" : "450600",
+    "sortLetters" : "F"
+  },
+  {
+    "city_name" : "抚顺市",
+    "city_code" : "210400",
+    "sortLetters" : "F"
+  },
+  {
+    "city_name" : "佛山市",
+    "city_code" : "440600",
+    "sortLetters" : "F"
+  },
+  {
+    "city_name" : "阜新市",
+    "city_code" : "210900",
+    "sortLetters" : "F"
+  },
+  {
+    "city_name" : "阜阳市",
+    "city_code" : "341200",
+    "sortLetters" : "F"
+  },
+  {
+    "city_name" : "福州市",
+    "city_code" : "350100",
+    "sortLetters" : "F"
+  },
+  {
+    "city_name" : "抚州市",
+    "city_code" : "361000",
+    "sortLetters" : "F"
+  },
+  {
+    "city_name" : "广安市",
+    "city_code" : "511600",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "贵港市",
+    "city_code" : "450800",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "桂林市",
+    "city_code" : "450300",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "果洛州",
+    "city_code" : "632600",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "甘南州",
+    "city_code" : "623000",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "广元市",
+    "city_code" : "510800",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "贵阳市",
+    "city_code" : "520100",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "固原市",
+    "city_code" : "640400",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "赣州市",
+    "city_code" : "360700",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "广州市",
+    "city_code" : "440100",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "甘孜藏族自治州",
+    "city_code" : "513300",
+    "sortLetters" : "G"
+  },
+  {
+    "city_name" : "淮安市",
+    "city_code" : "320800",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "淮北市",
+    "city_code" : "340600",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "鹤壁市",
+    "city_code" : "410600",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "海北州",
+    "city_code" : "632200",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "河池市",
+    "city_code" : "451200",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "邯郸市",
+    "city_code" : "130400",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "海东地区",
+    "city_code" : "632100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "哈尔滨市",
+    "city_code" : "230100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "合肥市",
+    "city_code" : "340100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "鹤岗市",
+    "city_code" : "230400",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "黄冈市",
+    "city_code" : "421100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "黑河市",
+    "city_code" : "231100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "怀化市",
+    "city_code" : "431200",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "呼和浩特市",
+    "city_code" : "150100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "红河州",
+    "city_code" : "532500",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "海口市",
+    "city_code" : "460100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "呼伦贝尔市",
+    "city_code" : "150700",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "葫芦岛市",
+    "city_code" : "211400",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "哈密地区",
+    "city_code" : "652200",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "淮南市",
+    "city_code" : "340400",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "黄南州",
+    "city_code" : "632300",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "海南州",
+    "city_code" : "632500",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "衡水市",
+    "city_code" : "131100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "黄山市",
+    "city_code" : "341000",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "黄石市",
+    "city_code" : "420200",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "和田地区",
+    "city_code" : "653200",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "海西州",
+    "city_code" : "632800",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "衡阳市",
+    "city_code" : "430400",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "河源市",
+    "city_code" : "441600",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "杭州市",
+    "city_code" : "330100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "湖州市",
+    "city_code" : "330500",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "菏泽市",
+    "city_code" : "371700",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "惠州市",
+    "city_code" : "441300",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "贺州市",
+    "city_code" : "451100",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "汉中市",
+    "city_code" : "610700",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "亳州市",
+    "city_code" : "341600",
+    "sortLetters" : "H"
+  },
+  {
+    "city_name" : "吉安市",
+    "city_code" : "360800",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "晋城市",
+    "city_code" : "140500",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "金昌市",
+    "city_code" : "620300",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "景德镇市",
+    "city_code" : "360200",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "金华市",
+    "city_code" : "330700",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "九江市",
+    "city_code" : "360400",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "吉林市",
+    "city_code" : "220200",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "荆门市",
+    "city_code" : "420800",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "江门市",
+    "city_code" : "440700",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "佳木斯市",
+    "city_code" : "230800",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "济南市",
+    "city_code" : "370100",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "济宁市",
+    "city_code" : "370800",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "酒泉市",
+    "city_code" : "620900",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "鸡西市",
+    "city_code" : "230300",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "嘉兴市",
+    "city_code" : "330400",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "济源市",
+    "city_code" : "419000",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "揭阳市",
+    "city_code" : "445200",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "嘉峪关市",
+    "city_code" : "620200",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "晋中市",
+    "city_code" : "140700",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "锦州市",
+    "city_code" : "210700",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "焦作市",
+    "city_code" : "410800",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "荆州市",
+    "city_code" : "421000",
+    "sortLetters" : "J"
+  },
+  {
+    "city_name" : "开封市",
+    "city_code" : "410200",
+    "sortLetters" : "K"
+  },
+  {
+    "city_name" : "克拉玛依市",
+    "city_code" : "650200",
+    "sortLetters" : "K"
+  },
+  {
+    "city_name" : "昆明市",
+    "city_code" : "530100",
+    "sortLetters" : "K"
+  },
+  {
+    "city_name" : "喀什地区",
+    "city_code" : "653100",
+    "sortLetters" : "K"
+  },
+  {
+    "city_name" : "克孜勒苏柯尔克孜自治州",
+    "city_code" : "653000",
+    "sortLetters" : "K"
+  },
+  {
+    "city_name" : "六安市",
+    "city_code" : "341500",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "来宾市",
+    "city_code" : "451300",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "聊城市",
+    "city_code" : "371500",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "临沧市",
+    "city_code" : "530900",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "娄底市",
+    "city_code" : "431300",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "廊坊市",
+    "city_code" : "131000",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "临汾市",
+    "city_code" : "141000",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "漯河市",
+    "city_code" : "411100",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "丽江市",
+    "city_code" : "530700",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "吕梁市",
+    "city_code" : "141100",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "陇南市",
+    "city_code" : "621200",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "六盘水市",
+    "city_code" : "520200",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "丽水市",
+    "city_code" : "331100",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "乐山市",
+    "city_code" : "511100",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "拉萨市",
+    "city_code" : "540100",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "凉山彝族自治州",
+    "city_code" : "513400",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "莱芜市",
+    "city_code" : "371200",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "临夏州",
+    "city_code" : "622900",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "辽阳市",
+    "city_code" : "211000",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "辽源市",
+    "city_code" : "220400",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "龙岩市",
+    "city_code" : "350800",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "临沂市",
+    "city_code" : "371300",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "洛阳市",
+    "city_code" : "410300",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "连云港市",
+    "city_code" : "320700",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "柳州市",
+    "city_code" : "450200",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "泸州市",
+    "city_code" : "510500",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "兰州市",
+    "city_code" : "620100",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "林芝地区",
+    "city_code" : "542600",
+    "sortLetters" : "L"
+  },
+  {
+    "city_name" : "马鞍山市",
+    "city_code" : "340500",
+    "sortLetters" : "M"
+  },
+  {
+    "city_name" : "牡丹江市",
+    "city_code" : "231000",
+    "sortLetters" : "M"
+  },
+  {
+    "city_name" : "茂名市",
+    "city_code" : "440900",
+    "sortLetters" : "M"
+  },
+  {
+    "city_name" : "眉山市",
+    "city_code" : "511400",
+    "sortLetters" : "M"
+  },
+  {
+    "city_name" : "绵阳市",
+    "city_code" : "510700",
+    "sortLetters" : "M"
+  },
+  {
+    "city_name" : "梅州市",
+    "city_code" : "441400",
+    "sortLetters" : "M"
+  },
+  {
+    "city_name" : "宁波市",
+    "city_code" : "330200",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "南昌市",
+    "city_code" : "360100",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "南充市",
+    "city_code" : "511300",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "宁德市",
+    "city_code" : "350900",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "南京市",
+    "city_code" : "320100",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "内江市",
+    "city_code" : "511000",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "怒江州",
+    "city_code" : "533300",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "南宁市",
+    "city_code" : "450100",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "南平市",
+    "city_code" : "350700",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "那曲地区",
+    "city_code" : "542400",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "南通市",
+    "city_code" : "320600",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "南阳市",
+    "city_code" : "411300",
+    "sortLetters" : "N"
+  },
+  {
+    "city_name" : "平顶山市",
+    "city_code" : "410400",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "普洱市",
+    "city_code" : "530800",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "盘锦市",
+    "city_code" : "211100",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "平凉市",
+    "city_code" : "620800",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "莆田市",
+    "city_code" : "350300",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "萍乡市",
+    "city_code" : "360300",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "濮阳市",
+    "city_code" : "410900",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "攀枝花市",
+    "city_code" : "510400",
+    "sortLetters" : "P"
+  },
+  {
+    "city_name" : "青岛市",
+    "city_code" : "370200",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "黔东南州",
+    "city_code" : "522600",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "秦皇岛市",
+    "city_code" : "130300",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "曲靖市",
+    "city_code" : "530300",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "黔南州",
+    "city_code" : "522700",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "齐齐哈尔市",
+    "city_code" : "230200",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "七台河市",
+    "city_code" : "230900",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "黔西南州",
+    "city_code" : "522300",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "清远市",
+    "city_code" : "441800",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "庆阳市",
+    "city_code" : "621000",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "衢州市",
+    "city_code" : "330800",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "泉州市",
+    "city_code" : "350500",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "钦州市",
+    "city_code" : "450700",
+    "sortLetters" : "Q"
+  },
+  {
+    "city_name" : "日照市",
+    "city_code" : "371100",
+    "sortLetters" : "R"
+  },
+  {
+    "city_name" : "日喀则地区",
+    "city_code" : "542300",
+    "sortLetters" : "R"
+  },
+  {
+    "city_name" : "韶关市",
+    "city_code" : "440200",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "绥化市",
+    "city_code" : "231200",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "上海市",
+    "city_code" : "310100",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "石家庄市",
+    "city_code" : "130100",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "商洛市",
+    "city_code" : "611000",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "三明市",
+    "city_code" : "350400",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "三门峡市",
+    "city_code" : "411200",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "遂宁市",
+    "city_code" : "510900",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "山南地区",
+    "city_code" : "542200",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "四平市",
+    "city_code" : "220300",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "宿迁市",
+    "city_code" : "321300",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "商丘市",
+    "city_code" : "411400",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "上饶市",
+    "city_code" : "361100",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "汕头市",
+    "city_code" : "440500",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "汕尾市",
+    "city_code" : "441500",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "绍兴市",
+    "city_code" : "330600",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "沈阳市",
+    "city_code" : "210100",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "松原市",
+    "city_code" : "220700",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "十堰市",
+    "city_code" : "420300",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "邵阳市",
+    "city_code" : "430500",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "三亚市",
+    "city_code" : "460200",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "双鸭山市",
+    "city_code" : "230500",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "朔州市",
+    "city_code" : "140600",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "苏州市",
+    "city_code" : "320500",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "宿州市",
+    "city_code" : "341300",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "随州市",
+    "city_code" : "421300",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "深圳市",
+    "city_code" : "440300",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "石嘴山市",
+    "city_code" : "640200",
+    "sortLetters" : "S"
+  },
+  {
+    "city_name" : "泰安市",
+    "city_code" : "370900",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "铜川市",
+    "city_code" : "610200",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "塔城地区",
+    "city_code" : "654200",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "通化市",
+    "city_code" : "220500",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "天津市",
+    "city_code" : "120100",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "通辽市",
+    "city_code" : "150500",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "铁岭市",
+    "city_code" : "211200",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "铜陵市",
+    "city_code" : "340700",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "吐鲁番地区",
+    "city_code" : "652100",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "铜仁市",
+    "city_code" : "522200",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "唐山市",
+    "city_code" : "130200",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "天水市",
+    "city_code" : "620500",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "太原市",
+    "city_code" : "140100",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "泰州市",
+    "city_code" : "321200",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "台州市",
+    "city_code" : "331000",
+    "sortLetters" : "T"
+  },
+  {
+    "city_name" : "潍坊市",
+    "city_code" : "370700",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "乌海市",
+    "city_code" : "150300",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "芜湖市",
+    "city_code" : "340200",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "威海市",
+    "city_code" : "371000",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "武汉市",
+    "city_code" : "420100",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "乌兰察布市",
+    "city_code" : "150900",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "渭南市",
+    "city_code" : "610500",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "乌鲁木齐市",
+    "city_code" : "650100",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "文山州",
+    "city_code" : "532600",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "武威市",
+    "city_code" : "620600",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "无锡市",
+    "city_code" : "320200",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "温州市",
+    "city_code" : "330300",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "梧州市",
+    "city_code" : "450400",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "吴忠市",
+    "city_code" : "640300",
+    "sortLetters" : "W"
+  },
+  {
+    "city_name" : "西安市",
+    "city_code" : "610100",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "兴安盟",
+    "city_code" : "152200",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "厦门市",
+    "city_code" : "350200",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "宣城市",
+    "city_code" : "341800",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "许昌市",
+    "city_code" : "411000",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "孝感市",
+    "city_code" : "420900",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "锡林郭勒盟",
+    "city_code" : "152500",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "咸宁市",
+    "city_code" : "421200",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "西宁市",
+    "city_code" : "630100",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "西双版纳州",
+    "city_code" : "532800",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "邢台市",
+    "city_code" : "130500",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "湘潭市",
+    "city_code" : "430300",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "新乡市",
+    "city_code" : "410700",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "湘西土家族苗族自治州",
+    "city_code" : "433100",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "新余市",
+    "city_code" : "360500",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "信阳市",
+    "city_code" : "411500",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "襄阳市",
+    "city_code" : "420600",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "咸阳市",
+    "city_code" : "610400",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "忻州市",
+    "city_code" : "140900",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "徐州市",
+    "city_code" : "320300",
+    "sortLetters" : "X"
+  },
+  {
+    "city_name" : "雅安市",
+    "city_code" : "511800",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "延安市",
+    "city_code" : "610600",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "宜宾市",
+    "city_code" : "511500",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "延边朝鲜族自治州",
+    "city_code" : "222400",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "银川市",
+    "city_code" : "640100",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "运城市",
+    "city_code" : "140800",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "伊春市",
+    "city_code" : "230700",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "盐城市",
+    "city_code" : "320900",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "宜春市",
+    "city_code" : "360900",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "宜昌市",
+    "city_code" : "420500",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "云浮市",
+    "city_code" : "445300",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "阳江市",
+    "city_code" : "441700",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "营口市",
+    "city_code" : "210800",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "玉林市",
+    "city_code" : "450900",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "榆林市",
+    "city_code" : "610800",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "伊犁州",
+    "city_code" : "654000",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "阳泉市",
+    "city_code" : "140300",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "玉树州",
+    "city_code" : "632700",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "鹰潭市",
+    "city_code" : "360600",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "烟台市",
+    "city_code" : "370600",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "玉溪市",
+    "city_code" : "530400",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "岳阳市",
+    "city_code" : "430600",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "益阳市",
+    "city_code" : "430900",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "扬州市",
+    "city_code" : "321000",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "永州市",
+    "city_code" : "431100",
+    "sortLetters" : "Y"
+  },
+  {
+    "city_name" : "淄博市",
+    "city_code" : "370300",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "自贡市",
+    "city_code" : "510300",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "珠海市",
+    "city_code" : "440400",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "镇江市",
+    "city_code" : "321100",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "湛江市",
+    "city_code" : "440800",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "张家界市",
+    "city_code" : "430800",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "张家口市",
+    "city_code" : "130700",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "周口市",
+    "city_code" : "411600",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "驻马店市",
+    "city_code" : "411700",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "肇庆市",
+    "city_code" : "441200",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "舟山市",
+    "city_code" : "330900",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "中山市",
+    "city_code" : "442000",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "昭通市",
+    "city_code" : "530600",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "中卫市",
+    "city_code" : "640500",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "资阳市",
+    "city_code" : "512000",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "遵义市",
+    "city_code" : "520300",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "张掖市",
+    "city_code" : "620700",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "漳州市",
+    "city_code" : "350600",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "枣庄市",
+    "city_code" : "370400",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "郑州市",
+    "city_code" : "410100",
+    "sortLetters" : "Z"
+  },
+  {
+    "city_name" : "株洲市",
+    "city_code" : "430200",
+    "sortLetters" : "Z"
+  }
+]

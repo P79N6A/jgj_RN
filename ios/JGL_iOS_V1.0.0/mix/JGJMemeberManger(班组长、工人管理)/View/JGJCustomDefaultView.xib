@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJCustomDefaultView">
+            <connections>
+                <outlet property="containView" destination="iN0-l3-epB" id="WhI-Gy-3cp"/>
+                <outlet property="desLable" destination="KH2-hd-mAO" id="fox-nV-92U"/>
+                <outlet property="flagImageView" destination="Uz2-pM-XzF" id="OuI-3Z-swj"/>
+                <outlet property="leftButton" destination="OuR-Q2-aGt" id="Ewo-yj-mmU"/>
+                <outlet property="leftRightCenterX" destination="wPF-m2-TUV" id="WWS-iD-UdS"/>
+                <outlet property="rightButton" destination="Ncb-Ca-6Hh" id="SA3-R1-jhR"/>
+                <outlet property="rightButtonCenterX" destination="fNd-Ag-UJf" id="A3m-IS-QyG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evalue_exist_data" translatesAutoresizingMaskIntoConstraints="NO" id="Uz2-pM-XzF">
+                    <rect key="frame" x="150" y="44" width="75" height="75"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH2-hd-mAO">
+                    <rect key="frame" x="10" y="145" width="355" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncb-Ca-6Hh">
+                    <rect key="frame" x="195" y="215" width="140" height="45"/>
+                    <color key="backgroundColor" red="0.9215686917" green="0.30588233469999998" blue="0.30588233469999998" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="2We-2W-fCI"/>
+                        <constraint firstAttribute="width" constant="140" id="Gep-XD-INP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="我也去评价"/>
+                    <connections>
+                        <action selector="rightButtonAction:" destination="-1" eventType="touchUpInside" id="0Sh-Z6-sul"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuR-Q2-aGt">
+                    <rect key="frame" x="40" y="215" width="140" height="45"/>
+                    <color key="backgroundColor" red="0.9215686917" green="0.30588233469999998" blue="0.30588233469999998" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="h4H-hd-LJ6"/>
+                        <constraint firstAttribute="width" constant="140" id="s5W-ea-G5k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="查看对他的评价"/>
+                    <connections>
+                        <action selector="leftButtonAction:" destination="-1" eventType="touchUpInside" id="yIj-m2-W3r"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BE0-Sk-9wQ" customClass="LineView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="4Gx-f1-wZc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uz2-pM-XzF" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="0Uz-oH-eCU"/>
+                <constraint firstItem="KH2-hd-mAO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="43t-yp-RtT"/>
+                <constraint firstItem="Ncb-Ca-6Hh" firstAttribute="top" secondItem="KH2-hd-mAO" secondAttribute="bottom" constant="46" id="7HY-Ef-SY8"/>
+                <constraint firstAttribute="trailing" secondItem="BE0-Sk-9wQ" secondAttribute="trailing" id="GZs-9z-B8k"/>
+                <constraint firstItem="KH2-hd-mAO" firstAttribute="centerX" secondItem="Uz2-pM-XzF" secondAttribute="centerX" id="Jb8-18-LmD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KH2-hd-mAO" secondAttribute="trailing" constant="10" id="QR9-rm-6Jc"/>
+                <constraint firstItem="OuR-Q2-aGt" firstAttribute="top" secondItem="Ncb-Ca-6Hh" secondAttribute="top" id="Uks-24-RCY"/>
+                <constraint firstItem="Ncb-Ca-6Hh" firstAttribute="centerX" secondItem="KH2-hd-mAO" secondAttribute="centerX" constant="77.5" id="fNd-Ag-UJf"/>
+                <constraint firstItem="KH2-hd-mAO" firstAttribute="top" secondItem="Uz2-pM-XzF" secondAttribute="bottom" constant="26" id="nMY-7M-cl2"/>
+                <constraint firstItem="BE0-Sk-9wQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nmW-kB-Y0a"/>
+                <constraint firstItem="OuR-Q2-aGt" firstAttribute="centerX" secondItem="KH2-hd-mAO" secondAttribute="centerX" constant="-77.5" id="wPF-m2-TUV"/>
+                <constraint firstItem="Uz2-pM-XzF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="x1R-Na-EAZ"/>
+                <constraint firstItem="BE0-Sk-9wQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="y19-fl-jjP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="evalue_exist_data" width="75" height="75"/>
+    </resources>
+</document>

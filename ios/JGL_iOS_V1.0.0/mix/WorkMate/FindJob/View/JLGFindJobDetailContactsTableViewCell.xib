@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JLGFindJobDetailContactsTableViewCell" rowHeight="84" id="KGk-i7-Jjw" customClass="JLGFindJobDetailContactsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcW-BY-Jre" customClass="LineView">
+                        <rect key="frame" x="10" y="29" width="342" height="1"/>
+                        <color key="backgroundColor" red="1" green="0.062118181430000002" blue="0.1550690065" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hyO-NM-UYf"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FqS-96-tys">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="6"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="k65-Mg-fCr"/>
+                        </constraints>
+                    </view>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLz-cN-ujG">
+                        <rect key="frame" x="10" y="43" width="342" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="ONg-uL-ybW"/>
+                        </constraints>
+                    </scrollView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwo-bU-mFv">
+                        <rect key="frame" x="252" y="-7" width="100" height="51"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Amk-rP-Twt"/>
+                            <constraint firstAttribute="height" constant="50" id="KkA-iP-cEk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="37" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-117" maxY="0.0"/>
+                        <state key="normal" title="更多" image="right">
+                            <color key="titleColor" red="0.84313725490196079" green="0.14509803921568626" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="contacFriendButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Tpo-sQ-9j1"/>
+                        </connections>
+                    </button>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bk5-ha-hz2">
+                        <rect key="frame" x="0.0" y="123" width="362" height="10"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="JWf-iN-2zT"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您有3个朋友认识班组长" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCV-bd-fhr">
+                        <rect key="frame" x="10" y="10" width="149" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bk5-ha-hz2" secondAttribute="trailing" id="1yg-H2-qtt"/>
+                    <constraint firstItem="zCV-bd-fhr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5Wp-zW-Cub"/>
+                    <constraint firstItem="hLz-cN-ujG" firstAttribute="top" secondItem="zCV-bd-fhr" secondAttribute="bottom" constant="10" id="7iu-NM-bxI"/>
+                    <constraint firstItem="hLz-cN-ujG" firstAttribute="top" secondItem="HcW-BY-Jre" secondAttribute="bottom" constant="9" id="80g-4j-ptN"/>
+                    <constraint firstAttribute="trailing" secondItem="HcW-BY-Jre" secondAttribute="trailing" constant="10" id="Ay4-e8-wdX"/>
+                    <constraint firstItem="bk5-ha-hz2" firstAttribute="top" secondItem="hLz-cN-ujG" secondAttribute="bottom" id="EGW-O5-ViA"/>
+                    <constraint firstItem="bk5-ha-hz2" firstAttribute="top" secondItem="hLz-cN-ujG" secondAttribute="bottom" id="IEz-Oe-IMc"/>
+                    <constraint firstItem="iwo-bU-mFv" firstAttribute="centerY" secondItem="zCV-bd-fhr" secondAttribute="centerY" id="Pmc-YG-oHh"/>
+                    <constraint firstItem="HcW-BY-Jre" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PqH-TB-7nv"/>
+                    <constraint firstAttribute="bottom" secondItem="bk5-ha-hz2" secondAttribute="bottom" id="Q3e-9P-teO"/>
+                    <constraint firstItem="HcW-BY-Jre" firstAttribute="top" secondItem="iwo-bU-mFv" secondAttribute="bottom" constant="6" id="Qik-DL-bKf"/>
+                    <constraint firstItem="bk5-ha-hz2" firstAttribute="top" secondItem="hLz-cN-ujG" secondAttribute="bottom" id="UEB-LF-yQy"/>
+                    <constraint firstItem="zCV-bd-fhr" firstAttribute="top" secondItem="FqS-96-tys" secondAttribute="top" constant="10" id="YYx-cw-ON3"/>
+                    <constraint firstItem="FqS-96-tys" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="aT6-UO-wIH"/>
+                    <constraint firstItem="FqS-96-tys" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kLQ-4x-eQ1"/>
+                    <constraint firstItem="hLz-cN-ujG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="luE-mn-JjV"/>
+                    <constraint firstAttribute="trailing" secondItem="iwo-bU-mFv" secondAttribute="trailing" constant="10" id="m6N-0k-vak"/>
+                    <constraint firstAttribute="trailing" secondItem="hLz-cN-ujG" secondAttribute="trailing" constant="10" id="ood-G2-912"/>
+                    <constraint firstItem="FqS-96-tys" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rcv-G4-mBQ"/>
+                    <constraint firstItem="zCV-bd-fhr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sBf-3C-H7s"/>
+                    <constraint firstItem="hLz-cN-ujG" firstAttribute="top" secondItem="HcW-BY-Jre" secondAttribute="bottom" constant="13" id="syN-E2-Uso"/>
+                    <constraint firstItem="bk5-ha-hz2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uyM-XK-hBm"/>
+                    <constraint firstItem="iwo-bU-mFv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="v0e-9m-9VE"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="sBf-3C-H7s"/>
+                        <exclude reference="Qik-DL-bKf"/>
+                        <exclude reference="7iu-NM-bxI"/>
+                        <exclude reference="80g-4j-ptN"/>
+                        <exclude reference="EGW-O5-ViA"/>
+                        <exclude reference="UEB-LF-yQy"/>
+                        <exclude reference="v0e-9m-9VE"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="checkMoreButton" destination="iwo-bU-mFv" id="aZm-Am-c26"/>
+                <outlet property="imageScrollView" destination="hLz-cN-ujG" id="3nH-3g-v12"/>
+                <outlet property="imageViewScrollViewH" destination="ONg-uL-ybW" id="tkF-DR-rgA"/>
+                <outlet property="yourFirendsLabel" destination="zCV-bd-fhr" id="vWB-m8-vQT"/>
+            </connections>
+            <point key="canvasLocation" x="373" y="138"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right" width="9" height="15"/>
+    </resources>
+</document>

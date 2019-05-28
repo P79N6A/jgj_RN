@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JGJCalendarCheckCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTV-fv-biq">
+                    <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAd-Jv-m7k">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE2-AY-T8L">
+                                    <rect key="frame" x="10" y="8" width="36" height="34"/>
+                                    <state key="normal" title="取消"/>
+                                    <connections>
+                                        <action selector="cancelButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="J49-hT-3OL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMz-LU-AWj">
+                                    <rect key="frame" x="274" y="8" width="36" height="34"/>
+                                    <state key="normal" title="确定"/>
+                                    <connections>
+                                        <action selector="confirmButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="yaJ-sH-PtY"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查询类别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z48-8s-GJv">
+                                    <rect key="frame" x="130" y="16" width="60" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.1450980392" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="nMz-LU-AWj" secondAttribute="trailing" constant="10" id="5Vy-O4-7NJ"/>
+                                <constraint firstItem="tE2-AY-T8L" firstAttribute="leading" secondItem="VAd-Jv-m7k" secondAttribute="leading" constant="10" id="8xU-gW-Ld4"/>
+                                <constraint firstItem="nMz-LU-AWj" firstAttribute="centerY" secondItem="VAd-Jv-m7k" secondAttribute="centerY" id="KG3-5y-cdK"/>
+                                <constraint firstItem="Z48-8s-GJv" firstAttribute="centerX" secondItem="VAd-Jv-m7k" secondAttribute="centerX" id="S3d-Cg-xLE"/>
+                                <constraint firstItem="nMz-LU-AWj" firstAttribute="centerY" secondItem="tE2-AY-T8L" secondAttribute="centerY" id="oZz-VE-rVf"/>
+                                <constraint firstAttribute="height" constant="50" id="z5N-K6-Jae"/>
+                                <constraint firstItem="Z48-8s-GJv" firstAttribute="centerY" secondItem="tE2-AY-T8L" secondAttribute="centerY" id="zl6-8Q-Xee"/>
+                            </constraints>
+                        </view>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHi-Ms-D2K">
+                            <rect key="frame" x="0.0" y="50" width="320" height="150"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="zt6-c0-aYS"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="y0a-Nc-p8Z"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JHi-Ms-D2K" firstAttribute="leading" secondItem="jTV-fv-biq" secondAttribute="leading" id="82j-CC-dYz"/>
+                        <constraint firstAttribute="trailing" secondItem="JHi-Ms-D2K" secondAttribute="trailing" id="CYi-uJ-ZD5"/>
+                        <constraint firstAttribute="trailing" secondItem="VAd-Jv-m7k" secondAttribute="trailing" id="DTf-Tx-aYZ"/>
+                        <constraint firstItem="JHi-Ms-D2K" firstAttribute="top" secondItem="VAd-Jv-m7k" secondAttribute="bottom" id="FOf-vD-WGA"/>
+                        <constraint firstAttribute="bottom" secondItem="JHi-Ms-D2K" secondAttribute="bottom" id="iMl-oa-P3m"/>
+                        <constraint firstAttribute="height" constant="200" id="iUn-vb-TVa"/>
+                        <constraint firstItem="VAd-Jv-m7k" firstAttribute="leading" secondItem="jTV-fv-biq" secondAttribute="leading" id="mwE-OM-6ds"/>
+                        <constraint firstItem="VAd-Jv-m7k" firstAttribute="top" secondItem="jTV-fv-biq" secondAttribute="top" id="vem-DG-DSM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jTV-fv-biq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="POz-69-i7H"/>
+                <constraint firstAttribute="bottom" secondItem="jTV-fv-biq" secondAttribute="bottom" id="qc9-W8-ZQo"/>
+                <constraint firstAttribute="trailing" secondItem="jTV-fv-biq" secondAttribute="trailing" id="xCI-Ay-Cse"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="containView" destination="jTV-fv-biq" id="Krw-9k-Vln"/>
+                <outlet property="containViewBottom" destination="qc9-W8-ZQo" id="VtJ-hj-ldT"/>
+                <outlet property="pickView" destination="JHi-Ms-D2K" id="uul-KH-sCT"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="353"/>
+        </view>
+    </objects>
+</document>

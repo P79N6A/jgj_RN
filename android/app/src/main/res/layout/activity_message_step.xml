@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f1f1f1"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/head_right_text"/>
+
+
+    <EditText
+        android:id="@+id/ed_desc"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:hint="请输入整改措施"
+        android:maxLength="400"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_cccccc"
+        android:textSize="14sp"/>
+
+</LinearLayout>

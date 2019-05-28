@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@drawable/draw_white_5radius"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/draw_dialog_top_style"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="修改检查结果"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_uncheck"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_check_bg"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/icon_check_gou"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="不用检查"
+                android:textColor="@drawable/radio_check_textcolor"
+                android:textSize="15sp"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_pass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_check_bg"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="75dp"
+                android:paddingRight="75dp"
+                android:text="通过"
+                android:textColor="@drawable/radio_check_textcolor"
+                android:textSize="15sp"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_rectification"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_check_bg"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingLeft="75dp"
+                android:paddingRight="75dp"
+                android:text="待整改"
+                android:textColor="@drawable/radio_check_textcolor"
+                android:textSize="15sp"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        style="@style/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_btn_height"
+        android:layout_below="@id/view"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/draw_dialog_bottom_round"
+        android:orientation="horizontal">
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/redBtn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/color_525c68"
+            android:textSize="@dimen/text_size_14"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/color_dbdbdb"/>
+
+        <com.jizhi.jlongg.main.custom.TextViewTouchChangeAlpha
+            android:id="@+id/btn_asscess"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/assign"
+            android:textColor="@color/color_d7252c"
+            android:textSize="@dimen/text_size_14"/>
+    </LinearLayout>
+
+
+</LinearLayout>

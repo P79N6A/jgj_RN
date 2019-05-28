@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JGJMemberWorkInfoCell" id="KGk-i7-Jjw" customClass="JGJMemberWorkInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="appraise_pro_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jVL-JX-nNX">
+                        <rect key="frame" x="10" y="15" width="13" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La0-Di-P1M">
+                        <rect key="frame" x="33" y="14" width="277" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jVL-JX-nNX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5qg-2o-cO0"/>
+                    <constraint firstItem="jVL-JX-nNX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="O5R-0k-OJn"/>
+                    <constraint firstItem="La0-Di-P1M" firstAttribute="leading" secondItem="jVL-JX-nNX" secondAttribute="trailing" constant="10" id="W42-iz-qcG"/>
+                    <constraint firstAttribute="trailing" secondItem="La0-Di-P1M" secondAttribute="trailing" constant="10" id="bqp-hE-Dvs"/>
+                    <constraint firstItem="La0-Di-P1M" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="t42-vB-p4T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="imageViewType" destination="jVL-JX-nNX" id="sOM-1y-o67"/>
+                <outlet property="typeDes" destination="La0-Di-P1M" id="sH1-d4-lLf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="appraise_pro_icon" width="13" height="13"/>
+    </resources>
+</document>

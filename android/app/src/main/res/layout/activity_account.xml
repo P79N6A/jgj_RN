@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title_account" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="@color/color_3a3f4e">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/icon_account_triangle"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:id="@+id/btn_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/radio_account_hour"
+                android:drawableBottom="@drawable/radio_account_arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/pricemode_hour"
+                android:textColor="@drawable/radio_account_tab_check_textcolor"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/btn_all_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_all_work"
+                android:drawableBottom="@drawable/radio_account_arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/all_work_hour"
+                android:textColor="@drawable/radio_account_tab_check_textcolor"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/btn_all_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/radio_all_account"
+                android:drawableBottom="@drawable/radio_account_arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="包工记账"
+                android:textColor="@drawable/radio_account_tab_check_textcolor"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+
+            <RadioButton
+                android:id="@+id/btn_borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/radio_hour_borrow"
+                android:drawableBottom="@drawable/radio_account_arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/borrowing"
+                android:textColor="@drawable/radio_account_tab_check_textcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/btn_wages_settlement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_hour_wages"
+                android:drawableBottom="@drawable/radio_account_arrow"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="结算"
+                android:textColor="@drawable/radio_account_tab_check_textcolor"
+                android:textSize="15sp" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="@color/color_3a3f4e"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+</LinearLayout>

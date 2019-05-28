@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJProListBottomView">
+            <connections>
+                <outlet property="containView" destination="iN0-l3-epB" id="a3E-Ut-9rz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWn-YT-tjG">
+                    <rect key="frame" x="150" y="0.0" width="75" height="50"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="hjI-pf-sBC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="9" maxY="-18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="-17" maxX="-44" maxY="0.0"/>
+                    <state key="normal" title="重命名" image="cloud_share_icon">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzG-es-hWy">
+                    <rect key="frame" x="246.5" y="0.0" width="70" height="50"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="McR-QK-N6B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="9" maxY="-18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="-17" maxX="-44" maxY="0.0"/>
+                    <state key="normal" title="重命名" image="cloud_rename_icon">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rys-SD-qY0">
+                    <rect key="frame" x="59" y="0.0" width="70" height="50"/>
+                    <color key="backgroundColor" red="0.89411764709999997" green="0.5450980392" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="ukU-cc-2Wu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="19" maxY="-18"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="-17" maxX="-25" maxY="0.0"/>
+                    <state key="normal" title="下载" image="cloud_download_icon">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rys-SD-qY0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="0.5" id="1li-oA-o6g"/>
+                <constraint firstItem="Rys-SD-qY0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Ol-Py-PXX"/>
+                <constraint firstAttribute="bottom" secondItem="Rys-SD-qY0" secondAttribute="bottom" id="5is-Ok-uk0"/>
+                <constraint firstAttribute="bottom" secondItem="mWn-YT-tjG" secondAttribute="bottom" id="AXX-yB-Jjk"/>
+                <constraint firstItem="hzG-es-hWy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="1.5" id="Cgf-3H-AYX"/>
+                <constraint firstItem="hzG-es-hWy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PGK-yb-O42"/>
+                <constraint firstItem="hzG-es-hWy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QKs-g3-QFr"/>
+                <constraint firstItem="mWn-YT-tjG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RvW-mh-bdM"/>
+                <constraint firstItem="Rys-SD-qY0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Xxy-xI-C6v"/>
+                <constraint firstAttribute="bottom" secondItem="hzG-es-hWy" secondAttribute="bottom" id="jlA-GC-wVI"/>
+                <constraint firstItem="mWn-YT-tjG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lKz-18-o4n"/>
+                <constraint firstItem="mWn-YT-tjG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="x8D-Oz-lBh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cloud_download_icon" width="17" height="17"/>
+        <image name="cloud_rename_icon" width="17" height="17"/>
+        <image name="cloud_share_icon" width="17" height="17"/>
+    </resources>
+</document>

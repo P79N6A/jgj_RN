@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_color">
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wheel_view_left_text_size" />
+
+        <TextView
+            android:id="@+id/tv_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wheel_view_center_text_size" />
+
+        <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wheel_view_left_text_size" />
+    </RelativeLayout>
+
+    <com.jizhi.jlongg.main.custom.ButtonTouchChangeAlpha
+        android:id="@+id/recordDays"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_gy_333333_3radius"
+        android:textColor="@color/gray_333333"
+        android:textSize="@dimen/text_size_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.jizhi.wheelview.WheelView
+            android:id="@+id/id_year"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jizhi.wheelview.WheelView
+            android:id="@+id/id_month"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jizhi.wheelview.WheelView
+            android:id="@+id/id_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.jizhi.wheelview.WheelView
+            android:id="@+id/id_week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

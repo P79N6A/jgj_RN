@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="76dp"
+        android:visibility="visible">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false"
+            tools:background="@drawable/head2" />
+
+        <TextView
+            android:id="@+id/tv_username_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@id/img_head_left"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp"
+            tools:text="2019" />
+
+        <RelativeLayout
+            android:id="@+id/send_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            android:layout_toRightOf="@id/img_head_left"
+            android:background="@drawable/selector_messge_text_left"
+            android:orientation="horizontal">
+
+            <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                android:id="@+id/img_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:focusable="false"
+                android:scaleType="centerCrop"
+                app:riv_border_color="@color/color_f1f1f1"
+                app:riv_border_width="0dip"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                app:riv_corner_radius="@dimen/rect_radius"
+                app:riv_oval="false"
+                tools:background="@drawable/head2" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/img_head"
+                android:maxLength="20"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="张晓阳" />
+
+            <LinearLayout
+                android:id="@+id/l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/img_head">
+
+                <ImageView
+                    android:id="@+id/auth_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/auth_icon" />
+
+                <ImageView
+                    android:id="@+id/verify_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/verfined_icon" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_head"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="7dp"
+                android:textSize="12sp"
+                tools:text="乌兹别克族 工龄 20 年 队伍 150 人" />
+
+            <TextView
+                android:id="@+id/textTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textOne"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                tools:text="玻璃幕墙工 | 水电工..." />
+            <!--<TextView
+                android:id="@+id/tv_text_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="2dp"
+                android:autoLink="web"
+
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.1"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textColorLink="@color/blue_46a6ff"
+                android:textScaleX="1.0"
+                android:textSize="16sp"/>-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone">
+
+        <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+            android:id="@+id/img_head_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/color_f1f1f1"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="@dimen/rect_radius"
+            app:riv_oval="false"
+            tools:background="@drawable/head2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/img_head_right">
+
+
+            <LinearLayout
+                android:id="@+id/rea_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="13dp">
+
+                    <TextView
+                        android:id="@+id/tv_unread_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_628ae0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_date_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_unread_right"
+                        android:text="0000"
+                        android:textColor="@color/color_666666"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:id="@+id/spinner"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/load_spinner"
+                            android:visibility="invisible" />
+
+                        <ImageButton
+                            android:id="@+id/img_sendfail"
+                            android:layout_width="15dip"
+                            android:layout_height="15dip"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/icon_sendfail"
+                            android:padding="10dp"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/send_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/img_head_right"
+                        android:background="@drawable/selector_messge_text_left_white">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.jizhi.jongg.widget.RoundeImageHashCodeTextLayout
+                                android:id="@+id/img_head_context"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:focusable="false"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginLeft="7dp"
+                                android:scaleType="centerCrop"
+                                app:riv_border_color="@color/color_f1f1f1"
+                                app:riv_border_width="0dip"
+                                app:riv_corner_radius="@dimen/rect_radius"
+                                app:riv_oval="false"
+                                tools:background="@drawable/head2" />
+
+                            <TextView
+                                android:id="@+id/name_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_toRightOf="@+id/img_head_context"
+                                android:maxLength="20"
+                                android:layout_marginTop="7dp"
+                                android:textColor="@color/color_333333"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                tools:text="张晓阳" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/name_right"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_toRightOf="@+id/img_head_context">
+
+                                <ImageView
+                                    android:id="@+id/auth_right"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/auth_icon" />
+
+                                <ImageView
+                                    android:id="@+id/verify_right"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/verfined_icon" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textOne_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img_head_context"
+                                android:layout_marginTop="4dp"
+                                android:textSize="12sp"
+                                android:layout_marginLeft="7dp"
+                                tools:text="乌兹别克" />
+
+                            <TextView
+                                android:id="@+id/textTwo_right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textOne_right"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="7dp"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="7dp"
+                                android:textSize="12sp"
+                                tools:text="玻璃幕墙工 | 水电工..." />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

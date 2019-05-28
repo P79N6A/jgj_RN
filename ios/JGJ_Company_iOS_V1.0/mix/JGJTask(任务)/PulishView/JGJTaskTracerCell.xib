@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="JGJTaskTracerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akl-Te-Ka0">
+                        <rect key="frame" x="111" y="21" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8KR-fG-dtq" customClass="LineView">
+                        <rect key="frame" x="10" y="58.5" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.47843137250000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="gzS-5B-HUI"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W89-nJ-Kbw">
+                        <rect key="frame" x="0.0" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6bG-3B-6nt"/>
+                            <constraint firstAttribute="height" constant="40" id="qzT-eP-oHG"/>
+                        </constraints>
+                        <state key="normal" image="EllipseIcon"/>
+                        <state key="selected" image="MultiSelected"/>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGi-hQ-xUK">
+                        <rect key="frame" x="46" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="hMa-6D-lb6"/>
+                            <constraint firstAttribute="height" constant="50" id="k92-sz-iaH"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-sc-OP3">
+                        <rect key="frame" x="270" y="16.5" width="38" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="2dl-fv-nhJ"/>
+                            <constraint firstAttribute="height" constant="27" id="acS-bc-cX1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="-7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eFL-sc-OP3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="08U-qK-Tlj"/>
+                    <constraint firstItem="W89-nJ-Kbw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0js-wZ-QeG"/>
+                    <constraint firstAttribute="trailing" secondItem="eFL-sc-OP3" secondAttribute="trailing" constant="12" id="EKq-zv-6yO"/>
+                    <constraint firstItem="akl-Te-Ka0" firstAttribute="centerY" secondItem="tGi-hQ-xUK" secondAttribute="centerY" id="S2w-Az-TYa"/>
+                    <constraint firstAttribute="bottom" secondItem="8KR-fG-dtq" secondAttribute="bottom" id="Ube-ah-SjI"/>
+                    <constraint firstItem="W89-nJ-Kbw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bZa-oG-TFc"/>
+                    <constraint firstItem="tGi-hQ-xUK" firstAttribute="leading" secondItem="W89-nJ-Kbw" secondAttribute="trailing" constant="6" id="cPZ-nJ-dAo"/>
+                    <constraint firstItem="tGi-hQ-xUK" firstAttribute="centerY" secondItem="W89-nJ-Kbw" secondAttribute="centerY" id="iw5-za-UJY"/>
+                    <constraint firstItem="8KR-fG-dtq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rE0-U5-6yv"/>
+                    <constraint firstItem="akl-Te-Ka0" firstAttribute="leading" secondItem="tGi-hQ-xUK" secondAttribute="trailing" constant="15" id="txZ-mo-cSl"/>
+                    <constraint firstAttribute="trailing" secondItem="8KR-fG-dtq" secondAttribute="trailing" constant="10" id="yHO-rm-g8w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="flagButton" destination="eFL-sc-OP3" id="Eyi-uP-thO"/>
+                <outlet property="headButton" destination="tGi-hQ-xUK" id="Jj8-Et-UbP"/>
+                <outlet property="lineView" destination="8KR-fG-dtq" id="BwL-iU-Cc2"/>
+                <outlet property="nameLable" destination="akl-Te-Ka0" id="8EO-92-Kwt"/>
+                <outlet property="selectedBtn" destination="W89-nJ-Kbw" id="JEK-0f-wXG"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="EllipseIcon" width="20" height="20"/>
+        <image name="MultiSelected" width="20" height="20"/>
+    </resources>
+</document>

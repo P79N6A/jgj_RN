@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="JGJNotificationDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘远强" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH8-ov-jVZ">
+                        <rect key="frame" x="13" y="18" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="JHG-VY-69d"/>
+                            <constraint firstAttribute="height" constant="20" id="JpK-oW-yj2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYM-Ec-DIa">
+                        <rect key="frame" x="238" y="10" width="200" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="UiX-zd-2pA"/>
+                            <constraint firstAttribute="width" constant="200" id="ldx-Vy-dUK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通知各位，要下雨了 ，请把砖搬到室内" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJf-Yo-nAY">
+                        <rect key="frame" x="5" y="48" width="438" height="101"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CJf-Yo-nAY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="CLR-YA-39l"/>
+                    <constraint firstItem="CJf-Yo-nAY" firstAttribute="top" secondItem="jH8-ov-jVZ" secondAttribute="bottom" constant="10" id="TTI-Aa-1qn"/>
+                    <constraint firstAttribute="bottom" secondItem="CJf-Yo-nAY" secondAttribute="bottom" constant="10" id="VV4-ex-X69"/>
+                    <constraint firstAttribute="trailing" secondItem="kYM-Ec-DIa" secondAttribute="trailing" constant="10" id="Wq2-3q-GtP"/>
+                    <constraint firstItem="jH8-ov-jVZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Ytt-nz-Ib0"/>
+                    <constraint firstItem="jH8-ov-jVZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="daS-xw-hVO"/>
+                    <constraint firstAttribute="trailing" secondItem="CJf-Yo-nAY" secondAttribute="trailing" constant="5" id="iha-Sf-zZh"/>
+                    <constraint firstItem="kYM-Ec-DIa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="yIJ-5G-CHQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="DesLable" destination="CJf-Yo-nAY" id="Ona-wl-7bc"/>
+                <outlet property="NameLable" destination="jH8-ov-jVZ" id="Yoz-Gi-pSA"/>
+                <outlet property="TimeLable" destination="kYM-Ec-DIa" id="MDL-st-W6U"/>
+            </connections>
+            <point key="canvasLocation" x="-423" y="180"/>
+        </tableViewCell>
+    </objects>
+</document>

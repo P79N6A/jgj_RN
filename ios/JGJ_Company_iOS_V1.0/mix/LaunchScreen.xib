@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="UMZ-fu-g9K">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="9W9-HI-LU4"/>
+                <viewControllerLayoutGuide type="bottom" id="9k1-4B-hkz"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="mYZ-cr-Ndd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default-736h" translatesAutoresizingMaskIntoConstraints="NO" id="m06-Iy-aob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="m06-Iy-aob" firstAttribute="leading" secondItem="mYZ-cr-Ndd" secondAttribute="leading" id="EVw-zY-y9D"/>
+                    <constraint firstItem="m06-Iy-aob" firstAttribute="top" secondItem="mYZ-cr-Ndd" secondAttribute="top" id="Hhc-Ys-Wxl"/>
+                    <constraint firstAttribute="trailing" secondItem="m06-Iy-aob" secondAttribute="trailing" id="Ldv-hA-MGk"/>
+                    <constraint firstItem="9k1-4B-hkz" firstAttribute="top" secondItem="m06-Iy-aob" secondAttribute="bottom" id="aHk-fK-GHS"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="422" y="423"/>
+        </viewController>
+    </objects>
+    <resources>
+        <image name="Default-736h" width="17" height="19"/>
+    </resources>
+</document>

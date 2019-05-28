@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JGJQustionShowView">
+            <connections>
+                <outlet property="KownBtn" destination="6vd-qE-XVb" id="93C-lC-OV3"/>
+                <outlet property="baseView" destination="Fyh-JI-QoZ" id="fBs-dX-GLS"/>
+                <outlet property="contentLable" destination="bgz-7Z-Rrk" id="Eiz-6q-t3F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pNr-vU-SSc">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT9-LD-LJL">
+                    <rect key="frame" x="0.0" y="0.0" width="229" height="79"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fyh-JI-QoZ">
+                            <rect key="frame" x="0.0" y="0.0" width="229" height="74"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qustionArrow" translatesAutoresizingMaskIntoConstraints="NO" id="heo-yE-CuW">
+                                    <rect key="frame" x="75" y="74" width="10" height="5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="10" id="DhQ-BF-vJ3"/>
+                                        <constraint firstAttribute="height" constant="5" id="KWO-Bu-EKb"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未结工资 = 点工工资 + 包工工资 - 借支金额 - 已结金额" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-7Z-Rrk">
+                                    <rect key="frame" x="8" y="8" width="213" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="UkW-uL-8OI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.8966984160958904" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vd-qE-XVb">
+                                    <rect key="frame" x="144" y="46" width="65" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="nMJ-g0-hs5"/>
+                                        <constraint firstAttribute="height" constant="20" id="oc8-Js-d18"/>
+                                    </constraints>
+                                    <state key="normal" title="我知道了">
+                                        <color key="titleColor" red="0.92156862745098034" green="0.30588235294117649" blue="0.30588235294117649" alpha="0.8966984160958904" colorSpace="deviceRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickKwonBtn:" destination="-1" eventType="touchUpInside" id="fVv-hy-Sd9"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="0.90432363013698636" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstItem="bgz-7Z-Rrk" firstAttribute="leading" secondItem="Fyh-JI-QoZ" secondAttribute="leading" constant="8" id="JB7-qg-eGz"/>
+                                <constraint firstItem="bgz-7Z-Rrk" firstAttribute="top" secondItem="Fyh-JI-QoZ" secondAttribute="top" constant="8" id="KTQ-s4-vfU"/>
+                                <constraint firstItem="heo-yE-CuW" firstAttribute="top" secondItem="Fyh-JI-QoZ" secondAttribute="top" constant="74" id="Ybu-Hu-8zt"/>
+                                <constraint firstItem="heo-yE-CuW" firstAttribute="leading" secondItem="Fyh-JI-QoZ" secondAttribute="leading" constant="75" id="ljd-dL-Tfe"/>
+                                <constraint firstAttribute="trailing" secondItem="6vd-qE-XVb" secondAttribute="trailing" constant="20" id="xHm-kJ-if5"/>
+                                <constraint firstAttribute="trailing" secondItem="bgz-7Z-Rrk" secondAttribute="trailing" constant="8" id="xIA-y0-Lof"/>
+                                <constraint firstAttribute="bottom" secondItem="6vd-qE-XVb" secondAttribute="bottom" constant="8" id="yHd-il-GBh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="0.0" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Fyh-JI-QoZ" secondAttribute="trailing" id="B1m-wE-Ppr"/>
+                        <constraint firstItem="Fyh-JI-QoZ" firstAttribute="top" secondItem="QT9-LD-LJL" secondAttribute="top" id="OD9-Oi-G7H"/>
+                        <constraint firstItem="Fyh-JI-QoZ" firstAttribute="leading" secondItem="QT9-LD-LJL" secondAttribute="leading" id="TBm-VC-fgS"/>
+                        <constraint firstAttribute="bottom" secondItem="Fyh-JI-QoZ" secondAttribute="bottom" constant="5" id="pqZ-0b-h68"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QT9-LD-LJL" firstAttribute="top" secondItem="B7B-Oh-V7E" secondAttribute="top" id="BJU-lV-9tB"/>
+                <constraint firstAttribute="trailing" secondItem="QT9-LD-LJL" secondAttribute="trailing" id="Nwe-KJ-JDU"/>
+                <constraint firstAttribute="bottom" secondItem="QT9-LD-LJL" secondAttribute="bottom" id="prg-88-z4l"/>
+                <constraint firstItem="QT9-LD-LJL" firstAttribute="leading" secondItem="B7B-Oh-V7E" secondAttribute="leading" id="w0M-O9-TK1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="B7B-Oh-V7E"/>
+            <point key="canvasLocation" x="56.5" y="-40.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qustionArrow" width="10" height="5"/>
+    </resources>
+</document>

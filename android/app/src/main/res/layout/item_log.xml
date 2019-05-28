@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <View
+            style="@style/line"
+            android:layout_alignParentBottom="true" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:src="@drawable/icon_video" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@id/img_head"
+            android:text="name"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/margin_15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="date"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/margin_12dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<View-->
+        <!--style="@style/line"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+        <com.jizhi.jongg.widget.CollapsibleTextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp" />
+
+        <com.jizhi.jlongg.groupimageviews.NineGridMsgImageView
+            android:id="@+id/ngl_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginTop="15dp"
+            app:imgGap="3dp"
+            app:maxSize="9"
+            app:showStyle="grid"
+            app:singleImgSize="300dp" />
+
+        <View
+            style="@style/line"
+            android:layout_height="7.5dp"
+            android:layout_below="@id/ngl_images"
+            android:layout_marginTop="25dp"
+            android:background="@color/color_eeeeee" />
+    </RelativeLayout>
+</LinearLayout>

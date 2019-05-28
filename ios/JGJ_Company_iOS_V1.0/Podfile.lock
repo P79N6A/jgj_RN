@@ -1,0 +1,22 @@
+PODS:
+  - BaiduMobStatCodeless (4.6.6)
+  - WCDB (1.0.6):
+    - WCDB/sqlcipher (= 1.0.6)
+  - WCDB/sqlcipher (1.0.6)
+
+DEPENDENCIES:
+  - BaiduMobStatCodeless
+  - WCDB
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BaiduMobStatCodeless
+    - WCDB
+
+SPEC CHECKSUMS:
+  BaiduMobStatCodeless: 94cc1728a663b51a252a21b528027a56d0df717a
+  WCDB: 4d2926bf695b2e00d785b50afd32c2dcc8cbbd98
+
+PODFILE CHECKSUM: 0951395abc5168cea056b671736ccfde5677f356
+
+COCOAPODS: 1.5.2

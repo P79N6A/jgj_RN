@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_only_title" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fef1e1"
+        android:gravity="center"
+        android:text="如需新建检查项，请返回至“检查项”模块进行设置"
+        android:textColor="#f18215"
+        android:textSize="@dimen/text_size_13" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_f1f1f1"
+        android:divider="@null" />
+
+    <include layout="@layout/bottom_red_button_layout" />
+
+</LinearLayout>

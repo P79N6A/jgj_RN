@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="150dip"
+        android:background="@drawable/dialog_top_style">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/icon_success" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="13dip"
+                android:gravity="center"
+                android:lineSpacingExtra="3dip"
+                android:text="祝贺,同步成功!"
+                android:textColor="@color/gray_666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="270dp"
+        android:layout_height="@dimen/red_button_height"
+        android:background="@drawable/dialog_bottom_style"
+        android:text="@string/iam_sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_size">
+
+    </Button>
+
+
+</LinearLayout>
